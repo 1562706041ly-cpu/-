@@ -1,0 +1,24 @@
+{
+  "dataset": "paderborn_singlecondition_n15_m07_f10_v1.npz",
+  "shape": [
+    176,
+    2048
+  ],
+  "vmd_shape": [
+    176,
+    8,
+    2048
+  ],
+  "train_sha256": "cca3c44e781827409abdf00f47ce02f6a8df34c1d85c7ff0f680c00221a6fb9e",
+  "bank_sha256": "315fe615bbd39b861f86da892d75359ed89784039406d28ff9da6e2fd81a5d06",
+  "K": 8,
+  "alpha": 300.0,
+  "tau": 0.0,
+  "DC": 0,
+  "init": 1,
+  "tol": 1e-07,
+  "dtype": "float32",
+  "reused_windows": 176,
+  "computed_windows": 0,
+  "source_bank_sha256": "6eaf9c131bde7daa16b088f7a0349658d486c5e6a23b14d6a344a8addadc893c"
+}
