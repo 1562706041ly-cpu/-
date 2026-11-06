@@ -16,21 +16,21 @@
 <text x="615.0" y="313.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">加权评价对已知的相似度</text>
 <rect x="450" y="390" width="330" height="180" rx="14" fill="#FDE3C0" stroke="#EE9B3A" stroke-width="2.5"/>
 <text x="615.0" y="434.46" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">可靠度 R(x)</text>
-<text x="615.0" y="468.27" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">能量与距离一致性</text>
-<text x="615.0" y="498.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">两个弱视图稳定性</text>
-<text x="615.0" y="528.9899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">分流确定性（是否在0.5附近）</text>
+<text x="615.0" y="468.27" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">能量与原型证据一致性</text>
+<text x="615.0" y="498.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">跨弱视图稳定性</text>
+<text x="615.0" y="528.9899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">分流确定性</text>
 <rect x="840" y="225" width="340" height="310" rx="14" fill="#FDE3C0" stroke="#EE9B3A" stroke-width="2.5"/>
 <text x="1010.0" y="319.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">样本证据分区</text>
 <text x="1010.0" y="353.09" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">高K·高R → 可靠已知</text>
 <text x="1010.0" y="383.45" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">低K·高R → 可靠未知</text>
-<text x="1010.0" y="413.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">低R → 不确定样本</text>
+<text x="1010.0" y="413.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">证据冲突/低R → 不确定</text>
 <text x="1010.0" y="444.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">（软权重，不做硬划分）</text>
 <rect x="1240" y="225" width="340" height="310" rx="14" fill="#FDE3C0" stroke="#EE9B3A" stroke-width="2.5"/>
-<text x="1410.0" y="319.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">增强预算分配</text>
-<text x="1410.0" y="353.09" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">b(x) = f(K, R)</text>
-<text x="1410.0" y="383.45" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">控制扰动强度</text>
-<text x="1410.0" y="413.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">与扰动模态数量</text>
-<text x="1410.0" y="444.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">不确定样本 → 弱增强</text>
+<text x="1410.0" y="319.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">增强预算分配 b(x)=f(K,R)</text>
+<text x="1410.0" y="353.09" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">控制扰动强度与模态数</text>
+<text x="1410.0" y="383.45" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">高K可靠 → 弱扰动</text>
+<text x="1410.0" y="413.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">低K可靠 → 适度加强</text>
+<text x="1410.0" y="444.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">不确定 → 保守</text>
 <rect x="1640" y="200" width="320" height="140" rx="14" fill="#FFFFFF" stroke="#777" stroke-width="2.5"/>
 <text x="1800.0" y="254.82" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">VMD 分解</text>
 <text x="1800.0" y="288.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">得到各本征模态分量</text>
@@ -39,11 +39,11 @@
 <text x="1800.0" y="468.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">重构得到增强视图</text>
 <polygon points="2170,190.0 2330.0,310 2170,430.0 2010.0,310" fill="#FFFFFF" stroke="#555" stroke-width="2.5"/>
 <text x="2170" y="285.16" font-size="28" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">保真检查</text>
-<text x="2170" y="316.90000000000003" font-size="18" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">扰动量 · 频谱结构</text>
-<text x="2170" y="341.74" font-size="18" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">· 整体振动能量</text>
+<text x="2170" y="316.90000000000003" font-size="18" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">相对扰动量·频谱形状</text>
+<text x="2170" y="341.74" font-size="18" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">·RMS相对变化</text>
 <rect x="2010" y="500" width="320" height="95" rx="14" fill="#F4F4F4" stroke="#8A8A8A" stroke-width="2.5"/>
-<text x="2170.0" y="532.32" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">未通过：降低强度</text>
-<text x="2170.0" y="566.13" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">重试或回退弱增强</text>
+<text x="2170.0" y="532.32" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">未通过：预算缩减</text>
+<text x="2170.0" y="566.13" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">仍不合格→保守视图回退</text>
 <polyline points="420,365 435,365" fill="none" stroke="#555" stroke-width="3"/>
 <polyline points="435,280 435,450" fill="none" stroke="#555" stroke-width="3"/>
 <polyline points="435,280 450,280" fill="none" stroke="#555" stroke-width="3"/>
@@ -86,17 +86,17 @@
 <text x="295.0" y="919.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">输入</text>
 <text x="295.0" y="953.0899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">增强视图特征</text>
 <text x="295.0" y="983.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">z1, z2</text>
-<text x="295.0" y="1013.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">分流权重 (K, R)</text>
+<text x="295.0" y="1013.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">K(x)、R(x)、分流结果</text>
 <text x="295.0" y="1044.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">已知类标签</text>
 <rect x="450" y="755" width="330" height="130" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
 <text x="615.0" y="789.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">标签锚点</text>
-<text x="615.0" y="823.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">同一已知标签 → 正对候选</text>
-<text x="615.0" y="853.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">少量的已知类样本</text>
+<text x="615.0" y="823.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">同一已知标签 → 可靠正关系</text>
+<text x="615.0" y="853.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">不同已知标签 → 可靠负关系</text>
 <rect x="450" y="905" width="330" height="170" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
-<text x="615.0" y="929.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">局部邻域</text>
-<text x="615.0" y="963.0899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">互为k近邻且共享邻居多</text>
+<text x="615.0" y="929.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">分流/暂定类别 + 邻域</text>
+<text x="615.0" y="963.0899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">互为k近邻、共享邻居多</text>
 <text x="615.0" y="993.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">→ 正对候选</text>
-<text x="615.0" y="1023.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">近邻稀疏且无共享邻居</text>
+<text x="615.0" y="1023.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">邻域无联系且暂定类别不同</text>
 <text x="615.0" y="1054.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">→ 负对候选</text>
 <rect x="450" y="1095" width="330" height="130" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
 <text x="615.0" y="1129.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">跨视图一致性</text>
@@ -115,14 +115,14 @@
 <text x="1410.0" y="1084.8200000000002" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">不确定关系</text>
 <text x="1410.0" y="1118.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">降权或暂不使用</text>
 <rect x="1640" y="755" width="320" height="150" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
-<text x="1800.0" y="799.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">选择性难负对学习</text>
-<text x="1800.0" y="833.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">仅在可靠负对中挖掘</text>
-<text x="1800.0" y="863.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">剔除疑似假负样本</text>
+<text x="1800.0" y="799.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">选择性难负样本</text>
+<text x="1800.0" y="833.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">可信负关系中混合合成</text>
+<text x="1800.0" y="863.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">难度预算=f(可信度)</text>
 <rect x="1640" y="965" width="320" height="200" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
-<text x="1800.0" y="1019.46" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">联合优化</text>
-<text x="1800.0" y="1053.2700000000002" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">有监督对比（已知锚点）</text>
-<text x="1800.0" y="1083.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">+ 加权无监督对比</text>
-<text x="1800.0" y="1113.99" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">+ 已知类分类损失</text>
+<text x="1800.0" y="1019.46" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">联合优化（分阶段）</text>
+<text x="1800.0" y="1053.2700000000002" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">已知类监督</text>
+<text x="1800.0" y="1083.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">+ 同源视图对比</text>
+<text x="1800.0" y="1113.99" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">+ 可靠关系加权对比</text>
 <rect x="2040" y="800" width="290" height="325" rx="14" fill="#D5E6F8" stroke="#4A82C2" stroke-width="2.5"/>
 <text x="2185.0" y="901.78" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">输出</text>
 <text x="2185.0" y="935.5899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">已知类：准确识别</text>
@@ -163,8 +163,8 @@
 <polygon points="2040,1065 2024.0,1073.0 2024.0,1057.0" fill="#555"/>
 <polyline points="2185,1125 2185,1272 155,1272 155,520 450,520" fill="none" stroke="#D35400" stroke-width="3.5" stroke-dasharray="10,7"/>
 <polygon points="450,520 434.0,528.0 434.0,512.0" fill="#D35400"/>
-<rect x="980.390625" y="1256.6" width="379.21875" height="30.799999999999997" fill="#EAF5E5"/>
-<text x="1170" y="1272" font-size="22" text-anchor="middle" dominant-baseline="central" fill="#D35400" font-weight="700">更新编码器 → 重新评估 K, R（迭代）</text>
+<rect x="960.875" y="1256.6" width="418.25" height="30.799999999999997" fill="#EAF5E5"/>
+<text x="1170" y="1272" font-size="22" text-anchor="middle" dominant-baseline="central" fill="#D35400" font-weight="700">周期更新特征/原型/关系 → 重新评估 K, R</text>
 <polyline points="2330,310 2372,310 2372,640 285,640 285,880" fill="none" stroke="#2E7D32" stroke-width="3.5"/>
 <polygon points="285,880 277.0,864.0 293.0,864.0" fill="#2E7D32"/>
 <rect x="2344.0" y="425.3" width="56.0" height="29.4" fill="#FFF3E0"/>
