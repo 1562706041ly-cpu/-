@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2440" height="1340" viewBox="0 0 2440 1340" font-family="Microsoft YaHei, 微软雅黑, Noto Sans SC, PingFang SC, sans-serif"><rect width="2440" height="1340" fill="white"/><text x="1220.0" y="52.0" font-size="42" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">轴向柱塞泵开放环境故障诊断 · 技术路线（拟研究方案）</text>
+<rect x="40" y="100" width="2360" height="520" rx="22" fill="#FFF3E0" stroke="#EE9B3A" stroke-width="3"/>
+<rect x="40" y="100" width="100" height="520" rx="16" fill="#FBD9A6" stroke="#EE9B3A" stroke-width="2.5"/>
+<text x="90" y="344.13" font-size="26" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">第三章</text>
+<text x="90" y="377.94" font-size="23" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">增强方法</text>
+<rect x="170" y="118" width="2200" height="54" rx="10" fill="#F9D0D0" stroke="#D75C5C" stroke-width="2.5"/>
+<text x="1270" y="145.0" font-size="30" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">已知性与可靠度联合控制的自适应增强</text>
+<rect x="170" y="280" width="250" height="170" rx="14" fill="#FFFFFF" stroke="#777" stroke-width="2.5"/>
+<text x="295.0" y="319.46" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">输入</text>
+<text x="295.0" y="353.27" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">少量标注样本</text>
+<text x="295.0" y="383.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">+ 混合无标签</text>
+<text x="295.0" y="413.99" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">样本 x</text>
+<rect x="450" y="200" width="330" height="160" rx="14" fill="#FDE3C0" stroke="#EE9B3A" stroke-width="2.5"/>
+<text x="615.0" y="249.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">已知性 K(x)</text>
+<text x="615.0" y="283.45" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">能量与已知原型距离</text>
+<text x="615.0" y="313.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">加权评价对已知的相似度</text>
+<rect x="450" y="390" width="330" height="180" rx="14" fill="#FDE3C0" stroke="#EE9B3A" stroke-width="2.5"/>
+<text x="615.0" y="434.46" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">可靠度 R(x)</text>
+<text x="615.0" y="468.27" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">能量与距离一致性</text>
+<text x="615.0" y="498.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">两个弱视图稳定性</text>
+<text x="615.0" y="528.9899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">分流确定性（是否在0.5附近）</text>
+<rect x="840" y="225" width="340" height="310" rx="14" fill="#FDE3C0" stroke="#EE9B3A" stroke-width="2.5"/>
+<text x="1010.0" y="319.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">样本证据分区</text>
+<text x="1010.0" y="353.09" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">高K·高R → 可靠已知</text>
+<text x="1010.0" y="383.45" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">低K·高R → 可靠未知</text>
+<text x="1010.0" y="413.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">低R → 不确定样本</text>
+<text x="1010.0" y="444.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">（软权重，不做硬划分）</text>
+<rect x="1240" y="225" width="340" height="310" rx="14" fill="#FDE3C0" stroke="#EE9B3A" stroke-width="2.5"/>
+<text x="1410.0" y="319.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">增强预算分配</text>
+<text x="1410.0" y="353.09" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">b(x) = f(K, R)</text>
+<text x="1410.0" y="383.45" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">控制扰动强度</text>
+<text x="1410.0" y="413.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">与扰动模态数量</text>
+<text x="1410.0" y="444.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">不确定样本 → 弱增强</text>
+<rect x="1640" y="200" width="320" height="140" rx="14" fill="#FFFFFF" stroke="#777" stroke-width="2.5"/>
+<text x="1800.0" y="254.82" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">VMD 分解</text>
+<text x="1800.0" y="288.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">得到各本征模态分量</text>
+<rect x="1640" y="380" width="320" height="140" rx="14" fill="#FFFFFF" stroke="#777" stroke-width="2.5"/>
+<text x="1800.0" y="434.82" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">按预算扰动模态幅值</text>
+<text x="1800.0" y="468.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">重构得到增强视图</text>
+<polygon points="2170,190.0 2330.0,310 2170,430.0 2010.0,310" fill="#FFFFFF" stroke="#555" stroke-width="2.5"/>
+<text x="2170" y="285.16" font-size="28" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">保真检查</text>
+<text x="2170" y="316.90000000000003" font-size="18" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">扰动量 · 频谱结构</text>
+<text x="2170" y="341.74" font-size="18" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">· 整体振动能量</text>
+<rect x="2010" y="500" width="320" height="95" rx="14" fill="#F4F4F4" stroke="#8A8A8A" stroke-width="2.5"/>
+<text x="2170.0" y="532.32" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">未通过：降低强度</text>
+<text x="2170.0" y="566.13" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">重试或回退弱增强</text>
+<polyline points="420,365 435,365" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="435,280 435,450" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="435,280 450,280" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="450,280 434.0,288.0 434.0,272.0" fill="#555"/>
+<polyline points="435,450 450,450" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="450,450 434.0,458.0 434.0,442.0" fill="#555"/>
+<polyline points="780,280 810,280 810,450 780,450" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="780,280 810,280" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="780,480 810,480" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="810,280 810,480" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="810,380 840,380" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="840,380 824.0,388.0 824.0,372.0" fill="#555"/>
+<polyline points="1180,380 1240,380" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1240,380 1224.0,388.0 1224.0,372.0" fill="#555"/>
+<polyline points="1580,380 1610,380" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="1610,270 1610,450" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="1610,270 1640,270" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1640,270 1624.0,278.0 1624.0,262.0" fill="#555"/>
+<polyline points="1610,450 1640,450" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1640,450 1624.0,458.0 1624.0,442.0" fill="#555"/>
+<polyline points="1800,340 1800,380" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1800,380 1792.0,364.0 1808.0,364.0" fill="#555"/>
+<polyline points="1960,450 1985,450 1985,310 2010,310" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="2010,310 1994.0,318.0 1994.0,302.0" fill="#555"/>
+<polyline points="2170,430 2170,500" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="2170,500 2162.0,484.0 2178.0,484.0" fill="#555"/>
+<rect x="2176.0" y="449.6" width="36.0" height="30.799999999999997" fill="#FFF3E0"/>
+<text x="2194" y="465" font-size="22" text-anchor="middle" dominant-baseline="central" fill="#C0392B" font-weight="700">否</text>
+<polyline points="2010,548 1800,548 1800,520" fill="none" stroke="#555" stroke-width="3" stroke-dasharray="10,7"/>
+<polygon points="1800,520 1808.0,536.0 1792.0,536.0" fill="#555"/>
+<rect x="1873.0" y="534.0" width="54.0" height="28.0" fill="#FFF3E0"/>
+<text x="1900" y="548" font-size="20" text-anchor="middle" dominant-baseline="central" fill="#555" font-weight="400">重试</text>
+<rect x="40" y="660" width="2360" height="645" rx="22" fill="#EAF5E5" stroke="#69AE5A" stroke-width="3"/>
+<rect x="40" y="660" width="100" height="645" rx="16" fill="#BFE0B5" stroke="#69AE5A" stroke-width="2.5"/>
+<text x="90" y="966.1300000000001" font-size="26" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">第四章</text>
+<text x="90" y="999.94" font-size="23" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">比较方法</text>
+<rect x="450" y="678" width="1920" height="54" rx="10" fill="#F9D0D0" stroke="#D75C5C" stroke-width="2.5"/>
+<text x="1410" y="705.0" font-size="29" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">分流引导的可靠正负关系构建与对比学习（先判断关系是否可信，再拉近/推远）</text>
+<rect x="170" y="880" width="250" height="200" rx="14" fill="#FFFFFF" stroke="#777" stroke-width="2.5"/>
+<text x="295.0" y="919.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">输入</text>
+<text x="295.0" y="953.0899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">增强视图特征</text>
+<text x="295.0" y="983.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">z1, z2</text>
+<text x="295.0" y="1013.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">分流权重 (K, R)</text>
+<text x="295.0" y="1044.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">已知类标签</text>
+<rect x="450" y="755" width="330" height="130" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
+<text x="615.0" y="789.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">标签锚点</text>
+<text x="615.0" y="823.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">同一已知标签 → 正对候选</text>
+<text x="615.0" y="853.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">少量的已知类样本</text>
+<rect x="450" y="905" width="330" height="170" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
+<text x="615.0" y="929.28" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">局部邻域</text>
+<text x="615.0" y="963.0899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">互为k近邻且共享邻居多</text>
+<text x="615.0" y="993.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">→ 正对候选</text>
+<text x="615.0" y="1023.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">近邻稀疏且无共享邻居</text>
+<text x="615.0" y="1054.17" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">→ 负对候选</text>
+<rect x="450" y="1095" width="330" height="130" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
+<text x="615.0" y="1129.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">跨视图一致性</text>
+<text x="615.0" y="1163.45" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">弱视图与自适应视图</text>
+<text x="615.0" y="1193.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">关系是否一致</text>
+<rect x="840" y="870" width="340" height="245" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
+<text x="1010.0" y="946.96" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">关系可信度评估</text>
+<text x="1010.0" y="980.77" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">综合锚点、邻域、</text>
+<text x="1010.0" y="1011.13" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">跨视图一致性与分流权重</text>
+<text x="1010.0" y="1041.49" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">判断正/负关系是否可信</text>
+<rect x="1260" y="755" width="300" height="110" rx="14" fill="#FFFFFF" stroke="#777" stroke-width="2.5"/>
+<text x="1410.0" y="810.0" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">可靠负对 → 推远</text>
+<rect x="1260" y="895" width="300" height="110" rx="14" fill="#FFFFFF" stroke="#777" stroke-width="2.5"/>
+<text x="1410.0" y="950.0" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">可靠正对 → 拉近</text>
+<rect x="1260" y="1040" width="300" height="120" rx="14" fill="#F1F1F1" stroke="#8A8A8A" stroke-width="2.5" stroke-dasharray="10,7"/>
+<text x="1410.0" y="1084.8200000000002" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">不确定关系</text>
+<text x="1410.0" y="1118.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">降权或暂不使用</text>
+<rect x="1640" y="755" width="320" height="150" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
+<text x="1800.0" y="799.64" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">选择性难负对学习</text>
+<text x="1800.0" y="833.4499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">仅在可靠负对中挖掘</text>
+<text x="1800.0" y="863.81" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">剔除疑似假负样本</text>
+<rect x="1640" y="965" width="320" height="200" rx="14" fill="#D8EDD1" stroke="#69AE5A" stroke-width="2.5"/>
+<text x="1800.0" y="1019.46" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">联合优化</text>
+<text x="1800.0" y="1053.2700000000002" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">有监督对比（已知锚点）</text>
+<text x="1800.0" y="1083.63" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">+ 加权无监督对比</text>
+<text x="1800.0" y="1113.99" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">+ 已知类分类损失</text>
+<rect x="2040" y="800" width="290" height="325" rx="14" fill="#D5E6F8" stroke="#4A82C2" stroke-width="2.5"/>
+<text x="2185.0" y="901.78" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#222">输出</text>
+<text x="2185.0" y="935.5899999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">已知类：准确识别</text>
+<text x="2185.0" y="965.9499999999999" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">未知类：聚类发现</text>
+<text x="2185.0" y="996.31" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">多个未知故障类别</text>
+<text x="2185.0" y="1026.67" font-size="22" font-weight="400" text-anchor="middle" dominant-baseline="central" fill="#222">（而非单一“未知类”）</text>
+<polyline points="420,980 435,980" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="435,820 435,1160" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="435,820 450,820" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="450,820 434.0,828.0 434.0,812.0" fill="#555"/>
+<polyline points="435,990 450,990" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="450,990 434.0,998.0 434.0,982.0" fill="#555"/>
+<polyline points="435,1160 450,1160" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="450,1160 434.0,1168.0 434.0,1152.0" fill="#555"/>
+<polyline points="780,820 810,820" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="780,990 810,990" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="780,1160 810,1160" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="810,820 810,1160" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="810,990 840,990" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="840,990 824.0,998.0 824.0,982.0" fill="#555"/>
+<polyline points="1180,990 1210,990" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="1210,810 1210,1100" fill="none" stroke="#555" stroke-width="3"/>
+<polyline points="1210,810 1260,810" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1260,810 1244.0,818.0 1244.0,802.0" fill="#555"/>
+<polyline points="1210,950 1260,950" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1260,950 1244.0,958.0 1244.0,942.0" fill="#555"/>
+<polyline points="1210,1100 1260,1100" fill="none" stroke="#555" stroke-width="3" stroke-dasharray="10,7"/>
+<polygon points="1260,1100 1244.0,1108.0 1244.0,1092.0" fill="#555"/>
+<polyline points="1560,810 1640,810" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1640,810 1624.0,818.0 1624.0,802.0" fill="#555"/>
+<polyline points="1800,905 1800,965" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1800,965 1792.0,949.0 1808.0,949.0" fill="#555"/>
+<polyline points="1560,950 1600,950 1600,1030 1640,1030" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="1640,1030 1624.0,1038.0 1624.0,1022.0" fill="#555"/>
+<polyline points="1560,1100 1640,1100" fill="none" stroke="#555" stroke-width="3" stroke-dasharray="10,7"/>
+<polygon points="1640,1100 1624.0,1108.0 1624.0,1092.0" fill="#555"/>
+<polyline points="1960,1065 2040,1065" fill="none" stroke="#555" stroke-width="3"/>
+<polygon points="2040,1065 2024.0,1073.0 2024.0,1057.0" fill="#555"/>
+<polyline points="2185,1125 2185,1272 155,1272 155,520 450,520" fill="none" stroke="#D35400" stroke-width="3.5" stroke-dasharray="10,7"/>
+<polygon points="450,520 434.0,528.0 434.0,512.0" fill="#D35400"/>
+<rect x="980.390625" y="1256.6" width="379.21875" height="30.799999999999997" fill="#EAF5E5"/>
+<text x="1170" y="1272" font-size="22" text-anchor="middle" dominant-baseline="central" fill="#D35400" font-weight="700">更新编码器 → 重新评估 K, R（迭代）</text>
+<polyline points="2330,310 2372,310 2372,640 285,640 285,880" fill="none" stroke="#2E7D32" stroke-width="3.5"/>
+<polygon points="285,880 277.0,864.0 293.0,864.0" fill="#2E7D32"/>
+<rect x="2344.0" y="425.3" width="56.0" height="29.4" fill="#FFF3E0"/>
+<text x="2372" y="440" font-size="21" text-anchor="middle" dominant-baseline="central" fill="#2E7D32" font-weight="700">通过</text>
+<rect x="1112.3125" y="625.3" width="375.375" height="29.4" fill="white"/>
+<text x="1300" y="640" font-size="21" text-anchor="middle" dominant-baseline="central" fill="#2E7D32" font-weight="700">通过 → 增强视图（z1, z2）送入第四章</text></svg>
