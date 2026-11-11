@@ -1,0 +1,423 @@
+{
+ "source": "npy/Motor-2_100",
+ "channel": 4,
+ "window": 2048,
+ "seed": 20261110,
+ "combos": {
+  "C1": {
+   "known_fault": "motor BPFO",
+   "unknown": [
+    "impeller",
+    "pump bearing",
+    "soft foot"
+   ],
+   "unused": "motor BPFI"
+  },
+  "C2": {
+   "known_fault": "motor BPFI",
+   "unknown": [
+    "impeller",
+    "pump bearing",
+    "motor BPFO"
+   ],
+   "unused": "soft foot"
+  },
+  "C3": {
+   "known_fault": "soft foot",
+   "unknown": [
+    "impeller",
+    "pump bearing",
+    "motor BPFI"
+   ],
+   "unused": "motor BPFO"
+  }
+ },
+ "types": {
+  "healthy": [
+   "healthy 1",
+   "healthy 2",
+   "healthy 3"
+  ],
+  "impeller": [
+   "impeller 1",
+   "impeller 2",
+   "impeller 3"
+  ],
+  "pump bearing": [
+   "bearing pump 1",
+   "bearing pump 2",
+   "bearing pump 3"
+  ],
+  "motor BPFO": [
+   "bearing bpfo 1",
+   "bearing bpfo 2",
+   "bearing bpfo 3"
+  ],
+  "motor BPFI": [
+   "bearing bpfi 1",
+   "bearing bpfi 2",
+   "bearing bpfi 3"
+  ],
+  "soft foot": [
+   "soft foot 1",
+   "soft foot 2"
+  ]
+ },
+ "sealed_final_test": "SEALED_test_Motor-2_75.json",
+ "files": {
+  "splits/motor2_100_ch4_C1_fold1.npz": {
+   "combo": "C1",
+   "fold": 1,
+   "train_installations": [
+    "healthy 2",
+    "healthy 3",
+    "bearing bpfo 2",
+    "bearing bpfo 3",
+    "impeller 2",
+    "impeller 3",
+    "bearing pump 2",
+    "bearing pump 3",
+    "soft foot 2"
+   ],
+   "eval_installations": [
+    "healthy 1",
+    "bearing bpfo 1",
+    "impeller 1",
+    "bearing pump 1",
+    "soft foot 1"
+   ],
+   "n_train": 1440,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "motor BPFO": 320,
+    "impeller": 320,
+    "pump bearing": 320,
+    "soft foot": 160
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "motor BPFO": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "soft foot": 160
+   },
+   "train_sha256": "e4eddab4f5baada69ca4438d17c534a4c73cb7575a3264ada10cdf673a145edf"
+  },
+  "splits/motor2_100_ch4_C1_fold2.npz": {
+   "combo": "C1",
+   "fold": 2,
+   "train_installations": [
+    "healthy 1",
+    "healthy 3",
+    "bearing bpfo 1",
+    "bearing bpfo 3",
+    "impeller 1",
+    "impeller 3",
+    "bearing pump 1",
+    "bearing pump 3",
+    "soft foot 1"
+   ],
+   "eval_installations": [
+    "healthy 2",
+    "bearing bpfo 2",
+    "impeller 2",
+    "bearing pump 2",
+    "soft foot 2"
+   ],
+   "n_train": 1440,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "motor BPFO": 320,
+    "impeller": 320,
+    "pump bearing": 320,
+    "soft foot": 160
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "motor BPFO": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "soft foot": 160
+   },
+   "train_sha256": "01759493cdab5804a08e35414713a2b6f9fcaa83071f97f871214f5d49561863"
+  },
+  "splits/motor2_100_ch4_C1_fold3.npz": {
+   "combo": "C1",
+   "fold": 3,
+   "train_installations": [
+    "healthy 1",
+    "healthy 2",
+    "bearing bpfo 1",
+    "bearing bpfo 2",
+    "impeller 1",
+    "impeller 2",
+    "bearing pump 1",
+    "bearing pump 2",
+    "soft foot 2"
+   ],
+   "eval_installations": [
+    "healthy 3",
+    "bearing bpfo 3",
+    "impeller 3",
+    "bearing pump 3",
+    "soft foot 1"
+   ],
+   "n_train": 1440,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "motor BPFO": 320,
+    "impeller": 320,
+    "pump bearing": 320,
+    "soft foot": 160
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "motor BPFO": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "soft foot": 160
+   },
+   "train_sha256": "fc76a85df02e1dab176f2dc1286949ae1ae2265e62defe85105bd82fca91b62e"
+  },
+  "splits/motor2_100_ch4_C2_fold1.npz": {
+   "combo": "C2",
+   "fold": 1,
+   "train_installations": [
+    "healthy 2",
+    "healthy 3",
+    "bearing bpfi 2",
+    "bearing bpfi 3",
+    "impeller 2",
+    "impeller 3",
+    "bearing pump 2",
+    "bearing pump 3",
+    "bearing bpfo 2",
+    "bearing bpfo 3"
+   ],
+   "eval_installations": [
+    "healthy 1",
+    "bearing bpfi 1",
+    "impeller 1",
+    "bearing pump 1",
+    "bearing bpfo 1"
+   ],
+   "n_train": 1600,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "motor BPFI": 320,
+    "impeller": 320,
+    "pump bearing": 320,
+    "motor BPFO": 320
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "motor BPFI": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "motor BPFO": 160
+   },
+   "train_sha256": "f1d5d85256bcf6fdb93525e6051df7454198b662007e168741ae2d5ef8b1bce4"
+  },
+  "splits/motor2_100_ch4_C2_fold2.npz": {
+   "combo": "C2",
+   "fold": 2,
+   "train_installations": [
+    "healthy 1",
+    "healthy 3",
+    "bearing bpfi 1",
+    "bearing bpfi 3",
+    "impeller 1",
+    "impeller 3",
+    "bearing pump 1",
+    "bearing pump 3",
+    "bearing bpfo 1",
+    "bearing bpfo 3"
+   ],
+   "eval_installations": [
+    "healthy 2",
+    "bearing bpfi 2",
+    "impeller 2",
+    "bearing pump 2",
+    "bearing bpfo 2"
+   ],
+   "n_train": 1600,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "motor BPFI": 320,
+    "impeller": 320,
+    "pump bearing": 320,
+    "motor BPFO": 320
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "motor BPFI": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "motor BPFO": 160
+   },
+   "train_sha256": "363fe2fbaa16af4d09d1f469815616ff2057983689796a8c269d8466b7dab0c8"
+  },
+  "splits/motor2_100_ch4_C2_fold3.npz": {
+   "combo": "C2",
+   "fold": 3,
+   "train_installations": [
+    "healthy 1",
+    "healthy 2",
+    "bearing bpfi 1",
+    "bearing bpfi 2",
+    "impeller 1",
+    "impeller 2",
+    "bearing pump 1",
+    "bearing pump 2",
+    "bearing bpfo 1",
+    "bearing bpfo 2"
+   ],
+   "eval_installations": [
+    "healthy 3",
+    "bearing bpfi 3",
+    "impeller 3",
+    "bearing pump 3",
+    "bearing bpfo 3"
+   ],
+   "n_train": 1600,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "motor BPFI": 320,
+    "impeller": 320,
+    "pump bearing": 320,
+    "motor BPFO": 320
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "motor BPFI": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "motor BPFO": 160
+   },
+   "train_sha256": "ceec6998d10bdf5d1a2866bbf6d243171628351fa895152da01dda09e187576c"
+  },
+  "splits/motor2_100_ch4_C3_fold1.npz": {
+   "combo": "C3",
+   "fold": 1,
+   "train_installations": [
+    "healthy 2",
+    "healthy 3",
+    "soft foot 2",
+    "impeller 2",
+    "impeller 3",
+    "bearing pump 2",
+    "bearing pump 3",
+    "bearing bpfi 2",
+    "bearing bpfi 3"
+   ],
+   "eval_installations": [
+    "healthy 1",
+    "soft foot 1",
+    "impeller 1",
+    "bearing pump 1",
+    "bearing bpfi 1"
+   ],
+   "n_train": 1440,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "soft foot": 160,
+    "impeller": 320,
+    "pump bearing": 320,
+    "motor BPFI": 320
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "soft foot": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "motor BPFI": 160
+   },
+   "train_sha256": "13f96194cea0ecde092fd375a68335660ab36ea5867c62e3e36e361b8f92ce32"
+  },
+  "splits/motor2_100_ch4_C3_fold2.npz": {
+   "combo": "C3",
+   "fold": 2,
+   "train_installations": [
+    "healthy 1",
+    "healthy 3",
+    "soft foot 1",
+    "impeller 1",
+    "impeller 3",
+    "bearing pump 1",
+    "bearing pump 3",
+    "bearing bpfi 1",
+    "bearing bpfi 3"
+   ],
+   "eval_installations": [
+    "healthy 2",
+    "soft foot 2",
+    "impeller 2",
+    "bearing pump 2",
+    "bearing bpfi 2"
+   ],
+   "n_train": 1440,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "soft foot": 160,
+    "impeller": 320,
+    "pump bearing": 320,
+    "motor BPFI": 320
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "soft foot": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "motor BPFI": 160
+   },
+   "train_sha256": "cebf88a2148a4919234f448009ee4f8bac0e76cb776c60a9306e63344cfeabdb"
+  },
+  "splits/motor2_100_ch4_C3_fold3.npz": {
+   "combo": "C3",
+   "fold": 3,
+   "train_installations": [
+    "healthy 1",
+    "healthy 2",
+    "soft foot 2",
+    "impeller 1",
+    "impeller 2",
+    "bearing pump 1",
+    "bearing pump 2",
+    "bearing bpfi 1",
+    "bearing bpfi 2"
+   ],
+   "eval_installations": [
+    "healthy 3",
+    "soft foot 1",
+    "impeller 3",
+    "bearing pump 3",
+    "bearing bpfi 3"
+   ],
+   "n_train": 1440,
+   "n_eval": 800,
+   "train_counts": {
+    "healthy": 320,
+    "soft foot": 160,
+    "impeller": 320,
+    "pump bearing": 320,
+    "motor BPFI": 320
+   },
+   "eval_counts": {
+    "healthy": 160,
+    "soft foot": 160,
+    "impeller": 160,
+    "pump bearing": 160,
+    "motor BPFI": 160
+   },
+   "train_sha256": "a089bc54ae65f487fd4e53a406c42599acaa30531b312aaf4698018357c7a8f5"
+  }
+ }
+}

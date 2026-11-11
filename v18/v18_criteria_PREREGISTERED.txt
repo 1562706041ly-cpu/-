@@ -1,0 +1,10 @@
+v18 Chapter-3 energy schemes -- decision criteria fixed BEFORE any full run (2026-11-06)
+Paired baseline: A3g (adaptive_kr2 + gated K, no E-scheme). Same seeds 0..5, same steps.
+A scheme PASSES on Paderborn iff ALL hold:
+  (1) mean H(OPEN-V) > A3g mean H, and H better than A3g on >= 4/6 seeds;
+  (2) the energy is what helps: scheme beats its energy-free counterpart
+      E1 vs E1d (same pseudo-unknown views, K without energy) -- for E1;
+      E2/E3 vs A3d (no energy anywhere) -- mean H higher;
+  (3) known_false_unk mean rises by no more than +0.02 vs A3g.
+Failing schemes are reported as negative results, not tuned further on validation.
+Passing schemes go to the centrifugal pump (27 pairs) with the same criteria (>= 18/27 pairs for (1)).
