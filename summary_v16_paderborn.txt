@@ -1,0 +1,260 @@
+﻿
+=== P_B  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.750            0.833            0.250            0.667            0.789
+   1            0.925            0.625            0.075            0.833            0.746
+   2            0.925            0.833            0.075            0.870            0.877
+   3            0.925            0.833            0.075            0.870            0.877
+   4            0.700            0.875            0.300            0.636            0.778
+   5            0.825            0.750            0.175            0.720            0.786
+mean     0.842+-0.091     0.792+-0.083     0.158+-0.091     0.766+-0.096     0.809+-0.050
+  final_auroc_K: 0.808+-0.044
+  init_zone_unknown_frac: 0.743+-0.138
+  false_unk_class0: 0.083+-0.055
+  false_unk_class1: 0.233+-0.189
+  guard_reassigned_val: 5.167+-4.913
+
+=== P_A3o  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.700            0.333            0.300            0.400            0.452
+   1            0.925            0.667            0.075            0.842            0.775
+   2            0.925            0.875            0.075            0.875            0.899
+   3            0.925            0.833            0.075            0.870            0.877
+   4            0.625            0.875            0.375            0.583            0.729
+   5            0.825            0.792            0.175            0.731            0.808
+mean     0.821+-0.119     0.729+-0.191     0.179+-0.119     0.717+-0.174     0.757+-0.148
+  auroc_K_unknown_vs_known: 0.800+-0.042
+  auroc_R_correct_routing: 0.664+-0.087
+  zone_reliable_unknown_unknown_frac: 0.698+-0.121
+  zone_reliable_known_unknown_frac: 0.142+-0.020
+  label_neg_precision: 0.882+-0.064
+  label_pos_precision: 0.794+-0.022
+  final_auroc_K: 0.800+-0.042
+  init_zone_unknown_frac: 0.705+-0.130
+  false_unk_class0: 0.083+-0.055
+  false_unk_class1: 0.275+-0.243
+  guard_reassigned_val: 5.500+-4.958
+
+=== P_A3g  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.600            0.917            0.400            0.579            0.725
+   1            0.900            0.750            0.100            0.818            0.818
+   2            0.950            0.875            0.050            0.913            0.911
+   3            0.925            0.875            0.075            0.875            0.899
+   4            0.650            0.833            0.350            0.588            0.730
+   5            0.875            0.958            0.125            0.821            0.915
+mean     0.817+-0.138     0.868+-0.066     0.183+-0.138     0.766+-0.133     0.833+-0.081
+  auroc_K_unknown_vs_known: 0.661+-0.149
+  auroc_R_correct_routing: 0.654+-0.059
+  zone_reliable_unknown_unknown_frac: 0.467+-0.208
+  zone_reliable_known_unknown_frac: 0.226+-0.120
+  label_neg_precision: 0.847+-0.038
+  label_pos_precision: 0.777+-0.135
+  final_auroc_K: 0.804+-0.046
+  init_zone_unknown_frac: 0.721+-0.127
+  false_unk_class0: 0.100+-0.058
+  false_unk_class1: 0.267+-0.261
+  guard_reassigned_val: 5.833+-5.113
+
+=== P_A3d  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.700            0.917            0.300            0.647            0.794
+   1            0.900            0.750            0.100            0.818            0.818
+   2            0.950            0.833            0.050            0.909            0.888
+   3            0.925            0.875            0.075            0.875            0.899
+   4            0.650            0.833            0.350            0.588            0.730
+   5            0.875            0.917            0.125            0.815            0.895
+mean     0.833+-0.115     0.854+-0.058     0.167+-0.115     0.775+-0.117     0.837+-0.063
+  auroc_K_unknown_vs_known: 0.802+-0.046
+  auroc_R_correct_routing: 0.658+-0.089
+  zone_reliable_unknown_unknown_frac: 0.710+-0.140
+  zone_reliable_known_unknown_frac: 0.146+-0.030
+  label_neg_precision: 0.884+-0.068
+  label_pos_precision: 0.796+-0.037
+  final_auroc_K: 0.802+-0.046
+  init_zone_unknown_frac: 0.722+-0.131
+  false_unk_class0: 0.100+-0.058
+  false_unk_class1: 0.233+-0.219
+  guard_reassigned_val: 5.667+-4.922
+
+=== P_A3c  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.575            0.958            0.425            0.575            0.719
+   1            0.875            0.750            0.125            0.783            0.808
+   2            0.925            0.792            0.075            0.864            0.853
+   3            0.925            0.375            0.075            0.750            0.534
+   4            0.700            0.875            0.300            0.636            0.778
+   5            0.825            0.875            0.175            0.750            0.849
+mean     0.804+-0.128     0.771+-0.189     0.196+-0.128     0.726+-0.095     0.757+-0.110
+  auroc_K_unknown_vs_known: 0.654+-0.110
+  auroc_R_correct_routing: 0.636+-0.037
+  zone_reliable_unknown_unknown_frac: 0.499+-0.163
+  zone_reliable_known_unknown_frac: 0.215+-0.134
+  label_neg_precision: 0.852+-0.033
+  label_pos_precision: 0.771+-0.144
+  final_auroc_K: 0.788+-0.058
+  init_zone_unknown_frac: 0.697+-0.120
+  false_unk_class0: 0.100+-0.071
+  false_unk_class1: 0.292+-0.257
+  guard_reassigned_val: 4.667+-3.944
+
+=== P_A3nm  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.550            0.958            0.450            0.561            0.699
+   1            0.900            0.750            0.100            0.818            0.818
+   2            0.975            0.750            0.025            0.947            0.848
+   3            0.950            0.417            0.050            0.833            0.579
+   4            0.700            0.875            0.300            0.636            0.778
+   5            0.625            1.000            0.375            0.615            0.769
+mean     0.783+-0.166     0.792+-0.192     0.217+-0.166     0.735+-0.139     0.749+-0.089
+  auroc_K_unknown_vs_known: 0.656+-0.130
+  auroc_R_correct_routing: 0.646+-0.046
+  zone_reliable_unknown_unknown_frac: 0.477+-0.177
+  zone_reliable_known_unknown_frac: 0.233+-0.127
+  label_neg_precision: 0.855+-0.053
+  label_pos_precision: 0.765+-0.140
+  final_auroc_K: 0.789+-0.052
+  init_zone_unknown_frac: 0.687+-0.126
+  false_unk_class0: 0.075+-0.063
+  false_unk_class1: 0.358+-0.332
+  guard_reassigned_val: 5.167+-4.634
+
+=== P_A3ns  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.675            0.333            0.325            0.381            0.446
+   1            0.925            0.750            0.075            0.857            0.828
+   2            0.925            0.792            0.075            0.864            0.853
+   3            0.925            0.875            0.075            0.875            0.899
+   4            0.625            0.833            0.375            0.571            0.714
+   5            0.875            0.792            0.125            0.792            0.831
+mean     0.825+-0.126     0.729+-0.181     0.175+-0.126     0.723+-0.185     0.762+-0.152
+  auroc_K_unknown_vs_known: 0.649+-0.146
+  auroc_R_correct_routing: 0.644+-0.050
+  zone_reliable_unknown_unknown_frac: 0.497+-0.196
+  zone_reliable_known_unknown_frac: 0.232+-0.141
+  label_neg_precision: 0.840+-0.031
+  label_pos_precision: 0.763+-0.153
+  final_auroc_K: 0.803+-0.042
+  init_zone_unknown_frac: 0.733+-0.139
+  false_unk_class0: 0.100+-0.065
+  false_unk_class1: 0.250+-0.229
+  guard_reassigned_val: 5.833+-4.488
+
+=== P_R4o  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.750            0.875            0.250            0.677            0.808
+   1            0.825            0.667            0.175            0.696            0.737
+   2            0.950            0.875            0.050            0.913            0.911
+   3            0.875            0.833            0.125            0.800            0.854
+   4            0.550            0.917            0.450            0.550            0.687
+   5            0.775            0.292            0.200            0.467            0.424
+mean     0.788+-0.125     0.743+-0.217     0.208+-0.125     0.684+-0.148     0.737+-0.158
+  auroc_K_unknown_vs_known: 0.778+-0.093
+  auroc_R_correct_routing: 0.636+-0.080
+  zone_reliable_unknown_unknown_frac: 0.635+-0.131
+  zone_reliable_known_unknown_frac: 0.158+-0.047
+  label_neg_precision: 0.829+-0.062
+  label_pos_precision: 0.768+-0.048
+  final_auroc_K: 0.778+-0.093
+  init_zone_unknown_frac: 0.650+-0.145
+  false_unk_class0: 0.192+-0.137
+  false_unk_class1: 0.225+-0.239
+  guard_reassigned_val: 2.667+-1.972
+
+=== P_R4  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.650            0.833            0.350            0.588            0.730
+   1            0.900            0.625            0.100            0.789            0.738
+   2            0.900            0.833            0.100            0.833            0.865
+   3            0.925            0.375            0.075            0.750            0.534
+   4            0.675            0.833            0.325            0.606            0.746
+   5            0.825            0.667            0.175            0.696            0.737
+mean     0.812+-0.111     0.694+-0.166     0.188+-0.111     0.710+-0.090     0.725+-0.098
+  auroc_K_unknown_vs_known: 0.676+-0.131
+  auroc_R_correct_routing: 0.681+-0.046
+  zone_reliable_unknown_unknown_frac: 0.480+-0.114
+  zone_reliable_known_unknown_frac: 0.216+-0.172
+  label_neg_precision: 0.812+-0.056
+  label_pos_precision: 0.754+-0.178
+  final_auroc_K: 0.778+-0.053
+  init_zone_unknown_frac: 0.712+-0.117
+  false_unk_class0: 0.125+-0.038
+  false_unk_class1: 0.250+-0.216
+  guard_reassigned_val: 3.167+-2.967
+
+=== P_F  (n_seeds=6) ===
+seed        known_acc       unk_recall  known_false_unk    unk_precision                H
+   0            0.675            0.417            0.325            0.435            0.515
+   1            0.900            0.792            0.100            0.826            0.842
+   2            0.975            0.833            0.025            0.952            0.899
+   3            0.875            0.750            0.125            0.783            0.808
+   4            0.575            0.875            0.425            0.553            0.694
+   5            0.550            1.000            0.450            0.571            0.710
+mean     0.758+-0.166     0.778+-0.179     0.242+-0.166     0.687+-0.180     0.745+-0.125
+  auroc_K_unknown_vs_known: 0.685+-0.138
+  auroc_R_correct_routing: 0.674+-0.066
+  zone_reliable_unknown_unknown_frac: 0.487+-0.099
+  zone_reliable_known_unknown_frac: 0.191+-0.159
+  label_neg_precision: 0.826+-0.052
+  label_pos_precision: 0.789+-0.171
+  final_auroc_K: 0.797+-0.049
+  init_zone_unknown_frac: 0.715+-0.162
+  false_unk_class0: 0.125+-0.075
+  false_unk_class1: 0.358+-0.330
+  guard_reassigned_val: 4.667+-4.784
+
+=== paired differences vs P_B (method - baseline) ===
+P_A3o: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.021 (std 0.030), better in 0/6 seeds, per-seed: -0.05 +0.00 +0.00 +0.00 -0.07 +0.00
+         unk_recall: mean diff -0.063 (std 0.197), better in 3/6 seeds, per-seed: -0.50 +0.04 +0.04 +0.00 +0.00 +0.04
+    known_false_unk: mean diff +0.021 (std 0.030), better in 0/6 seeds, per-seed: +0.05 +0.00 +0.00 +0.00 +0.08 +0.00
+      unk_precision: mean diff -0.049 (std 0.100), better in 3/6 seeds, per-seed: -0.27 +0.01 +0.01 +0.00 -0.05 +0.01
+                  H: mean diff -0.052 (std 0.130), better in 3/6 seeds, per-seed: -0.34 +0.03 +0.02 +0.00 -0.05 +0.02
+P_A3g: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.025 (std 0.065), better in 2/6 seeds, per-seed: -0.15 -0.03 +0.02 +0.00 -0.05 +0.05
+         unk_recall: mean diff +0.076 (std 0.078), better in 5/6 seeds, per-seed: +0.08 +0.12 +0.04 +0.04 -0.04 +0.21
+    known_false_unk: mean diff +0.025 (std 0.065), better in 2/6 seeds, per-seed: +0.15 +0.03 -0.02 +0.00 +0.05 -0.05
+      unk_precision: mean diff -0.000 (std 0.061), better in 3/6 seeds, per-seed: -0.09 -0.02 +0.04 +0.01 -0.05 +0.10
+                  H: mean diff +0.024 (std 0.066), better in 4/6 seeds, per-seed: -0.06 +0.07 +0.03 +0.02 -0.05 +0.13
+P_A3d: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.008 (std 0.037), better in 2/6 seeds, per-seed: -0.05 -0.03 +0.02 +0.00 -0.05 +0.05
+         unk_recall: mean diff +0.062 (std 0.071), better in 4/6 seeds, per-seed: +0.08 +0.12 +0.00 +0.04 -0.04 +0.17
+    known_false_unk: mean diff +0.008 (std 0.037), better in 2/6 seeds, per-seed: +0.05 +0.03 -0.02 +0.00 +0.05 -0.05
+      unk_precision: mean diff +0.009 (std 0.046), better in 3/6 seeds, per-seed: -0.02 -0.02 +0.04 +0.01 -0.05 +0.09
+                  H: mean diff +0.029 (std 0.050), better in 5/6 seeds, per-seed: +0.00 +0.07 +0.01 +0.02 -0.05 +0.11
+P_A3c: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.038 (std 0.064), better in 0/6 seeds, per-seed: -0.18 -0.05 +0.00 +0.00 +0.00 +0.00
+         unk_recall: mean diff -0.021 (std 0.207), better in 3/6 seeds, per-seed: +0.12 +0.12 -0.04 -0.46 +0.00 +0.12
+    known_false_unk: mean diff +0.037 (std 0.064), better in 0/6 seeds, per-seed: +0.17 +0.05 +0.00 +0.00 +0.00 +0.00
+      unk_precision: mean diff -0.040 (std 0.053), better in 1/6 seeds, per-seed: -0.09 -0.05 -0.01 -0.12 +0.00 +0.03
+                  H: mean diff -0.052 (std 0.138), better in 2/6 seeds, per-seed: -0.07 +0.06 -0.02 -0.34 +0.00 +0.06
+P_A3nm: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.058 (std 0.103), better in 2/6 seeds, per-seed: -0.20 -0.03 +0.05 +0.02 +0.00 -0.20
+         unk_recall: mean diff -0.000 (std 0.214), better in 3/6 seeds, per-seed: +0.12 +0.12 -0.08 -0.42 +0.00 +0.25
+    known_false_unk: mean diff +0.058 (std 0.103), better in 2/6 seeds, per-seed: +0.20 +0.03 -0.05 -0.02 +0.00 +0.20
+      unk_precision: mean diff -0.031 (std 0.063), better in 1/6 seeds, per-seed: -0.11 -0.02 +0.08 -0.04 +0.00 -0.10
+                  H: mean diff -0.060 (std 0.116), better in 1/6 seeds, per-seed: -0.09 +0.07 -0.03 -0.30 +0.00 -0.02
+P_A3ns: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.017 (std 0.045), better in 1/6 seeds, per-seed: -0.07 +0.00 +0.00 +0.00 -0.07 +0.05
+         unk_recall: mean diff -0.063 (std 0.204), better in 3/6 seeds, per-seed: -0.50 +0.12 -0.04 +0.04 -0.04 +0.04
+    known_false_unk: mean diff +0.017 (std 0.045), better in 1/6 seeds, per-seed: +0.08 +0.00 +0.00 +0.00 +0.08 -0.05
+      unk_precision: mean diff -0.043 (std 0.116), better in 3/6 seeds, per-seed: -0.29 +0.02 -0.01 +0.01 -0.06 +0.07
+                  H: mean diff -0.047 (std 0.141), better in 3/6 seeds, per-seed: -0.34 +0.08 -0.02 +0.02 -0.06 +0.05
+P_R4o: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.054 (std 0.058), better in 1/6 seeds, per-seed: +0.00 -0.10 +0.02 -0.05 -0.15 -0.05
+         unk_recall: mean diff -0.049 (std 0.184), better in 4/6 seeds, per-seed: +0.04 +0.04 +0.04 +0.00 +0.04 -0.46
+    known_false_unk: mean diff +0.050 (std 0.060), better in 1/6 seeds, per-seed: +0.00 +0.10 -0.02 +0.05 +0.15 +0.03
+      unk_precision: mean diff -0.082 (std 0.097), better in 2/6 seeds, per-seed: +0.01 -0.14 +0.04 -0.07 -0.09 -0.25
+                  H: mean diff -0.072 (std 0.136), better in 2/6 seeds, per-seed: +0.02 -0.01 +0.03 -0.02 -0.09 -0.36
+P_R4: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.029 (std 0.034), better in 0/6 seeds, per-seed: -0.10 -0.03 -0.03 +0.00 -0.02 +0.00
+         unk_recall: mean diff -0.097 (std 0.164), better in 0/6 seeds, per-seed: +0.00 +0.00 +0.00 -0.46 -0.04 -0.08
+    known_false_unk: mean diff +0.029 (std 0.034), better in 0/6 seeds, per-seed: +0.10 +0.03 +0.03 +0.00 +0.03 +0.00
+      unk_precision: mean diff -0.055 (std 0.034), better in 0/6 seeds, per-seed: -0.08 -0.04 -0.04 -0.12 -0.03 -0.02
+                  H: mean diff -0.084 (std 0.117), better in 0/6 seeds, per-seed: -0.06 -0.01 -0.01 -0.34 -0.03 -0.05
+P_F: 6 paired seeds, identical labelled windows: True
+          known_acc: mean diff -0.083 (std 0.101), better in 1/6 seeds, per-seed: -0.07 -0.03 +0.05 -0.05 -0.12 -0.27
+         unk_recall: mean diff -0.014 (std 0.212), better in 2/6 seeds, per-seed: -0.42 +0.17 +0.00 -0.08 +0.00 +0.25
+    known_false_unk: mean diff +0.083 (std 0.101), better in 1/6 seeds, per-seed: +0.08 +0.03 -0.05 +0.05 +0.12 +0.28
+      unk_precision: mean diff -0.079 (std 0.100), better in 1/6 seeds, per-seed: -0.23 -0.01 +0.08 -0.09 -0.08 -0.15
+                  H: mean diff -0.064 (std 0.114), better in 2/6 seeds, per-seed: -0.27 +0.10 +0.02 -0.07 -0.08 -0.08
