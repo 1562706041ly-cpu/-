@@ -1,0 +1,23 @@
+{
+ "dataset": "motor2_100_ch4_C3_fold2.npz",
+ "shape": [
+  1440,
+  2048
+ ],
+ "vmd_shape": [
+  1440,
+  8,
+  2048
+ ],
+ "train_sha256": "cebf88a2148a4919234f448009ee4f8bac0e76cb776c60a9306e63344cfeabdb",
+ "bank_sha256": "75fa357160bb0f474b8c2484edf944a206f1b772a5d60f2c8ff4d2e0af2a0bc9",
+ "K": 8,
+ "alpha": 300.0,
+ "tau": 0.0,
+ "DC": 0,
+ "init": 1,
+ "tol": 1e-07,
+ "dtype": "float32",
+ "input": "per-window z-scored X_train",
+ "reconstruction_rel_error": 0.0399
+}

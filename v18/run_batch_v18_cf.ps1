@@ -9,8 +9,11 @@ $SEEDS  = 0..2
 $COMBOS = @("C1","C2","C3")
 $FOLDS  = 1..3
 
-& $PY build_vmd_bank.py (Get-ChildItem "$SPLITS\motor2_100_ch4_C*_fold*.npz" | Where-Object { $_.Name -notlike "*_vmd*" } | ForEach-Object { $_.FullName })
-if ($LASTEXITCODE -ne 0) { Write-Host "VMD bank build FAILED (pip install vmdpy?)" -ForegroundColor Red; exit 1 }
+# Laptop-friendly: VMD banks are PRECOMPUTED (merge_vmd_banks.ps1), training on the GPU, few CPU threads, low priority.
+$env:OMP_NUM_THREADS = "4"; $env:MKL_NUM_THREADS = "4"
+(Get-Process -Id $PID).PriorityClass = "BelowNormal"
+$missing = @(foreach ($c in $COMBOS) { foreach ($f in $FOLDS) { $p = "$SPLITS\motor2_100_ch4_${c}_fold${f}_vmd.npy"; if (-not (Test-Path $p)) { $p } } })
+if ($missing.Count -gt 0) { Write-Host "missing VMD banks (run merge_vmd_banks.ps1 and copy centrifugal folder):" -ForegroundColor Red; $missing; exit 1 }
 
 $COMMON = @("--known","0,1","--unknown","2,3,4","--steps","1500","--warmup","300","--sup-steps","600","--device","cuda",
             "--k-score","denergy","--energy-T","0.05","--unk-init","kr","--known-subcenters","2","--known-guard","0.4","--guard-expand","0.2",
