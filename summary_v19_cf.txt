@@ -1,0 +1,29 @@
+runs found: 27  methods: ['B']
+combo labels: 0 healthy, 1 known fault, 2..4 unknown faults (see centrifugal/splits/manifest.json)
+  C1: known BPFO       | unknown 2 impeller, 3 pump bearing, 4 soft foot
+  C2: known BPFI       | unknown 2 impeller, 3 pump bearing, 4 motor BPFO
+  C3: known soft foot  | unknown 2 impeller, 3 pump bearing, 4 motor BPFI
+
+=== overall (mean +- std over combo x fold x seed)
+method     n        known_acc       unk_recall  known_false_unk                H  unk_cluster_acc
+B         27     0.620+-0.189     0.744+-0.106     0.304+-0.163     0.646+-0.107     0.578+-0.099
+
+=== per combo (mean over folds x seeds)
+-- C1
+   B       known_acc=0.633  unk_recall=0.810  known_false_unk=0.363  H=0.694  unk_cluster_acc=0.527
+-- C2
+   B       known_acc=0.669  unk_recall=0.663  known_false_unk=0.331  H=0.639  unk_cluster_acc=0.561
+-- C3
+   B       known_acc=0.558  unk_recall=0.758  known_false_unk=0.219  H=0.607  unk_cluster_acc=0.647
+
+=== per class (mean over everything); unknown classes 2..4 = recall, known 0/1 = false-unknown rate
+   B       fu0=0.352  fu1=0.257  rec2=0.406  rec3=0.965  rec4=0.860
+
+=== where do unknown windows go? (fraction of unknown windows predicted healthy / known fault), by fold
+    fold k evaluates healthy k and severity k; healthy 1 was measured right before impeller 1
+   B        fold1: to_healthy=0.190  to_known_fault=0.031
+   B        fold2: to_healthy=0.189  to_known_fault=0.008
+   B        fold3: to_healthy=0.265  to_known_fault=0.085
+
+=== paired differences vs B (same combo, fold, seed; method - baseline)
+
