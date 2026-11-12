@@ -1,6 +1,9 @@
 # v19 centrifugal pump: NEW baseline input (channels 1,2,4,5 + log-spectrum front-end) and Chapter 3 on top of it.
 # 3 combos x 3 folds x 3 seeds = 27 pairs per method, 4 methods = 108 runs (GPU). ASCII only.
 # Needs: merge_v19.ps1 done (pool + VMD bank re-assembled, splits_ch1245 built). No VMD / heavy CPU work here.
+# Usage: run_batch_v19_cf.ps1              -> all 4 methods (needs the VMD bank)
+#        run_batch_v19_cf.ps1 -Methods B   -> only the new baseline (no VMD bank needed)
+param([string[]]$Methods = @("B","A3g","A3d","A3c"))
 $PY     = "D:\chuqishiyan1\zhubao\pump_reproduction\.venv_gpu\Scripts\python.exe"
 $SCRIPT = "m2_paderborn_kr.py"
 $SPLITS = "centrifugal\splits_ch1245"
@@ -10,7 +13,10 @@ $COMBOS = @("C1","C2","C3")
 $FOLDS  = 1..3
 $env:OMP_NUM_THREADS = "4"; $env:MKL_NUM_THREADS = "4"
 (Get-Process -Id $PID).PriorityClass = "BelowNormal"
-if (-not (Test-Path $BANK)) { Write-Host "missing $BANK (run merge_v19.ps1)" -ForegroundColor Red; exit 1 }
+$needBank = @($Methods | Where-Object { $_ -ne "B" }).Count -gt 0
+if ($needBank -and -not (Test-Path $BANK)) {
+    Write-Host "missing $BANK : download the VMD parts and run merge_v19.ps1, or run only the baseline with  -Methods B" -ForegroundColor Red; exit 1
+}
 
 $COMMON = @("--known","0,1","--unknown","2,3,4","--steps","1500","--warmup","300","--sup-steps","600","--device","cuda",
             "--k-score","denergy","--energy-T","0.05","--unk-init","kr","--known-subcenters","2","--known-guard","0.4","--guard-expand","0.2",
@@ -24,6 +30,8 @@ $methods = @(
     @{ Name = "A3d"; Args = @("--mode","adaptive_kr2","--contrast","plain","--vmd-bank",$BANK) },      # Chapter 3, K without energy gate
     @{ Name = "A3c"; Args = @("--mode","shuffled_kr2","--contrast","plain","--vmd-bank",$BANK) + $G }  # control: budgets shuffled
 )
+$methods = @($methods | Where-Object { $Methods -contains $_.Name })
+if ($methods.Count -eq 0) { Write-Host "no valid method in -Methods $Methods (use B, A3g, A3d, A3c)" -ForegroundColor Red; exit 1 }
 $t0 = Get-Date
 foreach ($c in $COMBOS) { foreach ($f in $FOLDS) { foreach ($m in $methods) { foreach ($s in $SEEDS) {
     $tag  = "V19_${c}_f${f}_$($m.Name)_seed$s"

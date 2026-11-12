@@ -12,8 +12,14 @@ foreach ($f in $files) {
     Copy-Item (Join-Path $src $json) (Join-Path $dst $json) -Force
     $want = (Get-Content (Join-Path $src $json) -Raw | ConvertFrom-Json).($f.Key)
     $out  = Join-Path $dst $f.Name
-    $parts = Get-ChildItem (Join-Path $src "$($f.Name).part*") | Sort-Object Name
-    if ($parts.Count -eq 0) { Write-Host "no parts for $($f.Name)" -ForegroundColor Red; exit 1 }
+    $parts = @(Get-ChildItem (Join-Path $src "$($f.Name).part*") -ErrorAction SilentlyContinue | Sort-Object Name)
+    if ($parts.Count -eq 0) {
+        if ($f.Name -like "*_vmd.npy") { Write-Host "VMD bank parts not downloaded yet: skipped (baseline B does not need it)" -ForegroundColor Yellow; continue }
+        Write-Host "no parts for $($f.Name)" -ForegroundColor Red; exit 1
+    }
+    if (Test-Path $out) {
+        if ((Get-FileHash $out -Algorithm SHA256).Hash.ToLower() -eq $want) { Write-Host "OK  $out (already assembled)"; continue }
+    }
     $o = [System.IO.File]::Create($out)
     foreach ($p in $parts) { $i = [System.IO.File]::OpenRead($p.FullName); $i.CopyTo($o); $i.Close() }
     $o.Close()
