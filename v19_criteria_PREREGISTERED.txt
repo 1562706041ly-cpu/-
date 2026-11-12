@@ -1,0 +1,12 @@
+v19 centrifugal pump -- decision criteria fixed BEFORE the GPU runs (2026-11-12)
+Data: Bruinsma Motor-2 100 %, channels 1,2,4,5, shared installation pool, same installations/folds/combos as v15.
+Input chosen on a sandbox screen (seed 0, 9 splits): log-spectrum front-end + per-window normalisation.
+27 pairs = 3 combos x 3 folds x 3 seeds; all comparisons paired (same combo, fold, seed).
+(1) New baseline B is acceptable iff mean H >= 0.60 and mean known_false_unk <= 0.20.
+    If H >= 0.60 but known_false_unk > 0.20: report, next step = known/unknown decision calibration.
+(2) Chapter 3 holds iff A3g beats B AND A3c in mean H, each on >= 18/27 pairs, and known_false_unk
+    of A3g is not more than +0.02 above B.
+(3) Energy is a contribution iff A3g beats A3d in mean H on >= 18/27 pairs (on this dataset; Paderborn
+    already showed no difference -> report both).
+(4) Report fold 1 (healthy session 1) separately as session-shift stress test; it is not removed.
+Failures are reported as negative results. The sealed 75 % speed data stays untouched.

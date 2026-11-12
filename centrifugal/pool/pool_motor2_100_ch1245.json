@@ -1,0 +1,35 @@
+{
+ "file": "pool_motor2_100_ch1245.npz",
+ "shape": [
+  2720,
+  4,
+  2048
+ ],
+ "channels": [
+  1,
+  2,
+  4,
+  5
+ ],
+ "per_installation": 160,
+ "installations": [
+  "healthy 1",
+  "healthy 2",
+  "healthy 3",
+  "impeller 1",
+  "impeller 2",
+  "impeller 3",
+  "bearing pump 1",
+  "bearing pump 2",
+  "bearing pump 3",
+  "bearing bpfo 1",
+  "bearing bpfo 2",
+  "bearing bpfo 3",
+  "bearing bpfi 1",
+  "bearing bpfi 2",
+  "bearing bpfi 3",
+  "soft foot 1",
+  "soft foot 2"
+ ],
+ "sha256": "4be16646c108805062fcc19c523b346cafd7fad812262a3cdfcea8418157afa4"
+}
