@@ -1,0 +1,111 @@
+runs found: 108  methods: ['B', 'A3g', 'A3d', 'A3c']
+combo labels: 0 healthy, 1 known fault, 2..4 unknown faults (see centrifugal/splits/manifest.json)
+  C1: known BPFO       | unknown 2 impeller, 3 pump bearing, 4 soft foot
+  C2: known BPFI       | unknown 2 impeller, 3 pump bearing, 4 motor BPFO
+  C3: known soft foot  | unknown 2 impeller, 3 pump bearing, 4 motor BPFI
+
+=== overall (mean +- std over combo x fold x seed)
+method     n        known_acc       unk_recall  known_false_unk                H  unk_cluster_acc
+B         27     0.429+-0.201     0.573+-0.206     0.421+-0.236     0.441+-0.154     0.489+-0.217
+A3g       27     0.430+-0.194     0.562+-0.202     0.413+-0.231     0.437+-0.144     0.484+-0.215
+A3d       27     0.425+-0.191     0.563+-0.202     0.418+-0.234     0.434+-0.140     0.487+-0.216
+A3c       27     0.432+-0.196     0.570+-0.211     0.414+-0.230     0.442+-0.147     0.485+-0.224
+
+=== per combo (mean over folds x seeds)
+-- C1
+   B       known_acc=0.534  unk_recall=0.544  known_false_unk=0.238  H=0.511  unk_cluster_acc=0.466
+   A3g     known_acc=0.515  unk_recall=0.521  known_false_unk=0.247  H=0.488  unk_cluster_acc=0.449
+   A3d     known_acc=0.517  unk_recall=0.516  known_false_unk=0.242  H=0.487  unk_cluster_acc=0.446
+   A3c     known_acc=0.520  unk_recall=0.539  known_false_unk=0.248  H=0.501  unk_cluster_acc=0.450
+-- C2
+   B       known_acc=0.395  unk_recall=0.600  known_false_unk=0.450  H=0.433  unk_cluster_acc=0.522
+   A3g     known_acc=0.397  unk_recall=0.600  known_false_unk=0.450  H=0.435  unk_cluster_acc=0.532
+   A3d     known_acc=0.390  unk_recall=0.596  known_false_unk=0.452  H=0.430  unk_cluster_acc=0.531
+   A3c     known_acc=0.407  unk_recall=0.600  known_false_unk=0.442  H=0.439  unk_cluster_acc=0.526
+-- C3
+   B       known_acc=0.358  unk_recall=0.576  known_false_unk=0.575  H=0.378  unk_cluster_acc=0.479
+   A3g     known_acc=0.376  unk_recall=0.566  known_false_unk=0.543  H=0.387  unk_cluster_acc=0.473
+   A3d     known_acc=0.367  unk_recall=0.575  known_false_unk=0.560  H=0.385  unk_cluster_acc=0.484
+   A3c     known_acc=0.370  unk_recall=0.571  known_false_unk=0.552  H=0.387  unk_cluster_acc=0.480
+
+=== per class (mean over everything); unknown classes 2..4 = recall, known 0/1 = false-unknown rate
+   B       fu0=0.499  fu1=0.343  rec2=0.500  rec3=0.794  rec4=0.425
+   A3g     fu0=0.493  fu1=0.334  rec2=0.482  rec3=0.796  rec4=0.409
+   A3d     fu0=0.501  fu1=0.335  rec2=0.474  rec3=0.806  rec4=0.408
+   A3c     fu0=0.504  fu1=0.324  rec2=0.498  rec3=0.786  rec4=0.426
+
+=== where do unknown windows go? (fraction of unknown windows predicted healthy / known fault), by fold
+    fold k evaluates healthy k and severity k; healthy 1 was measured right before impeller 1
+   B        fold1: to_healthy=0.099  to_known_fault=0.540
+   B        fold2: to_healthy=0.018  to_known_fault=0.194
+   B        fold3: to_healthy=0.143  to_known_fault=0.287
+   A3g      fold1: to_healthy=0.116  to_known_fault=0.526
+   A3g      fold2: to_healthy=0.021  to_known_fault=0.192
+   A3g      fold3: to_healthy=0.169  to_known_fault=0.289
+   A3d      fold1: to_healthy=0.116  to_known_fault=0.526
+   A3d      fold2: to_healthy=0.020  to_known_fault=0.197
+   A3d      fold3: to_healthy=0.173  to_known_fault=0.280
+   A3c      fold1: to_healthy=0.103  to_known_fault=0.537
+   A3c      fold2: to_healthy=0.014  to_known_fault=0.186
+   A3c      fold3: to_healthy=0.155  to_known_fault=0.294
+
+=== paired differences vs B (same combo, fold, seed; method - baseline)
+-- A3g: 27 pairs
+          known_acc: mean +0.000 (std 0.029), better in 12/27
+         unk_recall: mean -0.011 (std 0.041), better in 9/27
+    known_false_unk: mean -0.008 (std 0.037), better in 15/27
+                  H: mean -0.004 (std 0.032), better in 9/27
+    unk_cluster_acc: mean -0.004 (std 0.044), better in 11/27
+-- A3d: 27 pairs
+          known_acc: mean -0.004 (std 0.026), better in 10/27
+         unk_recall: mean -0.011 (std 0.048), better in 10/27
+    known_false_unk: mean -0.003 (std 0.029), better in 14/27
+                  H: mean -0.007 (std 0.033), better in 11/27
+    unk_cluster_acc: mean -0.001 (std 0.049), better in 11/27
+-- A3c: 27 pairs
+          known_acc: mean +0.003 (std 0.031), better in 12/27
+         unk_recall: mean -0.003 (std 0.050), better in 12/27
+    known_false_unk: mean -0.007 (std 0.035), better in 14/27
+                  H: mean +0.002 (std 0.032), better in 12/27
+    unk_cluster_acc: mean -0.003 (std 0.049), better in 11/27
+
+=== paired differences vs A3d (same combo, fold, seed; method - baseline)
+-- B: 27 pairs
+          known_acc: mean +0.004 (std 0.026), better in 11/27
+         unk_recall: mean +0.011 (std 0.048), better in 17/27
+    known_false_unk: mean +0.003 (std 0.029), better in 12/27
+                  H: mean +0.007 (std 0.033), better in 16/27
+    unk_cluster_acc: mean +0.001 (std 0.049), better in 14/27
+-- A3g: 27 pairs
+          known_acc: mean +0.005 (std 0.011), better in 13/27
+         unk_recall: mean -0.000 (std 0.018), better in 11/27
+    known_false_unk: mean -0.005 (std 0.017), better in 11/27
+                  H: mean +0.003 (std 0.011), better in 18/27
+    unk_cluster_acc: mean -0.003 (std 0.015), better in 10/27
+-- A3c: 27 pairs
+          known_acc: mean +0.008 (std 0.030), better in 14/27
+         unk_recall: mean +0.007 (std 0.048), better in 16/27
+    known_false_unk: mean -0.004 (std 0.030), better in 14/27
+                  H: mean +0.009 (std 0.028), better in 15/27
+    unk_cluster_acc: mean -0.002 (std 0.044), better in 14/27
+
+=== paired differences vs A3c (same combo, fold, seed; method - baseline)
+-- B: 27 pairs
+          known_acc: mean -0.003 (std 0.031), better in 12/27
+         unk_recall: mean +0.003 (std 0.050), better in 15/27
+    known_false_unk: mean +0.007 (std 0.035), better in 12/27
+                  H: mean -0.002 (std 0.032), better in 15/27
+    unk_cluster_acc: mean +0.003 (std 0.049), better in 14/27
+-- A3g: 27 pairs
+          known_acc: mean -0.003 (std 0.031), better in 11/27
+         unk_recall: mean -0.008 (std 0.043), better in 11/27
+    known_false_unk: mean -0.001 (std 0.028), better in 10/27
+                  H: mean -0.006 (std 0.024), better in 12/27
+    unk_cluster_acc: mean -0.001 (std 0.041), better in 13/27
+-- A3d: 27 pairs
+          known_acc: mean -0.008 (std 0.030), better in 11/27
+         unk_recall: mean -0.007 (std 0.048), better in 10/27
+    known_false_unk: mean +0.004 (std 0.030), better in 11/27
+                  H: mean -0.009 (std 0.028), better in 12/27
+    unk_cluster_acc: mean +0.002 (std 0.044), better in 12/27
+
