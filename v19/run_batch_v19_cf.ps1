@@ -4,6 +4,7 @@
 # Usage: run_batch_v19_cf.ps1              -> all 4 methods (needs the VMD bank)
 #        run_batch_v19_cf.ps1 -Methods B   -> only the new baseline (no VMD bank needed)
 param([string[]]$Methods = @("B","A3g","A3d","A3c"))
+$Methods = @($Methods | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })   # "-Methods B,A3g" via -File
 $PY     = "D:\chuqishiyan1\zhubao\pump_reproduction\.venv_gpu\Scripts\python.exe"
 $SCRIPT = "m2_paderborn_kr.py"
 $SPLITS = "centrifugal\splits_ch1245"
@@ -24,16 +25,16 @@ $COMMON = @("--known","0,1","--unknown","2,3,4","--steps","1500","--warmup","300
             "--record-key","train_installation","--refresh-every","300","--gate-gamma","2",
             "--input","spec","--norm","window")
 $G = @("--k-score-train","gated")
-$methods = @(
+$methodDefs = @(
     @{ Name = "B";   Args = @("--mode","generic","--contrast","plain","--vmd-bank","none") },          # new baseline
     @{ Name = "A3g"; Args = @("--mode","adaptive_kr2","--contrast","plain","--vmd-bank",$BANK) + $G }, # Chapter 3 (energy-distance gated K)
     @{ Name = "A3d"; Args = @("--mode","adaptive_kr2","--contrast","plain","--vmd-bank",$BANK) },      # Chapter 3, K without energy gate
     @{ Name = "A3c"; Args = @("--mode","shuffled_kr2","--contrast","plain","--vmd-bank",$BANK) + $G }  # control: budgets shuffled
 )
-$methods = @($methods | Where-Object { $Methods -contains $_.Name })
-if ($methods.Count -eq 0) { Write-Host "no valid method in -Methods $Methods (use B, A3g, A3d, A3c)" -ForegroundColor Red; exit 1 }
+$runDefs = @($methodDefs | Where-Object { $Methods -contains $_.Name })
+if ($runDefs.Count -eq 0) { Write-Host "no valid method in -Methods $Methods (use B, A3g, A3d, A3c)" -ForegroundColor Red; exit 1 }
 $t0 = Get-Date
-foreach ($c in $COMBOS) { foreach ($f in $FOLDS) { foreach ($m in $methods) { foreach ($s in $SEEDS) {
+foreach ($c in $COMBOS) { foreach ($f in $FOLDS) { foreach ($m in $runDefs) { foreach ($s in $SEEDS) {
     $tag  = "V19_${c}_f${f}_$($m.Name)_seed$s"
     if (Test-Path "runs_paderborn\$tag\results_exp2.json") { continue }
     $data = "$SPLITS\motor2_100_ch1245_${c}_fold$f.npz"
