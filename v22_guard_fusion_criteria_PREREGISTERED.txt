@@ -1,0 +1,25 @@
+v22 known-guard with distance fusion (D1 + D2) -- criteria fixed BEFORE the end-to-end runs (2026-11-14)
+
+HONEST STATUS OF THE OFFLINE SCREEN (v20 models, 9 splits, seed 0, held-out known-vs-unknown AUROC of kNN scores):
+  * The offline screen had NO pre-registered rule (criteria were written after the first look) and compared ~12 variants
+    on the same evaluation installations. The best variant (spectral-band hand features, fusion 0.782) is therefore
+    optimistically biased; the a-priori variant (all 58 hand features) gave 0.743; current K 0.666; deep kNN alone 0.689.
+  * Hand features are very unstable across splits (0.18 ... 0.89); time-domain statistics and envelope features were at or
+    below chance (0.36 / 0.49) on new installations.
+End-to-end design (all scores use labelled windows + pseudo-known guard references only; installation ids of KNOWN windows only):
+  D1  score = 0.5 * z(deep cosine kNN, k=10) + 0.5 * z(hand-feature cosine kNN, k=10)
+  D2  each z is calibrated with leave-one-installation-out scores of the labelled windows; tau = q-quantile (q=0.4) of the fused
+      leave-one-installation-out scores; a window routed to an unknown cluster returns to the nearest known class iff score >= tau.
+Methods (27 pairs each, same data/seeds as v20, same B / Bg4 results are reused for pairing):
+  Gd   deep kNN only, same z/LOIO/k-mean machinery (control: isolates the effect of the hand features)
+  Gfs  deep + SPECTRAL-BAND hand features (selected after the offline look; reported as such)
+  Gfa  deep + ALL 58 hand features per channel (a-priori variant)
+Decision rule:
+  (1) Hand features help iff Gfs (or Gfa) beats Gd in mean H on >= 18/27 pairs.
+  (2) The fused guard improves the method iff it beats Bg4 in mean H on >= 18/27 pairs AND known_false_unk is not higher than Bg4 by more than 0.02.
+  (3) Gfa is the confirmatory variant. A pass of Gfs alone is reported as "selected after screening, needs confirmation on the sealed 75 % data".
+  (4) The sealed 75 % speed data stays untouched. Failures are reported as negative results.
+
+CORRECTION (2026-11-14, found in the sandbox BEFORE any end-to-end results): the hand-feature kNN uses LABELLED windows only as
+references. With the pseudo-known guard references added (only 69 % truly known in split C2_f1), the hand-feature AUROC fell
+from 0.89 to 0.53. The deep kNN part keeps the labelled + pseudo-known references of the existing guard. Criteria above unchanged.
