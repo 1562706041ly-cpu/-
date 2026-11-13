@@ -1,0 +1,7 @@
+v20b EXPLORATORY follow-up (decided AFTER seeing the v20 screen; must be reported as post-hoc) -- fixed before running (2026-11-13)
+Question: is the energy direction useful when the perturbation is stronger?
+Changes vs v20: --edir-lam 1.0 (pure energy-gradient sign, no random part) and --kr2-gain 2.0 (mode budget x2).
+Variants: EDd2 (distance-energy direction), EDr2 (random sign, same magnitudes = control). 9 pump splits x seed 0.
+EDd2 passes iff: mean H > B and > EDr2, better than both on >= 6/9 splits, held-out K AUROC > B on >= 6/9,
+and known_false_unk not more than +0.02 above B. Any positive result must still be confirmed on the GPU (27 pairs)
+and finally on the sealed 75 % speed data, because the setting was chosen after looking at results.

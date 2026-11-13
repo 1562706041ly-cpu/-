@@ -1,0 +1,14 @@
+v20 Chapter 3 "energy decides the DIRECTION of the VMD perturbation" -- sandbox screen criteria, fixed BEFORE running (2026-11-13)
+Setting: centrifugal pump v19 (channels 1,2,4,5, log-spectrum front-end, --norm window), 9 splits x seed 0, CPU, same
+steps as the GPU runs (1500 / warmup 300 / sup 600). Magnitude bound unchanged (kappa(x) * record spread s_cm, |u| <= 2).
+Variants (all adaptive_kr2 + gated K, lambda = 0.5):
+  EDd  direction = sign of d(distance energy)/d(mode log-amplitude); known-routed samples: energy up, unknown-routed: energy down
+  EDh  same with the classifier-head free energy
+  EDr  CONTROL: same magnitudes, direction = random sign (isolates "energy chooses the direction")
+Reference: B (sandbox seed-0 runs S19_*_B4sw already done).
+A variant PASSES the screen iff ALL hold:
+  (1) mean H > B and H better than B on >= 6/9 splits;
+  (2) held-out known-vs-unknown AUROC of K (kr_diag_val) better than B on >= 6/9 splits;
+  (3) mean H > EDr and better than EDr on >= 6/9 splits (otherwise the energy direction is not what helps);
+  (4) mean known_false_unk not more than +0.02 above B.
+Passing variants go to the GPU (27 pairs) with the v19 criteria. Failing variants are reported as negative results.

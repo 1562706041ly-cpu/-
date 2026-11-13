@@ -1,0 +1,8 @@
+v20g known-guard calibration (step 3: known windows misjudged as unknown) -- fixed before running (2026-11-13)
+Change: --guard-group-key train_installation (known-guard threshold tau calibrated leave-one-INSTALLATION-out on the
+labelled windows instead of leave-one-window-out). Everything else = v19 baseline B (channels 1,2,4,5, spec, window).
+Motivation (from code, not from eval results): labelled windows come from 2 installations per known class, so the
+nearest other labelled window is usually from the SAME installation -> tau too high for windows of a new installation.
+Sandbox screen: 9 splits x seed 0, compared with B (S19_*_B4sw_seed0).
+Passes iff: mean known_false_unk lower than B on >= 6/9 splits, mean H not lower than B (>= B - 0.005),
+and unknown recall drops by at most 0.05. Passing -> GPU 27 pairs; final target known_false_unk <= 0.20, H >= 0.60.
