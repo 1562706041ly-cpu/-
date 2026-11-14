@@ -89,12 +89,12 @@ plt.tight_layout(); plt.savefig('fig1_split.png', dpi=170); plt.close()
 fig, ax = plt.subplots(figsize=(10.6, 3.9)); ax.axis('off'); ax.set_xlim(0, 10.5); ax.set_ylim(0, 4)
 boxes = [(0.1, '振动窗口\n4通道×2048点\n(0.1 s, 约2.5转)', '#f4e3b2'), (1.85, '汉宁窗 + FFT\n对数幅度谱\n(每通道1025点)', '#cfe5cf'),
          (3.6, '频率轴一维CNN\n对比学习\n(仅10%已知标签)', '#cfe0f4'), (5.35, '已知性 K\n距离能量/kNN\n可靠度 R', '#e8d3ee'),
-         (7.1, '半监督k-means\n已知:2子中心/类\n未知:2个中心', '#f4d3d3'), (8.85, '已知类保护\n阈值τ按\n"留一安装"校准', '#f9c9a8')]
+         (7.1, '半监督k-means\n已知:2子中心/类\n未知:3个中心(=未知类数)', '#f4d3d3'), (8.85, '已知类保护\n阈值τ按\n"留一安装"校准', '#f9c9a8')]
 for x, t, c in boxes:
     ax.add_patch(FancyBboxPatch((x, 1.5), 1.45, 1.6, boxstyle='round,pad=0.04', fc=c, ec='#555')); ax.text(x + 0.725, 2.3, t, ha='center', va='center', fontsize=8.6)
 for x in (1.57, 3.32, 5.07, 6.82, 8.57): ax.annotate('', xy=(x + 0.27, 2.3), xytext=(x, 2.3), arrowprops=dict(arrowstyle='->', lw=1.4))
 ax.text(5.25, 3.65, '本文流程（离心泵，输入为多通道频谱）', ha='center', fontsize=12)
-ax.text(5.25, 0.95, '输出：已知类（健康 / 已知故障）或"未知"；未知窗口再分到2个未知簇', ha='center', fontsize=9.5)
+ax.text(5.25, 0.95, '输出：已知类（健康 / 已知故障）或"未知"；未知窗口再分到3个未知簇（簇数取未知类数，是先验设定）', ha='center', fontsize=9.5)
 ax.text(5.25, 0.45, '4通道+频谱输入：H 0.441→0.646；留一安装保护校准：H持平(0.646→0.650)，已知误判未知 0.304→0.177，未知召回 0.744→0.626', ha='center', fontsize=9, color='#a02020')
 plt.savefig('fig2_pipeline.png', dpi=170, bbox_inches='tight'); plt.close()
 
