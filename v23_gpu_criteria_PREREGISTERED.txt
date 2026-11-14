@@ -1,0 +1,16 @@
+v23 GPU run -- criteria fixed BEFORE the GPU results (written right after the sandbox screen)
+
+Sandbox screen (seed 0, 9 splits; not a result): Mx H 0.652 vs Bg 0.636 (8/9) and vs Rg 0.637 (7/9); held-out K AUROC +0.009 (6/9);
+known_false_unk -0.012. The effect is small (+0.016 H); the screen can only justify a GPU run.
+
+GPU: centrifugal pump, 27 pairs (3 combos x 3 folds x 3 seeds), same data / settings as v20.
+  Rg : adaptive_kr2 + gated K + leave-one-installation-out guard (q=0.4), random independent mode perturbation   (matched control)
+  Mx : the same + installation mixing (--mix-aug install)
+  Bg4: v20 result (generic augmentation + the same guard), reused for pairing.
+Mx is a Chapter 3 improvement iff ALL hold:
+  (1) Mx beats Bg4 in H on >= 18/27 pairs;
+  (2) Mx beats Rg in H on >= 18/27 pairs (isolates "a real installation profile" from "any VMD perturbation");
+  (3) mean known_false_unk of Mx is not more than +0.02 above Bg4.
+Reported either way. A pass supports "installation-aware augmentation" for this dataset only; it does not test the distance-guided
+choice of a source installation (impossible with <= 2 training installations per class).
+The sealed 75 % speed data stays untouched.

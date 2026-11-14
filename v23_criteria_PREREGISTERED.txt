@@ -1,0 +1,31 @@
+v23 "distance + installation difference" -- criteria fixed BEFORE any run (written after the v22 GPU results)
+
+Setting: centrifugal pump v19 data (channels 1,2,4,5; log-spectrum front-end; --norm window), 9 splits x seed 0, sandbox CPU.
+Reference B-line = Bg (spectrum baseline + leave-one-installation-out guard, q=0.4), runs S20g_*_Bg_seed0.
+Why a screen only: seed-0 results move by 0.05-0.15 between runs; anything that passes goes to the GPU (27 pairs).
+
+KNOWN LIMITATION OF THE DATA (stated before the test): every known class has only 2 TRAINING installations (soft foot: 1).
+Choosing a source installation "by distance" is therefore impossible (one candidate). Distance enters only through the
+known-ness K (routing and strength). The distance-guided source selection cannot be tested here; it needs >= 4-5
+installations per class (own test rig).
+
+PART B (offline, no retraining, saved Bg models; held-out known-vs-unknown AUROC of a score, labelled windows only as references)
+  B0 reference : mean cosine distance to the k=10 nearest labelled windows
+  B1 LOF-style : B0 divided by the mean "own k-distance" of those neighbours (self excluded)
+  B2 installation-aware LOF (PRIMARY): as B1, but the neighbours' own k-distance is computed against windows of OTHER installations only
+  Pass iff B2 beats B0 in mean AUROC by >= 0.03 AND on >= 6/9 splits. B1 is secondary (reported, cannot rescue a failed B2).
+  NOTE: a calibration/monotone transform cannot change an AUROC; only a different ranking can.
+
+PART A (training; Chapter 3 replacement): cross-installation mode-energy mixing ("Mx")
+  Windows routed to a known class (labelled, or K >= 0.5 with predicted class c) get their VMD mode log-energy profile moved by
+  lambda * (mu_src - mu_own), mu = installation mean mode log-energy profile of class c from LABELLED windows only, own = nearest
+  profile, src = another installation of class c, lambda = kappa(K,R) * U(0,1). Other windows keep the random perturbation of A3g.
+  Variants (adaptive_kr2, gated K, leave-one-installation-out guard q=0.4 in all of them):
+    Rg  control : random independent mode perturbation (A3g behaviour)
+    Mx          : installation mixing
+  Mx passes the screen iff ALL hold (9 splits, seed 0):
+    (1) mean H(Mx) > mean H(Bg) and > mean H(Rg), better than each on >= 6/9 splits;
+    (2) held-out K AUROC (kr_diag_val) of Mx > that of Bg in mean, and on >= 6/9 splits;
+    (3) mean known_false_unk of Mx not more than +0.02 above Bg.
+  Passing -> GPU 27 pairs with the v19 criteria (>= 18/27 vs Bg4 and vs Rg). Failing -> reported as a negative result; no tuning of lambda.
+Not allowed after seeing results: changing lambda, k, the routing threshold, or the variants.
