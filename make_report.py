@@ -37,7 +37,7 @@ def paired(a, b, col):
 # ---------------------------------------------------------------- table 1: all methods
 cols = ['H', 'known_acc', 'unk_recall', 'known_false_unk', 'unk_cluster_acc']
 names = {'B_old': '旧基线：通道4 + 波形', 'B': '新基线B：4通道 + 频谱', 'Bg3': 'B + 留一安装保护 q=0.3', 'Bg4': 'B + 留一安装保护 q=0.4（主方法）',
-         'Bg5': 'B + 留一安装保护 q=0.5', 'v19_A3g': '第三章增强 A3g（能量—距离门控K）', 'v19_A3d': '第三章增强 A3d（无能量门控）',
+         'Bg5': 'B + 留一安装保护 q=0.5', 'v19_A3g': '第三章增强 A3g（能量—距离门控K）', 'v19_A3d': '第三章增强 A3d（K=距离能量，无头能量门控）',
          'v19_A3c': '第三章增强 A3c（预算打乱对照）', 'EDdg': '第三章：能量决定方向 EDdg', 'EDrg': '第三章：随机方向 EDrg（对照）',
          'Gd': '保护换深度kNN距离 Gd', 'Gfs': '保护融合人工特征（频带）Gfs', 'Gfa': '保护融合人工特征（全部）Gfa'}
 t1 = d.groupby('method')[cols].mean().loc[list(names)].round(3)
@@ -46,7 +46,7 @@ t1.to_csv('table1_all_methods.csv', encoding='utf-8-sig')
 
 # ---------------------------------------------------------------- table 2: paired comparisons
 pairs = [('B', 'B_old', '新基线 vs 旧基线（4通道+频谱）'), ('Bg4', 'B', '留一安装保护 vs 新基线'), ('Bg4', 'B_old', '主方法 vs 旧基线'),
-         ('v19_A3g', 'B', '第三章 A3g vs B'), ('v19_A3g', 'v19_A3c', 'A3g vs 预算打乱 A3c'), ('v19_A3g', 'v19_A3d', 'A3g vs 无能量门控 A3d'),
+         ('v19_A3g', 'B', '第三章 A3g vs B'), ('v19_A3g', 'v19_A3c', 'A3g vs 预算打乱 A3c'), ('v19_A3g', 'v19_A3d', 'A3g vs A3d（距离能量之上加头能量门控）'),
          ('EDdg', 'EDrg', '能量方向 vs 随机方向'), ('EDdg', 'Bg4', '能量方向 vs Bg4'), ('Gd', 'Bg4', '深度kNN保护 vs Bg4'),
          ('Gfs', 'Gd', '融合人工特征（频带）vs Gd'), ('Gfa', 'Gd', '融合人工特征（全部）vs Gd')]
 rows = []
@@ -120,7 +120,7 @@ ax.set_title('保护阈值是一条工作曲线：用未知召回换已知准确
 plt.tight_layout(); plt.savefig('fig4_guard_curve.png', dpi=170); plt.close()
 
 # ---------------------------------------------------------------- fig5: negative results (paired delta H)
-neg = [('v19_A3g', 'B', '第三章 A3g − B'), ('v19_A3g', 'v19_A3c', 'A3g − 预算打乱 A3c'), ('v19_A3g', 'v19_A3d', 'A3g − 无能量门控 A3d (能量的贡献)'),
+neg = [('v19_A3g', 'B', '第三章 A3g − B'), ('v19_A3g', 'v19_A3c', 'A3g − 预算打乱 A3c'), ('v19_A3g', 'v19_A3d', 'A3g − A3d（在距离能量上再加头能量门控）'),
        ('EDdg', 'EDrg', '能量方向 − 随机方向'), ('EDdg', 'Bg4', '能量方向 − Bg4'), ('Gd', 'Bg4', '深度kNN保护 − Bg4'),
        ('Gfs', 'Gd', '融合人工特征(频带) − Gd'), ('Gfa', 'Gd', '融合人工特征(全部) − Gd')]
 fig, ax = plt.subplots(figsize=(8.2, 4.2))
