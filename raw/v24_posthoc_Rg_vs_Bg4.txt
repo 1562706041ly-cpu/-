@@ -1,0 +1,10 @@
+POST-HOC (not pre-registered in this form; computed 2026-11-06 from results_v23/summary_v23_cf.csv, existing GPU runs, 27 paired runs, bootstrap over 9 splits, seed 0)
+Question: does Chapter-3 adaptive augmentation (Rg: adaptive_kr2 + gated K + LOIO guard) beat the same pipeline without Chapter 3 (Bg4: generic + LOIO guard)?
+Rg - Bg4  H               -0.0107  95% [-0.0205, -0.0006]  higher in 9/27, positive in 1/9 splits
+Rg - Bg4  nmi             -0.0115  95% [-0.0214, -0.0009]  higher in 12/27, positive in 3/9
+Rg - Bg4  unk_cluster_acc -0.0022  95% [-0.0224, +0.0151]  higher in 15/27, positive in 5/9
+Rg - Bg4  known_false_unk +0.0237  95% [+0.0021, +0.0481]  (higher = worse)
+Rg - B    H               -0.0066  95% [-0.0432, +0.0297]
+Rg - B    unk_cluster_acc -0.0972  95% [-0.1649, -0.0381]
+Means over 27 runs  B: H .646 nmi .575 unk_cluster_acc .578 known_false_unk .304 | Bg4: .650 .579 .483 .177 | Rg: .640 .567 .481 .200
+Code check: R = stability x decisiveness depends only on K of two weak views; budget(K,R) and the LOIO guard do not use the head energy. The Chapter-4 relation cache uses the head SOFTMAX confidence (kr_modules.compute_kr 'prob', build_relation_cache c_known = K*R*conf), which is not changed by Rk.

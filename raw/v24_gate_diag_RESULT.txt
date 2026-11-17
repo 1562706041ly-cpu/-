@@ -1,0 +1,12 @@
+v24 gate diagnostic RESULT (Paderborn, 6 warm-up models of V_A3d, single split; script work/diag_gate_v24.py; raw: v24_gate_diag_A3d.json)
+Criteria: v24_gate_diag_PREREGISTERED.txt (written before the run). Pump models not in the sandbox: pump NOT covered.
+
+M1 Spearman (mean over 6): qE vs qD 0.19 (known 0.26, unknown 0.43); qDE vs qD 0.90 (per-seed 0.85-0.94)
+M2 AUROC unknown-vs-known, S_U | S_V (mean): qD 0.811 | 0.819; qE 0.415 | 0.399; qG 0.742 | 0.761; qDE 0.797 | 0.796
+   dAUROC (qG - qD): S_U -0.141 -0.008 -0.136 -0.103 -0.031 +0.003; S_V -0.100 -0.009 -0.073 -0.075 -0.028 -0.062
+M3 route flips (mean): qG vs qD 19.9 % (qG correct on 12 % of flips); qG vs qDE 29.8 % (qG correct on 17 % of flips)
+M4 region qD>=0.8 (30 % of windows): qG flips 34.5 % of them to unknown; routing accuracy qG 0.614 vs qD 0.924
+
+Pre-registered verdict: "gate hurts" needs dAUROC <= -0.02 on BOTH sets in >= 5/6 models: met in 4/6 -> rule NOT met -> formally inconclusive.
+"Redundant" rule (|dAUROC| < 0.01 and rho >= 0.9): not met (rho(qE,qD) = 0.19, |dAUROC| up to 0.14).
+Direction of every mean is negative; 4/6 models clear the 0.02 bar on both sets.

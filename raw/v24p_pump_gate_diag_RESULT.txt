@@ -1,0 +1,10 @@
+v24p RESULT (Bruinsma Motor-2 pump, 27 warm-up models = 9 splits x 3 seeds, sandbox CPU; script scratch/v24p/diag_gate_pump.py; raw v24p_pump_gate_diag.json)
+Criteria: v24p_pump_gate_diag_PREREGISTERED.txt (written before the scores were computed).
+M1 Spearman (mean): qE-qD 0.393 (known 0.496, unknown 0.361); qDE-qD 0.885. rho(qE,qD) >= 0.9 in 0/27 models.
+M2 AUROC S_U | S_V (mean): qD 0.915 | 0.671; qE 0.595 | 0.467; qG 0.871 | 0.660; qDE 0.853 | 0.661
+   dAUROC qG-qD: S_U -0.044, S_V -0.011. qDE-qD: S_U -0.062, S_V -0.010.
+M3 route flips: qG vs qD 3.5 % (qG correct on 18 % of flips); qG vs qDE 16.9 % (qG correct on 72 % of flips)
+M4 region qD>=0.8 (37.7 % of windows): qG flips 4.4 %; routing accuracy qG 0.759 vs qD 0.787
+Rule check: "gate hurts" needs dAUROC<=-0.02 on both sets in >=23/27 models and >=8/9 splits: observed 10/27 models, 3/9 splits -> NOT met.
+"adds information": 0/27. "redundant": |dAUROC|<0.01 on both sets in 0/27 -> NOT met. => formally INCONCLUSIVE.
+Notes: calibration emitted exp-overflow warnings (values saturate to 0/1, no NaN). Fixed-model only; no end-to-end H.

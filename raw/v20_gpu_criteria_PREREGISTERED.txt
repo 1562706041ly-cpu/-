@@ -1,0 +1,13 @@
+v20 GPU run (centrifugal pump, 27 pairs = 3 combos x 3 folds x 3 seeds) -- criteria fixed before the GPU runs (2026-11-13)
+Setting = v19 baseline (channels 1,2,4,5, log-spectrum front-end, --norm window). Paired comparisons (same combo/fold/seed).
+A. Known-guard calibration (leave-one-installation-out), main setting q = 0.4 (Bg4) vs B:
+   holds iff known_false_unk lower on >= 18/27 pairs AND mean H >= B - 0.005.
+   Unknown-recall cost is reported. Bg3/Bg5 are reported as the guard operating curve (sensitivity), NOT used to pick q.
+   (Sandbox seed-0 screen: kfu 0.390 -> 0.206 (9/9 lower), H 0.605 -> 0.636 (8/9), unknown recall 0.762 -> 0.631;
+    it failed the screen rule "recall drop <= 0.05", which is why q is reported as a curve.)
+B. Chapter 3, energy decides the direction (EDdg) vs random direction with the same magnitudes (EDrg), both with the
+   calibrated guard: the energy direction is a contribution iff EDdg beats EDrg in mean H on >= 18/27 pairs.
+   Chapter 3 improves the method iff additionally EDdg beats Bg4 in mean H on >= 18/27 pairs.
+   (Sandbox seed-0 screen without the new guard: EDd vs EDr 7/9, EDd vs B 4/9 -> screen not passed; stronger
+    variant lam=1, budget x2 was clearly worse: H 0.547 vs B 0.605.)
+Failures are reported as negative results. The sealed 75 % speed data is not touched.
