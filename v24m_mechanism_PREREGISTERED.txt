@@ -1,0 +1,55 @@
+v24m mechanism check: what does the Chapter-3 VMD augmentation actually change?
+Written BEFORE the script was run (2026-11-06). Bruinsma centrifugal pump only (Motor-2, 100 % speed, 4-channel log-spectrum). The sealed 75 % speed data is not opened.
+
+WHY
+Three pre-registered comparisons (v20 energy direction, v23 Mx, v24 Rk/Rd/Rg) and the post-hoc Rg/Rk/Rd vs Bg4 show no gain. A trial log printed fallback 0.00, mean_shrink 0.00 and distance-energy change 0.00 (2 decimals, one run, 4 prints). Hypothesis (NOT a finding): the VMD perturbation is small compared with the standard augmentation that is applied on top of it, so adaptive allocation of its strength cannot matter. This check measures the perturbation. It trains nothing and does not test whether the method works.
+
+WHAT TRAINING DOES (read from code, m2_paderborn_kr.py lines ~889-938)
+ Bg4 (generic): view1 = A(x), view2 = A(x); A = standard augmentation p = (shift 256, scale 0.2, noise 0.1, mask 0.10).
+ Rk / Rg after warm-up: view1 = A(x), view2 = A(x_vmd); x_vmd = x + sum_m (exp(0.5 u kappa s_m) - 1) mode_m with fidelity check (log-spectral distance per channel <= tau_lsd, exponent halved up to 3 times, else fall back to x).
+ So the VMD perturbation sits UNDER the standard augmentation. The relevant question is its size relative to what A already does.
+
+MODELS AND DATA
+ 27 warm-up checkpoints (3 combos x 3 folds x seeds 0,1,2), scratch/v24p/runs_paderborn/P_*_seed*/m2_PADERBORN_seed*_warmup.pt (generic mode up to step 300 = the warm-up shared with Rk/Rg; RNG consumption may differ slightly from an Rk run, so these are equivalent, not bit-identical, warm-up models).
+ Windows: ALL training windows of the split (labelled + unlabelled, ~1440), the population that is augmented in training. No evaluation (held-out) window is used. Encoder in eval mode, no parameter is updated.
+ VMD bank: centrifugal/pool/pool_motor2_100_ch1245_vmd.npy indexed by train_pool_index (same reconstruction check as the training script, relative error < 0.1).
+ Nuisance statistics (sigma_rec, g, tau_lsd per channel) and kappa = budget_v2(K, R, 0.25, 0.5) are computed exactly as in prepare_nuisance / refresh_kr_state, with K from the 'knn' scorer (Rk, primary) and from the 'gated' scorer (Rg, secondary). kr2_gain = 1.
+ Labels are used only to split the post-hoc report by known/unknown windows. Nothing is selected from them.
+
+VIEWS (same windows)
+ V0 x (original)
+ V1 sum of the VMD modes (reconstruction only, no perturbation)
+ V2 x_vmd (adaptive kappa, with fidelity), K from Rk
+ V2g x_vmd with K from Rg
+ V2s x_vmd with kappa permuted among unlabelled windows (random allocation control, same kappa distribution)
+ V3 A(x) (standard augmentation)
+ V4 A(x_vmd) with the SAME random numbers as V3 (so V4 - V3 isolates the VMD perturbation under the standard augmentation); V3' = A(x) with different random numbers (independent standard view)
+ V5 weak augmentation (used for R)
+
+MEASUREMENTS (per window, then median / 90th / 99th percentile over windows, per model; then summarised over 27 models)
+ S1 signal: relative change ||v - x|| / ||x||; waveform cosine to x (mean over channels).
+ S2 fidelity: realised log-spectral distance LSD(x_vmd, x) per channel, ratio LSD / tau_lsd (max over channels); fraction of windows that were shrunk (>=1 halving) and that fell back to x. (Same torch_lsd as the code.)
+ F1 feature: d(a, b) = 1 - cos(enc(a), enc(b)) for V0 vs V1, V0 vs V2, V3 vs V4 (VMD effect under identical standard augmentation), V3 vs V3' (two independent standard views = the natural view-to-view difference in contrastive training), V0 vs V5.
+ F2 ratio r = median d(V3, V4) / median d(V3, V3').
+ R1 routing: fraction of windows with route (K >= 0.5) changed between enc(x) and enc(x_vmd); mean |K(x_vmd) - K(x)|.
+ B1 budget: distribution of kappa (mean, p10, p90) by route; Spearman(kappa, realised LSD / tau); Spearman(kappa, d(V0, V2)).
+ B2 allocation: realised signal change of V2 vs V2s (same kappa distribution, random allocation): difference in median S1 and F1.
+
+DECISION RULES (counted over the 27 models; unit-of-independence caveat: 9 splits x 3 seeds, seeds share data)
+ NEGLIGIBLE      : median LSD/tau < 0.25 AND r < 0.10 in >= 23/27 models.
+ FIDELITY-BOUND  : fraction shrunk or fallen back > 0.20 in >= 14/27 models.
+ COMPARABLE      : r >= 0.50 in >= 23/27 models.
+ FOLLOWS BUDGET  : Spearman(kappa, LSD/tau) >= 0.5 in >= 23/27 models (the realised perturbation tracks the allocated budget).
+ ALLOCATION-RELEVANT: |median S1(V2) - median S1(V2s)| / median S1(V2s) >= 0.10 in >= 23/27 models.
+ Anything else is reported as intermediate / inconclusive. Several labels can hold at once.
+
+ACTIONS DECIDED NOW (before seeing results)
+ NEGLIGIBLE (alone)            -> do NOT run the fixed / random / adaptive ablation yet (it could not differ). First pre-register a dose-response check of the budget (--kr2-gain), because the budget scale is the first suspect.
+ FIDELITY-BOUND                -> examine tau_lsd and the shrink rule before any ablation.
+ COMPARABLE and ALLOCATION-RELEVANT -> proceed to the pre-registered three-arm ablation (fixed / random / adaptive allocation).
+ COMPARABLE but not ALLOCATION-RELEVANT -> the allocation cannot matter at this scale; report as such.
+ Intermediate                  -> report, discuss before choosing.
+
+NOT CLAIMED
+ A small feature change is not necessarily bad: the encoder may be invariant to reasonable augmentations. This check does not say whether the method helps, only how large the perturbation is. It uses fixed warm-up models, not the models after Chapter-3 training.
+ Paderborn is not used.
