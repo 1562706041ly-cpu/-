@@ -1,0 +1,19 @@
+v28 gain selection rule for the independent band gain under kappa = 1 (design step; written BEFORE the scan was run, 2026-11-06). No training, no H, no labels, no evaluation (held-out installation) window. Bruinsma pump, Motor-2 100 % speed. 75 % speed data sealed.
+
+PURPOSE
+ Fix, as a single constant, the gain of the INDEPENDENT band perturbation whose feature change equals that of the COORDINATED perturbation at gain 2.0, in the final configuration of the planned end-to-end screen: uniform kappa = 1 for every window (no K/R budget), same band budget s_cb as v27 (labelled known windows, record-level variation), same fidelity rule. The v27b scan used the K/R budget and cannot be reused.
+
+DATA
+ The 27 warm-up checkpoints (9 splits x 3 seeds). Windows: all TRAINING windows of the split (labelled and unlabelled; no labels are used; no evaluation window is used). Recordings = (train_installation, train_measurement) ids. Recordings are sorted lexicographically; those at even positions form the SELECTION half, those at odd positions form the CHECK half. The two halves are used per model; the selection never sees the check half.
+
+QUANTITY
+ feat(v) = median over the windows of the half of 1 - cos(enc(A(x)), enc(A(v))) with the same standard-augmentation random numbers (seed 7) for A(x) and A(v); the same band-gain random numbers u (independent draw u_cb; coordinated u_b = channel-1 draw) as in v27.
+ Target per model: feat(VC at gain 2.0).
+
+SELECTION
+ Grid for the independent gain: 0.50, 0.55, ..., 1.50 (21 values). g_I* = the grid value that minimises, over the 27 models, the mean of |ln( feat_VI(g) / feat_VC(2.0) )| computed on the SELECTION half. One constant for all models (no per-model tuning, no re-selection during or after training).
+ Reported besides: the best grid value of each model; the same quantity at g_I* on the CHECK half; median signal change and shrink fraction of VI(g_I*), VC(2.0) and VI(2.0) on both halves; feat of VI(2.0).
+ Check criterion (reported, no automatic re-selection): on the CHECK half |ln(feat_VI(g_I*) / feat_VC(2.0))| <= ln(1.25) in >= 23/27 models. If it fails, g_I* stays as selected and the mismatch is stated as a limitation of the screen.
+
+NOT CLAIMED
+ That feature matching at warm-up persists through training (the encoder changes; the planned screen logs the in-training feature change as an implementation check only); that matched feature change means equal harm or benefit.
