@@ -1,0 +1,48 @@
+v25 feature-stability check of the VMD candidate view: PRE-REGISTRATION (final; supersedes v25_featcheck_PREREGISTERED_DRAFT.txt).
+Bruinsma centrifugal pump only (Motor-2, 100 % speed). 75 % speed data sealed. Confirmed by the user 2026-11-06 with the changes below; written BEFORE any step-1 number was computed.
+
+CONFIRMED BY THE USER
+ 1. Calibration C1 (weak-view, q = 0.95) is primary; C2 is reported for scale only and is never used to choose or to switch.
+ 2. Pure fallback (a rejected window returns to x); the existing log-spectral check keeps its own halving.
+ 3. End-to-end (step 2) at gain 2 only; gain 4 only for scale in step 1.
+ 4. If the check is INERT, OVER-REJECT or INCONCLUSIVE the line ends for this formulation; no recalibration. A new calibration would be a new hypothesis and a new pre-registration.
+ Changes to the draft requested by the user and made here: SELECTS replaced by an integrity check; INCONCLUSIVE branch added; per-split aggregation fixed; random-fallback control details; interpretation of the three step-2 comparisons; closing sentence.
+
+NEW HYPOTHESIS
+ H1: rejecting VMD candidate views whose FEATURE change is unusually large, in addition to the existing log-spectral fidelity check, improves end-to-end H over the same VMD augmentation without this check.
+ Competing explanation to exclude: any benefit comes only from using the VMD perturbation less often (random-fallback control in step 2).
+ A small feature change does not guarantee that the class is unchanged; a rejected window is not evidence that it is unknown. The check never uses labels and never moves a window towards a known class.
+
+CODE FACT (m2_paderborn_kr.py lines 888-938; also in v24m_mechanism_PREREGISTERED.txt)
+ Bg4: view1 = A(x), view2 = A(x). Rk after warm-up: view1 = A(x), view2 = A(x_vmd); A = standard augmentation. The VMD perturbation sits UNDER A. The check acts on x_vmd before A.
+
+CHECK
+ d_f(x, x_vmd) = 1 - cos(enc(x), enc(x_vmd)), current encoder in eval mode, no gradient.
+ The candidate x_vmd is first produced by the existing mechanism (budget kappa, log-spectral fidelity with up to 3 halvings, fallback to x). Candidates that already fell back there are NOT part of the feature check (they carry no VMD perturbation); they are counted separately. Among the remaining "active" candidates: reject (return x) iff d_f > tau_f.
+ Calibration of tau_f (recomputed at every K/R refresh with the current encoder), LABELLED windows only (no unknown labels, no evaluation windows):
+  C1 (primary): 0.95 quantile of d(enc(x_l), enc(A_weak(x_l))) over the labelled windows and 20 draws of the weak augmentation (shift 64, scale 0.05, noise 0.02, mask 0) -- the feature change caused by benign augmentation.
+  C2 (scale only): median d between labelled same-class windows from DIFFERENT installations.
+ Design information already in hand (labelled windows, 9 splits, seed 0; no rejection counts, no unknown labels): C1 mean 0.0058 (per split 0.0031-0.0092), C2 median mean 0.085 (per split 0.025-0.123). VMD feature change: median 0.0013 at gain 1 (measured); roughly 0.005 at gain 2 and 0.016 at gain 4 (approximation from v24d). Written now, not a result: with C1 the check probably rejects a large share at gain 2 and almost everything at gain 4; with C2 almost nothing.
+
+STEP 1 (fixed models, no training, no H; sandbox CPU)
+ Models: 27 warm-up checkpoints (9 splits x 3 seeds). Windows: all training windows per split (labelled and unlabelled; the rules use the unlabelled windows, the labelled windows are reported separately). K from knn, kappa = budget_v2. Gains 2 (primary) and 4 (scale only). Same u and the same standard-augmentation random numbers as v24d. Encoder: the warm-up encoder of that model.
+ Rejection rate = rejected active candidates / active candidates among the unlabelled windows. Per-split value = mean of the 3 seed values of that split. Log-spectral fallbacks are reported separately (fraction of all windows).
+ Reported (descriptive): rejection rate per model and per split; by kappa tercile; by zone (reliable-known, reliable-unknown, uncertain); by true known/unknown (labels for analysis only); mean realised signal change and feature change of rejected vs kept windows; feature change and route-flip rate of the final views vs the unchecked views; rejection rate under C2 (scale only).
+ RULES (27 models; seeds share data, so 27 models are not 27 independent datasets)
+  INTEGRITY (code executes the rule): in 27/27 models all d_f and tau_f are finite; every rejected active candidate is exactly x in the output; every kept active candidate equals its x_vmd; every log-spectral fallback is exactly x and is not counted as a feature rejection. This shows only that the rule is executed as written; it does NOT show that the rejected views are harmful (that is tested by the step-2 control).
+  OPERATES   : gain-2 rejection rate between 5 % and 60 % in >= 23/27 models AND, on the per-split values, no more than 3 of the 9 splits with a gain-2 rate above 90 % or below 1 %.
+  INERT      : gain-2 rejection rate < 5 % in >= 23/27 models.
+  OVER-REJECT: gain-2 rejection rate > 60 % in >= 23/27 models.
+  INCONCLUSIVE: none of OPERATES, INERT, OVER-REJECT is met. Then the per-split results are reported, step 2 is not run, and no calibration is switched.
+ DECISIONS FIXED NOW: INTEGRITY and OPERATES -> step 2 allowed. INTEGRITY failed -> debug, rerun once with the same rules. INERT, OVER-REJECT or INCONCLUSIVE -> report; no step 2; no recalibration.
+
+STEP 2 (end-to-end, user's GPU; only if step 1 passes; 9 splits x seed 0; gain 2 only)
+ Arms: Bg4 and Rk2 (existing seed-0 runs, reused); Rk2F (new: --feat-check on); Rk2R (new: --feat-check random); 18 new runs.
+ Rk2F and Rk2R both pass the same log-spectral check first. In Rk2R the feature check is computed as well, the number of rejections in that batch is counted, and the same number of windows is rejected AT RANDOM among the active candidates of that batch (candidates that already fell back are not chosen again). "Same number" means matched within each arm's own batch; the two training trajectories diverge and are not assumed to have identical batches; the realised rejection rates of both arms are logged and reported.
+ Code: flags --feat-check {none,on,random} (default none, regression-tested bit-identical to the v24s2 code on the default path before delivery), --feat-check-q 0.95; log values reject_frac and d_f quantiles every 300 steps.
+ Comparisons (H, paired, 9 splits, 95 % bootstrap over splits): P1 Rk2F - Rk2 (does the added check improve the existing VMD scheme); P2 Rk2F - Rk2R (does selecting by feature change beat the same number of random rejections); P3 Rk2F - Bg4 (does the new scheme have a chance to exceed the main baseline). They answer different questions. Even if P1 and P2 are positive, a P3 below zero means the new scheme is not shown to beat the baseline.
+ Rules: WORTH CONFIRMING: mean dH >= +0.02 AND positive in >= 7/9 splits AND interval lower bound > 0. HARM: mean dH <= -0.02 AND interval upper bound < 0. Otherwise: no evidence of a difference. Validity as in v24s2 (invalid runs excluded and not replaced; an arm with < 8 valid runs is not interpreted; no run dropped because of its H; UTF-16 logs decoded). One seed per split: exploratory; three comparisons, no multiplicity correction.
+ Honest prior (written now): stage 2 found no benefit from a larger dose or from (K, R) allocation. A cap on the feature change can help only if the harmful perturbations are the large ones; the stage-2 losses were concentrated in two splits with one seed.
+ After step 2: report the results by these rules. If no comparison is worth confirming, it is recorded as: no benefit observed in the current setting. No further Chapter-3 experiment on this formulation without a new pre-registered hypothesis.
+
+NOT CLAIMED: that feature stability preserves the fault class; that the result holds for the trained encoder, other pumps or the sealed 75 % speed data.
