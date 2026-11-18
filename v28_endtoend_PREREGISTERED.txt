@@ -1,0 +1,66 @@
+v28 end-to-end exploratory screen of band-gain augmentation (independent vs coordinated): PRE-REGISTRATION (final; supersedes v28_endtoend_PREREGISTERED_DRAFT.txt).
+Bruinsma centrifugal pump only (Motor-2, 100 % speed). 75 % speed data sealed. Confirmed by the user 2026-11-06 with the decisions below; written and pushed BEFORE any training code was written and before any new run.
+
+DECISIONS BY THE USER (adopted)
+ 1. Independent gain stays the CONSTANT 0.65 (rule v28-rule pushed 2026-11-18T14:18:57Z before the scan). The failed check (15/27) is a stated limitation; no per-run automatic matching; no change after seeing the check.
+ 2. Thresholds 0.02, 7/9 and a t-interval are accepted, with (a) the interval algorithm fixed, (b) the meaning of each passing comparison fixed, (c) HARM with numbers.
+ 3. Three new arms and five comparisons are accepted as a screen, not a confirmation, without multiplicity correction.
+ 4. The unknown-class separability description (P1) is mandatory, not optional.
+ 5. A GPU consistency check of the reused Bg4 is added.
+
+CONTEXT AND QUESTION
+ Chapter 3 leaves the VMD formulation. Evidence so far (all on these 9 splits, therefore not independent): no VMD variant beat Bg4 (v20, v23, v24, v24s2); v26 and v27 are mechanism checks on fixed warm-up encoders. v27 found that independent and coordinated band gains matched in signal level differ about 5 times in feature change.
+ Question: with the K/R budget removed (uniform kappa = 1), (a) does a band-gain second view help over the standard augmentation alone (Bg4), and (b) does coordination across channels matter at matched intensity (feature-level matched, signal-level matched)?
+ Removing K/R is a design choice that isolates the question. The earlier result was that allocation by (K, R) showed no benefit for the VMD budget (v24s2: Rk - Rks mean dH -0.001, interval containing 0); that is not a proof of no value, and it does not carry over to band gain automatically.
+
+ARMS (all: the Bg4 pipeline = --mode generic --contrast plain --vmd-bank none --known-guard 0.4 --guard-group-key train_installation + the COMMON arguments of run_batch_v24s2_cf.ps1; only the second view after warm-up differs)
+  Bg4   existing seed-0 runs (V20_*_Bg4_seed0), reused unless the GPU consistency check fails (below).
+  BI65  independent band gain, gain 0.65.
+  BC2   coordinated band gain, gain 2.0.
+  BI2   independent band gain, gain 2.0.
+ New runs: 3 arms x 9 splits x seed 0 = 27 (plus 1 check run, plus 9 Bg4 re-runs only if the check fails).
+ Second view after warm-up (step 300): A(band_view(x)); view 1 stays A(x). Labelled and unlabelled windows both receive it. kappa = 1 for every window.
+ Band view: 32 linear bands (partition of kr_modules.log_band_energy; DC in band 0, Nyquist in the last band; low-energy bands are not excluded); amplitude gain exp(0.5 u s_cb) on every complex rfft bin of band b of channel c (the gain constant is inside s_cb); u clipped to [-2, 2]; independent: u_cb independent; coordinated: u_b = the channel-1 draw of the same random tensor, shared by the four channels; s_cb = gain x mean over the known classes of the standard deviation across RECORDINGS (train_installation + train_measurement) of the record-mean log band energy of the LABELLED windows (window-level std if a class has fewer than 2 recordings; the count is logged); fidelity: per-channel log-spectral distance <= tau_lsd (labelled windows, record key = installation, as in training), exponent halved up to 3 times, then fall back to x. One random-number stream (seed + 20000) with the same shape in all three arms.
+
+KNOWN LIMITATION OF THE FEATURE MATCH (from v28_gain_scan_RESULT.txt)
+ BI65 is not feature-matched to BC2 in every split. The check on the held-out half of recordings was within a factor 1.25 in 15/27 models; the mismatch sits in the three C3 splits (check-half mean |ln ratio| 0.65, 0.60, 0.78): there the independent view is about 2 times weaker in feature change than BC2. In the six C1/C2 splits the mismatch is at most about 0.17. At the pair (BI65, BC2) the coordinated view also has about 2.5 times the signal change (0.208 vs 0.082) and is shrunk in about 32 % of the windows (BI65: none), so the nominal gain 2.0 of BC2 acts weaker than nominal.
+ Consequences fixed now:
+  - The primary comparison BC2 - BI65 is reported per split family: C1/C2 (6 splits) and C3 (3 splits). The family split is DESCRIPTIVE ONLY and enters no candidate rule.
+  - In the C3 splits BC2 is both the more strongly perturbed arm and the arm with the larger feature change than BI65; a BC2 advantage over BI65 that comes mainly from C3 is NOT attributed to coordination.
+  - Feature matching at warm-up is not assumed to persist through training (the encoder changes).
+
+COMPARISONS (H on the held-out installations = harmonic mean of known accuracy and unknown recall as in all earlier work; paired per split, seed 0; 9 splits)
+ Primary:   P1 BC2 - BI65 (feature-level matched, with the limitation above); P2 BC2 - BI2 (signal-level matched).
+ Secondary: S1 BI65 - Bg4; S2 BC2 - Bg4; S3 BI2 - Bg4.
+ Screening, not confirmation; five comparisons; no multiplicity correction.
+
+INTERVAL (fixed): two-sided 95 % t-interval of the mean of the 9 paired differences, mean +/- t(0.975; 8 df) x s / sqrt(9), t = 2.306. With 8 valid pairs: 7 df, t = 2.365 (only if exactly one pair is invalid). This is a conservative bar: a mean difference of 0.02 has a lower bound above 0 only if the standard error is below about 0.0087, and in stage 2 the per-split standard deviation of the paired differences was about 0.02-0.04 (standard error 0.007-0.013). Most likely no comparison will pass; for a screen this is acceptable and is stated here.
+
+DECISION RULES (thresholds fixed by the user)
+ CANDIDATE: mean dH >= +0.02 AND dH > 0 in >= 7/9 splits AND the t-interval lower bound > 0 (with 8 valid pairs: >= 7/8 positive).
+ HARM: mean dH <= -0.02 AND dH < 0 in >= 7/9 splits; recorded as "harmful in this setting"; descriptive, it triggers no other action.
+ Otherwise: no evidence of a difference at this resolution.
+ WHAT A PASSING COMPARISON MEANS (fixed now)
+  S2 BC2 - Bg4 is a CANDIDATE: the line "coordinated band gain improves performance" becomes a candidate for a separately pre-registered multi-seed stage (seeds 1 and 2 of the same splits are not independent data).
+  P1 or P2 is a CANDIDATE but S2 is not: it says only that coordination is less harmful than that independent arm; it is NOT a performance candidate and does not enter a multi-seed performance confirmation.
+  S1 or S3 is a CANDIDATE: independent band gain becomes a candidate, unrelated to coordination.
+ STOP RULE: it concerns S2 only. If S2 is not a CANDIDATE, the line "coordinated band gain improves performance" is stopped: recorded as "no benefit observed in this setting", no threshold change, no arm added, no further run on the same splits and seed to chase a result. Any later work needs a new pre-registered hypothesis.
+ READING TABLE (descriptive): BC2 ~ BI65 and both below Bg4 -> consistent with "coordinated looked better only because it perturbs less"; BC2 > BI65 at similar feature change -> coordination may matter, but signal change differs about 2.5 times and C3 is mismatched, so the effect is not isolated; BC2 > BI2 with BC2 ~ BI65 -> the larger feature change of BI2 may be what hurts, not separable from coordination; BI65 vs Bg4 -> whether a weak independent band gain has any effect. No outcome supports a causal statement about coordination.
+
+DESCRIPTIVE OUTPUTS (all mandatory, reported for every new arm and for Bg4 where available)
+ Known accuracy, unknown recall, known-to-unknown rate, unknown cluster accuracy, NMI, per-split tables.
+ Unknown-class separability P1 (pair AUROC between different recordings, class x recording cells, 100,000 positive and 100,000 negative pairs per run, the same sampling as v26) computed from the feature files that every seed-0 run writes (feat_gcd_PADERBORN_seed0.npz: FU = unlabelled training windows, FV = held-out windows, with true labels yu, yv): P1_U on the unknown windows of the unlabelled training set; P1_V on the unknown windows of the held-out set (recordings from the split's train_ / val_ installation and measurement ids). Labels are used only for this evaluation. All 27 new runs are scored. Old Bg4 runs are scored if their feature files exist on the user's machine; if they do not, P1 is compared only among the three new arms and the missing Bg4 value is stated; Bg4 is NOT re-run for this. The analysis script verifies that yu equals the training labels of the unlabelled windows of that split before scoring.
+ In-training implementation check (no random numbers consumed, no effect on training): every 300 steps each band arm logs on the current batch the median relative signal change of the band view, the shrunk and fallback fractions and the median feature change 1 - cos(enc(x), enc(v)) with the encoder in eval mode, no gradient. They show whether the intended intervention was applied (the shrink fraction of BC2 at kappa = 1 was about 32 % at warm-up, so its effective perturbation is weaker than nominal); they are not outcomes and enter no rule.
+
+GPU CONSISTENCY CHECK OF THE REUSED Bg4 (code check, not a comparison)
+ Before the 27 runs, the new code is run on the GPU with DEFAULT band flags on C1 fold 1, seed 0, Bg4 arguments (tag V28CHK_C1_f1_Bg4_seed0) and its H on the held-out set is compared with the existing V20_C1_f1_Bg4_seed0. Tolerance |H difference| <= 0.005. PASS: the old Bg4 runs are reused. FAIL: the old Bg4 is not reused; all 9 Bg4 runs are re-run with the new code (tags V28_Cx_fy_Bg4_seed0) and used for every comparison. The check run is not a member of any comparison. Earlier, GPU repeats of the same configuration gave identical H (Rgrep, 3 of 3), which is why a tolerance of 0.005 is chosen.
+ CPU regression (done by me before delivery): with default flags the new code reproduces the v24s2 code bit-identically (C1 fold 1, seed 0, Bg4 configuration; openset, clustering and all prediction arrays). The reuse of the GPU Bg4 results rests on the GPU check above, the CPU regression and the earlier v20-vs-v23 CPU check; stated as a limit.
+
+VALIDITY AND RECORDS
+ A run is invalid if the process fails, any printed loss is nan/inf, results_exp2.json is missing or a metric is NaN. Invalid runs are listed, not replaced, not re-run unless the failure is infrastructural with unchanged arguments; an arm with < 8 valid runs is not interpreted; no run is dropped or flagged because of its H. PowerShell logs are UTF-16 and are decoded as such. Pairing is verified by the analysis script: labelled indices, n_labeled / n_unlabeled / n_val identical to the Bg4 run of the same split; stored arguments equal to Bg4 except tag, the new flags and the gain; the analysis aborts on failure.
+ The batch script checks the code hashes before any run. Runs are not started before this pre-registration is pushed (the push time is the record).
+
+LIMITS (stated now)
+ One seed per split; 9 splits from 3 combos share installations; the 100 % speed data were used for every earlier development decision, so this is not a confirmation; warm-up-based matching is imperfect (see above) and the encoder changes in training; band gain acts on magnitudes and is not VMD; sensor positions are unknown to me; the pump is a centrifugal pump, not a piston pump; the 75 % speed data stay sealed.
+
+NOT CLAIMED: that coordination or any band gain improves H; that either matched pair isolates the effect of coordination.
