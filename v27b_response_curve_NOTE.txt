@@ -1,0 +1,20 @@
+v27b design information (2026-11-06; descriptive; no hypothesis test, no rule, no H). Collected after the v27 result to decide how a feature-level intensity match could be built. It uses 9 warm-up models (one seed per split), all training windows, the same band-gain code, budget and fidelity rule as v27; script scratch/v24p/response_curve.py; raw v27b_response_curve.json.
+Mean over the 9 models, gain = multiplier of the band budget; feat = median 1 - cos between enc(A(x)) and enc(A(v)) with paired standard-augmentation numbers; sig = median relative signal change; shrunk = fraction of windows whose exponent was halved at least once (fidelity rule); fallback = windows returned to x.
+ gain | independent: feat  sig  shrunk | coordinated: feat  sig  shrunk
+ 0.25 | 0.0002 0.020 0.00 | 0.0000 0.020 0.00
+ 0.50 | 0.0007 0.040 0.00 | 0.0002 0.040 0.00
+ 0.75 | 0.0016 0.060 0.00 | 0.0004 0.060 0.00
+ 1.00 | 0.0028 0.080 0.00 | 0.0006 0.080 0.00
+ 2.00 | 0.0111 0.158 0.05 | 0.0021 0.158 0.04
+ 3.00 | 0.0147 0.190 0.40 | 0.0030 0.195 0.33
+ 4.00 | 0.0155 0.183 0.76 | 0.0032 0.190 0.71
+ 6.00 | 0.0161 0.197 0.94 | 0.0034 0.203 0.93
+ 8.00 | 0.0159 0.185 0.99 | 0.0033 0.194 0.98
+ 12.00| 0.0161 0.197 1.00 | 0.0034 0.203 1.00
+ Fallback was 0 at every gain (the fidelity rule shrinks but always finds an admissible exponent within 3 halvings).
+Findings
+ 1. Under the existing fidelity rule the coordinated view cannot reach the feature change of the independent view at gain 2 (0.0111): it saturates near 0.0034 because the rule shrinks almost every window from gain 4 on. Per model, the needed coordinated gain was not reachable up to 12 in 9 of 9 models. Both arms saturate (independent near 0.016, coordinated near 0.0034).
+ 2. The reverse match is feasible: the independent gain whose feature change equals that of the coordinated view at gain 2 (about 0.0021) is 0.85 on average (per model 0.77-1.01).
+ 3. At that feature-matched pair (independent about 0.85, coordinated 2.0) the coordinated view has about twice the signal change (0.158 vs about 0.07) and the shrink fraction is small for both (about 0 and 0.04).
+ 4. Which of the two intensities is "the" matched level is a design choice that this note does not make. A match at the independent level would need a relaxed fidelity bound, which changes the constraint and would be a different experiment.
+Limits: 9 models, one seed each, warm-up encoders; feature distance in a fixed feature space is not a measure of effect on H.
