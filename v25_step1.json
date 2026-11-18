@@ -1,0 +1,1919 @@
+[
+ {
+  "combo": "C1",
+  "fold": 1,
+  "seed": 0,
+  "tau_f_C1": 0.003093567444011569,
+  "tau_f_C2": 0.042490869760513306,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.08357558139534883,
+    "reject_rate_lab": 0.296875,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.017543859649122806,
+     0.06206896551724138,
+     0.18736383442265794
+    ],
+    "by_zone": {
+     "rel_known": 0.1906779661016949,
+     "rel_unknown": 0.03142857142857143,
+     "uncertain": 0.014705882352941176
+    },
+    "by_truth": {
+     "known": 0.1579861111111111,
+     "unknown": 0.03
+    },
+    "signal_change_rejected": 0.08770404756069183,
+    "signal_change_kept": 0.05998540669679642,
+    "feat_change_rejected": 0.004564106464385986,
+    "feat_change_kept": 0.0006239414215087891,
+    "feat_change_unchecked_med": 0.0007123053073883057,
+    "feat_change_final_med": 0.0005549788475036621,
+    "route_flip_unchecked": 0.057412790697674417,
+    "route_flip_final": 0.04578488372093023,
+    "tau_f": 0.003093567444011569
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.45494186046511625,
+    "reject_rate_lab": 0.765625,
+    "reject_rate_C2_unl": 0.002180232558139535,
+    "by_kappa_tercile": [
+     0.2759170653907496,
+     0.4482758620689655,
+     0.7037037037037037
+    ],
+    "by_zone": {
+     "rel_known": 0.7033898305084746,
+     "rel_unknown": 0.3514285714285714,
+     "uncertain": 0.23529411764705882
+    },
+    "by_truth": {
+     "known": 0.6319444444444444,
+     "unknown": 0.3275
+    },
+    "signal_change_rejected": 0.155270516872406,
+    "signal_change_kept": 0.10598435252904892,
+    "feat_change_rejected": 0.006224840879440308,
+    "feat_change_kept": 0.001428455114364624,
+    "feat_change_unchecked_med": 0.002753645181655884,
+    "feat_change_final_med": 0.00046262145042419434,
+    "route_flip_unchecked": 0.13953488372093023,
+    "route_flip_final": 0.046511627906976744,
+    "tau_f": 0.003093567444011569
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 1,
+  "seed": 1,
+  "tau_f_C1": 0.0035942315589636564,
+  "tau_f_C2": 0.06392809748649597,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.18023255813953487,
+    "reject_rate_lab": 0.375,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.06531204644412192,
+     0.13157894736842105,
+     0.3769063180827887
+    ],
+    "by_zone": {
+     "rel_known": 0.348,
+     "rel_unknown": 0.10349854227405247,
+     "uncertain": 0.015789473684210527
+    },
+    "by_truth": {
+     "known": 0.3055555555555556,
+     "unknown": 0.09
+    },
+    "signal_change_rejected": 0.09988844394683838,
+    "signal_change_kept": 0.06572236865758896,
+    "feat_change_rejected": 0.005032241344451904,
+    "feat_change_kept": 0.0011143088340759277,
+    "feat_change_unchecked_med": 0.001413881778717041,
+    "feat_change_final_med": 0.0008333325386047363,
+    "route_flip_unchecked": 0.056686046511627904,
+    "route_flip_final": 0.036337209302325583,
+    "tau_f": 0.0035942315589636564
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6482558139534884,
+    "reject_rate_lab": 0.875,
+    "reject_rate_C2_unl": 0.005087209302325582,
+    "by_kappa_tercile": [
+     0.47895500725689405,
+     0.706140350877193,
+     0.8736383442265795
+    ],
+    "by_zone": {
+     "rel_known": 0.866,
+     "rel_unknown": 0.5830903790087464,
+     "uncertain": 0.3105263157894737
+    },
+    "by_truth": {
+     "known": 0.78125,
+     "unknown": 0.5525
+    },
+    "signal_change_rejected": 0.1648118793964386,
+    "signal_change_kept": 0.10952160507440567,
+    "feat_change_rejected": 0.00832173228263855,
+    "feat_change_kept": 0.002025902271270752,
+    "feat_change_unchecked_med": 0.005246341228485107,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.1751453488372093,
+    "route_flip_final": 0.037063953488372096,
+    "tau_f": 0.0035942315589636564
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 1,
+  "seed": 2,
+  "tau_f_C1": 0.002911534858867526,
+  "tau_f_C2": 0.055857181549072266,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.11555232558139535,
+    "reject_rate_lab": 0.21875,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.0196078431372549,
+     0.05240174672489083,
+     0.27450980392156865
+    ],
+    "by_zone": {
+     "rel_known": 0.24299065420560748,
+     "rel_unknown": 0.04574132492113565,
+     "uncertain": 0.0
+    },
+    "by_truth": {
+     "known": 0.2204861111111111,
+     "unknown": 0.04
+    },
+    "signal_change_rejected": 0.08812445402145386,
+    "signal_change_kept": 0.05639887601137161,
+    "feat_change_rejected": 0.004183948040008545,
+    "feat_change_kept": 0.0008023381233215332,
+    "feat_change_unchecked_med": 0.0009343922138214111,
+    "feat_change_final_med": 0.0006795823574066162,
+    "route_flip_unchecked": 0.053052325581395346,
+    "route_flip_final": 0.047238372093023256,
+    "tau_f": 0.002911534858867526
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.5799418604651163,
+    "reject_rate_lab": 0.828125,
+    "reject_rate_C2_unl": 0.0007267441860465116,
+    "by_kappa_tercile": [
+     0.3769063180827887,
+     0.5480349344978166,
+     0.8148148148148148
+    ],
+    "by_zone": {
+     "rel_known": 0.7831775700934579,
+     "rel_unknown": 0.5189274447949527,
+     "uncertain": 0.24154589371980675
+    },
+    "by_truth": {
+     "known": 0.7361111111111112,
+     "unknown": 0.4675
+    },
+    "signal_change_rejected": 0.14312787353992462,
+    "signal_change_kept": 0.09435202181339264,
+    "feat_change_rejected": 0.006231963634490967,
+    "feat_change_kept": 0.001548171043395996,
+    "feat_change_unchecked_med": 0.003715813159942627,
+    "feat_change_final_med": 1.1920928955078125e-07,
+    "route_flip_unchecked": 0.12427325581395349,
+    "route_flip_final": 0.038517441860465115,
+    "tau_f": 0.002911534858867526
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 2,
+  "seed": 0,
+  "tau_f_C1": 0.006340882275253534,
+  "tau_f_C2": 0.0660325288772583,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.39898255813953487,
+    "reject_rate_lab": 0.765625,
+    "reject_rate_C2_unl": 0.0007267441860465116,
+    "by_kappa_tercile": [
+     0.1895424836601307,
+     0.37336244541484714,
+     0.6339869281045751
+    ],
+    "by_zone": {
+     "rel_known": 0.6059479553903345,
+     "rel_unknown": 0.3327495621716287,
+     "uncertain": 0.12359550561797752
+    },
+    "by_truth": {
+     "known": 0.5399305555555556,
+     "unknown": 0.2975
+    },
+    "signal_change_rejected": 0.1254093497991562,
+    "signal_change_kept": 0.09013476222753525,
+    "feat_change_rejected": 0.011229753494262695,
+    "feat_change_kept": 0.00292813777923584,
+    "feat_change_unchecked_med": 0.00500863790512085,
+    "feat_change_final_med": 0.0012013614177703857,
+    "route_flip_unchecked": 0.125,
+    "route_flip_final": 0.0559593023255814,
+    "tau_f": 0.006340882275253534
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.8255813953488372,
+    "reject_rate_lab": 0.921875,
+    "reject_rate_C2_unl": 0.04578488372093023,
+    "by_kappa_tercile": [
+     0.7058823529411765,
+     0.834061135371179,
+     0.9368191721132898
+    ],
+    "by_zone": {
+     "rel_known": 0.9368029739776952,
+     "rel_unknown": 0.8143607705779334,
+     "uncertain": 0.6254681647940075
+    },
+    "by_truth": {
+     "known": 0.8958333333333334,
+     "unknown": 0.775
+    },
+    "signal_change_rejected": 0.20236609876155853,
+    "signal_change_kept": 0.14643089473247528,
+    "feat_change_rejected": 0.018251031637191772,
+    "feat_change_kept": 0.003960937261581421,
+    "feat_change_unchecked_med": 0.014999568462371826,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.25363372093023256,
+    "route_flip_final": 0.02180232558139535,
+    "tau_f": 0.006340882275253534
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 2,
+  "seed": 1,
+  "tau_f_C1": 0.004229786805808544,
+  "tau_f_C2": 0.06336784362792969,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6940406976744186,
+    "reject_rate_lab": 0.921875,
+    "reject_rate_C2_unl": 0.005813953488372093,
+    "by_kappa_tercile": [
+     0.5346320346320347,
+     0.6967032967032967,
+     0.8518518518518519
+    ],
+    "by_zone": {
+     "rel_known": 0.851063829787234,
+     "rel_unknown": 0.5813953488372093,
+     "uncertain": 0.47029702970297027
+    },
+    "by_truth": {
+     "known": 0.8194444444444444,
+     "unknown": 0.60375
+    },
+    "signal_change_rejected": 0.10851865261793137,
+    "signal_change_kept": 0.07419414073228836,
+    "feat_change_rejected": 0.01076352596282959,
+    "feat_change_kept": 0.002568483352661133,
+    "feat_change_unchecked_med": 0.00729253888130188,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.10610465116279069,
+    "route_flip_final": 0.015261627906976744,
+    "tau_f": 0.004229786805808544
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.9585755813953488,
+    "reject_rate_lab": 1.0,
+    "reject_rate_C2_unl": 0.09593023255813954,
+    "by_kappa_tercile": [
+     0.922077922077922,
+     0.9714285714285714,
+     0.9825708061002179
+    ],
+    "by_zone": {
+     "rel_known": 0.986322188449848,
+     "rel_unknown": 0.9496124031007752,
+     "uncertain": 0.8910891089108911
+    },
+    "by_truth": {
+     "known": 0.9756944444444444,
+     "unknown": 0.94625
+    },
+    "signal_change_rejected": 0.18609967827796936,
+    "signal_change_kept": 0.13144761323928833,
+    "feat_change_rejected": 0.022349417209625244,
+    "feat_change_kept": 0.0034482479095458984,
+    "feat_change_unchecked_med": 0.02152073383331299,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.2318313953488372,
+    "route_flip_final": 0.005087209302325582,
+    "tau_f": 0.004229786805808544
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 2,
+  "seed": 2,
+  "tau_f_C1": 0.004405200481414795,
+  "tau_f_C2": 0.0515214204788208,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.5813953488372093,
+    "reject_rate_lab": 0.8125,
+    "reject_rate_C2_unl": 0.005087209302325582,
+    "by_kappa_tercile": [
+     0.30501089324618735,
+     0.6615720524017468,
+     0.7777777777777778
+    ],
+    "by_zone": {
+     "rel_known": 0.737094837935174,
+     "rel_unknown": 0.41935483870967744,
+     "uncertain": 0.24034334763948498
+    },
+    "by_truth": {
+     "known": 0.7447916666666666,
+     "unknown": 0.46375
+    },
+    "signal_change_rejected": 0.1259971261024475,
+    "signal_change_kept": 0.08460468053817749,
+    "feat_change_rejected": 0.009640127420425415,
+    "feat_change_kept": 0.002313762903213501,
+    "feat_change_unchecked_med": 0.005571573972702026,
+    "feat_change_final_med": 1.1920928955078125e-07,
+    "route_flip_unchecked": 0.1257267441860465,
+    "route_flip_final": 0.03997093023255814,
+    "tau_f": 0.004405200481414795
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.8844476744186046,
+    "reject_rate_lab": 0.96875,
+    "reject_rate_C2_unl": 0.07122093023255814,
+    "by_kappa_tercile": [
+     0.7712418300653595,
+     0.9301310043668122,
+     0.9520697167755992
+    ],
+    "by_zone": {
+     "rel_known": 0.9447779111644657,
+     "rel_unknown": 0.8516129032258064,
+     "uncertain": 0.7124463519313304
+    },
+    "by_truth": {
+     "known": 0.953125,
+     "unknown": 0.835
+    },
+    "signal_change_rejected": 0.20047502219676971,
+    "signal_change_kept": 0.13712558150291443,
+    "feat_change_rejected": 0.017128705978393555,
+    "feat_change_kept": 0.0030291080474853516,
+    "feat_change_unchecked_med": 0.014851212501525879,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.26526162790697677,
+    "route_flip_final": 0.010901162790697675,
+    "tau_f": 0.004405200481414795
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 3,
+  "seed": 0,
+  "tau_f_C1": 0.004809794016182423,
+  "tau_f_C2": 0.12004619836807251,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.5138081395348837,
+    "reject_rate_lab": 0.828125,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.289760348583878,
+     0.4606986899563319,
+     0.7908496732026143
+    ],
+    "by_zone": {
+     "rel_known": 0.7483974358974359,
+     "rel_unknown": 0.36,
+     "uncertain": 0.22466960352422907
+    },
+    "by_truth": {
+     "known": 0.7274305555555556,
+     "unknown": 0.36
+    },
+    "signal_change_rejected": 0.09897454082965851,
+    "signal_change_kept": 0.06993240863084793,
+    "feat_change_rejected": 0.01008671522140503,
+    "feat_change_kept": 0.0021589994430541992,
+    "feat_change_unchecked_med": 0.0049603283405303955,
+    "feat_change_final_med": 1.1920928955078125e-07,
+    "route_flip_unchecked": 0.13517441860465115,
+    "route_flip_final": 0.046511627906976744,
+    "tau_f": 0.004809794016182423
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.872093023255814,
+    "reject_rate_lab": 0.984375,
+    "reject_rate_C2_unl": 0.00872093023255814,
+    "by_kappa_tercile": [
+     0.7625272331154684,
+     0.8777292576419214,
+     0.9760348583877996
+    ],
+    "by_zone": {
+     "rel_known": 0.9807692307692307,
+     "rel_unknown": 0.820952380952381,
+     "uncertain": 0.6916299559471366
+    },
+    "by_truth": {
+     "known": 0.953125,
+     "unknown": 0.81375
+    },
+    "signal_change_rejected": 0.1686491221189499,
+    "signal_change_kept": 0.11941653490066528,
+    "feat_change_rejected": 0.019267410039901733,
+    "feat_change_kept": 0.003025919198989868,
+    "feat_change_unchecked_med": 0.016737014055252075,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.28997093023255816,
+    "route_flip_final": 0.01744186046511628,
+    "tau_f": 0.004809794016182423
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 3,
+  "seed": 1,
+  "tau_f_C1": 0.005880746059119701,
+  "tau_f_C2": 0.12976691126823425,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.5116279069767442,
+    "reject_rate_lab": 0.84375,
+    "reject_rate_C2_unl": 0.0007267441860465116,
+    "by_kappa_tercile": [
+     0.28540305010893247,
+     0.4497816593886463,
+     0.7995642701525054
+    ],
+    "by_zone": {
+     "rel_known": 0.7569230769230769,
+     "rel_unknown": 0.33793103448275863,
+     "uncertain": 0.22336769759450173
+    },
+    "by_truth": {
+     "known": 0.7395833333333334,
+     "unknown": 0.3475
+    },
+    "signal_change_rejected": 0.0956275537610054,
+    "signal_change_kept": 0.0648767501115799,
+    "feat_change_rejected": 0.012948602437973022,
+    "feat_change_kept": 0.002611786127090454,
+    "feat_change_unchecked_med": 0.006161600351333618,
+    "feat_change_final_med": 1.4901161193847656e-07,
+    "route_flip_unchecked": 0.12281976744186046,
+    "route_flip_final": 0.040697674418604654,
+    "tau_f": 0.005880746059119701
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.8757267441860465,
+    "reject_rate_lab": 0.984375,
+    "reject_rate_C2_unl": 0.016715116279069766,
+    "by_kappa_tercile": [
+     0.7821350762527233,
+     0.8580786026200873,
+     0.9869281045751634
+    ],
+    "by_zone": {
+     "rel_known": 0.9784615384615385,
+     "rel_unknown": 0.8091954022988506,
+     "uncertain": 0.7457044673539519
+    },
+    "by_truth": {
+     "known": 0.9739583333333334,
+     "unknown": 0.805
+    },
+    "signal_change_rejected": 0.1602228581905365,
+    "signal_change_kept": 0.11123867332935333,
+    "feat_change_rejected": 0.023132145404815674,
+    "feat_change_kept": 0.0034879446029663086,
+    "feat_change_unchecked_med": 0.019783079624176025,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.26453488372093026,
+    "route_flip_final": 0.013808139534883721,
+    "tau_f": 0.005880746059119701
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 3,
+  "seed": 2,
+  "tau_f_C1": 0.004728871397674084,
+  "tau_f_C2": 0.07072442770004272,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.45494186046511625,
+    "reject_rate_lab": 0.859375,
+    "reject_rate_C2_unl": 0.0007267441860465116,
+    "by_kappa_tercile": [
+     0.19491525423728814,
+     0.4786516853932584,
+     0.6993464052287581
+    ],
+    "by_zone": {
+     "rel_known": 0.6614785992217899,
+     "rel_unknown": 0.2434017595307918,
+     "uncertain": 0.125
+    },
+    "by_truth": {
+     "known": 0.6597222222222222,
+     "unknown": 0.3075
+    },
+    "signal_change_rejected": 0.10383094102144241,
+    "signal_change_kept": 0.07324124127626419,
+    "feat_change_rejected": 0.00948682427406311,
+    "feat_change_kept": 0.0017046332359313965,
+    "feat_change_unchecked_med": 0.004008173942565918,
+    "feat_change_final_med": 0.0004578232765197754,
+    "route_flip_unchecked": 0.1308139534883721,
+    "route_flip_final": 0.04142441860465116,
+    "tau_f": 0.004728871397674084
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.7761627906976745,
+    "reject_rate_lab": 0.96875,
+    "reject_rate_C2_unl": 0.037063953488372096,
+    "by_kappa_tercile": [
+     0.5932203389830508,
+     0.8157303370786517,
+     0.9259259259259259
+    ],
+    "by_zone": {
+     "rel_known": 0.9156939040207522,
+     "rel_unknown": 0.6656891495601173,
+     "uncertain": 0.5113636363636364
+    },
+    "by_truth": {
+     "known": 0.9236111111111112,
+     "unknown": 0.67
+    },
+    "signal_change_rejected": 0.1799871176481247,
+    "signal_change_kept": 0.12101398408412933,
+    "feat_change_rejected": 0.017025023698806763,
+    "feat_change_kept": 0.002905726432800293,
+    "feat_change_unchecked_med": 0.012232780456542969,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.3001453488372093,
+    "route_flip_final": 0.024709302325581394,
+    "tau_f": 0.004728871397674084
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 1,
+  "seed": 0,
+  "tau_f_C1": 0.003059449838474393,
+  "tau_f_C2": 0.10903269052505493,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.2571614583333333,
+    "reject_rate_lab": 0.640625,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.17900552486187846,
+     0.17647058823529413,
+     0.4140625
+    ],
+    "by_zone": {
+     "rel_known": 0.4606741573033708,
+     "rel_unknown": 0.20133481646273638,
+     "uncertain": 0.046875
+    },
+    "by_truth": {
+     "known": 0.359375,
+     "unknown": 0.19583333333333333
+    },
+    "signal_change_rejected": 0.08223466575145721,
+    "signal_change_kept": 0.06118333339691162,
+    "feat_change_rejected": 0.004794895648956299,
+    "feat_change_kept": 0.0011258125305175781,
+    "feat_change_unchecked_med": 0.0015680789947509766,
+    "feat_change_final_med": 0.0007687211036682129,
+    "route_flip_unchecked": 0.055338541666666664,
+    "route_flip_final": 0.035807291666666664,
+    "tau_f": 0.003059449838474393
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.7428385416666666,
+    "reject_rate_lab": 0.96875,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.6906077348066298,
+     0.6386554621848739,
+     0.859375
+    ],
+    "by_zone": {
+     "rel_known": 0.8764044943820225,
+     "rel_unknown": 0.7385984427141268,
+     "uncertain": 0.453125
+    },
+    "by_truth": {
+     "known": 0.7899305555555556,
+     "unknown": 0.7145833333333333
+    },
+    "signal_change_rejected": 0.1452217996120453,
+    "signal_change_kept": 0.10627418756484985,
+    "feat_change_rejected": 0.008140146732330322,
+    "feat_change_kept": 0.0018726587295532227,
+    "feat_change_unchecked_med": 0.005849242210388184,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.134765625,
+    "route_flip_final": 0.021484375,
+    "tau_f": 0.003059449838474393
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 1,
+  "seed": 1,
+  "tau_f_C1": 0.0023190497886389494,
+  "tau_f_C2": 0.0653928816318512,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.3704427083333333,
+    "reject_rate_lab": 0.671875,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.30099228224917307,
+     0.19658119658119658,
+     0.533203125
+    ],
+    "by_zone": {
+     "rel_known": 0.5353728489483748,
+     "rel_unknown": 0.32951653944020354,
+     "uncertain": 0.13215859030837004
+    },
+    "by_truth": {
+     "known": 0.4982638888888889,
+     "unknown": 0.29375
+    },
+    "signal_change_rejected": 0.07308375090360641,
+    "signal_change_kept": 0.06106529384851456,
+    "feat_change_rejected": 0.004139900207519531,
+    "feat_change_kept": 0.0009649991989135742,
+    "feat_change_unchecked_med": 0.0016080141067504883,
+    "feat_change_final_med": 0.0004830360412597656,
+    "route_flip_unchecked": 0.042317708333333336,
+    "route_flip_final": 0.026041666666666668,
+    "tau_f": 0.0023190497886389494
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.818359375,
+    "reject_rate_lab": 0.984375,
+    "reject_rate_C2_unl": 0.0026041666666666665,
+    "by_kappa_tercile": [
+     0.7596471885336273,
+     0.7777777777777778,
+     0.931640625
+    ],
+    "by_zone": {
+     "rel_known": 0.9311663479923518,
+     "rel_unknown": 0.8193384223918575,
+     "uncertain": 0.5550660792951542
+    },
+    "by_truth": {
+     "known": 0.8923611111111112,
+     "unknown": 0.7739583333333333
+    },
+    "signal_change_rejected": 0.13881872594356537,
+    "signal_change_kept": 0.10276694595813751,
+    "feat_change_rejected": 0.0076943039894104,
+    "feat_change_kept": 0.001522839069366455,
+    "feat_change_unchecked_med": 0.006283193826675415,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.11002604166666667,
+    "route_flip_final": 0.015625,
+    "tau_f": 0.0023190497886389494
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 1,
+  "seed": 2,
+  "tau_f_C1": 0.00304105575196445,
+  "tau_f_C2": 0.07085537910461426,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.2766927083333333,
+    "reject_rate_lab": 0.640625,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.21545157780195864,
+     0.13333333333333333,
+     0.416015625
+    ],
+    "by_zone": {
+     "rel_known": 0.5012531328320802,
+     "rel_unknown": 0.22154471544715448,
+     "uncertain": 0.0457516339869281
+    },
+    "by_truth": {
+     "known": 0.3993055555555556,
+     "unknown": 0.203125
+    },
+    "signal_change_rejected": 0.06926468759775162,
+    "signal_change_kept": 0.05654437839984894,
+    "feat_change_rejected": 0.004747629165649414,
+    "feat_change_kept": 0.0010883808135986328,
+    "feat_change_unchecked_med": 0.0016530752182006836,
+    "feat_change_final_med": 0.0007062852382659912,
+    "route_flip_unchecked": 0.053385416666666664,
+    "route_flip_final": 0.03125,
+    "tau_f": 0.00304105575196445
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.751953125,
+    "reject_rate_lab": 0.953125,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.6898803046789989,
+     0.638095238095238,
+     0.88671875
+    ],
+    "by_zone": {
+     "rel_known": 0.9147869674185464,
+     "rel_unknown": 0.733739837398374,
+     "uncertain": 0.4444444444444444
+    },
+    "by_truth": {
+     "known": 0.8368055555555556,
+     "unknown": 0.7010416666666667
+    },
+    "signal_change_rejected": 0.1282883882522583,
+    "signal_change_kept": 0.09849851578474045,
+    "feat_change_rejected": 0.008899986743927002,
+    "feat_change_kept": 0.001869499683380127,
+    "feat_change_unchecked_med": 0.006448239088058472,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.13346354166666666,
+    "route_flip_final": 0.022786458333333332,
+    "tau_f": 0.00304105575196445
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 2,
+  "seed": 0,
+  "tau_f_C1": 0.0045761168003082275,
+  "tau_f_C2": 0.08976030349731445,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.533203125,
+    "reject_rate_lab": 0.890625,
+    "reject_rate_C2_unl": 0.0006510416666666666,
+    "by_kappa_tercile": [
+     0.3508771929824561,
+     0.5205479452054794,
+     0.728515625
+    ],
+    "by_zone": {
+     "rel_known": 0.6982343499197432,
+     "rel_unknown": 0.5311077389984825,
+     "uncertain": 0.13385826771653545
+    },
+    "by_truth": {
+     "known": 0.6892361111111112,
+     "unknown": 0.4395833333333333
+    },
+    "signal_change_rejected": 0.1128961369395256,
+    "signal_change_kept": 0.08297662436962128,
+    "feat_change_rejected": 0.009446859359741211,
+    "feat_change_kept": 0.002077758312225342,
+    "feat_change_unchecked_med": 0.004999399185180664,
+    "feat_change_final_med": 1.1920928955078125e-07,
+    "route_flip_unchecked": 0.10091145833333333,
+    "route_flip_final": 0.037760416666666664,
+    "tau_f": 0.0045761168003082275
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.8704427083333334,
+    "reject_rate_lab": 0.984375,
+    "reject_rate_C2_unl": 0.018229166666666668,
+    "by_kappa_tercile": [
+     0.7504873294346979,
+     0.8904109589041096,
+     0.970703125
+    ],
+    "by_zone": {
+     "rel_known": 0.9695024077046549,
+     "rel_unknown": 0.8877086494688923,
+     "uncertain": 0.5826771653543307
+    },
+    "by_truth": {
+     "known": 0.9461805555555556,
+     "unknown": 0.825
+    },
+    "signal_change_rejected": 0.19746536016464233,
+    "signal_change_kept": 0.13205276429653168,
+    "feat_change_rejected": 0.018330156803131104,
+    "feat_change_kept": 0.0028077363967895508,
+    "feat_change_unchecked_med": 0.015485256910324097,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.23828125,
+    "route_flip_final": 0.024088541666666668,
+    "tau_f": 0.0045761168003082275
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 2,
+  "seed": 1,
+  "tau_f_C1": 0.0034258693922311068,
+  "tau_f_C2": 0.05825957655906677,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6184895833333334,
+    "reject_rate_lab": 0.890625,
+    "reject_rate_C2_unl": 0.0006510416666666666,
+    "by_kappa_tercile": [
+     0.5315656565656566,
+     0.5431034482758621,
+     0.787109375
+    ],
+    "by_zone": {
+     "rel_known": 0.775609756097561,
+     "rel_unknown": 0.5837988826815642,
+     "uncertain": 0.2682926829268293
+    },
+    "by_truth": {
+     "known": 0.7256944444444444,
+     "unknown": 0.5541666666666667
+    },
+    "signal_change_rejected": 0.10219520330429077,
+    "signal_change_kept": 0.07517217099666595,
+    "feat_change_rejected": 0.007902264595031738,
+    "feat_change_kept": 0.001805424690246582,
+    "feat_change_unchecked_med": 0.004677861928939819,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.10416666666666667,
+    "route_flip_final": 0.022135416666666668,
+    "tau_f": 0.0034258693922311068
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.921875,
+    "reject_rate_lab": 0.96875,
+    "reject_rate_C2_unl": 0.049479166666666664,
+    "by_kappa_tercile": [
+     0.8813131313131313,
+     0.9396551724137931,
+     0.9765625
+    ],
+    "by_zone": {
+     "rel_known": 0.975609756097561,
+     "rel_unknown": 0.9273743016759777,
+     "uncertain": 0.7414634146341463
+    },
+    "by_truth": {
+     "known": 0.953125,
+     "unknown": 0.903125
+    },
+    "signal_change_rejected": 0.18433016538619995,
+    "signal_change_kept": 0.11309155821800232,
+    "feat_change_rejected": 0.016046375036239624,
+    "feat_change_kept": 0.002380192279815674,
+    "feat_change_unchecked_med": 0.01478123664855957,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.22005208333333334,
+    "route_flip_final": 0.008463541666666666,
+    "tau_f": 0.0034258693922311068
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 2,
+  "seed": 2,
+  "tau_f_C1": 0.0037522106431424618,
+  "tau_f_C2": 0.06412369012832642,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6119791666666666,
+    "reject_rate_lab": 0.875,
+    "reject_rate_C2_unl": 0.001953125,
+    "by_kappa_tercile": [
+     0.39766081871345027,
+     0.6144814090019569,
+     0.82421875
+    ],
+    "by_zone": {
+     "rel_known": 0.7890070921985816,
+     "rel_unknown": 0.6094839609483961,
+     "uncertain": 0.22745098039215686
+    },
+    "by_truth": {
+     "known": 0.7413194444444444,
+     "unknown": 0.534375
+    },
+    "signal_change_rejected": 0.09897845983505249,
+    "signal_change_kept": 0.07331724464893341,
+    "feat_change_rejected": 0.008500456809997559,
+    "feat_change_kept": 0.0018419623374938965,
+    "feat_change_unchecked_med": 0.005120992660522461,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.115234375,
+    "route_flip_final": 0.034505208333333336,
+    "tau_f": 0.0037522106431424618
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.9010416666666666,
+    "reject_rate_lab": 0.984375,
+    "reject_rate_C2_unl": 0.061848958333333336,
+    "by_kappa_tercile": [
+     0.8031189083820662,
+     0.9217221135029354,
+     0.978515625
+    ],
+    "by_zone": {
+     "rel_known": 0.973404255319149,
+     "rel_unknown": 0.9191073919107392,
+     "uncertain": 0.6901960784313725
+    },
+    "by_truth": {
+     "known": 0.9513888888888888,
+     "unknown": 0.8708333333333333
+    },
+    "signal_change_rejected": 0.17990487813949585,
+    "signal_change_kept": 0.11596427857875824,
+    "feat_change_rejected": 0.018903642892837524,
+    "feat_change_kept": 0.0025389790534973145,
+    "feat_change_unchecked_med": 0.016477465629577637,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.23763020833333334,
+    "route_flip_final": 0.015625,
+    "tau_f": 0.0037522106431424618
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 3,
+  "seed": 0,
+  "tau_f_C1": 0.004787641577422619,
+  "tau_f_C2": 0.1230010986328125,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6282552083333334,
+    "reject_rate_lab": 0.953125,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.5118203309692672,
+     0.5393258426966292,
+     0.8515625
+    ],
+    "by_zone": {
+     "rel_known": 0.8547169811320755,
+     "rel_unknown": 0.5669191919191919,
+     "uncertain": 0.29439252336448596
+    },
+    "by_truth": {
+     "known": 0.7916666666666666,
+     "unknown": 0.5302083333333333
+    },
+    "signal_change_rejected": 0.09931539744138718,
+    "signal_change_kept": 0.07372155785560608,
+    "feat_change_rejected": 0.011504650115966797,
+    "feat_change_kept": 0.0023308992385864258,
+    "feat_change_unchecked_med": 0.0068145692348480225,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.154296875,
+    "route_flip_final": 0.033854166666666664,
+    "tau_f": 0.004787641577422619
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.916015625,
+    "reject_rate_lab": 0.984375,
+    "reject_rate_C2_unl": 0.033203125,
+    "by_kappa_tercile": [
+     0.8628841607565012,
+     0.9438202247191011,
+     0.994140625
+    ],
+    "by_zone": {
+     "rel_known": 0.9943396226415094,
+     "rel_unknown": 0.9040404040404041,
+     "uncertain": 0.7663551401869159
+    },
+    "by_truth": {
+     "known": 0.9670138888888888,
+     "unknown": 0.8854166666666666
+    },
+    "signal_change_rejected": 0.18123014271259308,
+    "signal_change_kept": 0.13071075081825256,
+    "feat_change_rejected": 0.02565920352935791,
+    "feat_change_kept": 0.0033576488494873047,
+    "feat_change_unchecked_med": 0.02353435754776001,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.314453125,
+    "route_flip_final": 0.011067708333333334,
+    "tau_f": 0.004787641577422619
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 3,
+  "seed": 1,
+  "tau_f_C1": 0.0035426944959908724,
+  "tau_f_C2": 0.10177391767501831,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.619140625,
+    "reject_rate_lab": 0.9375,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.37109375,
+     0.62109375,
+     0.865234375
+    ],
+    "by_zone": {
+     "rel_known": 0.8524871355060034,
+     "rel_unknown": 0.5893129770992367,
+     "uncertain": 0.22818791946308725
+    },
+    "by_truth": {
+     "known": 0.8246527777777778,
+     "unknown": 0.49583333333333335
+    },
+    "signal_change_rejected": 0.09382113814353943,
+    "signal_change_kept": 0.0640452429652214,
+    "feat_change_rejected": 0.009763181209564209,
+    "feat_change_kept": 0.001514434814453125,
+    "feat_change_unchecked_med": 0.005502223968505859,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.11263020833333333,
+    "route_flip_final": 0.036458333333333336,
+    "tau_f": 0.0035426944959908724
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.8984375,
+    "reject_rate_lab": 1.0,
+    "reject_rate_C2_unl": 0.032552083333333336,
+    "by_kappa_tercile": [
+     0.77734375,
+     0.919921875,
+     0.998046875
+    ],
+    "by_zone": {
+     "rel_known": 0.9931389365351629,
+     "rel_unknown": 0.916030534351145,
+     "uncertain": 0.674496644295302
+    },
+    "by_truth": {
+     "known": 0.9861111111111112,
+     "unknown": 0.8458333333333333
+    },
+    "signal_change_rejected": 0.1698419600725174,
+    "signal_change_kept": 0.09630054980516434,
+    "feat_change_rejected": 0.021889448165893555,
+    "feat_change_kept": 0.0020483434200286865,
+    "feat_change_unchecked_med": 0.018812358379364014,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.24283854166666666,
+    "route_flip_final": 0.016927083333333332,
+    "tau_f": 0.0035426944959908724
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 3,
+  "seed": 2,
+  "tau_f_C1": 0.00385456089861691,
+  "tau_f_C2": 0.09492871165275574,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.701171875,
+    "reject_rate_lab": 0.953125,
+    "reject_rate_C2_unl": 0.0006510416666666666,
+    "by_kappa_tercile": [
+     0.5786384976525821,
+     0.6511627906976745,
+     0.921875
+    ],
+    "by_zone": {
+     "rel_known": 0.9115384615384615,
+     "rel_unknown": 0.6502403846153846,
+     "uncertain": 0.33695652173913043
+    },
+    "by_truth": {
+     "known": 0.8454861111111112,
+     "unknown": 0.6145833333333334
+    },
+    "signal_change_rejected": 0.10310424119234085,
+    "signal_change_kept": 0.07204233109951019,
+    "feat_change_rejected": 0.011287450790405273,
+    "feat_change_kept": 0.0019241571426391602,
+    "feat_change_unchecked_med": 0.007344454526901245,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.16731770833333334,
+    "route_flip_final": 0.029296875,
+    "tau_f": 0.00385456089861691
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.931640625,
+    "reject_rate_lab": 1.0,
+    "reject_rate_C2_unl": 0.07291666666666667,
+    "by_kappa_tercile": [
+     0.8931924882629108,
+     0.9534883720930233,
+     0.98828125
+    ],
+    "by_zone": {
+     "rel_known": 0.9865384615384616,
+     "rel_unknown": 0.9230769230769231,
+     "uncertain": 0.8152173913043478
+    },
+    "by_truth": {
+     "known": 0.9652777777777778,
+     "unknown": 0.9114583333333334
+    },
+    "signal_change_rejected": 0.18578973412513733,
+    "signal_change_kept": 0.12933582067489624,
+    "feat_change_rejected": 0.027018249034881592,
+    "feat_change_kept": 0.002575814723968506,
+    "feat_change_unchecked_med": 0.02413085103034973,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.3040364583333333,
+    "route_flip_final": 0.005208333333333333,
+    "tau_f": 0.00385456089861691
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 1,
+  "seed": 0,
+  "tau_f_C1": 0.009228232316672802,
+  "tau_f_C2": 0.08561339974403381,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.20545977011494254,
+    "reject_rate_lab": 0.5,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.14224137931034483,
+     0.08247422680412371,
+     0.25511432009626955
+    ],
+    "by_zone": {
+     "rel_known": 0.3709090909090909,
+     "rel_unknown": 0.18634886240520043,
+     "uncertain": 0.061855670103092786
+    },
+    "by_truth": {
+     "known": 0.2662037037037037,
+     "unknown": 0.178125
+    },
+    "signal_change_rejected": 0.1225733682513237,
+    "signal_change_kept": 0.09237602353096008,
+    "feat_change_rejected": 0.013410985469818115,
+    "feat_change_kept": 0.0031099915504455566,
+    "feat_change_unchecked_med": 0.003965318202972412,
+    "feat_change_final_med": 0.002291768789291382,
+    "route_flip_unchecked": 0.07758620689655173,
+    "route_flip_final": 0.05244252873563218,
+    "tau_f": 0.009228232316672802
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6436781609195402,
+    "reject_rate_lab": 0.8541666666666666,
+    "reject_rate_C2_unl": 0.011494252873563218,
+    "by_kappa_tercile": [
+     0.5064655172413793,
+     0.4948453608247423,
+     0.7376654632972323
+    ],
+    "by_zone": {
+     "rel_known": 0.7963636363636364,
+     "rel_unknown": 0.6641386782231853,
+     "uncertain": 0.32989690721649484
+    },
+    "by_truth": {
+     "known": 0.6481481481481481,
+     "unknown": 0.6416666666666667
+    },
+    "signal_change_rejected": 0.2098425030708313,
+    "signal_change_kept": 0.15327587723731995,
+    "feat_change_rejected": 0.02021130919456482,
+    "feat_change_kept": 0.005359351634979248,
+    "feat_change_unchecked_med": 0.012907445430755615,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.16451149425287356,
+    "route_flip_final": 0.040229885057471264,
+    "tau_f": 0.009228232316672802
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 1,
+  "seed": 1,
+  "tau_f_C1": 0.011686796322464943,
+  "tau_f_C2": 0.08338183164596558,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.10919540229885058,
+    "reject_rate_lab": 0.4166666666666667,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.0696969696969697,
+     null,
+     0.13580246913580246
+    ],
+    "by_zone": {
+     "rel_known": 0.24675324675324675,
+     "rel_unknown": 0.09451219512195122,
+     "uncertain": 0.011299435028248588
+    },
+    "by_truth": {
+     "known": 0.16203703703703703,
+     "unknown": 0.08541666666666667
+    },
+    "signal_change_rejected": 0.11786466836929321,
+    "signal_change_kept": 0.09314051270484924,
+    "feat_change_rejected": 0.01540425419807434,
+    "feat_change_kept": 0.003197789192199707,
+    "feat_change_unchecked_med": 0.003664642572402954,
+    "feat_change_final_med": 0.002777308225631714,
+    "route_flip_unchecked": 0.06896551724137931,
+    "route_flip_final": 0.05172413793103448,
+    "tau_f": 0.011686796322464943
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.5560344827586207,
+    "reject_rate_lab": 0.8333333333333334,
+    "reject_rate_C2_unl": 0.010057471264367816,
+    "by_kappa_tercile": [
+     0.49797979797979797,
+     null,
+     0.6234567901234568
+    ],
+    "by_zone": {
+     "rel_known": 0.7142857142857143,
+     "rel_unknown": 0.5721544715447154,
+     "uncertain": 0.2598870056497175
+    },
+    "by_truth": {
+     "known": 0.5833333333333334,
+     "unknown": 0.54375
+    },
+    "signal_change_rejected": 0.21138516068458557,
+    "signal_change_kept": 0.16203126311302185,
+    "feat_change_rejected": 0.022439628839492798,
+    "feat_change_kept": 0.006273180246353149,
+    "feat_change_unchecked_med": 0.013225525617599487,
+    "feat_change_final_med": 1.1920928955078125e-07,
+    "route_flip_unchecked": 0.14152298850574713,
+    "route_flip_final": 0.05172413793103448,
+    "tau_f": 0.011686796322464943
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 1,
+  "seed": 2,
+  "tau_f_C1": 0.006648859474807978,
+  "tau_f_C2": 0.07255023717880249,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.27011494252873564,
+    "reject_rate_lab": 0.7083333333333334,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.09913793103448276,
+     0.05263157894736842,
+     0.37543053960964407
+    ],
+    "by_zone": {
+     "rel_known": 0.4857142857142857,
+     "rel_unknown": 0.24841437632135308,
+     "uncertain": 0.030120481927710843
+    },
+    "by_truth": {
+     "known": 0.3425925925925926,
+     "unknown": 0.2375
+    },
+    "signal_change_rejected": 0.11891114711761475,
+    "signal_change_kept": 0.0874880850315094,
+    "feat_change_rejected": 0.010102182626724243,
+    "feat_change_kept": 0.002598017454147339,
+    "feat_change_unchecked_med": 0.003762751817703247,
+    "feat_change_final_med": 0.001800239086151123,
+    "route_flip_unchecked": 0.07686781609195402,
+    "route_flip_final": 0.04597701149425287,
+    "tau_f": 0.006648859474807978
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.7528735632183908,
+    "reject_rate_lab": 0.875,
+    "reject_rate_C2_unl": 0.01221264367816092,
+    "by_kappa_tercile": [
+     0.6077586206896551,
+     0.5789473684210527,
+     0.8415614236509759
+    ],
+    "by_zone": {
+     "rel_known": 0.8821428571428571,
+     "rel_unknown": 0.7801268498942917,
+     "uncertain": 0.3795180722891566
+    },
+    "by_truth": {
+     "known": 0.7453703703703703,
+     "unknown": 0.75625
+    },
+    "signal_change_rejected": 0.1983526349067688,
+    "signal_change_kept": 0.14559826254844666,
+    "feat_change_rejected": 0.015933990478515625,
+    "feat_change_kept": 0.004024535417556763,
+    "feat_change_unchecked_med": 0.012260079383850098,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.16163793103448276,
+    "route_flip_final": 0.02514367816091954,
+    "tau_f": 0.006648859474807978
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 2,
+  "seed": 0,
+  "tau_f_C1": 0.008030745200812817,
+  "tau_f_C2": 0.024696439504623413,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.1788793103448276,
+    "reject_rate_lab": 0.4791666666666667,
+    "reject_rate_C2_unl": 0.014367816091954023,
+    "by_kappa_tercile": [
+     0.036637931034482756,
+     0.2478448275862069,
+     0.2521551724137931
+    ],
+    "by_zone": {
+     "rel_known": 0.23739495798319327,
+     "rel_unknown": 0.2226148409893993,
+     "uncertain": 0.02857142857142857
+    },
+    "by_truth": {
+     "known": 0.22685185185185186,
+     "unknown": 0.15729166666666666
+    },
+    "signal_change_rejected": 0.13788548111915588,
+    "signal_change_kept": 0.1005525067448616,
+    "feat_change_rejected": 0.01195836067199707,
+    "feat_change_kept": 0.0027132034301757812,
+    "feat_change_unchecked_med": 0.003420323133468628,
+    "feat_change_final_med": 0.002091050148010254,
+    "route_flip_unchecked": 0.07902298850574713,
+    "route_flip_final": 0.05675287356321839,
+    "tau_f": 0.008030745200812817
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6494252873563219,
+    "reject_rate_lab": 0.7291666666666666,
+    "reject_rate_C2_unl": 0.21767241379310345,
+    "by_kappa_tercile": [
+     0.33620689655172414,
+     0.8405172413793104,
+     0.771551724137931
+    ],
+    "by_zone": {
+     "rel_known": 0.7563025210084033,
+     "rel_unknown": 0.7703180212014135,
+     "uncertain": 0.30857142857142855
+    },
+    "by_truth": {
+     "known": 0.7361111111111112,
+     "unknown": 0.6104166666666667
+    },
+    "signal_change_rejected": 0.2501567602157593,
+    "signal_change_kept": 0.15946616232395172,
+    "feat_change_rejected": 0.01855960488319397,
+    "feat_change_kept": 0.004100292921066284,
+    "feat_change_unchecked_med": 0.01203492283821106,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.15804597701149425,
+    "route_flip_final": 0.034482758620689655,
+    "tau_f": 0.008030745200812817
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 2,
+  "seed": 1,
+  "tau_f_C1": 0.008541813120245934,
+  "tau_f_C2": 0.022943347692489624,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.21192528735632185,
+    "reject_rate_lab": 0.5208333333333334,
+    "reject_rate_C2_unl": 0.017959770114942528,
+    "by_kappa_tercile": [
+     0.04956896551724138,
+     0.3081896551724138,
+     0.27801724137931033
+    ],
+    "by_zone": {
+     "rel_known": 0.2847058823529412,
+     "rel_unknown": 0.22899728997289973,
+     "uncertain": 0.021834061135371178
+    },
+    "by_truth": {
+     "known": 0.2361111111111111,
+     "unknown": 0.20104166666666667
+    },
+    "signal_change_rejected": 0.13570386171340942,
+    "signal_change_kept": 0.09667528420686722,
+    "feat_change_rejected": 0.012359023094177246,
+    "feat_change_kept": 0.00290679931640625,
+    "feat_change_unchecked_med": 0.003820061683654785,
+    "feat_change_final_med": 0.002083390951156616,
+    "route_flip_unchecked": 0.09626436781609195,
+    "route_flip_final": 0.0639367816091954,
+    "tau_f": 0.008541813120245934
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6415229885057471,
+    "reject_rate_lab": 0.8333333333333334,
+    "reject_rate_C2_unl": 0.26939655172413796,
+    "by_kappa_tercile": [
+     0.40301724137931033,
+     0.7887931034482759,
+     0.7327586206896551
+    ],
+    "by_zone": {
+     "rel_known": 0.7435294117647059,
+     "rel_unknown": 0.6829268292682927,
+     "uncertain": 0.31877729257641924
+    },
+    "by_truth": {
+     "known": 0.6898148148148148,
+     "unknown": 0.6197916666666666
+    },
+    "signal_change_rejected": 0.23350070416927338,
+    "signal_change_kept": 0.16791510581970215,
+    "feat_change_rejected": 0.020131170749664307,
+    "feat_change_kept": 0.004670679569244385,
+    "feat_change_unchecked_med": 0.012825340032577515,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.18031609195402298,
+    "route_flip_final": 0.035201149425287355,
+    "tau_f": 0.008541813120245934
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 2,
+  "seed": 2,
+  "tau_f_C1": 0.00643771281465888,
+  "tau_f_C2": 0.022733449935913086,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.3649425287356322,
+    "reject_rate_lab": 0.6875,
+    "reject_rate_C2_unl": 0.03735632183908046,
+    "by_kappa_tercile": [
+     0.07327586206896551,
+     0.5387931034482759,
+     0.4827586206896552
+    ],
+    "by_zone": {
+     "rel_known": 0.46254681647940077,
+     "rel_unknown": 0.47035573122529645,
+     "uncertain": 0.06534090909090909
+    },
+    "by_truth": {
+     "known": 0.4675925925925926,
+     "unknown": 0.31875
+    },
+    "signal_change_rejected": 0.12879399955272675,
+    "signal_change_kept": 0.09350259602069855,
+    "feat_change_rejected": 0.01086464524269104,
+    "feat_change_kept": 0.0025108158588409424,
+    "feat_change_unchecked_med": 0.004432618618011475,
+    "feat_change_final_med": 0.001125037670135498,
+    "route_flip_unchecked": 0.07686781609195402,
+    "route_flip_final": 0.04956896551724138,
+    "tau_f": 0.00643771281465888
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.7650862068965517,
+    "reject_rate_lab": 0.9166666666666666,
+    "reject_rate_C2_unl": 0.33405172413793105,
+    "by_kappa_tercile": [
+     0.4892241379310345,
+     0.9073275862068966,
+     0.8987068965517241
+    ],
+    "by_zone": {
+     "rel_known": 0.8782771535580525,
+     "rel_unknown": 0.8537549407114624,
+     "uncertain": 0.4659090909090909
+    },
+    "by_truth": {
+     "known": 0.8449074074074074,
+     "unknown": 0.7291666666666666
+    },
+    "signal_change_rejected": 0.2392013818025589,
+    "signal_change_kept": 0.13994382321834564,
+    "feat_change_rejected": 0.019840717315673828,
+    "feat_change_kept": 0.003634333610534668,
+    "feat_change_unchecked_med": 0.014614999294281006,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.17097701149425287,
+    "route_flip_final": 0.02514367816091954,
+    "tau_f": 0.00643771281465888
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 3,
+  "seed": 0,
+  "tau_f_C1": 0.008273830637335777,
+  "tau_f_C2": 0.10596126317977905,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.3800287356321839,
+    "reject_rate_lab": 0.75,
+    "reject_rate_C2_unl": 0.0007183908045977011,
+    "by_kappa_tercile": [
+     0.2413793103448276,
+     0.21782178217821782,
+     0.5137741046831956
+    ],
+    "by_zone": {
+     "rel_known": 0.592948717948718,
+     "rel_unknown": 0.36923076923076925,
+     "uncertain": 0.13617021276595745
+    },
+    "by_truth": {
+     "known": 0.5023148148148148,
+     "unknown": 0.325
+    },
+    "signal_change_rejected": 0.11573440581560135,
+    "signal_change_kept": 0.09484437108039856,
+    "feat_change_rejected": 0.01411294937133789,
+    "feat_change_kept": 0.0035305023193359375,
+    "feat_change_unchecked_med": 0.006050318479537964,
+    "feat_change_final_med": 0.0015943050384521484,
+    "route_flip_unchecked": 0.1257183908045977,
+    "route_flip_final": 0.04382183908045977,
+    "tau_f": 0.008273830637335777
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.819683908045977,
+    "reject_rate_lab": 0.9583333333333334,
+    "reject_rate_C2_unl": 0.033764367816091954,
+    "by_kappa_tercile": [
+     0.7047413793103449,
+     0.7079207920792079,
+     0.9242424242424242
+    ],
+    "by_zone": {
+     "rel_known": 0.9487179487179487,
+     "rel_unknown": 0.8331360946745562,
+     "uncertain": 0.6
+    },
+    "by_truth": {
+     "known": 0.8865740740740741,
+     "unknown": 0.7895833333333333
+    },
+    "signal_change_rejected": 0.2165623903274536,
+    "signal_change_kept": 0.16252632439136505,
+    "feat_change_rejected": 0.026715397834777832,
+    "feat_change_kept": 0.0049936771392822266,
+    "feat_change_unchecked_med": 0.02133333683013916,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.24209770114942528,
+    "route_flip_final": 0.022988505747126436,
+    "tau_f": 0.008273830637335777
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 3,
+  "seed": 1,
+  "tau_f_C1": 0.013954034075140953,
+  "tau_f_C2": 0.12990140914916992,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.18031609195402298,
+    "reject_rate_lab": 0.5208333333333334,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.03879310344827586,
+     0.08071748878923767,
+     0.3049645390070922
+    ],
+    "by_zone": {
+     "rel_known": 0.3248407643312102,
+     "rel_unknown": 0.18716577540106952,
+     "uncertain": 0.02727272727272727
+    },
+    "by_truth": {
+     "known": 0.23148148148148148,
+     "unknown": 0.15729166666666666
+    },
+    "signal_change_rejected": 0.11795183271169662,
+    "signal_change_kept": 0.091182179749012,
+    "feat_change_rejected": 0.020273566246032715,
+    "feat_change_kept": 0.003978908061981201,
+    "feat_change_unchecked_med": 0.004980206489562988,
+    "feat_change_final_med": 0.0029751956462860107,
+    "route_flip_unchecked": 0.13290229885057472,
+    "route_flip_final": 0.09554597701149425,
+    "tau_f": 0.013954034075140953
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.6020114942528736,
+    "reject_rate_lab": 0.8958333333333334,
+    "reject_rate_C2_unl": 0.013649425287356323,
+    "by_kappa_tercile": [
+     0.38146551724137934,
+     0.4663677130044843,
+     0.7900709219858156
+    ],
+    "by_zone": {
+     "rel_known": 0.8089171974522293,
+     "rel_unknown": 0.6336898395721925,
+     "uncertain": 0.3333333333333333
+    },
+    "by_truth": {
+     "known": 0.6805555555555556,
+     "unknown": 0.5666666666666667
+    },
+    "signal_change_rejected": 0.2185586541891098,
+    "signal_change_kept": 0.16376268863677979,
+    "feat_change_rejected": 0.030889153480529785,
+    "feat_change_kept": 0.00759810209274292,
+    "feat_change_unchecked_med": 0.018210172653198242,
+    "feat_change_final_med": 5.960464477539063e-08,
+    "route_flip_unchecked": 0.2413793103448276,
+    "route_flip_final": 0.0668103448275862,
+    "tau_f": 0.013954034075140953
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 3,
+  "seed": 2,
+  "tau_f_C1": 0.007935753092169762,
+  "tau_f_C2": 0.11368498206138611,
+  "gains": {
+   "2.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.4260057471264368,
+    "reject_rate_lab": 0.7916666666666666,
+    "reject_rate_C2_unl": 0.0,
+    "by_kappa_tercile": [
+     0.17025862068965517,
+     0.2235294117647059,
+     0.6279683377308707
+    ],
+    "by_zone": {
+     "rel_known": 0.6658415841584159,
+     "rel_unknown": 0.4276827371695179,
+     "uncertain": 0.14202898550724638
+    },
+    "by_truth": {
+     "known": 0.5694444444444444,
+     "unknown": 0.3614583333333333
+    },
+    "signal_change_rejected": 0.11113370954990387,
+    "signal_change_kept": 0.0779121145606041,
+    "feat_change_rejected": 0.014978229999542236,
+    "feat_change_kept": 0.003251314163208008,
+    "feat_change_unchecked_med": 0.0064071714878082275,
+    "feat_change_final_med": 0.0012128353118896484,
+    "route_flip_unchecked": 0.13649425287356323,
+    "route_flip_final": 0.06465517241379311,
+    "tau_f": 0.007935753092169762
+   },
+   "4.0": {
+    "integrity": true,
+    "frac_logspec_fallback_all": 0.0,
+    "frac_logspec_fallback_unl": 0.0,
+    "reject_rate_unl": 0.8225574712643678,
+    "reject_rate_lab": 0.9583333333333334,
+    "reject_rate_C2_unl": 0.03089080459770115,
+    "by_kappa_tercile": [
+     0.6487068965517241,
+     0.7529411764705882,
+     0.9445910290237467
+    ],
+    "by_zone": {
+     "rel_known": 0.9702970297029703,
+     "rel_unknown": 0.8491446345256609,
+     "uncertain": 0.6
+    },
+    "by_truth": {
+     "known": 0.9074074074074074,
+     "unknown": 0.784375
+    },
+    "signal_change_rejected": 0.1965399831533432,
+    "signal_change_kept": 0.11761971563100815,
+    "feat_change_rejected": 0.02867203950881958,
+    "feat_change_kept": 0.004905223846435547,
+    "feat_change_unchecked_med": 0.022847145795822144,
+    "feat_change_final_med": 0.0,
+    "route_flip_unchecked": 0.2708333333333333,
+    "route_flip_final": 0.034482758620689655,
+    "tau_f": 0.007935753092169762
+   }
+  }
+ }
+]
