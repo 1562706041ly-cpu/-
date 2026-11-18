@@ -1,0 +1,54 @@
+v27 cross-channel coordinated band perturbation: mechanism-check PRE-REGISTRATION (final; supersedes v27_crosschannel_PREREGISTERED_DRAFT.txt).
+Bruinsma centrifugal pump only (Motor-2, 100 % speed). 75 % speed data sealed. Confirmed by the user 2026-11-06 with the changes below; written and pushed BEFORE any v27 number was computed. Mechanism check only: no training, no H, no GPU.
+
+CONFIRMED BY THE USER
+ 1. Route A: spectral band-gain augmentation, no VMD. It is a new candidate augmentation and does NOT inherit the "VMD adaptive augmentation" novelty claim; no performance claim is made or presumed.
+ 2. 32 linear bands (as in the existing fidelity metric); this is not asserted to be optimal; it is NOT changed to a log partition after seeing results.
+ 3. Band budget estimated from the training-side LABELLED known-class windows only (record-level variation of band log energy, no class-separation factor). No evaluation window and no unknown label enters the budget.
+ 4. Thresholds kept as exploratory engineering criteria (0.10, 0.25, 0.5, 23/27) with the two changes below. Changes requested and made: (a) natural variation computed per RECORDING; (b) the feature-difference criterion is descriptive only.
+ Literature corrections adopted: arXiv 2410.16419 (multivariate TVAR) uses diagonal model and noise-correlation matrices and does not preserve cross-channel covariance; the window warp of arXiv 2201.11739 uses a common time window and scaling for all channels (the array (l, c) is resized as a whole) but is not a frequency-band perturbation and does not aim to preserve cross-channel spectral relations.
+
+HYPOTHESIS H3
+ At matched per-channel perturbation intensity, band perturbations shared across the four channels preserve the cross-channel spectral relations better than independent per-channel band perturbations, and the independent ones change these relations by a non-negligible fraction of their natural between-recording variation (defined below). Only then could coordination matter. Whether it improves discovery performance is not tested. H3 is not claimed to be true.
+
+PARTITION AND TRANSFORM (fixed)
+ Window length 2048, rfft bins 0..1024 (1025 bins). Edges e_k = floor(k * 1025 / 32), k = 0..32; band b covers bins [e_b, e_{b+1}); the last band therefore includes the Nyquist bin 1024; the DC bin 0 belongs to band 0. This is the partition of kr_modules.log_band_energy and torch_lsd. Band gain: X'(f) = X(f) * g_b for every complex bin in band b (including DC and Nyquist, real gains), x' = irfft(X', n = 2048). Windows are z-scored per window and channel before this step as in training; the perturbed window is not renormalised (as the VMD view was not).
+ Low-energy bands are NOT excluded and not treated specially: log energies use the fixed floor 1e-12 of the existing function. The share of the cross-channel change that comes from the 10 % of (channel, band) cells with the lowest mean band energy (labelled windows) is reported.
+
+BUDGET (labelled known windows of the training split only)
+ Band log energy E_cb(w) = log_band_energy of channel c. Recording = (train_installation, train_measurement). Per known class: record means of E_cb; sigma_cb(class) = standard deviation (ddof 0, as nuisance_mode_stats) over the record means of that class; if a class has fewer than 2 recordings among the labelled windows, the window-level standard deviation is used (the existing code's fallback) and the number of such classes is reported. s_cb = mean over the known classes of sigma_cb(class), times gain. No factor g. kappa(w) = budget_v2(K, R, 0.25, 0.5) per window, K from knn, labelled windows kappa = 1 (as in training). Amplitude gain on band b of channel c: g = exp(0.5 * u * kappa * s_cb) (the energy changes by exp(u * kappa * s_cb)). u clipped to [-2, 2].
+ "gain" here scales the NEW band budget. Gain 2 is not the same dose as VMD gain 2 and is not interpreted as such. The realised intensity is reported next to the earlier VMD values (signal change 0.045 / 0.090 / 0.175 at VMD gain 1 / 2 / 4) for scale only. Primary gain: 2 (as confirmed); gains 1 and 4 are reported; rules are evaluated at gain 2 only and the gain is not switched after the result.
+ Fidelity: the existing log-spectral rule (per channel LSD <= tau_lsd with tau_lsd from the labelled windows exactly as used in training, record key = installation), the exponent of the whole window halved up to 3 times, then fall back to x. This halves all channels together. Shrink and fallback fractions are reported per arm.
+
+VIEWS (27 warm-up checkpoints = 9 splits x 3 seeds; all training windows per split; encoder in eval mode)
+ VO = x. VI = independent: u_cb independent over channels c and bands b. VC = coordinated: u_b shared by all four channels, independent over bands. Same marginal law per channel and band, same s_cb, same kappa, same fidelity rule. The same seed and the same random generator state are used for VI (u of shape window x channel x band) and VC (u of shape window x band, repeated over channels) for the primary draw.
+ Standard augmentation A (shift 256, scale 0.2, noise 0.1, mask 0.10) with identical torch seed for VA = A(x), VIA = A(VI), VCA = A(VC).
+ Feature-level repeats (primary gain only): 3 additional independent draws of u for each of VI and VC (seeds fixed in the script) to show the random spread of the feature distances.
+
+INTENSITY MATCH (checked, not assumed; per channel)
+ Per channel: median over windows of the relative signal change ||v_c - x_c|| / ||x_c||, and of LSD_c / tau_lsd,c. Also fractions shrunk and fallen back, the mean feature distance d(enc(x), enc(v)).
+ INTENSITY MATCHED: for all four channels and both metrics |median(VC) - median(VI)| / median(VI) <= 0.10, in >= 23/27 models. Computed over the unlabelled training windows.
+
+CROSS-CHANNEL RELATION
+ Relation of window w, channel pair (c, c') (6 pairs), band b: rel = E_cb(w) - E_c'b(w) (log-energy difference).
+ Dv (change caused by the perturbation): for a perturbed view v, the mean over windows of the mean over pairs and bands of |rel(v) - rel(x)|; computed over the UNLABELLED training windows (the population that receives the adaptive kappa); also reported over the labelled windows.
+ Dnat (natural between-recording variation, labelled known windows only, per recording first): for each known class with >= 2 recordings among the labelled windows, the recording-level mean of rel over the windows of that recording; Dnat(class) = mean over unordered pairs of different recordings of the mean over channel pairs and bands of |relmean_r - relmean_r'|; Dnat = mean over such classes (classes weighted equally). Same unit as Dv (absolute difference of log-energy differences, averaged over 6 pairs and 32 bands). If no class has >= 2 recordings, or Dnat < 1e-3, the model is NOT EVALUABLE and counts as "not met" in the rules that use Dnat; their number is reported.
+ Descriptive: the within-recording fluctuation (mean absolute difference of rel between two windows of the same recording), so that the part of the between-window variation that does not come from recordings is visible. Dnat contains sampling noise from few windows per recording; this is stated as a limit and not corrected.
+ The ratio 0.25 is relative to this defined recording-level scale; it is not a universal physical safety threshold.
+
+RULES (27 models; 9 splits x 3 seeds are not 27 independent datasets; per-split results (mean of the 3 seeds) are reported for every rule)
+ INTENSITY MATCHED: as above.
+ PROBLEM EXISTS    : Dv(VI) / Dnat >= 0.25 in >= 23/27 models (not-evaluable models count as not met).
+ COORDINATION PRESERVES: Dv(VC) <= 0.5 * Dv(VI) in >= 23/27 models. Dv(VC) is near 0 by construction only when the s_cb of the channels coincide; unequal channel budgets, clipping and the shrink rule make it non-zero, so this is an integrity-type check of the construction, not evidence of usefulness.
+ Descriptive only (no rule, no stop decision): d(enc(x), enc(v)) for VI and VC (raw and after A), d between the two paired views, the spread over the 3 repeat draws, route flips of K, unknown separability P1 (as v26) at gain 2 for VA / VIA / VCA with labels for analysis only, per-channel and per-band tables, the 20 % relative feature-distance difference as a reference value only. Two equal median distances do not show that the encoder cannot tell the views apart (direction and distribution may differ), and no statement of that kind will be made.
+
+DECISIONS FIXED NOW
+ INTENSITY not matched                          -> report the confound; no relation statement is attributed to coordination; no end-to-end design from this pre-registration.
+ INTENSITY MATCHED and PROBLEM EXISTS and COORDINATION PRESERVES -> a mechanism difference is observed under the preset metrics; a separate end-to-end pre-registration may be discussed (Bg4 main baseline; independent band gain; coordinated band gain at matched intensity); this does not mean performance is better, and repositioning Chapter 3 away from VMD would first be discussed with the supervisor.
+ Any mechanism rule not met, or any other combination -> reported as not met or inconclusive; no end-to-end run under this pre-registration; no threshold, partition or budget is changed and recomputed. This would not prove that every cross-channel coordination method is useless.
+ Bg4 remains the main baseline for any future end-to-end comparison. The 75 % speed data stay sealed.
+
+LIMITS (stated now)
+ Warm-up encoders; a fixed feature space says nothing about H. The band gain acts on magnitudes; the encoder input is the log magnitude spectrum (periodic Hann window, then rfft), so a band gain is only approximately an offset on it; phase is not seen by the model, which does not mean that phase is physically unimportant. The sensor positions of channels 1, 2, 4, 5 are not known to me; "cross-channel relation" is a statistical statement about the four recorded channels. Few labelled windows per recording (64 labelled windows in total). 27 models are 9 splits x 3 seeds.
+
+NOT CLAIMED: that independent perturbation destroys relations that matter for diagnosis; that coordinated perturbation improves H or class discovery; that the route is novel.

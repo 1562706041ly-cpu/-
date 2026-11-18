@@ -1,0 +1,27 @@
+v27 RESULT: cross-channel coordinated vs independent band-gain perturbation (Bruinsma pump, Motor-2 100 % speed; 27 warm-up models = 9 splits x 3 seeds; sandbox CPU; script scratch/v24p/crosschannel.py; raw v27_models.jsonl, one line per model).
+Criteria: v27_crosschannel_PREREGISTERED.txt (pushed to branch v27-prereg, 2026-11-18T14:01:58Z, before any v27 number). Mechanism check only: no training, no H, no GPU. 75 % speed data not opened. Labels used for analysis only (P1); the budget uses labelled known windows only.
+Implementation clarifications (no rule changed): the coordinated draw u_b is the channel-1 draw of the independent view (same generator state; channel 1 is therefore identical in both arms); tau_lsd is computed as in training (record key = installation) and the band budget and Dnat use recordings (installation + measurement), as pre-registered. Every model had >= 2 labelled recordings per known class (no budget fallback class; 27/27 evaluable).
+
+PRE-REGISTERED RULES (gain 2; counts over 27 models)
+ INTENSITY MATCHED (per channel, signal change and LSD/tau medians within 10 %)   27/27   (needs 23)  -> met   (worst relative difference per model: min 0.015, median 0.030, max 0.085)
+ PROBLEM EXISTS (Dv(VI)/Dnat >= 0.25)                                            27/27   (needs 23)  -> met   (ratio mean 0.86, range 0.80-0.92)
+ COORDINATION PRESERVES (Dv(VC) <= 0.5 Dv(VI))                                    27/27   (needs 23)  -> met   (Dv(VC)/Dv(VI) mean 0.325, range 0.28-0.37)
+ Per-split values are consistent (ratio Dv(VI)/Dnat 0.81-0.90; Dv(VC)/Dv(VI) 0.29-0.36; worst intensity difference 0.02-0.05).
+ Pre-registered decision for "all three met": a mechanism difference is observed under the preset metrics; a separate end-to-end pre-registration may be discussed. This does NOT mean performance is better.
+
+NUMBERS (mean over 27 models)
+ Dnat (natural recording-level variation of the cross-channel relation) 0.544; within-recording fluctuation 0.402 (75 % of Dnat); Dv unlabelled windows: independent 0.470, coordinated 0.153 (labelled windows 0.548 / 0.192).
+ Per-channel median relative signal change: independent 0.161 0.146 0.163 0.143, coordinated 0.164 0.149 0.164 0.146 (channels 1, 2, 4, 5); LSD/tau about 0.50-0.55 in both. Shrunk windows: 6.5 % independent, 4.5 % coordinated; fallback 0 in both. Band budget s_cb mean per channel 0.335 0.418 0.314 0.257 (before gain). Share of the relation change that touches the 10 % lowest-energy (channel, band) cells: 0.22 (independent), 0.24 (coordinated).
+ Gains 1 / 2 / 4: signal change about 0.08 / 0.155 / 0.18 (saturating); shrunk windows independent 0 / 6.5 % / 76 %, coordinated 0 / 4.5 % / 71 %. At gain 4 the fidelity rule acts on three quarters of the windows.
+
+DESCRIPTIVE (no rule; fixed encoder, warm-up)
+ Feature distance after the standard augmentation, d(A(v), A(x)) with paired random numbers (gain 2): independent 0.0113, coordinated 0.0022. The coordinated view changes the feature about 5 times LESS than the independent view with the same signal-level intensity: ratio 0.14-0.27 in all 27 models (relative difference >= 0.2 in 27/27; the 20 % figure was a reference only). Three independent re-draws: independent 0.0114 (sd 0.0003 across draws), coordinated 0.0022 (sd 0.0000). Distance between the paired views d(VIA, VCA) 0.0107. Gains 1 and 4 give the same ratio (0.22, 0.21). K route flips (gain 2): independent 0.200, coordinated 0.064.
+ Unknown-class separability P1 (as v26; labels for analysis only; gain 2): A(x) 0.8686; independent -0.0306; coordinated -0.0052 (for comparison the VMD view at gain 2: -0.0155).
+
+READING AND LIMITS (descriptive; added after the result)
+ 1. The pre-registered "intensity matched" criterion is satisfied by signal change and log-spectral distance, but it does not cover the encoder's response: the coordinated view moves the feature about 5 times less. Any end-to-end comparison of independent versus coordinated perturbation at "matched intensity" would therefore still be confounded in feature space, and the coordinated arm would effectively be a much weaker perturbation to the encoder. The criterion would need a feature-level (or encoder-sensitivity) matching rule in a new pre-registration.
+ 2. Dnat is not a clean between-recording scale: 75 % of its value is the within-recording fluctuation of the relation (0.40), and each recording has few labelled windows. Dv(VI)/within-recording = 1.17. The independent perturbation moves the relation about as much as two windows of the same recording differ from each other; the 0.25 criterion is met by a wide margin (0.86), but it is relative to a scale dominated by window-level variation.
+ 3. Dv(VC) being much smaller than Dv(VI) follows largely from the construction (shared random numbers); the remaining 0.153 comes from unequal channel budgets and the shrink rule. This is an integrity check, as pre-registered, not evidence of usefulness.
+ 4. The coordinated and independent views have the same per-channel marginal law and signal-level intensity by design. Whether the encoder's lower response to the coordinated view is a benefit (less damage) or a loss (less augmentation) is not tested here.
+ 5. Band gain is a magnitude-only perturbation; it is not VMD. The VMD novelty claim of Chapter 3 does not transfer. Warm-up encoders; fixed feature spaces say nothing about H. 27 models are 9 splits x 3 seeds, not independent datasets.
+ 6. No end-to-end run, no H, no repositioning decision follows from this result by itself.
