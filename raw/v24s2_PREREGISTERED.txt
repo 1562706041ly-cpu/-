@@ -1,0 +1,59 @@
+v24s2 stage 2: exploratory end-to-end screen of the Chapter-3 VMD dose and of adaptive vs random budget allocation.
+Bruinsma centrifugal pump only (Motor-2, 100 % speed, 4-channel log-spectrum). Written BEFORE any run of the new arms (2026-11-06).
+The sealed 75 % speed data is NOT opened and is not used to choose anything.
+
+STATUS OF THIS EXPERIMENT
+Exploratory screen. The 100 % speed data and these 9 splits have already been used for v18-v24 diagnostics and for choosing this design (the dose scan v24d used only training windows and warm-up models, no held-out labels, but the design is motivated by the earlier comparisons). Results are candidates, not confirmations. Nothing here may be written as "validated".
+
+ARMS (all: pump batch of v23/v24; --mode adaptive_kr2 unless stated; --k-score-train knn; --contrast plain; --vmd-bank centrifugal\pool\pool_motor2_100_ch1245_vmd.npy; --known-guard 0.4 --guard-group-key train_installation; same COMMON arguments as run_batch_v24_cf.ps1)
+  Rk2   adaptive allocation, --kr2-gain 2                                  NEW
+  Rk4   adaptive allocation, --kr2-gain 4                                  NEW
+  Rks2  random allocation, --mode shuffled_kr2 --kr2-shuf-scope sample, --kr2-gain 2   NEW
+  Rks4  random allocation, --mode shuffled_kr2 --kr2-shuf-scope sample, --kr2-gain 4   NEW
+  Rk    existing v24 runs (gain 1, adaptive, knn), reused: V20_*_Rk_seed0
+  Bg4   existing v20 runs (generic mode, no Chapter 3), reused: V20_*_Bg4_seed0
+Units: 9 splits (3 combos x 3 folds) x seed 0 = 9 runs per arm, 36 new runs. One seed per split: seed noise is NOT averaged out (seeds 1 and 2 of the same splits would only reduce seed noise; they do not provide independent data).
+
+RANDOM ALLOCATION CONTROL (code facts, read and tested)
+ - Existing --mode shuffled_kr2 shuffles BOTH the per-window budget kappa AND the (channel, mode) mode budget sigma_rec * g. That mixes two things. The new flag --kr2-shuf-scope sample shuffles only the per-window kappa(K, R); the mode budget stays natural. The default of the flag is the old behaviour ('both').
+ - Shuffling is over the whole labelled set and over the whole unlabelled set separately (labelled windows keep kappa = 1), at every K/R refresh (every 300 steps), with a fixed permutation seed. kappa is one scalar per window, so channels are not shuffled separately.
+ - Both arms use the same augmentation, fidelity check, model and training settings. They differ only in which window receives which kappa. The kappa distribution of the pool is identical by construction; the per-batch distribution and the realised perturbation are logged (kap_mean, kap_p10, kap_p90, relchg_med, fallback, mean_shrink every 300 steps) and reported; the training trajectories of the two arms differ.
+ - Code regression (CPU, C1 fold 1, seed 0, Rk configuration, gain 1): the new code reproduces the v23 code bit-identically for adaptive_kr2 and shuffled_kr2 with default flags (openset, clustering block and all prediction arrays equal). GPU and other splits were not re-checked. The reused Rk runs were produced by the v23 code.
+
+COMPARISONS (paired, per split, seed 0; H = harmonic mean of known accuracy and unknown recall on the held-out installations)
+  C1 dose:        Rk2 - Rk,   Rk4 - Rk
+  C2 vs baseline: Rk2 - Bg4,  Rk4 - Bg4
+  C3 allocation:  Rk2 - Rks2, Rk4 - Rks4
+ Secondary metrics (reported, no rule): known_false_unk, unk_recall, known_acc, unk_cluster_acc, nmi; mechanism logs per arm.
+ Interval: 95 % bootstrap of the mean over the 9 splits (10000 resamples, seed 0).
+
+RULES (applied to each comparison independently; six comparisons, NO multiplicity correction; any hit is a candidate)
+  WORTH CONFIRMING: mean dH >= +0.02 AND positive in >= 7/9 splits AND interval lower bound > 0.
+  HARM:             mean dH <= -0.02 AND interval upper bound < 0.
+  otherwise: NO EVIDENCE OF A DIFFERENCE at this resolution.
+ With 8 valid paired splits the sign requirement is >= 7/8 (rounded up from 7/9 x 8); with fewer than 8 the comparison is not interpreted.
+ Resolution note (written now, from the existing seed-0 per-split differences: sd 0.02-0.04, so the standard error over 9 splits is about 0.008-0.015): differences below about 0.02 cannot be told from noise in this screen.
+
+INTERPRETATION TABLE FIXED NOW
+  C3 WORTH CONFIRMING at a gain          -> adaptive allocation by (K, R) has a candidate benefit at that gain.
+  C3 not worth confirming, C1/C2 worth confirming -> a larger dose may help, but this screen does not show that the allocation by (K, R) matters.
+  C2 worth confirming, C3 not            -> "VMD perturbation at that dose" is the candidate, not the allocation mechanism.
+  nothing worth confirming               -> no support for Chapter-3 adaptive augmentation at gains 1, 2, 4 in this setup; the negative result stands.
+  HARM at a gain                         -> report; do not use that gain.
+ Rks2 and Rks4 are paired with Rk2 and Rk4 only; they are not compared with Bg4.
+
+OBJECTIVE VALIDITY RULES (fixed before any H is seen)
+  A run is INVALID if: the process exits with an error, or any printed loss in its log is nan or inf, or results_exp2.json is missing, or any reported metric is NaN. Invalid runs are listed in invalid_v24s2.txt, are not replaced and not re-run unless the failure is clearly infrastructural (e.g. out of memory) with unchanged arguments, and are excluded from the paired comparisons of that split (n reported).
+  An arm is analysed only if >= 8 of its 9 runs are valid; otherwise it is reported as FAILED and no comparison with it is interpreted.
+  No run is dropped or flagged because of its H value.
+
+PAIRING IS VERIFIED (analyze_v24s2.py aborts on failure)
+  - For every split, labelled window indices and n_labeled / n_unlabeled / n_val are identical across Rk, Rk2, Rk4, Rks2, Rks4 and Bg4.
+  - Stored args of the new arms equal those of the reused Rk run of the same split except tag, seeds, mode, kr2_gain, kr2_shuf_scope (an absent kr2_shuf_scope in old runs counts as 'both').
+  - The local code hashes are checked by the batch script before any run.
+
+CONFIRMATION (decided now, procedure only)
+  Anything labelled WORTH CONFIRMING needs confirmation on data not used for selection, with a protocol pre-registered before it is run. Seeds 1 and 2 of the same splits do not count as independent data. The sealed 75 % speed data differ from the 100 % speed data by an operating-condition shift, so using them tests something different (a speed shift) and may fail for that reason; whether to open them is decided separately and not now.
+
+NOT CLAIMED
+  No claim that a larger dose is better, that the semantic label is preserved, or that the fixed-model dose scan (v24d) predicts H. The pump here is a centrifugal pump, not a piston pump.

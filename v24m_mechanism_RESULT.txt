@@ -1,0 +1,32 @@
+v24m RESULT (27 pump warm-up models = 9 splits x 3 seeds, all training windows of each split, sandbox CPU; script scratch/v24p/mech_check.py; raw v24m_mechanism.json)
+Criteria: v24m_mechanism_PREREGISTERED.txt (written before the run). Fixed warm-up models, nothing trained. K from the 'knn' scorer (Rk); Rg values are in the json.
+
+Rule counts (27 models)            needs   observed
+ NEGLIGIBLE   (LSD/tau<0.25 and r<0.10)  23    16   -> not met
+ FIDELITY-BOUND (>20 % shrunk/fallback)  14     0   -> not met
+ COMPARABLE   (r >= 0.50)                23     0   -> not met
+ FOLLOWS BUDGET (Spearman kappa-LSD/tau >= 0.5) 23  26 -> met
+ ALLOCATION-RELEVANT (B2 >= 0.10)        23     0   -> not met  (see caveat 1)
+Formal verdict: "intermediate". No pre-registered action label applies, so the action is "report and discuss before choosing".
+
+Numbers (mean over 27 models; min-max in brackets)
+ signal: median relative change of the VMD view 0.045 [0.030-0.054]; standard augmentation alone 1.40 (time shift decorrelates the waveform; the encoder sees the log spectrum).
+ fidelity: median realised LSD/tau 0.138 [0.079-0.179]; 99th percentile 0.30 [0.19-0.41]; shrunk 0.000, fallback 0.000 in every model (the check never acts).
+ feature distance d = 1 - cos:
+   VMD effect under the same standard augmentation d(V3,V4)      0.0013 [0.0003-0.0021]
+   two independent standard views d(V3,V3')                      0.0142 [0.0129-0.0159]
+   ratio r                                                       0.090 [0.022-0.148]   (all 27 models below 0.15)
+   VMD view vs original d(V0,V2)                                 0.0012
+   reconstruction without the VMD residual vs original d(V0,V1)  0.0157 (13 x larger than the perturbation)
+   standard-augmented vs original d(V0,V3)                       0.087
+ routing (unlabelled windows): route (K >= 0.5) changes for 4.2 % [2.0-7.8 %]; mean |dK| 0.044.
+ budget: kappa mean 0.666, p10 0.435, p90 0.922. Spearman(kappa, LSD/tau) 0.64 [0.43-0.75]; Spearman(kappa, feature distance) 0.43 [0.28-0.55].
+ per-channel mean mode budget sigma_rec*g: 0.204 0.180 0.112 0.075 (channels 1, 2, 4, 5); tau_lsd 0.815 1.067 0.720 0.583.
+
+CAVEATS (stated after seeing the result, not used to change any rule)
+ 1. B2 compares the MEDIAN signal change of the adaptive view with that of a view whose kappa is randomly permuted among unlabelled windows. Permuting keeps the kappa distribution, so the median barely moves by construction (observed 0.8 %). ALLOCATION-RELEVANT is therefore almost uninformative: 0/27 does not show that allocation is irrelevant. The window-level Spearman values above are the better descriptive evidence (the realised perturbation does follow kappa).
+ 2. r < 0.10 held in 16/27 models; the other 11 are between 0.10 and 0.148. The 0.10 cut was fixed in advance and is not changed.
+ 3. Warm-up models only (300 contrastive steps). After Chapter-3 training the encoder differs. The feature change is measured with an encoder that has just been trained to be invariant to the standard augmentation; small feature change is not by itself a defect.
+ 4. Same random numbers are used for V3 and V4 (torch seed), so d(V3,V4) isolates the VMD perturbation; V3' uses other numbers.
+ 5. K is only one of the quantities that react: route changes 4.2 %, which is far larger relative to the feature change (0.0012) than one would expect; the scorer is sensitive to tiny feature changes near the 0.5 decision boundary.
+ 6. Not tested: whether a larger budget (--kr2-gain) changes any downstream result.

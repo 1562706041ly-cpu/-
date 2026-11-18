@@ -1,0 +1,35 @@
+v24 end-to-end comparison on the Bruinsma centrifugal pump (Motor-2, 100 % speed): which knownness K drives Chapter-3 training.
+Written BEFORE any new run (2026-11-06). Supersedes v24b (Paderborn, withdrawn).
+
+QUESTION
+Does replacing the gated head-energy + distance K (Rg = A3g behaviour) by the pure nearest-neighbour score (Rk) or by the distance energy (Rd = A3d behaviour) change the final open-set H, with the leave-one-installation-out (LOIO) known guard on in all arms?
+
+ARMS (identical except --k-score-train; all use v23 code, adaptive_kr2, VMD bank, --input spec --norm window, --known-guard 0.4 --guard-group-key train_installation, --k-score denergy for the post-hoc stage)
+  Rg    --k-score-train gated  (K = qD^2 qE + (1-qD^2) qD)   EXISTING 27 runs from v23 (V20_*_Rg), reused
+  Rk    --k-score-train knn    (K = qD, nearest labelled cosine)                 NEW 27 runs
+  Rd    (no --k-score-train -> falls back to --k-score denergy; K = qDE, T=0.05)  NEW 27 runs
+  Rgrep same flags as Rg, 3 repeat runs (C1 f1, C2 f2, C3 f3, seed 0): GPU run-to-run noise floor. Reported only, it changes no rule.
+Units: 9 splits (3 combos x 3 folds) x seeds 0,1,2 = 27 paired runs per comparison. Seeds inside a split share the same data, so the 9 splits are the unit for the interval; the 27 runs are not 27 independent datasets.
+
+PAIRING IS VERIFIED, NOT ASSUMED (analyze_v24.py aborts if any check fails)
+ 1. For every Rg / Rk / Rd / Rgrep run the stored args are identical except tag, seeds and k_score_train (expected: gated / knn / None / gated).
+ 2. For every (combo, fold, seed) the labelled window indices, n_labeled, n_unlabeled, n_val are identical across arms.
+ 3. The local m2_paderborn_kr.py and kr_modules.py have the v23 sha256 (checked by run_batch_v24_cf.ps1 before any run).
+ If Rg runs fail checks 1-2 (e.g. a different local code version), ALL arms including Rg are re-run on the GPU and the comparison is redone.
+
+METRIC: H on the held-out installations (harmonic mean of known accuracy and unknown recall), as in summarize_cf.py (openset V). Secondary: known_false_unk, unk_recall, nmi.
+
+COMPARISONS (delta = H_X - H_Y, paired): P1 Rk - Rg;  P2 Rd - Rg;  P3 Rk - Rd.
+INTERVAL: 95 % bootstrap interval of the mean over the 9 splits (each split value = mean of its 3 seeds; 10000 resamples, seed 0).
+DECISION RULES (applied in this order)
+ better:   mean delta >= +0.02 AND strictly higher in >= 18/27 runs AND positive in >= 6/9 splits AND interval lower bound > 0
+ worse:    mean delta <= -0.02 AND interval upper bound < 0
+ no worse (not shown better): mean delta >= -0.01 AND interval lower bound >= -0.02
+ otherwise: inconclusive
+Interpretation caveat fixed now: if the Rgrep repeat differences |H - H_rep| have a mean above 0.03, any |mean delta| below that is reported as not interpretable.
+
+SCOPE
+ - The 100 % speed data has already been used for the v18-v24 diagnostics and method discussion. This comparison is a development-scope evaluation on those data, not a confirmation on unseen data.
+ - The sealed 75 % speed data is NOT opened and is not used to choose a method or any parameter. Whether it is used as a final one-shot test is decided separately, before it is touched.
+ - Nothing is tuned: gamma = 2, T = 0.05, guard q = 0.4 are as in v23.
+ - The earlier fixed-model diagnostic (v24p) was inconclusive by its own rule; this experiment does not assume its direction.

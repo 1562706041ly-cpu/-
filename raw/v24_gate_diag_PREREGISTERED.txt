@@ -1,0 +1,36 @@
+v24 gate diagnostic: is the head energy redundant with the distance, a scale problem, or no complementary information?
+Written BEFORE any result of this diagnostic was computed (2026-11-06).
+
+SCOPE AND LIMITS
+- Fixed-model, offline. No retraining. Models: the 6 warm-up checkpoints of runs V_A3d seed0-5 (Paderborn, single split, known = {0,1}, unknown = {2}).
+  These 6 models share ONE data split, so they are 6 seeds on the same data, not 6 independent datasets.
+- Centrifugal-pump models are not in the sandbox (trained on the user's GPU). The pump is NOT covered by this diagnostic.
+- There is no separate validation set in this project. Windows called "val" in the split files are the held-out evaluation set (installation/bearing held out).
+  This diagnostic uses true labels ONLY for analysis. It selects no parameter. gamma = 2 and the region threshold below are fixed now.
+- Fixed-model scores do not prove end-to-end H differences. They only show what the score does.
+
+SCORES (higher = more known; all calibrated with the labelled leave-one-out rule, 5% quantile -> 0.5, median -> 0.95, as in kr_modules)
+- qD  : nearest labelled cosine (w = 0)
+- qE  : classifier-head energy logsumexp(head(f)) (w = 1)
+- qG  : gated, w = qD^2, K = w*qE + (1-w)*qD (the A3g score)
+- qDE : distance energy, T = 0.05 (the A3d score). Kept as a separate reference: qD is not identical to qDE.
+Sets: S_U = train-unlabelled windows, S_V = held-out evaluation windows.
+
+MEASUREMENTS
+M1  Spearman(qE, qD) and Spearman(qDE, qD), pooled and within known / within unknown windows (labels for analysis only), on S_U.
+M2  AUROC unknown-vs-known for qD, qE, qG, qDE on S_U and S_V.
+M3  Routing at K >= 0.5 (known) vs < 0.5 (unknown): fraction of windows whose route differs between qG and qD, and between qG and qDE.
+    Among differing windows, the fraction where qG is correct.
+M4  Region qD >= 0.8 (fixed now): fraction of windows whose route differs between qG and qD, and routing accuracy of qG vs qD inside the region.
+
+DECISION RULES (per model, then counted over 6 models)
+- "Head energy adds information inside the support":  AUROC(qG) - AUROC(qD) >= +0.02 on BOTH S_U and S_V in >= 5/6 models.
+- "Gate hurts": AUROC(qG) - AUROC(qD) <= -0.02 on BOTH sets in >= 5/6 models.
+- "Redundant": |AUROC(qG) - AUROC(qD)| < 0.01 on both sets in >= 5/6 models AND pooled Spearman(qE, qD) >= 0.9 in >= 5/6 models.
+- "Different ranking but no gain": |dAUROC| < 0.01 but pooled Spearman < 0.9.
+- Anything else: inconclusive, reported as such.
+- Spearman thresholds: >= 0.9 strong overlap, 0.5-0.9 partial, < 0.5 distinct.
+
+NOT CLAIMED
+- No claim about the pump data, about end-to-end H, or about Chapter 4.
+- A logistic-regression fusion that uses unknown-class labels is NOT part of this diagnostic (it would not respect the unsupervised setting).

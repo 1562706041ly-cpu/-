@@ -1,0 +1,41 @@
+v24d dose check, stage 1 (fixed models, no training). Bruinsma centrifugal pump only. Written BEFORE the script was run (2026-11-06). 75 % speed data not opened.
+
+QUESTION
+Does --kr2-gain really change the realised VMD perturbation, is the change cancelled by the fidelity check (shrink / fall back to x), and at the largest admissible dose does the perturbation become a material part of the view-to-view difference the encoder sees? The fidelity bound tau_lsd is a constraint, not a target: nothing here tries to reach it.
+
+CODE FACTS (read before writing this file)
+ - --kr2-gain multiplies the mode budget: scale = sigma_rec * g * gain (m2_paderborn_kr.py line 769). gain = 0 gives scale 0, exponent 0, exp(0) - 1 = 0, so x_vmd = x EXACTLY (the VMD residual is kept untouched; the modes are not re-summed). So gain = 0 is not "reconstruction only"; it is the original window. This is verified numerically below (max |x_vmd - x| must be 0).
+ - The perturbation is x + sum_m (exp(0.5 u kappa scale) - 1) mode_m, u ~ N(0,1) clipped to [-2, 2] (the only truncation), exponent halved up to 3 times when the log-spectral distance of any channel exceeds tau_lsd of that channel, then fall back to x. The exponential factor is unbounded otherwise.
+ - "V1" of v24m (sum of modes) is NOT a view used in training (training keeps the residual). Its feature distance (0.0157) is a reference, not a baseline for the perturbation; it is not used for any rule here.
+ - gain = 0 in training would not be identical to Bg4: the adaptive_kr2 path also differs in RNG use and K/R refresh. Only the gain=0 VIEW equals the original window.
+
+DESIGN
+ Models: the same 27 warm-up checkpoints and all training windows per split as v24m (scratch/v24p/runs_paderborn/P_*). K from the 'knn' scorer (Rk), kappa = budget_v2(K, R, 0.25, 0.5), labelled windows kappa = 1.
+ Gains: 0, 1, 2, 4, 8 (candidates; 8 is included only to see where the fidelity check starts to act).
+ Randomness: for each model ONE u tensor (shape B x C x M x 1, seed + 20000) is drawn once and reused for every gain; the standard augmentation A uses the same torch seed (7) for V3 and V4 at every gain, V3' uses seed 8. So differences between gains come from the dose only.
+ Views per gain g: x_g (VMD view with fidelity), A(x_g) vs A(x) with identical random numbers.
+
+MEASUREMENTS (per model, per gain; median over windows, plus p90, p99, max)
+ D1 nominal: mean |exponent| 0.5 |u| kappa scale gain before the fidelity check (per channel).
+ D2 realised signal change: ||x_g - x|| / ||x||. Realised-to-nominal ratio of the signal change relative to gain = 1 (should be about gain if nothing cancels it).
+ D3 fidelity: LSD/tau_lsd per channel (median, p99, max), fraction shrunk (>=1 halving), fraction fallen back, mean number of halvings.
+ D4 feature: d(A(x), A(x_g)) = 1 - cos of encoder features, ratio r_g = median d / median d(A(x), A'(x)) (two independent standard views).
+ D5 routing: fraction of windows whose route (K >= 0.5) differs between x and x_g; mean |K(x_g) - K(x)|.
+ D6 per channel: realised LSD/tau for each of the four channels (channels 1, 2, 4, 5 are indices 0..3; "channels 4 and 5" = indices 2 and 3).
+
+RULES (counted over 27 models; seeds share data so 9 splits x 3 seeds is not 27 independent datasets)
+ R0 sanity: gain = 0 gives x_g == x exactly (max abs difference 0) in 27/27 models. If not, stop and debug.
+ R1 DOSE-EFFECTIVE (nominal): D1 and D2 median signal change are strictly increasing over gains 0, 1, 2, 4 in >= 23/27 models, AND median signal change at gain 4 >= 2 x that at gain 1 in >= 23/27 models.
+ R2 ADMISSIBLE gain g (g >= 2): fraction fallen back <= 0.05 AND fraction shrunk <= 0.30, in >= 23/27 models.
+ R3 CANCELLED: realised signal change at gain g / realised at gain 1 < 0.5 * g (the check or the clip removes more than half of the nominal increase) in >= 14/27 models. Reported per gain.
+ R4 MATERIAL: at the LARGEST admissible gain g* (R2), r_g* >= 0.30 in >= 23/27 models. (0.30 = the perturbation changes the feature by at least 30 % of what two independent standard views differ by. This threshold is a judgement fixed now, not derived.)
+
+DECISION BEFORE SEEING RESULTS
+ R0 fails                         -> stop, debug.
+ R1 holds and R4 holds            -> stage 2 allowed: small end-to-end training at the admissible gains only (pre-registered separately before it is run; fewer splits and seeds as an exploratory screen, a selected gain must then be confirmed on data not used for selection; 75 % speed data stays sealed).
+ R1 holds, R4 fails, some g > 1 admissible -> no training. The perturbation inside the fidelity bound stays a small part of the view difference; report it as the mechanism limit.
+ R1 fails or no g > 1 admissible  -> no training; examine the clip / fidelity rule before anything else.
+ Mixed outcomes: report and discuss; no training until agreed.
+
+NOT CLAIMED
+ No statement about downstream H. A larger dose is not assumed to be better. Warm-up models only. Rk (knn) K only.
