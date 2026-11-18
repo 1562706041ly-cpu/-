@@ -1,0 +1,55 @@
+v28 exploratory screen: 9 splits x seed 0 (criteria: v28_endtoend_PREREGISTERED.txt). Screening, not confirmation; five comparisons, no multiplicity correction.
+KNOWN LIMITATION: BI65 is not feature-matched to BC2 in the three C3 splits (independent about 2x weaker there); BC2 at kappa = 1 is shrunk by the fidelity rule, so its effective perturbation is weaker than nominal.
+Bg4 source: V20 (existing runs, reused; GPU check passed)
+
+arm means over valid splits: H, known_acc, unk_recall, known_false_unk, unk_cluster_acc, nmi
+  Bg4   n=9  H 0.663  known_acc 0.739  unk_recall 0.657  known_false_unk 0.188  unk_cluster_acc 0.515  nmi 0.587
+  BI65  n=9  H 0.651  known_acc 0.733  unk_recall 0.653  known_false_unk 0.198  unk_cluster_acc 0.516  nmi 0.594
+  BC2   n=9  H 0.669  known_acc 0.738  unk_recall 0.651  known_false_unk 0.177  unk_cluster_acc 0.510  nmi 0.576
+  BI2   n=9  H 0.629  known_acc 0.671  unk_recall 0.669  known_false_unk 0.251  unk_cluster_acc 0.509  nmi 0.564
+
+P1 [primary, feature-level matched (limited in C3)]: BC2 - BI65 (n=9): mean dH +0.0181  sd 0.0422  se 0.0141  95% t-interval [-0.0144, +0.0505]  positive in 5/9, negative in 4/9
+   per-split dH (C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3): -0.012 -0.004 +0.017 -0.008 +0.085 +0.035 +0.080 -0.042 +0.010
+   secondary mean differences: known_acc +0.005  unk_recall -0.002  known_false_unk -0.021  unk_cluster_acc -0.006  nmi -0.018
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+   DESCRIPTIVE ONLY, enters no rule - by split family: C1/C2: n=6 mean dH +0.0190; C3: n=3 mean dH +0.0163
+   (in C3 the coordinated arm is both more strongly perturbed and has the larger feature change than BI65; an advantage coming mainly from C3 is not attributed to coordination)
+
+P2 [primary, signal-level matched]: BC2 - BI2 (n=9): mean dH +0.0397  sd 0.0839  se 0.0280  95% t-interval [-0.0248, +0.1042]  positive in 6/9, negative in 3/9
+   per-split dH (C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3): +0.048 +0.042 -0.019 +0.005 +0.050 -0.008 +0.234 -0.064 +0.068
+   secondary mean differences: known_acc +0.067  unk_recall -0.018  known_false_unk -0.074  unk_cluster_acc +0.001  nmi +0.012
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+S1 [secondary]: BI65 - Bg4 (n=9): mean dH -0.0122  sd 0.0212  se 0.0071  95% t-interval [-0.0286, +0.0041]  positive in 2/9, negative in 7/9
+   per-split dH (C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3): -0.003 +0.008 -0.015 -0.022 -0.021 -0.020 -0.048 +0.027 -0.015
+   secondary mean differences: known_acc -0.007  unk_recall -0.004  known_false_unk +0.010  unk_cluster_acc +0.001  nmi +0.006
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+S2 [secondary (decides the stop rule)]: BC2 - Bg4 (n=9): mean dH +0.0058  sd 0.0283  se 0.0094  95% t-interval [-0.0159, +0.0276]  positive in 5/9, negative in 4/9
+   per-split dH (C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3): -0.015 +0.005 +0.002 -0.030 +0.064 +0.015 +0.032 -0.015 -0.005
+   secondary mean differences: known_acc -0.001  unk_recall -0.006  known_false_unk -0.011  unk_cluster_acc -0.005  nmi -0.011
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+S3 [secondary]: BI2 - Bg4 (n=9): mean dH -0.0339  sd 0.0760  se 0.0253  95% t-interval [-0.0923, +0.0245]  positive in 4/9, negative in 5/9
+   per-split dH (C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3): -0.063 -0.037 +0.022 -0.036 +0.013 +0.023 -0.202 +0.049 -0.073
+   secondary mean differences: known_acc -0.068  unk_recall +0.013  known_false_unk +0.063  unk_cluster_acc -0.006  nmi -0.024
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+WHAT THE VERDICTS MEAN (fixed in the pre-registration)
+  STOP RULE: S2 BC2 - Bg4 is not a CANDIDATE -> the line "coordinated band gain improves performance" is stopped; recorded as "no benefit observed in this setting". No threshold change, no arm added, no further run on the same splits and seed.
+
+Unknown-class separability P1-AUROC (pair AUROC between different recordings; unknown windows of the unlabelled training set P1_U and of the held-out set P1_V; labels for evaluation only; the same pairs for every arm of a split)
+  Bg4   n=9  P1_U 0.9078  P1_V 0.9392
+  BI65  n=9  P1_U 0.9128  P1_V 0.9407
+  BC2   n=9  P1_U 0.9006  P1_V 0.9325
+  BI2   n=9  P1_U 0.9111  P1_V 0.9351
+  dP1 BC2 - BI65 (n=9): P1_U -0.0122  P1_V -0.0082   (descriptive)
+  dP1 BC2 - BI2 (n=9): P1_U -0.0105  P1_V -0.0026   (descriptive)
+  dP1 BI65 - Bg4 (n=9): P1_U +0.0051  P1_V +0.0015   (descriptive)
+  dP1 BC2 - Bg4 (n=9): P1_U -0.0072  P1_V -0.0067   (descriptive)
+  dP1 BI2 - Bg4 (n=9): P1_U +0.0033  P1_V -0.0041   (descriptive)
+
+In-training implementation check (last print of each run; mean over valid runs; NOT outcomes): band_sig = median relative signal change, band_shrunk, band_fallback, band_feat_e3 = 1000 x median feature change
+  BI65  band_sig n/a  band_shrunk n/a  band_fallback n/a  band_feat_e3 n/a  (logs: 0 runs)   feature change e3 by family: C1/C2 n/a, C3 n/a
+  BC2   band_sig n/a  band_shrunk n/a  band_fallback n/a  band_feat_e3 n/a  (logs: 0 runs)   feature change e3 by family: C1/C2 n/a, C3 n/a
+  BI2   band_sig n/a  band_shrunk n/a  band_fallback n/a  band_feat_e3 n/a  (logs: 0 runs)   feature change e3 by family: C1/C2 n/a, C3 n/a
