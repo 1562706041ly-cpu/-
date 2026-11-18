@@ -1,0 +1,18 @@
+v28 gain scan RESULT (design step; rule v28_gain_selection_RULE.txt pushed to branch v28-rule at 2026-11-18T14:18:57Z, before the scan). 27 warm-up models; all training windows; recording-level halves (even positions = SELECTION, odd = CHECK); kappa = 1; no labels, no evaluation window, no H. Script scratch/v24p/gain_scan.py; raw v28_gain_scan.json.
+
+SELECTION: grid 0.50-1.50 (step 0.05), score = mean |ln(feat_VI(g) / feat_VC(2.0))| on the selection half.
+ Scores (selection half): 0.50:0.746 0.55:0.555 0.60:0.396 0.65:0.309 0.70:0.311 0.75:0.358 0.80:0.404 0.85:0.445 0.90:0.499 1.00:0.679 1.20:1.063 1.50:1.538.
+ SELECTED independent gain g_I* = 0.65 (0.70 is a near tie: 0.311). The v27b value 0.85 does not survive kappa = 1 (score 0.445), as expected from the change of the budget.
+ Per-model best grid value: mean 0.73, range 0.55-1.00.
+
+CHECK (rule: |ln ratio| <= ln(1.25) in >= 23/27 models on the CHECK half; no automatic re-selection)
+ selection half: within the bound in 17/27 models; median |ln ratio| 0.146; max 0.913; mean feat_VI(g*)/feat_VC 0.860.
+ check half:     within the bound in 15/27 models  -> check criterion NOT met; median |ln ratio| 0.180; max 0.861; mean ratio 0.856.
+ per split (check half, mean |ln ratio|): C1f1 0.153, C1f2 0.085, C1f3 0.170, C2f1 0.131, C2f2 0.131, C2f3 0.095, C3f1 0.652, C3f2 0.602, C3f3 0.781. The mismatch sits in the three C3 splits (independent gain 0.65 is about 2 times weaker there); the six C1/C2 splits are within about 0.17.
+ As written in the rule: g_I* stays 0.65; the mismatch is a limitation of the screen.
+
+HALF MEANS (check half; selection half in brackets)
+ VC(2.0): feat 0.0036 [0.0037], signal change 0.208 [0.207], shrunk 0.321 [0.319]
+ VI(0.65): feat 0.0028 [0.0029], signal change 0.082 [0.081], shrunk 0.000
+ VI(2.0): feat 0.0154 [0.0162], signal change 0.179 [0.178], shrunk 0.467 [0.468]
+Observations: with kappa = 1 the coordinated gain 2 view is shrunk in 32 % of the windows (it was 4 % with the K/R budget, mean kappa about 0.7), and at the matched feature level the coordinated view has about 2.5 times the signal change of the independent one (0.208 vs 0.082). The independent gain 2 view has about 4 times the feature change of the coordinated one (0.0154 vs 0.0036) at a signal change within 20 % (0.179 vs 0.208).
