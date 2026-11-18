@@ -1,0 +1,69 @@
+v27 cross-channel coordinated band perturbation: mechanism-check PRE-REGISTRATION DRAFT (awaiting the user's confirmation; nothing computed from it).
+Bruinsma centrifugal pump only (Motor-2, 100 % speed). 75 % speed data sealed. Drafted 2026-11-06. No GPU, no end-to-end training, no H in this draft.
+
+STATUS OF THE LINE
+ v26 was the last diagnostic on the VMD-mode formulation (P1 INCONCLUSIVE, exposure met). This draft is a NEW hypothesis about a different augmentation, not a re-run of the VMD one. Prior work and open design points are listed first because they change what can be claimed.
+
+LITERATURE CHECK (preliminary; I re-read the sources that the user cited; this is not an exhaustive search)
+ - Multivariate VMD (Rehman and Aftab, arXiv 1907.04509): decomposes all channels jointly under a shared (common) centre-frequency model. Verified from the abstract. It is a decomposition, not an augmentation. Supports the concern that independent per-channel VMD does not align modes across channels (our own check, v26b: modes 3-6 differ by up to 4.3 kHz between channels).
+ - AMVMD-MC1DCNN (Sensors 2021, 21, 5494, rolling-mill bearings): adaptive multivariate VMD plus a multi-channel 1-D CNN; the review report states that a DCGAN is embedded to handle an unbalanced training set. Supervised, class-imbalance setting. "Multi-channel VMD plus augmentation" therefore already exists.
+ - Robust Augmentation for Multivariate Time Series Classification (arXiv 2201.11739): I read the text. Each augmentation selects a random subset of channels (a per-channel probability); cutout, mixup, cutmix, window warping, etc. I did not find a rule that coordinates perturbation VALUES across channels or that works on frequency bands. It does not establish the idea of coordinated band perturbation, nor does it exclude it.
+ - Multivariate TVAR augmentation (arXiv 2410.16419, failure PROGNOSTICS on C-MAPSS): CORRECTION to the summary that it preserves statistical relations between channels. In the version I read, the model matrices are diagonal, assumption A5 says the noise correlation matrix is diagonal (noise uncorrelated across channels), and the covariance parameters use only the per-channel variances (diagonal entries). It matches per-channel mean and variance over time, not cross-channel covariance. It is a prognostics method on simulated turbofan data.
+ Conclusion: coordination of band perturbations across channels is not claimed as novel here, and cross-channel-relation-preserving augmentation for fault DISCOVERY was not found in this preliminary check, which proves nothing about absence.
+
+DESIGN POINT THAT CHANGES THE CLAIM (stated before the plan)
+ Route A (fixed physical frequency bands) does not use VMD. It is a spectral band-gain augmentation: x' = irfft( rfft(x) * g(f) ), g piecewise constant per band, g = exp(0.5 u_b kappa s_b). The encoder input is the log magnitude spectrum, so a band gain is almost exactly an additive offset on that spectrum in that band. A band-wise amplitude jitter is a simple, widely used spectral augmentation. If route A were ever run end-to-end and worked, Chapter 3 would no longer be a "VMD adaptive augmentation" and would need repositioning with the supervisor. Route B (joint decomposition, MVMD) keeps the mode idea but needs a new decomposition bank (computational cost) and is not drafted here. The user's earlier note applies: the existing independent-VMD bank is not an MVMD result.
+
+NEW HYPOTHESIS
+ H3: at matched per-channel perturbation intensity, band perturbations that are shared across the four channels preserve the cross-channel spectral relations better than independent per-channel perturbations, and the independent ones move these relations by an amount that is not negligible compared with their natural variation. Only then can coordination matter at all. Whether coordination improves discovery performance is NOT tested here.
+ H3 is not claimed to be true. A negative outcome ends the route.
+
+VIEWS (fixed models, no training, no H, sandbox CPU)
+ Models: the 27 warm-up checkpoints (9 splits x 3 seeds); all training windows per split (known and unknown; labels used for analysis only). Encoder in eval mode.
+ Bands: 32 linear bands over the rfft bins of the 2048-point window (the same partition as KR.log_band_energy and torch_lsd, bin width 10 Hz x 64 = 640 Hz per band at 20 kHz). Band energy statistics are computed in the same way.
+ Budget per (channel c, band b): s_cb = sigma_rec_cb * gain, where sigma_rec_cb is the standard deviation across RECORDINGS (installation + measurement) of the record-mean log band energy of the labelled known-class windows, averaged over the known classes (the band analogue of sigma_rec in nuisance_mode_stats). No class-separation factor g is used in this mechanism check. kappa = budget_v2(K, R) per window as before (K from knn). Gain 2 is primary; gain 1 and 4 reported.
+ Views:
+  VO = x (original).
+  VI (independent): u_cb ~ N(0, 1) clipped to [-2, 2], independent over c and b.
+  VC (coordinated): u_b ~ N(0, 1) clipped to [-2, 2], the SAME for all four channels, independent over b. Same marginal law per channel and band as VI, same s_cb.
+  Gain on band b of channel c: g_cb = exp(0.5 u_{(c),b} kappa s_cb); the amplitude of that band is multiplied by g_cb. Fidelity: the existing log-spectral distance rule (per channel, tau_lsd from the labelled windows, up to 3 halvings, then fall back to x). The same random numbers (u drawn once per window, then used for VI as u_cb and for VC as u_b), seeds fixed as in v24d.
+  VA = A(x), VIA = A(VI), VCA = A(VC) with the same standard-augmentation random numbers (A: shift 256, scale 0.2, noise 0.1, mask 0.10).
+
+INTENSITY MATCH (checked, not assumed)
+ Per channel: median relative signal change ||v - x|| / ||x||, median LSD / tau_lsd (the existing torch_lsd), fraction shrunk, fraction fallen back; and the feature distance d = 1 - cos(enc(x), enc(v)).
+ MATCHED: for each channel, |median(VC) - median(VI)| / median(VI) <= 0.10 for both the signal change and the LSD ratio, in >= 23/27 models.
+ If not matched, the intensity differences are reported and no statement about relation preservation is made without them.
+
+CROSS-CHANNEL RELATION (the mechanism)
+ For the channel pairs (c, c') and band b: rel_{cc'b}(w) = logE_c,b(w) - logE_c',b(w), from the band energies of the window w (the same 32-band log energy as above; amplitudes squared).
+ Change of the relations: Dv = mean over pairs and bands of |rel(v) - rel(x)|, per window; median over windows.
+ Natural variation: Dnat = the standard deviation of rel_{cc'b} across the labelled known-class windows of the same class from DIFFERENT recordings (pooled over classes; averaged over pairs and bands). Labelled known windows only, no unknown labels.
+ Reported: Dv(VI), Dv(VC), Dnat and the ratios Dv / Dnat.
+ Dv(VC) is near zero by construction only if the channel budgets s_cb and kappa are equal across channels; with unequal budgets it is not zero, which is why it is measured. It is therefore an integrity-type check, not a performance claim.
+
+RULES (27 models; 9 splits x 3 seeds are not independent; gain 2)
+ INTENSITY MATCHED: as above.
+ PROBLEM EXISTS: Dv(VI) / Dnat >= 0.25 (independent perturbation moves the cross-channel relations by at least a quarter of their natural between-recording variation) in >= 23/27 models.
+ COORDINATION PRESERVES: Dv(VC) <= 0.5 x Dv(VI) in >= 23/27 models.
+ FEATURE LEVEL (descriptive plus one rule): median feature distance of A(VI) and A(VC) relative to A(x): d(VIA, VA) and d(VCA, VA), with the same standard-augmentation numbers. Rule FEATURE-DIFFERS: |d(VIA,VA) - d(VCA,VA)| / d(VIA,VA) >= 0.2 in >= 23/27 models (the encoder reacts differently to the two perturbations; otherwise coordination cannot matter to a downstream model).
+ Descriptive only (no rule): per-channel and per-band tables; per-split results; route-flip rate of K; unknown separability P1 as in v26 for VIA and VCA (labels for analysis only).
+ (0.10, 0.25, 0.5, 0.2 and 23/27 are judgements fixed now.)
+
+DECISIONS FIXED NOW
+ INTENSITY MATCHED and PROBLEM EXISTS and COORDINATION PRESERVES and FEATURE-DIFFERS -> the mechanism condition is present; a later, separately pre-registered end-to-end design (Bg4, independent band gain, coordinated band gain at matched intensity, a random-rejection-free control) may be proposed; repositioning of Chapter 3 would be discussed with the supervisor first.
+ PROBLEM EXISTS not met              -> independent perturbation does not move the cross-channel relations by a non-negligible fraction of their natural variation; the route ends.
+ INTENSITY not matched               -> report the mismatch; no relation statement; no end-to-end design until intensities are matched under a new pre-registration.
+ PROBLEM EXISTS met but COORDINATION PRESERVES not met -> the coordination as defined does not preserve the relations (unequal budgets or clipping); report; route ends.
+ FEATURE-DIFFERS not met             -> the encoder does not distinguish them; the route ends.
+ Anything else: INCONCLUSIVE; report per-split results; the route ends. No recalibration after the result. Bg4 stays the main baseline.
+
+LIMITS (stated now)
+ Warm-up encoders; fixed feature spaces do not show effects on H. Band gains act on magnitudes only (the encoder input is the log magnitude spectrum; phase is not given to the model, which does not mean that phase is physically unimportant). The sensor positions of channels 1, 2, 4, 5 are not known to me, so "cross-channel relation" is a statistical statement about the four recorded channels, not a physical one. 27 models are 9 splits x 3 seeds.
+
+NOT CLAIMED: that independent perturbation destroys relations that matter for diagnosis; that coordinated perturbation improves H or class discovery; that the route is novel.
+
+DECISIONS NEEDED FROM THE USER BEFORE ANY COMPUTATION
+ 1. Route A as drafted (band-gain augmentation, no VMD), accepting that this leaves the VMD formulation for this mechanism check. Or: stay with VMD and construct matched-band VMD perturbation (requires aligning modes to bands per window; more design).
+ 2. Band partition: 32 linear bands (as the existing fidelity metric), or a log-spaced partition (the VMD modes cluster around 300 Hz, 1 kHz and 7-9 kHz in the bank).
+ 3. Budget s_cb from record-level variation of band log energy without the class-separation factor g (no known/unknown role in this check).
+ 4. Thresholds (0.10, 0.25, 0.5, 0.2, 23/27) and the "route ends" decisions.
