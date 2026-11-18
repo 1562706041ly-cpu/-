@@ -1,0 +1,31 @@
+v24d stage-1 RESULT (27 pump warm-up models, all training windows per split, sandbox CPU; script scratch/v24p/dose_check.py; raw v24d_dose.json)
+Criteria: v24d_dose_PREREGISTERED.txt (written before the run; not changed). Fixed models, Rk (knn) K, same u and same standard-augmentation random numbers for every gain.
+
+Rules
+ R0 gain = 0 gives x_g == x exactly                      27/27   (needs 27)  -> met
+ R1 strictly increasing over gains 0,1,2,4: nominal 27/27, realised signal change 27/27; gain 4 >= 2 x gain 1: 27/27 (needs >= 23) -> met
+ R2 admissible (fallback <= 0.05 and shrunk <= 0.30): gain 2: 27/27; gain 4: 27/27; gain 8: 3/27 (needs >= 23) -> gains 2 and 4 admissible, 8 not
+ R3 cancelled (realised change < 0.5 g of the gain-1 change): 0/27 at gains 2, 4, 8 -> dose is not cancelled
+ R4 largest admissible gain g* = 4; r(g*) >= 0.30 in 27/27 (needs >= 23) -> met
+Pre-registered decision: R1 and R4 hold -> stage 2 (small end-to-end training at the admissible gains) is allowed. Stage 2 needs its own pre-registration before any run.
+
+Mean over 27 models by gain
+ gain  nominal|exp|  signal change med/p99  LSD/tau med/p99/max   shrunk  fallback  r       route change  mean|dK|
+ 0     0.000         0.000 / 0.000          0.000/0.000/0.000     0.000   0.000     0.000   0.000         0.000
+ 1     0.037         0.045 / 0.109          0.138/0.299/0.372     0.000   0.000     0.090   0.042         0.044
+ 2     0.074         0.090 / 0.253          0.276/0.607/0.755     0.000   0.000     0.342   0.100         0.099
+ 4     0.149         0.175 / 0.591          0.529/0.948/0.995     0.066   0.000     1.116   0.212         0.196
+ 8     0.297         0.234 / 0.774          0.674/0.991/0.999     0.585   0.000     1.725   0.255         0.235
+ r = median feature distance caused by the VMD perturbation under identical standard augmentation / median distance between two independent standard views.
+ r range over models: gain 1 0.02-0.15; gain 2 0.09-0.55; gain 4 0.33-1.73; gain 8 0.97-2.77.
+ Per-channel median LSD/tau (channels 1, 2, 4, 5): gain 1 0.108 0.073 0.088 0.070; gain 4 0.416 0.282 0.335 0.265; gain 8 0.545 0.369 0.439 0.341. All four channels scale with gain; the two channels with the smaller budget (4, 5 = indices 2, 3) scale too.
+
+Observations (descriptive)
+ 1. gain = 0 is the original window (the VMD residual is kept), not a reconstruction. The v24m "reconstruction only" view is not a training view and is not a baseline for the perturbation.
+ 2. Signal change grows about linearly with gain up to 4 (0.045 -> 0.175, x3.9). The feature response is much steeper: r grows 12-fold between gain 1 and gain 4 (0.09 -> 1.12). At gain 4 the VMD perturbation changes the feature MORE than two independent standard views differ from each other (r > 1 in most models). Whether that helps is not known.
+ 3. At gain 4 the fidelity check begins to act (6.6 % of windows shrunk, none fall back); at gain 8 it acts on 58 % and the realised signal change saturates (0.234 vs nominal 2 x gain 4). Gain 8 is outside the pre-registered admissible range.
+ 4. Route changes (K >= 0.5 flips between x and x_g) grow from 4 % (gain 1) to 21 % (gain 4). The knowledge score K reacts strongly to the perturbation at gain 4.
+ 5. The 99th percentile LSD/tau is 0.95 at gain 4, close to the bound, for some windows.
+
+Limits
+ Warm-up models only (300 steps); after Chapter-3 training the encoder differs. Rk K only. Fixed-model dose scan: it shows that the dose works and where the check acts, nothing about H. 27 models are 9 splits x 3 seeds.
