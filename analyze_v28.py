@@ -18,11 +18,17 @@ def read_log(path):
     if b[:2] in (b'\xff\xfe', b'\xfe\xff') or b[1:2] == b'\x00': return b.decode('utf-16', errors='ignore')
     return b.decode('utf-8', errors='ignore')
 
+# Keys that later code versions added to the stored args (with these defaults). Runs made by earlier code (the reused V20 Bg4 runs) simply lack them. A missing key is read as its default:
+# guard_score 'maxsim' (the v19/v20 known guard), mix_aug 'none', kr2_shuf_scope 'both'. (v28b fix: the first version compared None with the default and aborted on all 27 pairings.)
+LATER_DEFAULTS = {'guard_score': 'maxsim', 'mix_aug': 'none', 'kr2_shuf_scope': 'both'}
+
 def load_run(tag):
     f = os.path.join(a.root, tag, 'results_exp2.json')
     if not os.path.exists(f): return None
     r = list(json.load(open(f, encoding='utf-8')).values())[0]; o = r['openset']['V']
-    return dict(tag=tag, args=r['args'], lab=list(r['labeled_idx']), n=(r['n_labeled'], r['n_unlabeled'], r['n_val']),
+    args_ = dict(r['args']); filled = [k for k in LATER_DEFAULTS if k not in args_]
+    for k in filled: args_[k] = LATER_DEFAULTS[k]
+    return dict(tag=tag, args=args_, filled=filled, lab=list(r['labeled_idx']), n=(r['n_labeled'], r['n_unlabeled'], r['n_val']),
                 vals=dict(H=o['H'], known_acc=o['known_acc'], unk_recall=o['unk_recall'], known_false_unk=o['known_false_unk'],
                           unk_cluster_acc=r['M2_GCD+半监督KMeans']['V']['new'], nmi=r['M2_GCD+半监督KMeans']['V']['nmi']))
 
@@ -82,6 +88,8 @@ for c, f in splits:
             if v['args'].get(k) != want: fails.append(f'{arm} {c} f{f}: {k}={v["args"].get(k)!r}, expected {want!r}')
         diff = {k: (ref['args'].get(k), v['args'].get(k)) for k in set(ref['args']) | set(v['args']) if k not in IGN and ref['args'].get(k) != v['args'].get(k)}
         if diff: fails.append(f'{arm} {c} f{f}: args differ from Bg4: {diff}')
+filled_runs = sorted((v['tag'], v['filled']) for v in runs.values() if v.get('filled'))
+if filled_runs: P('keys absent from the stored args and read as their defaults (earlier code version): ' + '; '.join(f"{t}: {','.join(k)}" for t, k in filled_runs[:12]) + (' ...' if len(filled_runs) > 12 else ''))
 hard = [x for x in fails if not x.startswith('arm ')]
 P('pairing checks: ' + ('PASSED' if not hard else f'FAILED ({len(hard)} problems)'))
 for x in fails[:60]: P('  - ' + x)
