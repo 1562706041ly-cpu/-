@@ -1,0 +1,41 @@
+v24a allocation mechanism diagnostic: does adaptive allocation really give different budgets to different windows, and do those budget differences reach the perturbation the encoder sees?
+Bruinsma centrifugal pump only (Motor-2, 100 % speed). Written BEFORE any number of this diagnostic was computed (2026-11-06). 75 % speed data not opened. Nothing is retrained and no GPU time is used.
+
+WHY NOW
+Stage 2 (v24s2, 9 splits x seed 0, exploratory) found no evidence that allocation by (K, R) differs from random allocation of the same budgets (dH -0.001 at gain 2 and at gain 4) and no gain over Bg4. This diagnostic asks whether the mechanism works as designed. It cannot show that any allocation helps diagnosis, and a correlation found here is not evidence of benefit.
+
+DATA AVAILABLE (what is and is not in hand)
+ (a) Sandbox: the 27 warm-up checkpoints (9 splits x 3 seeds; scratch/v24p, step 300 of the shared warm-up) and the VMD bank. K, R and kappa are computed exactly as in training at the first refresh (Rk: K from the 'knn' scorer, kappa = budget_v2(K, R, 0.25, 0.5), labelled windows kappa = 1). Fixed-model analysis; the encoders are not the ones after Chapter-3 training.
+ (b) The 36 uploaded training logs (v24s2; Rk2, Rk4, Rks2, Rks4; 9 splits; UTF-16 decoded): every 300 steps a [KR step N] line (zone counts, AUROC of K and of R) and an aug line (kap_mean, kap_p10, kap_p90, relchg_med, fallback, mean_shrink of the training batch). They show the stages 300-1500 after Chapter-3 training starts.
+ (c) NOT in hand: per-window K, R, kappa after Chapter-3 training. They exist on the user's machine as runs_paderborn\V20_*_seed0\kr_teacher_*_step*.npz (written at every refresh) and need no GPU, only an upload. If part A-D below cannot be interpreted without them, this will be said and they will be requested; it is not a reason to rerun anything.
+
+MEASUREMENTS
+Part W (warm-up models, 27, unlabelled windows only; gains 2 and 4 as trained in stage 2)
+ W1 distribution of (K, R, kappa): fractions of unlabelled windows in reliable-known (K >= 0.5, R >= 0.5), reliable-unknown (K < 0.5, R >= 0.5) and uncertain (R < 0.5) zones; kappa p10, p50, p90, p90/p10, share of windows within 0.05 of the nominal levels 1.0, 0.625, 0.25.
+ W2 sample-to-sample difference between arms: the shuffled kappa is built exactly as in the code (permutation within the unlabelled set, seed + 40000). Spearman(kappa, kappa_shuf), mean |kappa - kappa_shuf|, fraction of windows with |difference| >= 0.10.
+ W3 transmission of the budget to the signal: the SAME random numbers u are used for the adaptive and the shuffled kappa and for every gain. Realised relative signal change ||x_v - x|| / ||x|| after the fidelity check. Spearman(assigned kappa, realised change) in each arm; Spearman(kappa_adaptive, realised change in the shuffled arm) (should be near 0 if the arms really perturb different windows); median realised change in the top and in the bottom tercile of the assigned kappa and their ratio; per-window noise: on every 4th unlabelled window, 20 independent draws of u, standard deviation of log(realised change) across draws (median over windows); budget SNR = |log(tercile ratio)| / that noise sd.
+ W4 transmission to the feature: d = 1 - cos(enc(x), enc(x_v)): Spearman(assigned kappa, d), top/bottom tercile median ratio, in both arms.
+ W5 meaning of the allocation (labels used for ANALYSIS ONLY): mean kappa of unlabelled known-class windows vs unlabelled unknown-class windows; AUROC of kappa for known vs unknown; share of unknown windows in each zone.
+Part L (logs, stages 300 / 600 / 900 / 1200 / 1500, 9 splits, arms Rk2 Rk4 Rks2 Rks4)
+ L1 zone counts as fractions of the unlabelled windows, AUROC of K, AUROC of R for correct routing, per stage; kap_mean / kap_p10 / kap_p90 / relchg_med / fallback / mean_shrink per stage; adaptive vs random arms side by side.
+ No rule is attached to Part L; it is descriptive and checks whether the warm-up picture holds during training.
+
+RULES (counted over the 27 warm-up models; 9 splits x 3 seeds are not 27 independent datasets; per gain where gain matters)
+ SPREAD         : kappa p90/p10 >= 1.5 in >= 23/27 models AND no single plateau holds more than 60 % of the unlabelled windows within +/-0.05.
+ DIFFERS        : mean |kappa - kappa_shuf| >= 0.10 in >= 23/27 models.
+ DECOUPLED      : |Spearman(kappa_adaptive, realised signal change in the shuffled arm)| < 0.15 in >= 23/27 models.
+ TRANSMITTED_SIGNAL : tercile ratio of the realised signal change (adaptive arm) >= 1.5 in >= 23/27 models, at gain 2 and at gain 4.
+ TRANSMITTED_FEATURE: tercile ratio of the feature distance (adaptive arm) >= 1.5 in >= 23/27 models, at gain 2 and at gain 4.
+ (1.5 is a judgement fixed now. The nominal kappa range p10-p90 of about 0.44-0.92 would give a ratio near 2 if the budget passed through unchanged.)
+
+DECISIONS FIXED BEFORE SEEING RESULTS (stop point included)
+ not SPREAD                                  -> inspect the (K, R) distribution and the budget map (budget_v2); decide whether a change is worth a pre-registered test.
+ SPREAD and DIFFERS and DECOUPLED but not TRANSMITTED_SIGNAL (at either gain) -> inspect the mode perturbation and the fidelity mechanism.
+ SPREAD, DIFFERS, DECOUPLED, TRANSMITTED_SIGNAL but not TRANSMITTED_FEATURE -> the encoder is insensitive to the extra budget; report; no further augmentation sweeps on this basis.
+ SPREAD, DIFFERS, DECOUPLED, TRANSMITTED_SIGNAL and TRANSMITTED_FEATURE (the mechanism works as designed) while stage 2 shows no end-to-end difference -> stop treating the current adaptive augmentation as the validated core of Chapter 3; the thesis chapter is re-scoped (the mechanism is a proposed component whose end-to-end benefit was not shown on this data).
+ Any other combination: report and discuss before choosing.
+ After this diagnostic: NO further Chapter-3 dose or allocation experiment on the current formulation unless a new hypothesis is pre-registered first.
+ Bg4 stays the main baseline; the 75 % speed data stay sealed.
+
+NOT CLAIMED
+ That any allocation improves diagnosis; that fixed-model (warm-up) findings hold after training; that 27 models are independent. A correlation between kappa and realised perturbation shows that the budget passes through, not that it is useful.

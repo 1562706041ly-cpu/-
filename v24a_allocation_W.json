@@ -1,0 +1,2081 @@
+[
+ {
+  "combo": "C1",
+  "fold": 1,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.3430232558139535,
+    "rel_unknown": 0.5087209302325582,
+    "uncertain": 0.14825581395348839
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8320397734642029,
+    "rel_unknown": 0.6268444061279297,
+    "uncertain": 0.402676522731781
+   },
+   "kappa_p10": 0.44669678807258606,
+   "kappa_p50": 0.6250030994415283,
+   "kappa_p90": 0.9158797264099121,
+   "p90_over_p10": 2.0503387451171875,
+   "plateau_share": {
+    "1.0": 0.03197674418604651,
+    "0.625": 0.5036337209302325,
+    "0.25": 0.02616279069767442
+   }
+  },
+  "W2": {
+   "spearman": 0.01646779646663069,
+   "mean_abs_diff": 0.1721768081188202,
+   "frac_ge_0p1": 0.5864825581395349
+  },
+  "W5": {
+   "mean_kappa_known": 0.7445582151412964,
+   "mean_kappa_unknown": 0.6059929132461548,
+   "auroc_kappa_known_vs_unknown": 0.746726345486111,
+   "unknown_share_in_zone": {
+    "rel_known": 0.09745762711864407,
+    "rel_unknown": 0.9471428571428572,
+    "uncertain": 0.44607843137254904
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6030933961733289,
+    "spearman_kappa_signal_shuffled": 0.590814729657088,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.014775785543715234,
+    "tercile_ratio_signal_adaptive": 1.6072087287902832,
+    "tercile_ratio_signal_shuffled": 1.6103376150131226,
+    "median_signal_adaptive": 0.06268969178199768,
+    "median_signal_shuffled": 0.06287465989589691,
+    "noise_sd_log_signal": 0.2855214476585388,
+    "budget_snr": 1.6618680293519879,
+    "spearman_kappa_feature_adaptive": 0.42486605935580535,
+    "spearman_kappa_feature_shuffled": 0.3961281880935702,
+    "tercile_ratio_feature_adaptive": 2.7795515060424805,
+    "tercile_ratio_feature_shuffled": 2.347515344619751,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5846686641748065,
+    "spearman_kappa_signal_shuffled": 0.574083922630668,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.020498970658361045,
+    "tercile_ratio_signal_adaptive": 1.6323262453079224,
+    "tercile_ratio_signal_shuffled": 1.621498703956604,
+    "median_signal_adaptive": 0.1263062059879303,
+    "median_signal_shuffled": 0.12640735507011414,
+    "noise_sd_log_signal": 0.3211047053337097,
+    "budget_snr": 1.526001125606294,
+    "spearman_kappa_feature_adaptive": 0.44491973046979966,
+    "spearman_kappa_feature_shuffled": 0.39633321042025377,
+    "tercile_ratio_feature_adaptive": 3.0415537357330322,
+    "tercile_ratio_feature_shuffled": 2.2856812477111816,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 1,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.3633720930232558,
+    "rel_unknown": 0.498546511627907,
+    "uncertain": 0.1380813953488372
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8899329900741577,
+    "rel_unknown": 0.6212884187698364,
+    "uncertain": 0.4066530764102936
+   },
+   "kappa_p10": 0.46847662329673767,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9658434391021729,
+   "p90_over_p10": 2.0616683959960938,
+   "plateau_share": {
+    "1.0": 0.1438953488372093,
+    "0.625": 0.48328488372093026,
+    "0.25": 0.02688953488372093
+   }
+  },
+  "W2": {
+   "spearman": -0.04211296340840955,
+   "mean_abs_diff": 0.2009851038455963,
+   "frac_ge_0p1": 0.6184593023255814
+  },
+  "W5": {
+   "mean_kappa_known": 0.8140217661857605,
+   "mean_kappa_unknown": 0.5994474291801453,
+   "auroc_kappa_known_vs_unknown": 0.8008702256944444,
+   "unknown_share_in_zone": {
+    "rel_known": 0.096,
+    "rel_unknown": 0.9475218658892128,
+    "uncertain": 0.5368421052631579
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6517057290601116,
+    "spearman_kappa_signal_shuffled": 0.6270522926221783,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.026820095707316062,
+    "tercile_ratio_signal_adaptive": 1.802634358406067,
+    "tercile_ratio_signal_shuffled": 1.64817476272583,
+    "median_signal_adaptive": 0.0711715966463089,
+    "median_signal_shuffled": 0.07127504050731659,
+    "noise_sd_log_signal": 0.2856020927429199,
+    "budget_snr": 2.0631821068639895,
+    "spearman_kappa_feature_adaptive": 0.4733089829938587,
+    "spearman_kappa_feature_shuffled": 0.4843964553854162,
+    "tercile_ratio_feature_adaptive": 2.9503846168518066,
+    "tercile_ratio_feature_shuffled": 2.7052838802337646,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.633633459226607,
+    "spearman_kappa_signal_shuffled": 0.6010909502396581,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.041109577537509295,
+    "tercile_ratio_signal_adaptive": 1.8538933992385864,
+    "tercile_ratio_signal_shuffled": 1.6556555032730103,
+    "median_signal_adaptive": 0.14299805462360382,
+    "median_signal_shuffled": 0.14382010698318481,
+    "noise_sd_log_signal": 0.3243288993835449,
+    "budget_snr": 1.9032777188529186,
+    "spearman_kappa_feature_adaptive": 0.48659320165616105,
+    "spearman_kappa_feature_shuffled": 0.4786831777200948,
+    "tercile_ratio_feature_adaptive": 3.028672695159912,
+    "tercile_ratio_feature_shuffled": 2.543522834777832,
+    "frac_shrunk_adaptive": 0.0021802326664328575,
+    "frac_shrunk_shuffled": 0.0021802326664328575
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 1,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.38880813953488375,
+    "rel_unknown": 0.46075581395348836,
+    "uncertain": 0.1504360465116279
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8627417683601379,
+    "rel_unknown": 0.618598461151123,
+    "uncertain": 0.3946045935153961
+   },
+   "kappa_p10": 0.4279664158821106,
+   "kappa_p50": 0.6250015497207642,
+   "kappa_p90": 0.9377652406692505,
+   "p90_over_p10": 2.1912121772766113,
+   "plateau_share": {
+    "1.0": 0.055232558139534885,
+    "0.625": 0.42805232558139533,
+    "0.25": 0.024709302325581394
+   }
+  },
+  "W2": {
+   "spearman": -0.008722294194054249,
+   "mean_abs_diff": 0.19968487322330475,
+   "frac_ge_0p1": 0.6518895348837209
+  },
+  "W5": {
+   "mean_kappa_known": 0.8168056011199951,
+   "mean_kappa_unknown": 0.5812017917633057,
+   "auroc_kappa_known_vs_unknown": 0.8675824652777779,
+   "unknown_share_in_zone": {
+    "rel_known": 0.07102803738317758,
+    "rel_unknown": 0.9763406940063092,
+    "uncertain": 0.6908212560386473
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6595616523096937,
+    "spearman_kappa_signal_shuffled": 0.6440647749791306,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.01061553568141102,
+    "tercile_ratio_signal_adaptive": 1.8193236589431763,
+    "tercile_ratio_signal_shuffled": 1.8034182786941528,
+    "median_signal_adaptive": 0.05924005061388016,
+    "median_signal_shuffled": 0.060051191598176956,
+    "noise_sd_log_signal": 0.2787119150161743,
+    "budget_snr": 2.147252355617311,
+    "spearman_kappa_feature_adaptive": 0.4984646394612783,
+    "spearman_kappa_feature_shuffled": 0.5065096527487006,
+    "tercile_ratio_feature_adaptive": 3.24932861328125,
+    "tercile_ratio_feature_shuffled": 3.3516054153442383,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.6361487485893217,
+    "spearman_kappa_signal_shuffled": 0.6278490352722449,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.007596033095924463,
+    "tercile_ratio_signal_adaptive": 1.799816370010376,
+    "tercile_ratio_signal_shuffled": 1.8317617177963257,
+    "median_signal_adaptive": 0.11901523172855377,
+    "median_signal_shuffled": 0.120684415102005,
+    "noise_sd_log_signal": 0.31052160263061523,
+    "budget_snr": 1.8925724911198876,
+    "spearman_kappa_feature_adaptive": 0.507991390688054,
+    "spearman_kappa_feature_shuffled": 0.5104617922723145,
+    "tercile_ratio_feature_adaptive": 3.2169172763824463,
+    "tercile_ratio_feature_shuffled": 3.145266532897949,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 2,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.39098837209302323,
+    "rel_unknown": 0.41497093023255816,
+    "uncertain": 0.19404069767441862
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8540402054786682,
+    "rel_unknown": 0.6265849471092224,
+    "uncertain": 0.4041707217693329
+   },
+   "kappa_p10": 0.40473270416259766,
+   "kappa_p50": 0.6255556344985962,
+   "kappa_p90": 0.9319257736206055,
+   "p90_over_p10": 2.3025710582733154,
+   "plateau_share": {
+    "1.0": 0.046511627906976744,
+    "0.625": 0.4069767441860465,
+    "0.25": 0.036337209302325583
+   }
+  },
+  "W2": {
+   "spearman": -0.029569699695592054,
+   "mean_abs_diff": 0.20696546137332916,
+   "frac_ge_0p1": 0.6671511627906976
+  },
+  "W5": {
+   "mean_kappa_known": 0.7779127955436707,
+   "mean_kappa_unknown": 0.5963618159294128,
+   "auroc_kappa_known_vs_unknown": 0.7961783854166666,
+   "unknown_share_in_zone": {
+    "rel_known": 0.16171003717472118,
+    "rel_unknown": 0.9527145359019265,
+    "uncertain": 0.6329588014981273
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6737023130374625,
+    "spearman_kappa_signal_shuffled": 0.6219694302014175,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.03386170818256027,
+    "tercile_ratio_signal_adaptive": 1.8304654359817505,
+    "tercile_ratio_signal_shuffled": 1.7385257482528687,
+    "median_signal_adaptive": 0.10173578560352325,
+    "median_signal_shuffled": 0.10439649224281311,
+    "noise_sd_log_signal": 0.29421234130859375,
+    "budget_snr": 2.0548773325697653,
+    "spearman_kappa_feature_adaptive": 0.4831277980440276,
+    "spearman_kappa_feature_shuffled": 0.5091487751144413,
+    "tercile_ratio_feature_adaptive": 2.9674437046051025,
+    "tercile_ratio_feature_shuffled": 3.43679141998291,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0007267441833391786
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.47288157506671236,
+    "spearman_kappa_signal_shuffled": 0.44255437751474397,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.029722968391348838,
+    "tercile_ratio_signal_adaptive": 1.5185754299163818,
+    "tercile_ratio_signal_shuffled": 1.5346596240997314,
+    "median_signal_adaptive": 0.19383519887924194,
+    "median_signal_shuffled": 0.1967679113149643,
+    "noise_sd_log_signal": 0.3537678122520447,
+    "budget_snr": 1.18092337337253,
+    "spearman_kappa_feature_adaptive": 0.33663454133986104,
+    "spearman_kappa_feature_shuffled": 0.3984164982236262,
+    "tercile_ratio_feature_adaptive": 1.978561282157898,
+    "tercile_ratio_feature_shuffled": 2.301095485687256,
+    "frac_shrunk_adaptive": 0.1184592992067337,
+    "frac_shrunk_shuffled": 0.11555232852697372
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 2,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.47819767441860467,
+    "rel_unknown": 0.375,
+    "uncertain": 0.14680232558139536
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8490908741950989,
+    "rel_unknown": 0.6210485696792603,
+    "uncertain": 0.41792720556259155
+   },
+   "kappa_p10": 0.4743565320968628,
+   "kappa_p50": 0.6302427053451538,
+   "kappa_p90": 0.9286192655563354,
+   "p90_over_p10": 1.9576399326324463,
+   "plateau_share": {
+    "1.0": 0.016715116279069766,
+    "0.625": 0.39316860465116277,
+    "0.25": 0.020348837209302327
+   }
+  },
+  "W2": {
+   "spearman": -0.019125162266842643,
+   "mean_abs_diff": 0.19790463149547577,
+   "frac_ge_0p1": 0.6729651162790697
+  },
+  "W5": {
+   "mean_kappa_known": 0.8158190250396729,
+   "mean_kappa_unknown": 0.6170905232429504,
+   "auroc_kappa_known_vs_unknown": 0.8390776909722223,
+   "unknown_share_in_zone": {
+    "rel_known": 0.22948328267477203,
+    "rel_unknown": 0.9864341085271318,
+    "uncertain": 0.693069306930693
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6196520969014004,
+    "spearman_kappa_signal_shuffled": 0.6200566926701442,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.00710353199122295,
+    "tercile_ratio_signal_adaptive": 1.8171335458755493,
+    "tercile_ratio_signal_shuffled": 1.77462899684906,
+    "median_signal_adaptive": 0.09814000129699707,
+    "median_signal_shuffled": 0.0987396091222763,
+    "noise_sd_log_signal": 0.3099903464317322,
+    "budget_snr": 1.9267060784100116,
+    "spearman_kappa_feature_adaptive": 0.36533963440787653,
+    "spearman_kappa_feature_shuffled": 0.4428740535874758,
+    "tercile_ratio_feature_adaptive": 2.3381855487823486,
+    "tercile_ratio_feature_shuffled": 2.8033499717712402,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.49405903909936616,
+    "spearman_kappa_signal_shuffled": 0.47242603875346384,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.00600939861003159,
+    "tercile_ratio_signal_adaptive": 1.5721040964126587,
+    "tercile_ratio_signal_shuffled": 1.5455849170684814,
+    "median_signal_adaptive": 0.18373891711235046,
+    "median_signal_shuffled": 0.18584705889225006,
+    "noise_sd_log_signal": 0.36192435026168823,
+    "budget_snr": 1.2500261741978191,
+    "spearman_kappa_feature_adaptive": 0.2512670566964684,
+    "spearman_kappa_feature_shuffled": 0.3313258828557616,
+    "tercile_ratio_feature_adaptive": 1.6382105350494385,
+    "tercile_ratio_feature_shuffled": 1.8816137313842773,
+    "frac_shrunk_adaptive": 0.11409883946180344,
+    "frac_shrunk_shuffled": 0.11918604373931885
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 2,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.6053779069767442,
+    "rel_unknown": 0.22529069767441862,
+    "uncertain": 0.1693313953488372
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8637295961380005,
+    "rel_unknown": 0.6163648962974548,
+    "uncertain": 0.41978955268859863
+   },
+   "kappa_p10": 0.4441632926464081,
+   "kappa_p50": 0.7525931596755981,
+   "kappa_p90": 0.9621891975402832,
+   "p90_over_p10": 2.1662960052490234,
+   "plateau_share": {
+    "1.0": 0.15625,
+    "0.625": 0.25363372093023256,
+    "0.25": 0.025436046511627907
+   }
+  },
+  "W2": {
+   "spearman": -0.023362285894557598,
+   "mean_abs_diff": 0.22369353473186493,
+   "frac_ge_0p1": 0.688953488372093
+  },
+  "W5": {
+   "mean_kappa_known": 0.8296776413917542,
+   "mean_kappa_unknown": 0.6630957126617432,
+   "auroc_kappa_known_vs_unknown": 0.7732161458333333,
+   "unknown_share_in_zone": {
+    "rel_known": 0.4117647058823529,
+    "rel_unknown": 0.932258064516129,
+    "uncertain": 0.721030042918455
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6936837734801024,
+    "spearman_kappa_signal_shuffled": 0.6682649308576974,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.06718635712672243,
+    "tercile_ratio_signal_adaptive": 2.0397932529449463,
+    "tercile_ratio_signal_shuffled": 1.9286036491394043,
+    "median_signal_adaptive": 0.10832461714744568,
+    "median_signal_shuffled": 0.10855056345462799,
+    "noise_sd_log_signal": 0.30773746967315674,
+    "budget_snr": 2.3164174868978504,
+    "spearman_kappa_feature_adaptive": 0.4519126654157191,
+    "spearman_kappa_feature_shuffled": 0.5113718521625096,
+    "tercile_ratio_feature_adaptive": 2.9380717277526855,
+    "tercile_ratio_feature_shuffled": 3.464266538619995,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0007267441833391786
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.49914397161047713,
+    "spearman_kappa_signal_shuffled": 0.41552065203279615,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.05525368301873705,
+    "tercile_ratio_signal_adaptive": 1.627882719039917,
+    "tercile_ratio_signal_shuffled": 1.4814139604568481,
+    "median_signal_adaptive": 0.1934213489294052,
+    "median_signal_shuffled": 0.19016441702842712,
+    "noise_sd_log_signal": 0.3691848814487457,
+    "budget_snr": 1.3198813103380802,
+    "spearman_kappa_feature_adaptive": 0.2782863720581697,
+    "spearman_kappa_feature_shuffled": 0.3306406851544384,
+    "tercile_ratio_feature_adaptive": 1.9502495527267456,
+    "tercile_ratio_feature_shuffled": 2.0509533882141113,
+    "frac_shrunk_adaptive": 0.19113372266292572,
+    "frac_shrunk_shuffled": 0.20276163518428802
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 3,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.45348837209302323,
+    "rel_unknown": 0.3815406976744186,
+    "uncertain": 0.16497093023255813
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8681522011756897,
+    "rel_unknown": 0.6226450800895691,
+    "uncertain": 0.4059026837348938
+   },
+   "kappa_p10": 0.4228868782520294,
+   "kappa_p50": 0.6292709708213806,
+   "kappa_p90": 0.9535622596740723,
+   "p90_over_p10": 2.254887342453003,
+   "plateau_share": {
+    "1.0": 0.11337209302325581,
+    "0.625": 0.39171511627906974,
+    "0.25": 0.023255813953488372
+   }
+  },
+  "W2": {
+   "spearman": 0.006351720778101123,
+   "mean_abs_diff": 0.21115313470363617,
+   "frac_ge_0p1": 0.6606104651162791
+  },
+  "W5": {
+   "mean_kappa_known": 0.8203074932098389,
+   "mean_kappa_unknown": 0.6103231310844421,
+   "auroc_kappa_known_vs_unknown": 0.822314453125,
+   "unknown_share_in_zone": {
+    "rel_known": 0.22115384615384615,
+    "rel_unknown": 0.9561904761904761,
+    "uncertain": 0.7048458149779736
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6802408111369851,
+    "spearman_kappa_signal_shuffled": 0.6892653503224098,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.00805509474105029,
+    "tercile_ratio_signal_adaptive": 1.7457445859909058,
+    "tercile_ratio_signal_shuffled": 1.8226724863052368,
+    "median_signal_adaptive": 0.08388758450746536,
+    "median_signal_shuffled": 0.08402951061725616,
+    "noise_sd_log_signal": 0.2647378444671631,
+    "budget_snr": 2.104652482192499,
+    "spearman_kappa_feature_adaptive": 0.5154376110540211,
+    "spearman_kappa_feature_shuffled": 0.5278462160874077,
+    "tercile_ratio_feature_adaptive": 3.401270866394043,
+    "tercile_ratio_feature_shuffled": 3.7867088317871094,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5047584237676968,
+    "spearman_kappa_signal_shuffled": 0.5516646035157886,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.00044955980758602435,
+    "tercile_ratio_signal_adaptive": 1.5490888357162476,
+    "tercile_ratio_signal_shuffled": 1.6579103469848633,
+    "median_signal_adaptive": 0.16089729964733124,
+    "median_signal_shuffled": 0.1618497520685196,
+    "noise_sd_log_signal": 0.31920433044433594,
+    "budget_snr": 1.3711183352261604,
+    "spearman_kappa_feature_adaptive": 0.4000762007387336,
+    "spearman_kappa_feature_shuffled": 0.43858684374180207,
+    "tercile_ratio_feature_adaptive": 2.221313238143921,
+    "tercile_ratio_feature_shuffled": 2.7695536613464355,
+    "frac_shrunk_adaptive": 0.08938953280448914,
+    "frac_shrunk_shuffled": 0.07921511679887772
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 3,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.47238372093023256,
+    "rel_unknown": 0.31613372093023256,
+    "uncertain": 0.21148255813953487
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8579738140106201,
+    "rel_unknown": 0.6169037818908691,
+    "uncertain": 0.41182512044906616
+   },
+   "kappa_p10": 0.403802752494812,
+   "kappa_p50": 0.6329665184020996,
+   "kappa_p90": 0.9324200749397278,
+   "p90_over_p10": 2.3090977668762207,
+   "plateau_share": {
+    "1.0": 0.02180232558139535,
+    "0.625": 0.3175872093023256,
+    "0.25": 0.02616279069767442
+   }
+  },
+  "W2": {
+   "spearman": -0.013265269018101015,
+   "mean_abs_diff": 0.22228926420211792,
+   "frac_ge_0p1": 0.6976744186046512
+  },
+  "W5": {
+   "mean_kappa_known": 0.8445731997489929,
+   "mean_kappa_unknown": 0.5742538571357727,
+   "auroc_kappa_known_vs_unknown": 0.90205078125,
+   "unknown_share_in_zone": {
+    "rel_known": 0.18615384615384614,
+    "rel_unknown": 0.9885057471264368,
+    "uncertain": 0.8556701030927835
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6962462237640443,
+    "spearman_kappa_signal_shuffled": 0.7213974693902172,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.058238290893831826,
+    "tercile_ratio_signal_adaptive": 1.8484501838684082,
+    "tercile_ratio_signal_shuffled": 1.9076396226882935,
+    "median_signal_adaptive": 0.080528125166893,
+    "median_signal_shuffled": 0.08021330833435059,
+    "noise_sd_log_signal": 0.25252681970596313,
+    "budget_snr": 2.4328011981345306,
+    "spearman_kappa_feature_adaptive": 0.5312737269621295,
+    "spearman_kappa_feature_shuffled": 0.49586817638044767,
+    "tercile_ratio_feature_adaptive": 3.6525719165802,
+    "tercile_ratio_feature_shuffled": 3.4444565773010254,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5160786014937957,
+    "spearman_kappa_signal_shuffled": 0.5760583748526035,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.06611952987605653,
+    "tercile_ratio_signal_adaptive": 1.6029242277145386,
+    "tercile_ratio_signal_shuffled": 1.71836256980896,
+    "median_signal_adaptive": 0.1530953347682953,
+    "median_signal_shuffled": 0.15373766422271729,
+    "noise_sd_log_signal": 0.3080309331417084,
+    "budget_snr": 1.5317604587594755,
+    "spearman_kappa_feature_adaptive": 0.4191973712240926,
+    "spearman_kappa_feature_shuffled": 0.3999042647089105,
+    "tercile_ratio_feature_adaptive": 2.368424415588379,
+    "tercile_ratio_feature_shuffled": 2.3280861377716064,
+    "frac_shrunk_adaptive": 0.09375,
+    "frac_shrunk_shuffled": 0.08212209492921829
+   }
+  }
+ },
+ {
+  "combo": "C1",
+  "fold": 3,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.5603197674418605,
+    "rel_unknown": 0.24781976744186046,
+    "uncertain": 0.19186046511627908
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8688064217567444,
+    "rel_unknown": 0.6178647875785828,
+    "uncertain": 0.3951745331287384
+   },
+   "kappa_p10": 0.38792991638183594,
+   "kappa_p50": 0.718180775642395,
+   "kappa_p90": 0.9642561674118042,
+   "p90_over_p10": 2.485645294189453,
+   "plateau_share": {
+    "1.0": 0.15406976744186046,
+    "0.625": 0.2609011627906977,
+    "0.25": 0.042877906976744186
+   }
+  },
+  "W2": {
+   "spearman": -0.0576017101722194,
+   "mean_abs_diff": 0.2437753528356552,
+   "frac_ge_0p1": 0.721656976744186
+  },
+  "W5": {
+   "mean_kappa_known": 0.8094490766525269,
+   "mean_kappa_unknown": 0.6482812762260437,
+   "auroc_kappa_known_vs_unknown": 0.7400976562500001,
+   "unknown_share_in_zone": {
+    "rel_known": 0.40207522697795073,
+    "rel_unknown": 0.8709677419354839,
+    "uncertain": 0.7310606060606061
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.7486519945036183,
+    "spearman_kappa_signal_shuffled": 0.7478200495454044,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.059636822624203736,
+    "tercile_ratio_signal_adaptive": 1.919735312461853,
+    "tercile_ratio_signal_shuffled": 1.976991891860962,
+    "median_signal_adaptive": 0.08853641897439957,
+    "median_signal_shuffled": 0.09014470130205154,
+    "noise_sd_log_signal": 0.24903647601604462,
+    "budget_snr": 2.6188425441805028,
+    "spearman_kappa_feature_adaptive": 0.5444295069877914,
+    "spearman_kappa_feature_shuffled": 0.5268037863371139,
+    "tercile_ratio_feature_adaptive": 4.529692649841309,
+    "tercile_ratio_feature_shuffled": 4.077672004699707,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5566093841335624,
+    "spearman_kappa_signal_shuffled": 0.5457972778432761,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": -0.04170349079234835,
+    "tercile_ratio_signal_adaptive": 1.6294912099838257,
+    "tercile_ratio_signal_shuffled": 1.7192918062210083,
+    "median_signal_adaptive": 0.16416600346565247,
+    "median_signal_shuffled": 0.16451434791088104,
+    "noise_sd_log_signal": 0.3018864393234253,
+    "budget_snr": 1.6173890621670872,
+    "spearman_kappa_feature_adaptive": 0.4179380369020977,
+    "spearman_kappa_feature_shuffled": 0.39550755157374395,
+    "tercile_ratio_feature_adaptive": 2.838407516479492,
+    "tercile_ratio_feature_shuffled": 2.699904680252075,
+    "frac_shrunk_adaptive": 0.12790697813034058,
+    "frac_shrunk_shuffled": 0.12209302186965942
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 1,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.2897135416666667,
+    "rel_unknown": 0.5852864583333334,
+    "uncertain": 0.125
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8315978050231934,
+    "rel_unknown": 0.6225838661193848,
+    "uncertain": 0.40900635719299316
+   },
+   "kappa_p10": 0.4935503602027893,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9002419710159302,
+   "p90_over_p10": 1.8240123987197876,
+   "plateau_share": {
+    "1.0": 0.0390625,
+    "0.625": 0.587890625,
+    "0.25": 0.015625
+   }
+  },
+  "W2": {
+   "spearman": 0.04795027047571188,
+   "mean_abs_diff": 0.14936619997024536,
+   "frac_ge_0p1": 0.5377604166666666
+  },
+  "W5": {
+   "mean_kappa_known": 0.7293516993522644,
+   "mean_kappa_unknown": 0.6126943230628967,
+   "auroc_kappa_known_vs_unknown": 0.7038917824074074,
+   "unknown_share_in_zone": {
+    "rel_known": 0.07865168539325842,
+    "rel_unknown": 0.9566184649610678,
+    "uncertain": 0.3385416666666667
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.5641377267615305,
+    "spearman_kappa_signal_shuffled": 0.4851191049665216,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.07169908007405237,
+    "tercile_ratio_signal_adaptive": 1.4823507070541382,
+    "tercile_ratio_signal_shuffled": 1.3411591053009033,
+    "median_signal_adaptive": 0.06608045101165771,
+    "median_signal_shuffled": 0.06734618544578552,
+    "noise_sd_log_signal": 0.28974348306655884,
+    "budget_snr": 1.3585435611802348,
+    "spearman_kappa_feature_adaptive": 0.3038703786699425,
+    "spearman_kappa_feature_shuffled": 0.38449902264207414,
+    "tercile_ratio_feature_adaptive": 1.925731897354126,
+    "tercile_ratio_feature_shuffled": 2.010942220687866,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.527990929103772,
+    "spearman_kappa_signal_shuffled": 0.44546789391699027,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.07177888530231312,
+    "tercile_ratio_signal_adaptive": 1.5119363069534302,
+    "tercile_ratio_signal_shuffled": 1.3137928247451782,
+    "median_signal_adaptive": 0.13488250970840454,
+    "median_signal_shuffled": 0.13572639226913452,
+    "noise_sd_log_signal": 0.3323550224304199,
+    "budget_snr": 1.2438239952453327,
+    "spearman_kappa_feature_adaptive": 0.2896941271274765,
+    "spearman_kappa_feature_shuffled": 0.37544998830966975,
+    "tercile_ratio_feature_adaptive": 1.834480881690979,
+    "tercile_ratio_feature_shuffled": 1.9001216888427734,
+    "frac_shrunk_adaptive": 0.0078125,
+    "frac_shrunk_shuffled": 0.0052083334885537624
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 1,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.3404947916666667,
+    "rel_unknown": 0.51171875,
+    "uncertain": 0.14778645833333334
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8620872497558594,
+    "rel_unknown": 0.6208442449569702,
+    "uncertain": 0.40993160009384155
+   },
+   "kappa_p10": 0.44753125309944153,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9463638663291931,
+   "p90_over_p10": 2.1146318912506104,
+   "plateau_share": {
+    "1.0": 0.08658854166666667,
+    "0.625": 0.525390625,
+    "0.25": 0.016927083333333332
+   }
+  },
+  "W2": {
+   "spearman": 0.005695115690153218,
+   "mean_abs_diff": 0.17986130714416504,
+   "frac_ge_0p1": 0.57421875
+  },
+  "W5": {
+   "mean_kappa_known": 0.7852930426597595,
+   "mean_kappa_unknown": 0.6037301421165466,
+   "auroc_kappa_known_vs_unknown": 0.7820294415509259,
+   "unknown_share_in_zone": {
+    "rel_known": 0.124282982791587,
+    "rel_unknown": 0.9821882951653944,
+    "uncertain": 0.5418502202643172
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6767431513987979,
+    "spearman_kappa_signal_shuffled": 0.6255000415450408,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.10080761269440303,
+    "tercile_ratio_signal_adaptive": 1.5840331315994263,
+    "tercile_ratio_signal_shuffled": 1.5381418466567993,
+    "median_signal_adaptive": 0.06547853350639343,
+    "median_signal_shuffled": 0.06548494845628738,
+    "noise_sd_log_signal": 0.26053276658058167,
+    "budget_snr": 1.765513856948969,
+    "spearman_kappa_feature_adaptive": 0.2797645541697698,
+    "spearman_kappa_feature_shuffled": 0.4422681804587642,
+    "tercile_ratio_feature_adaptive": 1.9023869037628174,
+    "tercile_ratio_feature_shuffled": 2.5971992015838623,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.6400913600783257,
+    "spearman_kappa_signal_shuffled": 0.5736471358257819,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.08711327575947557,
+    "tercile_ratio_signal_adaptive": 1.565319538116455,
+    "tercile_ratio_signal_shuffled": 1.5204640626907349,
+    "median_signal_adaptive": 0.13383156061172485,
+    "median_signal_shuffled": 0.13215886056423187,
+    "noise_sd_log_signal": 0.2991862893104553,
+    "budget_snr": 1.4976955725264272,
+    "spearman_kappa_feature_adaptive": 0.2804365372357481,
+    "spearman_kappa_feature_shuffled": 0.4217550566954903,
+    "tercile_ratio_feature_adaptive": 1.759650707244873,
+    "tercile_ratio_feature_shuffled": 2.309007406234741,
+    "frac_shrunk_adaptive": 0.005859375,
+    "frac_shrunk_shuffled": 0.011067708022892475
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 1,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.259765625,
+    "rel_unknown": 0.640625,
+    "uncertain": 0.099609375
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8991634845733643,
+    "rel_unknown": 0.6238915920257568,
+    "uncertain": 0.397851824760437
+   },
+   "kappa_p10": 0.5405195355415344,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9606453776359558,
+   "p90_over_p10": 1.7772630453109741,
+   "plateau_share": {
+    "1.0": 0.11783854166666667,
+    "0.625": 0.6334635416666666,
+    "0.25": 0.018229166666666668
+   }
+  },
+  "W2": {
+   "spearman": 0.018914363508730363,
+   "mean_abs_diff": 0.16152116656303406,
+   "frac_ge_0p1": 0.5143229166666666
+  },
+  "W5": {
+   "mean_kappa_known": 0.7594364881515503,
+   "mean_kappa_unknown": 0.6209493279457092,
+   "auroc_kappa_known_vs_unknown": 0.6747820818865742,
+   "unknown_share_in_zone": {
+    "rel_known": 0.047619047619047616,
+    "rel_unknown": 0.9186991869918699,
+    "uncertain": 0.24183006535947713
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.579101214030949,
+    "spearman_kappa_signal_shuffled": 0.5454729013968989,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.057825434622385985,
+    "tercile_ratio_signal_adaptive": 1.4862525463104248,
+    "tercile_ratio_signal_shuffled": 1.4063994884490967,
+    "median_signal_adaptive": 0.0593508780002594,
+    "median_signal_shuffled": 0.06015222892165184,
+    "noise_sd_log_signal": 0.2641872763633728,
+    "budget_snr": 1.4999128183652142,
+    "spearman_kappa_feature_adaptive": 0.3172795305313217,
+    "spearman_kappa_feature_shuffled": 0.3775097904976617,
+    "tercile_ratio_feature_adaptive": 1.9803940057754517,
+    "tercile_ratio_feature_shuffled": 2.010183811187744,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5470250092698212,
+    "spearman_kappa_signal_shuffled": 0.5105832305833666,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.0553437133211719,
+    "tercile_ratio_signal_adaptive": 1.4706472158432007,
+    "tercile_ratio_signal_shuffled": 1.4159201383590698,
+    "median_signal_adaptive": 0.12124484777450562,
+    "median_signal_shuffled": 0.12280791997909546,
+    "noise_sd_log_signal": 0.30199143290519714,
+    "budget_snr": 1.2771971147346686,
+    "spearman_kappa_feature_adaptive": 0.3157980844366882,
+    "spearman_kappa_feature_shuffled": 0.3653385866645272,
+    "tercile_ratio_feature_adaptive": 1.9451920986175537,
+    "tercile_ratio_feature_shuffled": 1.977828025817871,
+    "frac_shrunk_adaptive": 0.0065104165114462376,
+    "frac_shrunk_shuffled": 0.005859375
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 2,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.4055989583333333,
+    "rel_unknown": 0.4290364583333333,
+    "uncertain": 0.16536458333333334
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8381143808364868,
+    "rel_unknown": 0.6193161606788635,
+    "uncertain": 0.4095577299594879
+   },
+   "kappa_p10": 0.4416401982307434,
+   "kappa_p50": 0.6250001192092896,
+   "kappa_p90": 0.9199731349945068,
+   "p90_over_p10": 2.083082914352417,
+   "plateau_share": {
+    "1.0": 0.020833333333333332,
+    "0.625": 0.4375,
+    "0.25": 0.026692708333333332
+   }
+  },
+  "W2": {
+   "spearman": -0.00606115208408104,
+   "mean_abs_diff": 0.18948568403720856,
+   "frac_ge_0p1": 0.642578125
+  },
+  "W5": {
+   "mean_kappa_known": 0.8032180666923523,
+   "mean_kappa_unknown": 0.5954673886299133,
+   "auroc_kappa_known_vs_unknown": 0.8394748263888888,
+   "unknown_share_in_zone": {
+    "rel_known": 0.2086677367576244,
+    "rel_unknown": 0.9666160849772383,
+    "uncertain": 0.7598425196850394
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6269821121524458,
+    "spearman_kappa_signal_shuffled": 0.6103839131132449,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.006678130495961768,
+    "tercile_ratio_signal_adaptive": 1.7344474792480469,
+    "tercile_ratio_signal_shuffled": 1.8237507343292236,
+    "median_signal_adaptive": 0.09700578451156616,
+    "median_signal_shuffled": 0.09739750623703003,
+    "noise_sd_log_signal": 0.30971816182136536,
+    "budget_snr": 1.778032336488621,
+    "spearman_kappa_feature_adaptive": 0.38298144101851445,
+    "spearman_kappa_feature_shuffled": 0.452068292241548,
+    "tercile_ratio_feature_adaptive": 2.519869565963745,
+    "tercile_ratio_feature_shuffled": 2.78289794921875,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5096211637580975,
+    "spearman_kappa_signal_shuffled": 0.46482543423424855,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.0035207929048635036,
+    "tercile_ratio_signal_adaptive": 1.5675393342971802,
+    "tercile_ratio_signal_shuffled": 1.6030415296554565,
+    "median_signal_adaptive": 0.18952497839927673,
+    "median_signal_shuffled": 0.18846222758293152,
+    "noise_sd_log_signal": 0.35237884521484375,
+    "budget_snr": 1.2756358475110774,
+    "spearman_kappa_feature_adaptive": 0.2855926514722433,
+    "spearman_kappa_feature_shuffled": 0.33585526716958436,
+    "tercile_ratio_feature_adaptive": 1.8786059617996216,
+    "tercile_ratio_feature_shuffled": 2.00370454788208,
+    "frac_shrunk_adaptive": 0.0924479141831398,
+    "frac_shrunk_shuffled": 0.0950520858168602
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 2,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.400390625,
+    "rel_unknown": 0.4661458333333333,
+    "uncertain": 0.13346354166666666
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.86995929479599,
+    "rel_unknown": 0.6222061514854431,
+    "uncertain": 0.4160187244415283
+   },
+   "kappa_p10": 0.5013507008552551,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9562397599220276,
+   "p90_over_p10": 1.9073270559310913,
+   "plateau_share": {
+    "1.0": 0.12239583333333333,
+    "0.625": 0.470703125,
+    "0.25": 0.020182291666666668
+   }
+  },
+  "W2": {
+   "spearman": 0.020421842160460973,
+   "mean_abs_diff": 0.18719179928302765,
+   "frac_ge_0p1": 0.6028645833333334
+  },
+  "W5": {
+   "mean_kappa_known": 0.8134933114051819,
+   "mean_kappa_unknown": 0.6221211552619934,
+   "auroc_kappa_known_vs_unknown": 0.7927282262731481,
+   "unknown_share_in_zone": {
+    "rel_known": 0.23414634146341465,
+    "rel_unknown": 0.9553072625698324,
+    "uncertain": 0.6439024390243903
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6108786868426083,
+    "spearman_kappa_signal_shuffled": 0.5927235954210551,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.05280819421727531,
+    "tercile_ratio_signal_adaptive": 1.7378321886062622,
+    "tercile_ratio_signal_shuffled": 1.719988226890564,
+    "median_signal_adaptive": 0.09139245003461838,
+    "median_signal_shuffled": 0.09231576323509216,
+    "noise_sd_log_signal": 0.32488542795181274,
+    "budget_snr": 1.7010257165236682,
+    "spearman_kappa_feature_adaptive": 0.34692731535024784,
+    "spearman_kappa_feature_shuffled": 0.4335333596743226,
+    "tercile_ratio_feature_adaptive": 1.9726656675338745,
+    "tercile_ratio_feature_shuffled": 2.4837968349456787,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5023210182737876,
+    "spearman_kappa_signal_shuffled": 0.4610928230034592,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.04790290018145781,
+    "tercile_ratio_signal_adaptive": 1.4907753467559814,
+    "tercile_ratio_signal_shuffled": 1.4850237369537354,
+    "median_signal_adaptive": 0.17904132604599,
+    "median_signal_shuffled": 0.17892268300056458,
+    "noise_sd_log_signal": 0.37123197317123413,
+    "budget_snr": 1.0755979560510016,
+    "spearman_kappa_feature_adaptive": 0.2418818424321037,
+    "spearman_kappa_feature_shuffled": 0.3206183353754949,
+    "tercile_ratio_feature_adaptive": 1.4328945875167847,
+    "tercile_ratio_feature_shuffled": 1.8028966188430786,
+    "frac_shrunk_adaptive": 0.0774739608168602,
+    "frac_shrunk_shuffled": 0.0794270858168602
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 2,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.3671875,
+    "rel_unknown": 0.466796875,
+    "uncertain": 0.166015625
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8608807325363159,
+    "rel_unknown": 0.6227242350578308,
+    "uncertain": 0.40269967913627625
+   },
+   "kappa_p10": 0.4266588091850281,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9410004019737244,
+   "p90_over_p10": 2.205510377883911,
+   "plateau_share": {
+    "1.0": 0.07486979166666667,
+    "0.625": 0.4700520833333333,
+    "0.25": 0.030598958333333332
+   }
+  },
+  "W2": {
+   "spearman": 0.007358779396093919,
+   "mean_abs_diff": 0.19258274137973785,
+   "frac_ge_0p1": 0.623046875
+  },
+  "W5": {
+   "mean_kappa_known": 0.8023447394371033,
+   "mean_kappa_unknown": 0.5964248776435852,
+   "auroc_kappa_known_vs_unknown": 0.8197437427662038,
+   "unknown_share_in_zone": {
+    "rel_known": 0.17375886524822695,
+    "rel_unknown": 0.9693165969316597,
+    "uncertain": 0.6549019607843137
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6553786751920556,
+    "spearman_kappa_signal_shuffled": 0.6482333879733163,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.05043616932108215,
+    "tercile_ratio_signal_adaptive": 1.8249292373657227,
+    "tercile_ratio_signal_shuffled": 1.7706711292266846,
+    "median_signal_adaptive": 0.08801529556512833,
+    "median_signal_shuffled": 0.09015250205993652,
+    "noise_sd_log_signal": 0.3032934069633484,
+    "budget_snr": 1.9833639585486806,
+    "spearman_kappa_feature_adaptive": 0.4090134816922234,
+    "spearman_kappa_feature_shuffled": 0.4620354952809773,
+    "tercile_ratio_feature_adaptive": 2.7715492248535156,
+    "tercile_ratio_feature_shuffled": 2.9641811847686768,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5322337043853396,
+    "spearman_kappa_signal_shuffled": 0.5165230856356824,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.040374247226177544,
+    "tercile_ratio_signal_adaptive": 1.6890184879302979,
+    "tercile_ratio_signal_shuffled": 1.5671820640563965,
+    "median_signal_adaptive": 0.1739087700843811,
+    "median_signal_shuffled": 0.17468613386154175,
+    "noise_sd_log_signal": 0.3529672920703888,
+    "budget_snr": 1.4849749413663147,
+    "spearman_kappa_feature_adaptive": 0.3075341018194765,
+    "spearman_kappa_feature_shuffled": 0.3655975988071683,
+    "tercile_ratio_feature_adaptive": 2.2460248470306396,
+    "tercile_ratio_feature_shuffled": 2.324249029159546,
+    "frac_shrunk_adaptive": 0.0716145858168602,
+    "frac_shrunk_shuffled": 0.0677083358168602
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 3,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.3450520833333333,
+    "rel_unknown": 0.515625,
+    "uncertain": 0.13932291666666666
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8558052778244019,
+    "rel_unknown": 0.6195303201675415,
+    "uncertain": 0.4127455949783325
+   },
+   "kappa_p10": 0.47375887632369995,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9436507225036621,
+   "p90_over_p10": 1.991837501525879,
+   "plateau_share": {
+    "1.0": 0.08984375,
+    "0.625": 0.525390625,
+    "0.25": 0.020182291666666668
+   }
+  },
+  "W2": {
+   "spearman": -0.03012581042051272,
+   "mean_abs_diff": 0.180581733584404,
+   "frac_ge_0p1": 0.5904947916666666
+  },
+  "W5": {
+   "mean_kappa_known": 0.7809630632400513,
+   "mean_kappa_unknown": 0.6070184111595154,
+   "auroc_kappa_known_vs_unknown": 0.7648763020833332,
+   "unknown_share_in_zone": {
+    "rel_known": 0.15283018867924528,
+    "rel_unknown": 0.9608585858585859,
+    "uncertain": 0.5514018691588785
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6421230928586411,
+    "spearman_kappa_signal_shuffled": 0.5890266808248402,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.06131301721686165,
+    "tercile_ratio_signal_adaptive": 1.7237378358840942,
+    "tercile_ratio_signal_shuffled": 1.5470854043960571,
+    "median_signal_adaptive": 0.0879419669508934,
+    "median_signal_shuffled": 0.09018470346927643,
+    "noise_sd_log_signal": 0.28629225492477417,
+    "budget_snr": 1.901885517191328,
+    "spearman_kappa_feature_adaptive": 0.4081473002743261,
+    "spearman_kappa_feature_shuffled": 0.39358784572474204,
+    "tercile_ratio_feature_adaptive": 2.429741621017456,
+    "tercile_ratio_feature_shuffled": 2.1346242427825928,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5369546978403171,
+    "spearman_kappa_signal_shuffled": 0.4941504934882791,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.06895586795515313,
+    "tercile_ratio_signal_adaptive": 1.596816062927246,
+    "tercile_ratio_signal_shuffled": 1.4651648998260498,
+    "median_signal_adaptive": 0.17723873257637024,
+    "median_signal_shuffled": 0.17950710654258728,
+    "noise_sd_log_signal": 0.3699219822883606,
+    "budget_snr": 1.2651632192219089,
+    "spearman_kappa_feature_adaptive": 0.33050800697455945,
+    "spearman_kappa_feature_shuffled": 0.3328424549636485,
+    "tercile_ratio_feature_adaptive": 1.8520785570144653,
+    "tercile_ratio_feature_shuffled": 1.7959134578704834,
+    "frac_shrunk_adaptive": 0.056640625,
+    "frac_shrunk_shuffled": 0.0455729179084301
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 3,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.3795572916666667,
+    "rel_unknown": 0.4264322916666667,
+    "uncertain": 0.19401041666666666
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8513294458389282,
+    "rel_unknown": 0.6169398427009583,
+    "uncertain": 0.3927747905254364
+   },
+   "kappa_p10": 0.395264595746994,
+   "kappa_p50": 0.6249998807907104,
+   "kappa_p90": 0.9352394342422485,
+   "p90_over_p10": 2.366109848022461,
+   "plateau_share": {
+    "1.0": 0.054036458333333336,
+    "0.625": 0.4244791666666667,
+    "0.25": 0.037760416666666664
+   }
+  },
+  "W2": {
+   "spearman": 0.02724142858548826,
+   "mean_abs_diff": 0.19996900856494904,
+   "frac_ge_0p1": 0.6451822916666666
+  },
+  "W5": {
+   "mean_kappa_known": 0.7969624996185303,
+   "mean_kappa_unknown": 0.5816844701766968,
+   "auroc_kappa_known_vs_unknown": 0.8262894241898148,
+   "unknown_share_in_zone": {
+    "rel_known": 0.17495711835334476,
+    "rel_unknown": 0.966412213740458,
+    "uncertain": 0.7550335570469798
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.7572413291223928,
+    "spearman_kappa_signal_shuffled": 0.6893261449498237,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.13362725377545961,
+    "tercile_ratio_signal_adaptive": 2.0335190296173096,
+    "tercile_ratio_signal_shuffled": 1.8622589111328125,
+    "median_signal_adaptive": 0.08184651285409927,
+    "median_signal_shuffled": 0.08241937309503555,
+    "noise_sd_log_signal": 0.2550644278526306,
+    "budget_snr": 2.7827000823202654,
+    "spearman_kappa_feature_adaptive": 0.49703400972128386,
+    "spearman_kappa_feature_shuffled": 0.4763640891211199,
+    "tercile_ratio_feature_adaptive": 4.146792411804199,
+    "tercile_ratio_feature_shuffled": 3.598253011703491,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.6490584134816864,
+    "spearman_kappa_signal_shuffled": 0.5767879588544618,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.11983540568989727,
+    "tercile_ratio_signal_adaptive": 1.979142189025879,
+    "tercile_ratio_signal_shuffled": 1.7568434476852417,
+    "median_signal_adaptive": 0.16212336719036102,
+    "median_signal_shuffled": 0.16400916874408722,
+    "noise_sd_log_signal": 0.31390127539634705,
+    "budget_snr": 2.1747713898394436,
+    "spearman_kappa_feature_adaptive": 0.437334353619358,
+    "spearman_kappa_feature_shuffled": 0.41370540131538824,
+    "tercile_ratio_feature_adaptive": 3.1731386184692383,
+    "tercile_ratio_feature_shuffled": 2.797635793685913,
+    "frac_shrunk_adaptive": 0.0501302070915699,
+    "frac_shrunk_shuffled": 0.0481770820915699
+   }
+  }
+ },
+ {
+  "combo": "C2",
+  "fold": 3,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.3385416666666667,
+    "rel_unknown": 0.5416666666666666,
+    "uncertain": 0.11979166666666667
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.892723560333252,
+    "rel_unknown": 0.6215496063232422,
+    "uncertain": 0.392900288105011
+   },
+   "kappa_p10": 0.4957977831363678,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9787211418151855,
+   "p90_over_p10": 1.9740328788757324,
+   "plateau_share": {
+    "1.0": 0.16145833333333334,
+    "0.625": 0.53515625,
+    "0.25": 0.026041666666666668
+   }
+  },
+  "W2": {
+   "spearman": 0.00842170701968988,
+   "mean_abs_diff": 0.19160108268260956,
+   "frac_ge_0p1": 0.583984375
+  },
+  "W5": {
+   "mean_kappa_known": 0.8167903423309326,
+   "mean_kappa_unknown": 0.6074666380882263,
+   "auroc_kappa_known_vs_unknown": 0.7945882161458333,
+   "unknown_share_in_zone": {
+    "rel_known": 0.13076923076923078,
+    "rel_unknown": 0.9435096153846154,
+    "uncertain": 0.5815217391304348
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6935393239694174,
+    "spearman_kappa_signal_shuffled": 0.6644346356615296,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.06811066825564455,
+    "tercile_ratio_signal_adaptive": 1.7324639558792114,
+    "tercile_ratio_signal_shuffled": 1.5867067575454712,
+    "median_signal_adaptive": 0.0918484777212143,
+    "median_signal_shuffled": 0.09314359724521637,
+    "noise_sd_log_signal": 0.25660157203674316,
+    "budget_snr": 2.141626190425235,
+    "spearman_kappa_feature_adaptive": 0.4273710739931126,
+    "spearman_kappa_feature_shuffled": 0.39766461321616925,
+    "tercile_ratio_feature_adaptive": 2.6004889011383057,
+    "tercile_ratio_feature_shuffled": 2.4511194229125977,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5230061739047246,
+    "spearman_kappa_signal_shuffled": 0.4828989299284459,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.054333567042873926,
+    "tercile_ratio_signal_adaptive": 1.5660971403121948,
+    "tercile_ratio_signal_shuffled": 1.43764066696167,
+    "median_signal_adaptive": 0.18110382556915283,
+    "median_signal_shuffled": 0.18192298710346222,
+    "noise_sd_log_signal": 0.33421406149864197,
+    "budget_snr": 1.3422135037765297,
+    "spearman_kappa_feature_adaptive": 0.325305088497665,
+    "spearman_kappa_feature_shuffled": 0.2792565323027855,
+    "tercile_ratio_feature_adaptive": 2.1133673191070557,
+    "tercile_ratio_feature_shuffled": 1.6703091859817505,
+    "frac_shrunk_adaptive": 0.076171875,
+    "frac_shrunk_shuffled": 0.0846354141831398
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 1,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.19755747126436782,
+    "rel_unknown": 0.6630747126436781,
+    "uncertain": 0.13936781609195403
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8306361436843872,
+    "rel_unknown": 0.6202760338783264,
+    "uncertain": 0.38281044363975525
+   },
+   "kappa_p10": 0.43301960825920105,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.8532067537307739,
+   "p90_over_p10": 1.9703651666641235,
+   "plateau_share": {
+    "1.0": 0.035201149425287355,
+    "0.625": 0.6350574712643678,
+    "0.25": 0.035201149425287355
+   }
+  },
+  "W2": {
+   "spearman": 0.015332823554574368,
+   "mean_abs_diff": 0.14207972586154938,
+   "frac_ge_0p1": 0.4791666666666667
+  },
+  "W5": {
+   "mean_kappa_known": 0.6756976246833801,
+   "mean_kappa_unknown": 0.607607901096344,
+   "auroc_kappa_known_vs_unknown": 0.6093557098765433,
+   "unknown_share_in_zone": {
+    "rel_known": 0.09818181818181818,
+    "rel_unknown": 0.9436619718309859,
+    "uncertain": 0.31958762886597936
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.5166881216776424,
+    "spearman_kappa_signal_shuffled": 0.48734747538328116,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.0024070722008322073,
+    "tercile_ratio_signal_adaptive": 1.4391796588897705,
+    "tercile_ratio_signal_shuffled": 1.332882046699524,
+    "median_signal_adaptive": 0.09672962129116058,
+    "median_signal_shuffled": 0.09664139151573181,
+    "noise_sd_log_signal": 0.2874343693256378,
+    "budget_snr": 1.2666309557394555,
+    "spearman_kappa_feature_adaptive": 0.3622671901057146,
+    "spearman_kappa_feature_shuffled": 0.37055652319186977,
+    "tercile_ratio_feature_adaptive": 2.0244557857513428,
+    "tercile_ratio_feature_shuffled": 1.916151762008667,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.3838382568739057,
+    "spearman_kappa_signal_shuffled": 0.29705876448765584,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.0334629768852796,
+    "tercile_ratio_signal_adaptive": 1.4322136640548706,
+    "tercile_ratio_signal_shuffled": 1.259606957435608,
+    "median_signal_adaptive": 0.1887551248073578,
+    "median_signal_shuffled": 0.1846359372138977,
+    "noise_sd_log_signal": 0.39937275648117065,
+    "budget_snr": 0.899463617186916,
+    "spearman_kappa_feature_adaptive": 0.3030987810406425,
+    "spearman_kappa_feature_shuffled": 0.2516204690938087,
+    "tercile_ratio_feature_adaptive": 1.6577328443527222,
+    "tercile_ratio_feature_shuffled": 1.4497507810592651,
+    "frac_shrunk_adaptive": 0.0840517207980156,
+    "frac_shrunk_shuffled": 0.10272988677024841
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 1,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.16594827586206898,
+    "rel_unknown": 0.7068965517241379,
+    "uncertain": 0.1271551724137931
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8286519050598145,
+    "rel_unknown": 0.6215797066688538,
+    "uncertain": 0.3761770725250244
+   },
+   "kappa_p10": 0.446703165769577,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.8191202878952026,
+   "p90_over_p10": 1.8337016105651855,
+   "plateau_share": {
+    "1.0": 0.01939655172413793,
+    "0.625": 0.6853448275862069,
+    "0.25": 0.02658045977011494
+   }
+  },
+  "W2": {
+   "spearman": 0.00952028157489306,
+   "mean_abs_diff": 0.12272553890943527,
+   "frac_ge_0p1": 0.4353448275862069
+  },
+  "W5": {
+   "mean_kappa_known": 0.6555885672569275,
+   "mean_kappa_unknown": 0.6108563542366028,
+   "auroc_kappa_known_vs_unknown": 0.5668872974537037,
+   "unknown_share_in_zone": {
+    "rel_known": 0.05627705627705628,
+    "rel_unknown": 0.9105691056910569,
+    "uncertain": 0.288135593220339
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.49054757101216817,
+    "spearman_kappa_signal_shuffled": 0.47892739476474494,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.02074737332092692,
+    "tercile_ratio_signal_adaptive": 1.1585383415222168,
+    "tercile_ratio_signal_shuffled": 1.173272967338562,
+    "median_signal_adaptive": 0.09617099165916443,
+    "median_signal_shuffled": 0.09587904810905457,
+    "noise_sd_log_signal": 0.2786368131637573,
+    "budget_snr": 0.5281396901739661,
+    "spearman_kappa_feature_adaptive": 0.3442681107279887,
+    "spearman_kappa_feature_shuffled": 0.3219469395302203,
+    "tercile_ratio_feature_adaptive": 1.3939176797866821,
+    "tercile_ratio_feature_shuffled": 1.290164828300476,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.39076834832008756,
+    "spearman_kappa_signal_shuffled": 0.3874313571739027,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.010300229372811276,
+    "tercile_ratio_signal_adaptive": 1.1470409631729126,
+    "tercile_ratio_signal_shuffled": 1.1599318981170654,
+    "median_signal_adaptive": 0.18916872143745422,
+    "median_signal_shuffled": 0.18926167488098145,
+    "noise_sd_log_signal": 0.346025288105011,
+    "budget_snr": 0.3964610551337084,
+    "spearman_kappa_feature_adaptive": 0.29533773294213245,
+    "spearman_kappa_feature_shuffled": 0.27249438467334897,
+    "tercile_ratio_feature_adaptive": 1.2923989295959473,
+    "tercile_ratio_feature_shuffled": 1.2281651496887207,
+    "frac_shrunk_adaptive": 0.04094827547669411,
+    "frac_shrunk_shuffled": 0.043103449046611786
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 1,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.20114942528735633,
+    "rel_unknown": 0.6795977011494253,
+    "uncertain": 0.11925287356321838
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8535351157188416,
+    "rel_unknown": 0.6228769421577454,
+    "uncertain": 0.3817458152770996
+   },
+   "kappa_p10": 0.4777430295944214,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.8874021172523499,
+   "p90_over_p10": 1.8574883937835693,
+   "plateau_share": {
+    "1.0": 0.05387931034482758,
+    "0.625": 0.6544540229885057,
+    "0.25": 0.029454022988505746
+   }
+  },
+  "W2": {
+   "spearman": -9.997537733126368e-05,
+   "mean_abs_diff": 0.1386396437883377,
+   "frac_ge_0p1": 0.4640804597701149
+  },
+  "W5": {
+   "mean_kappa_known": 0.7029244899749756,
+   "mean_kappa_unknown": 0.6124352812767029,
+   "auroc_kappa_known_vs_unknown": 0.6394012827932101,
+   "unknown_share_in_zone": {
+    "rel_known": 0.075,
+    "rel_unknown": 0.9365750528541226,
+    "uncertain": 0.3192771084337349
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.5559245348625261,
+    "spearman_kappa_signal_shuffled": 0.5013167191460874,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.05195323091713412,
+    "tercile_ratio_signal_adaptive": 1.4166831970214844,
+    "tercile_ratio_signal_shuffled": 1.2867701053619385,
+    "median_signal_adaptive": 0.0942782461643219,
+    "median_signal_shuffled": 0.0948159396648407,
+    "noise_sd_log_signal": 0.26233381032943726,
+    "budget_snr": 1.3277677103400323,
+    "spearman_kappa_feature_adaptive": 0.39387988705752064,
+    "spearman_kappa_feature_shuffled": 0.3515760683151164,
+    "tercile_ratio_feature_adaptive": 2.077359437942505,
+    "tercile_ratio_feature_shuffled": 1.6988146305084229,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.43020011682671766,
+    "spearman_kappa_signal_shuffled": 0.32780959598929926,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.06489427117319722,
+    "tercile_ratio_signal_adaptive": 1.3495444059371948,
+    "tercile_ratio_signal_shuffled": 1.2382211685180664,
+    "median_signal_adaptive": 0.1845204383134842,
+    "median_signal_shuffled": 0.18305271863937378,
+    "noise_sd_log_signal": 0.35673919320106506,
+    "budget_snr": 0.8402975174068361,
+    "spearman_kappa_feature_adaptive": 0.3356125737725962,
+    "spearman_kappa_feature_shuffled": 0.23484284508267725,
+    "tercile_ratio_feature_adaptive": 1.7803237438201904,
+    "tercile_ratio_feature_shuffled": 1.4914641380310059,
+    "frac_shrunk_adaptive": 0.06968390941619873,
+    "frac_shrunk_shuffled": 0.08908046036958694
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 2,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.34195402298850575,
+    "rel_unknown": 0.40660919540229884,
+    "uncertain": 0.2514367816091954
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8382404446601868,
+    "rel_unknown": 0.6123893857002258,
+    "uncertain": 0.40449559688568115
+   },
+   "kappa_p10": 0.37401172518730164,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9117682576179504,
+   "p90_over_p10": 2.4378066062927246,
+   "plateau_share": {
+    "1.0": 0.0014367816091954023,
+    "0.625": 0.39727011494252873,
+    "0.25": 0.03807471264367816
+   }
+  },
+  "W2": {
+   "spearman": 0.005239515287047431,
+   "mean_abs_diff": 0.20611172914505005,
+   "frac_ge_0p1": 0.680316091954023
+  },
+  "W5": {
+   "mean_kappa_known": 0.795828640460968,
+   "mean_kappa_unknown": 0.5660315155982971,
+   "auroc_kappa_known_vs_unknown": 0.8424213927469136,
+   "unknown_share_in_zone": {
+    "rel_known": 0.2605042016806723,
+    "rel_unknown": 0.9593639575971732,
+    "uncertain": 0.8371428571428572
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.7150317121638974,
+    "spearman_kappa_signal_shuffled": 0.6986147874416324,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.03930695888406851,
+    "tercile_ratio_signal_adaptive": 2.0301856994628906,
+    "tercile_ratio_signal_shuffled": 1.9719845056533813,
+    "median_signal_adaptive": 0.10611927509307861,
+    "median_signal_shuffled": 0.10482704639434814,
+    "noise_sd_log_signal": 0.28422215580940247,
+    "budget_snr": 2.4914569535271216,
+    "spearman_kappa_feature_adaptive": 0.47179464351967765,
+    "spearman_kappa_feature_shuffled": 0.5288506610558364,
+    "tercile_ratio_feature_adaptive": 3.4139201641082764,
+    "tercile_ratio_feature_shuffled": 3.925873041152954,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.651851829982383,
+    "spearman_kappa_signal_shuffled": 0.6032070631667756,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.03430993523138045,
+    "tercile_ratio_signal_adaptive": 2.05647349357605,
+    "tercile_ratio_signal_shuffled": 1.8148151636123657,
+    "median_signal_adaptive": 0.21526363492012024,
+    "median_signal_shuffled": 0.20818942785263062,
+    "noise_sd_log_signal": 0.33852100372314453,
+    "budget_snr": 2.129831270676167,
+    "spearman_kappa_feature_adaptive": 0.43104846241934375,
+    "spearman_kappa_feature_shuffled": 0.4564743283124479,
+    "tercile_ratio_feature_adaptive": 3.1056931018829346,
+    "tercile_ratio_feature_shuffled": 3.070007562637329,
+    "frac_shrunk_adaptive": 0.03232758492231369,
+    "frac_shrunk_shuffled": 0.04813218489289284
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 2,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.305316091954023,
+    "rel_unknown": 0.5301724137931034,
+    "uncertain": 0.16451149425287356
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8526789546012878,
+    "rel_unknown": 0.6203076243400574,
+    "uncertain": 0.39489611983299255
+   },
+   "kappa_p10": 0.4286816120147705,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9313005805015564,
+   "p90_over_p10": 2.172476053237915,
+   "plateau_share": {
+    "1.0": 0.0639367816091954,
+    "0.625": 0.5107758620689655,
+    "0.25": 0.029454022988505746
+   }
+  },
+  "W2": {
+   "spearman": 0.00659567349322117,
+   "mean_abs_diff": 0.1851285696029663,
+   "frac_ge_0p1": 0.6084770114942529
+  },
+  "W5": {
+   "mean_kappa_known": 0.7701136469841003,
+   "mean_kappa_unknown": 0.6019976735115051,
+   "auroc_kappa_known_vs_unknown": 0.7569432388117284,
+   "unknown_share_in_zone": {
+    "rel_known": 0.2541176470588235,
+    "rel_unknown": 0.9525745257452575,
+    "uncertain": 0.6506550218340611
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6495558490227373,
+    "spearman_kappa_signal_shuffled": 0.5911289902493688,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.04307703960361805,
+    "tercile_ratio_signal_adaptive": 1.8022446632385254,
+    "tercile_ratio_signal_shuffled": 1.6565775871276855,
+    "median_signal_adaptive": 0.104975625872612,
+    "median_signal_shuffled": 0.10416103899478912,
+    "noise_sd_log_signal": 0.29029107093811035,
+    "budget_snr": 2.0291114061090747,
+    "spearman_kappa_feature_adaptive": 0.40140500983855165,
+    "spearman_kappa_feature_shuffled": 0.4109816824225359,
+    "tercile_ratio_feature_adaptive": 2.5433738231658936,
+    "tercile_ratio_feature_shuffled": 2.560018301010132,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5724879750746519,
+    "spearman_kappa_signal_shuffled": 0.47539537335792265,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.04735578843490622,
+    "tercile_ratio_signal_adaptive": 1.746556282043457,
+    "tercile_ratio_signal_shuffled": 1.5261777639389038,
+    "median_signal_adaptive": 0.21244364976882935,
+    "median_signal_shuffled": 0.21086519956588745,
+    "noise_sd_log_signal": 0.351055383682251,
+    "budget_snr": 1.5884844280558945,
+    "spearman_kappa_feature_adaptive": 0.3418928609127785,
+    "spearman_kappa_feature_shuffled": 0.3258231637219248,
+    "tercile_ratio_feature_adaptive": 2.131300449371338,
+    "tercile_ratio_feature_shuffled": 1.8711650371551514,
+    "frac_shrunk_adaptive": 0.03663793206214905,
+    "frac_shrunk_shuffled": 0.047413792461156845
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 2,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.38362068965517243,
+    "rel_unknown": 0.3635057471264368,
+    "uncertain": 0.25287356321839083
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8192751407623291,
+    "rel_unknown": 0.6082930564880371,
+    "uncertain": 0.4091323912143707
+   },
+   "kappa_p10": 0.3735005557537079,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.9099407196044922,
+   "p90_over_p10": 2.4362499713897705,
+   "plateau_share": {
+    "1.0": 0.005028735632183908,
+    "0.625": 0.36278735632183906,
+    "0.25": 0.033045977011494254
+   }
+  },
+  "W2": {
+   "spearman": -0.051888678753578665,
+   "mean_abs_diff": 0.21124951541423798,
+   "frac_ge_0p1": 0.6774425287356322
+  },
+  "W5": {
+   "mean_kappa_known": 0.7839633226394653,
+   "mean_kappa_unknown": 0.5735746622085571,
+   "auroc_kappa_known_vs_unknown": 0.8166208526234568,
+   "unknown_share_in_zone": {
+    "rel_known": 0.34269662921348315,
+    "rel_unknown": 0.9762845849802372,
+    "uncertain": 0.8039772727272727
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.7269180641087335,
+    "spearman_kappa_signal_shuffled": 0.7083975126691097,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.001644419658678217,
+    "tercile_ratio_signal_adaptive": 2.0386109352111816,
+    "tercile_ratio_signal_shuffled": 1.9454047679901123,
+    "median_signal_adaptive": 0.10659385472536087,
+    "median_signal_shuffled": 0.10650448501110077,
+    "noise_sd_log_signal": 0.2742641568183899,
+    "budget_snr": 2.5970169419123255,
+    "spearman_kappa_feature_adaptive": 0.5001853846055067,
+    "spearman_kappa_feature_shuffled": 0.5181521003060265,
+    "tercile_ratio_feature_adaptive": 3.5519206523895264,
+    "tercile_ratio_feature_shuffled": 3.6813113689422607,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.6702180812542092,
+    "spearman_kappa_signal_shuffled": 0.6145945016702344,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.0001067383100251042,
+    "tercile_ratio_signal_adaptive": 2.0606257915496826,
+    "tercile_ratio_signal_shuffled": 1.859924077987671,
+    "median_signal_adaptive": 0.21586783230304718,
+    "median_signal_shuffled": 0.21559470891952515,
+    "noise_sd_log_signal": 0.3354170322418213,
+    "budget_snr": 2.155554576767586,
+    "spearman_kappa_feature_adaptive": 0.46283104709499734,
+    "spearman_kappa_feature_shuffled": 0.45019206223968616,
+    "tercile_ratio_feature_adaptive": 2.984281063079834,
+    "tercile_ratio_feature_shuffled": 2.8336706161499023,
+    "frac_shrunk_adaptive": 0.02514367736876011,
+    "frac_shrunk_shuffled": 0.04022988677024841
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 3,
+  "seed": 0,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.22413793103448276,
+    "rel_unknown": 0.6070402298850575,
+    "uncertain": 0.16882183908045978
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.822107195854187,
+    "rel_unknown": 0.6150380373001099,
+    "uncertain": 0.39579078555107117
+   },
+   "kappa_p10": 0.41073882579803467,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.8632069826126099,
+   "p90_over_p10": 2.101595878601074,
+   "plateau_share": {
+    "1.0": 0.01221264367816092,
+    "0.625": 0.5783045977011494,
+    "0.25": 0.027298850574712645
+   }
+  },
+  "W2": {
+   "spearman": -0.0047075810451594055,
+   "mean_abs_diff": 0.15381398797035217,
+   "frac_ge_0p1": 0.5366379310344828
+  },
+  "W5": {
+   "mean_kappa_known": 0.6934183835983276,
+   "mean_kappa_unknown": 0.5933944582939148,
+   "auroc_kappa_known_vs_unknown": 0.6619791666666667,
+   "unknown_share_in_zone": {
+    "rel_known": 0.1794871794871795,
+    "rel_unknown": 0.9266272189349113,
+    "uncertain": 0.5148936170212766
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.5983065113588992,
+    "spearman_kappa_signal_shuffled": 0.5635643318258617,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.035296233030887164,
+    "tercile_ratio_signal_adaptive": 1.496455192565918,
+    "tercile_ratio_signal_shuffled": 1.4642693996429443,
+    "median_signal_adaptive": 0.10155649483203888,
+    "median_signal_shuffled": 0.10355131328105927,
+    "noise_sd_log_signal": 0.27355867624282837,
+    "budget_snr": 1.4735380062241394,
+    "spearman_kappa_feature_adaptive": 0.41062001778351254,
+    "spearman_kappa_feature_shuffled": 0.43231207533993327,
+    "tercile_ratio_feature_adaptive": 2.242548942565918,
+    "tercile_ratio_feature_shuffled": 2.3868212699890137,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.505646584440637,
+    "spearman_kappa_signal_shuffled": 0.4592873362469886,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.024280507198048903,
+    "tercile_ratio_signal_adaptive": 1.4680156707763672,
+    "tercile_ratio_signal_shuffled": 1.4187793731689453,
+    "median_signal_adaptive": 0.20610246062278748,
+    "median_signal_shuffled": 0.2077035903930664,
+    "noise_sd_log_signal": 0.35625919699668884,
+    "budget_snr": 1.0776187907219053,
+    "spearman_kappa_feature_adaptive": 0.38043510136013714,
+    "spearman_kappa_feature_shuffled": 0.3778621845630954,
+    "tercile_ratio_feature_adaptive": 1.9868838787078857,
+    "tercile_ratio_feature_shuffled": 2.073058605194092,
+    "frac_shrunk_adaptive": 0.024425286799669266,
+    "frac_shrunk_shuffled": 0.028735632076859474
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 3,
+  "seed": 1,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.22557471264367815,
+    "rel_unknown": 0.5373563218390804,
+    "uncertain": 0.23706896551724138
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8031980395317078,
+    "rel_unknown": 0.6159622669219971,
+    "uncertain": 0.39973902702331543
+   },
+   "kappa_p10": 0.3651749789714813,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.8418542742729187,
+   "p90_over_p10": 2.305344820022583,
+   "plateau_share": {
+    "1.0": 0.013649425287356323,
+    "0.625": 0.5287356321839081,
+    "0.25": 0.03879310344827586
+   }
+  },
+  "W2": {
+   "spearman": 0.029498185813434434,
+   "mean_abs_diff": 0.162758469581604,
+   "frac_ge_0p1": 0.5625
+  },
+  "W5": {
+   "mean_kappa_known": 0.653071939945221,
+   "mean_kappa_unknown": 0.5861778855323792,
+   "auroc_kappa_known_vs_unknown": 0.5905454282407407,
+   "unknown_share_in_zone": {
+    "rel_known": 0.2484076433121019,
+    "rel_unknown": 0.9491978609625669,
+    "uncertain": 0.5212121212121212
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.6426042547056068,
+    "spearman_kappa_signal_shuffled": 0.644141058258399,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.03218572698185575,
+    "tercile_ratio_signal_adaptive": 1.6403778791427612,
+    "tercile_ratio_signal_shuffled": 1.6134029626846313,
+    "median_signal_adaptive": 0.09529130160808563,
+    "median_signal_shuffled": 0.09591839462518692,
+    "noise_sd_log_signal": 0.2587173581123352,
+    "budget_snr": 1.9130012497707825,
+    "spearman_kappa_feature_adaptive": 0.4805149005997221,
+    "spearman_kappa_feature_shuffled": 0.43527556134020934,
+    "tercile_ratio_feature_adaptive": 3.0893166065216064,
+    "tercile_ratio_feature_shuffled": 2.8868088722229004,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.5604918671469055,
+    "spearman_kappa_signal_shuffled": 0.5617937967879607,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.0173626184968066,
+    "tercile_ratio_signal_adaptive": 1.6389944553375244,
+    "tercile_ratio_signal_shuffled": 1.6418087482452393,
+    "median_signal_adaptive": 0.1966729611158371,
+    "median_signal_shuffled": 0.19601553678512573,
+    "noise_sd_log_signal": 0.31604117155075073,
+    "budget_snr": 1.56334984577191,
+    "spearman_kappa_feature_adaptive": 0.4513033832459485,
+    "spearman_kappa_feature_shuffled": 0.3928896609181931,
+    "tercile_ratio_feature_adaptive": 2.6146492958068848,
+    "tercile_ratio_feature_shuffled": 2.419424057006836,
+    "frac_shrunk_adaptive": 0.01867816038429737,
+    "frac_shrunk_shuffled": 0.02514367736876011
+   }
+  }
+ },
+ {
+  "combo": "C3",
+  "fold": 3,
+  "seed": 2,
+  "W1": {
+   "zone_frac": {
+    "rel_known": 0.29022988505747127,
+    "rel_unknown": 0.4619252873563218,
+    "uncertain": 0.2478448275862069
+   },
+   "zone_mean_kappa": {
+    "rel_known": 0.8205050230026245,
+    "rel_unknown": 0.6140194535255432,
+    "uncertain": 0.393277108669281
+   },
+   "kappa_p10": 0.3474036455154419,
+   "kappa_p50": 0.625,
+   "kappa_p90": 0.8906146883964539,
+   "p90_over_p10": 2.5636308193206787,
+   "plateau_share": {
+    "1.0": 0.01221264367816092,
+    "0.625": 0.4504310344827586,
+    "0.25": 0.05459770114942529
+   }
+  },
+  "W2": {
+   "spearman": -0.008381198321956666,
+   "mean_abs_diff": 0.1920616328716278,
+   "frac_ge_0p1": 0.6458333333333334
+  },
+  "W5": {
+   "mean_kappa_known": 0.7217283844947815,
+   "mean_kappa_unknown": 0.573117196559906,
+   "auroc_kappa_known_vs_unknown": 0.7297272858796295,
+   "unknown_share_in_zone": {
+    "rel_known": 0.2747524752475248,
+    "rel_unknown": 0.9548989113530326,
+    "uncertain": 0.6811594202898551
+   }
+  },
+  "gains": {
+   "2.0": {
+    "spearman_kappa_signal_adaptive": 0.7337863024903347,
+    "spearman_kappa_signal_shuffled": 0.6910701022978667,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.04703192758313242,
+    "tercile_ratio_signal_adaptive": 1.8653756380081177,
+    "tercile_ratio_signal_shuffled": 1.696305513381958,
+    "median_signal_adaptive": 0.09198249876499176,
+    "median_signal_shuffled": 0.0923096165060997,
+    "noise_sd_log_signal": 0.25091612339019775,
+    "budget_snr": 2.4847444591140446,
+    "spearman_kappa_feature_adaptive": 0.5403301312686608,
+    "spearman_kappa_feature_shuffled": 0.45641814907517697,
+    "tercile_ratio_feature_adaptive": 3.472195863723755,
+    "tercile_ratio_feature_shuffled": 2.5559661388397217,
+    "frac_shrunk_adaptive": 0.0,
+    "frac_shrunk_shuffled": 0.0
+   },
+   "4.0": {
+    "spearman_kappa_signal_adaptive": 0.666526882347487,
+    "spearman_kappa_signal_shuffled": 0.6048144011533609,
+    "spearman_kappaAdaptive_vs_signal_in_shuffled_arm": 0.04332513557865239,
+    "tercile_ratio_signal_adaptive": 1.85172700881958,
+    "tercile_ratio_signal_shuffled": 1.6562169790267944,
+    "median_signal_adaptive": 0.18409903347492218,
+    "median_signal_shuffled": 0.18382811546325684,
+    "noise_sd_log_signal": 0.32021230459213257,
+    "budget_snr": 1.9240944619497256,
+    "spearman_kappa_feature_adaptive": 0.5017346761193875,
+    "spearman_kappa_feature_shuffled": 0.40121260320418045,
+    "tercile_ratio_feature_adaptive": 3.081130027770996,
+    "tercile_ratio_feature_shuffled": 2.2936041355133057,
+    "frac_shrunk_adaptive": 0.02298850566148758,
+    "frac_shrunk_shuffled": 0.031609196215867996
+   }
+  }
+ }
+]
