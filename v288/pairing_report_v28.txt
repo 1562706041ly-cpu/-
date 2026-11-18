@@ -1,0 +1,30 @@
+Bg4 source: V20 (existing runs, reused; GPU check passed)
+runs found per arm (valid / total of 9): Bg4 9/9  BI65 9/9  BC2 9/9  BI2 9/9
+pairing checks: FAILED (27 problems)
+  - BI65 C1 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C1 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C1 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C1 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C1 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C1 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C1 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C1 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C1 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C2 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C2 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C2 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C2 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C2 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C2 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C2 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C2 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C2 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C3 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C3 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C3 f1: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C3 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C3 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C3 f2: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI65 C3 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BC2 C3 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}
+  - BI2 C3 f3: args differ from Bg4: {'guard_score': (None, 'maxsim'), 'mix_aug': (None, 'none'), 'kr2_shuf_scope': (None, 'both')}

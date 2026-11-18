@@ -1,0 +1,3 @@
+H new code (GPU, default band flags) 0.694737   H old Bg4 0.694737   difference +0.000000   tolerance 0.005
+labelled windows identical: True
+PASS: the old Bg4 runs are reused
