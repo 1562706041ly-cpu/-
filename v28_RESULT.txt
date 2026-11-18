@@ -1,0 +1,38 @@
+v28 RESULT: end-to-end exploratory screen of band-gain augmentation (Bruinsma pump, Motor-2 100 % speed; 9 splits x seed 0; user's GPU; summary produced by the fixed analyzer v28b).
+Criteria: v28_endtoend_PREREGISTERED.txt (pushed to v28-prereg 2026-11-18T14:33:36Z, before any code or run; Addendum 1 pushed 15:33:12Z, before any H of a new arm was read). 75 % speed data not opened. Screening, not confirmation; five comparisons, no multiplicity correction.
+
+VALIDITY
+ GPU consistency check of the reused Bg4: H new code 0.694737, old 0.694737, difference 0.000000 (tolerance 0.005) -> PASS; the old V20 Bg4 runs were reused.
+ 27 new runs + 1 check run: all finish 1500 steps, no nan/inf loss, no Traceback (checked by me by decoding the uploaded UTF-16 logs); no invalid_v28.txt. Pairing: PASSED with the fixed analyzer (the first analyzer aborted because keys absent from the old Bg4 args were compared with None; see Addendum 1).
+ The "in-training implementation check" section of summary_v28.txt shows n/a (0 logs): the analyzer did not find the log files from the directory where it was run. This does not affect any comparison (H comes from results_exp2.json). The same quantities were read directly from the uploaded logs by me (below). The analyzer's log-based nan check was skipped for the same reason; I checked the logs separately (no nan/inf).
+
+ARM MEANS (9 splits; H, known acc, unknown recall, known-to-unknown, unknown cluster acc, NMI)
+ Bg4   0.663  0.739  0.657  0.188  0.515  0.587
+ BI65  0.651  0.733  0.653  0.198  0.516  0.594
+ BC2   0.669  0.738  0.651  0.177  0.510  0.576
+ BI2   0.629  0.671  0.669  0.251  0.509  0.564
+
+PRE-REGISTERED COMPARISONS (dH on the held-out installations; mean, sd, se, 95 % t-interval; positive/negative splits) -> verdict
+ P1 BC2 - BI65 (feature-matched, limited in C3): +0.0181  sd 0.0422  se 0.0141  [-0.0144, +0.0505]  5/9 positive -> no evidence of a difference at this resolution
+    by family (descriptive only): C1/C2 (6 splits) +0.0190; C3 (3 splits) +0.0163; per split: -0.012 -0.004 +0.017 -0.008 +0.085 +0.035 +0.080 -0.042 +0.010
+ P2 BC2 - BI2 (signal-matched): +0.0397  sd 0.0839  se 0.0280  [-0.0248, +0.1042]  6/9 positive -> no evidence of a difference
+    per split: +0.048 +0.042 -0.019 +0.005 +0.050 -0.008 +0.234 -0.064 +0.068 (one split, C3 fold 1, contributes +0.234)
+ S1 BI65 - Bg4: -0.0122  sd 0.0212  se 0.0071  [-0.0286, +0.0041]  2/9 positive, 7/9 negative -> no evidence of a difference (not HARM: the mean is above -0.02)
+ S2 BC2 - Bg4: +0.0058  sd 0.0283  se 0.0094  [-0.0159, +0.0276]  5/9 positive -> no evidence of a difference
+    per split: -0.015 +0.005 +0.002 -0.030 +0.064 +0.015 +0.032 -0.015 -0.005
+ S3 BI2 - Bg4: -0.0339  sd 0.0760  se 0.0253  [-0.0923, +0.0245]  4/9 positive, 5/9 negative -> no evidence of a difference (not HARM: fewer than 7/9 negative)
+    per split: -0.063 -0.037 +0.022 -0.036 +0.013 +0.023 -0.202 +0.049 -0.073 (C3 fold 1: -0.202)
+ No comparison is a CANDIDATE; none is HARM.
+ STOP RULE (S2 only): S2 BC2 - Bg4 is not a CANDIDATE -> the line "coordinated band gain improves performance" is stopped and recorded as "no benefit observed in this setting". No threshold change, no arm added, no further run on the same splits and seed.
+
+DESCRIPTIVE
+ Secondary differences vs Bg4: BC2 known-to-unknown -0.011, unknown recall -0.006, cluster acc -0.005, NMI -0.011; BI65 known-to-unknown +0.010; BI2 known acc -0.068, known-to-unknown +0.063.
+ Unknown-class separability P1 (unlabelled training set P1_U | held-out P1_V; labels for evaluation only): Bg4 0.9078 | 0.9392; BI65 0.9128 | 0.9407; BC2 0.9006 | 0.9325; BI2 0.9111 | 0.9351. dP1 vs Bg4: BI65 +0.005 | +0.002; BC2 -0.007 | -0.007; BI2 +0.003 | -0.004. All differences are below 0.012 AUROC.
+ In-training implementation check from the uploaded logs (mean over the prints after warm-up and over runs; 9 runs per arm; not outcomes): BI65 signal change 0.085, shrunk 0.000, feature change x10^3 1.97 (C1/C2 2.25, C3 1.42); BC2 0.205, 0.326, 1.87 (C1/C2 1.72, C3 2.15); BI2 0.184, 0.467, 5.66; fallback 0 in all. In training BC2 and BI65 are close in feature change overall but not within each family: BI65 about 30 % stronger in C1/C2 and about 35 % weaker in C3.
+
+READING AND LIMITS (descriptive)
+ - The resolution stated in advance holds: the standard errors are 0.007-0.028, so differences of a few hundredths cannot be separated from noise with 9 single-seed runs; every interval contains 0.
+ - The BC2 - BI65 difference is positive in both split families (C1/C2 +0.019, C3 +0.016), so it is not driven by C3 alone, but it is not a CANDIDATE, and at the matched pair the signal change differs about 2.4 times (0.205 vs 0.085).
+ - P2 is driven by one split (C3 fold 1); the same split gives S3 -0.202.
+ - BC2 has the highest mean H of the four arms (0.669 vs Bg4 0.663). This is a difference of +0.006 with an interval from -0.016 to +0.028; no non-inferiority or superiority claim is made or was pre-registered.
+ - One seed per split, 9 splits from 3 combos sharing installations, 100 % speed data used for all earlier development decisions; not a confirmation. Band gain is not VMD. The 75 % speed data stay sealed.

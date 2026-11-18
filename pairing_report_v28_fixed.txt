@@ -1,0 +1,4 @@
+Bg4 source: V20 (existing runs, reused; GPU check passed)
+runs found per arm (valid / total of 9): Bg4 9/9  BI65 9/9  BC2 9/9  BI2 9/9
+keys absent from the stored args and read as their defaults (earlier code version): V20_C1_f1_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C1_f2_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C1_f3_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C2_f1_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C2_f2_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C2_f3_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C3_f1_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C3_f2_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope; V20_C3_f3_Bg4_seed0: guard_score,mix_aug,kr2_shuf_scope
+pairing checks: PASSED
