@@ -1,0 +1,45 @@
+v25 feature-stability check of the VMD candidate view: PRE-REGISTRATION DRAFT (not yet confirmed by the user, nothing computed from it).
+Bruinsma centrifugal pump only (Motor-2, 100 % speed). 75 % speed data sealed. Drafted 2026-11-06.
+
+NEW HYPOTHESIS (the pre-registered stop point of v24a allows further Chapter-3 work only for a new, pre-registered hypothesis)
+ H1: rejecting VMD candidate views whose FEATURE change is unusually large, in addition to the existing log-spectral fidelity check, improves end-to-end H over the same VMD augmentation without this check.
+ Competing explanation to exclude: any benefit comes only from using the VMD perturbation less often (a control with the same number of random rejections is part of the design).
+ A small feature change does not guarantee that the class is unchanged, and a rejected window is not evidence that it is unknown. The check never looks at labels and never moves a window towards a known class.
+
+CODE FACT (verified in m2_paderborn_kr.py, lines 888-938; the same statement is in v24m_mechanism_PREREGISTERED.txt)
+ Bg4: view1 = A(x), view2 = A(x). Rk after warm-up: view1 = A(x), view2 = A(x_vmd), x_vmd = VMD perturbation of x, A = the standard augmentation. So the VMD perturbation already sits UNDER the standard augmentation; nothing here re-uses it as a "new direction". The check below acts on x_vmd before A.
+
+CHECK (candidate design)
+ d_f(x, x_vmd) = 1 - cos(enc(x), enc(x_vmd)), encoder in eval mode, no gradient, features of the CURRENT encoder.
+ Reject (return x) iff d_f > tau_f. Pure fallback, no halving (the existing log-spectral check keeps its own halving).
+ Calibration of tau_f, recomputed at every K/R refresh with the current encoder, from LABELLED windows only (no unknown labels, no test windows):
+  C1 (primary, decided now): q = 0.95 quantile of d(enc(x_l), enc(A_weak(x_l))) over the labelled windows and 20 draws of the weak augmentation (the benign-augmentation feature change).
+  C2 (reported for scale only, never used to choose): median of d between labelled same-class windows from DIFFERENT installations (natural cross-installation variation).
+ DESIGN INFORMATION ALREADY IN HAND (labelled windows of the 27-model set, seed 0 of each of the 9 splits; no rejection counts, no unknown labels): C1 mean 0.0058 (per-split p95 0.0031-0.0092; median 0.0015). C2 median mean 0.085 (per-split 0.025-0.123; p10 mean 0.035). The two scales differ by about 15x. Feature change of the VMD view (v24m, d between x and x_vmd): median 0.0013 at gain 1; from the v24d scan (r 0.34 at gain 2, 1.12 at gain 4, times the two-standard-view distance 0.014) roughly 0.005 at gain 2 and 0.016 at gain 4 (an approximation, measured under identical standard augmentation, not the same quantity).
+  Consequence written down now, not a result: with C1 the check will probably reject a large share at gain 2 and almost everything at gain 4 (it acts as a cap near the weak-augmentation scale); with C2 it would probably reject almost nothing. C1 stays the primary because it is the user's proposed design; C2 is not an alternative to switch to after seeing C1.
+
+STEP 1 (fixed models, no training, no H; sandbox CPU)
+ 27 warm-up checkpoints (9 splits x 3 seeds), all training windows per split, K from knn, kappa = budget_v2, gains 2 (primary) and 4 (scale only). Same u and the same standard-augmentation random numbers as v24d.
+ Measure per model: rejection rate; rejection rate by split; by kappa tercile; by zone (reliable-known, reliable-unknown, uncertain); by true known/unknown (labels for analysis only); mean realised signal change and feature change of rejected vs kept windows; feature change and route-flip rate of the kept set vs the unchecked set; whether rejected windows are the large perturbations (rank correlation of rejection with the unchecked feature change).
+ Rules (over 27 models; seeds share data, so 27 is not 27 independent datasets):
+  OPERATES   : gain-2 rejection rate between 5 % and 60 % in >= 23/27 models AND no split with a gain-2 rejection rate above 90 % or below 1 % in more than 3 of 9 splits.
+  INERT      : gain-2 rejection rate < 5 % in >= 23/27 models.
+  OVER-REJECT: gain-2 rejection rate > 60 % in >= 23/27 models.
+  SELECTS    : Spearman(rejection indicator, unchecked feature change) >= 0.5 in >= 23/27 models (the check removes the large changes rather than random windows).
+ Decisions fixed now: OPERATES and SELECTS -> step 2 allowed. INERT, OVER-REJECT or not SELECTS -> report; no step 2; no change of calibration (a new calibration would be a new hypothesis and a new pre-registration). Nothing is tuned from a rejection rate.
+
+STEP 2 (end-to-end, user's GPU; only if step 1 passes; 9 splits x seed 0; gain 2 only)
+ Arms: Bg4 and Rk2 (existing seed-0 runs, reused); Rk2F (new: --feat-check on); Rk2R (new: --feat-check random = per batch, compute the same check, count the rejected windows and reject the same number of RANDOM windows); 18 new runs.
+ Code: new flags --feat-check {none,on,random} (default none, to be regression-tested bit-identical to the v24s2 code on the default path), --feat-check-q 0.95. Cost: two extra encoder passes per batch.
+ Comparisons (H, paired, 9 splits, 95 % bootstrap): P1 Rk2F - Rk2, P2 Rk2F - Rk2R (selection vs quantity), P3 Rk2F - Bg4.
+ Rules: WORTH CONFIRMING: mean dH >= +0.02 AND positive in >= 7/9 splits AND interval lower bound > 0. HARM: mean dH <= -0.02 AND interval upper bound < 0. Otherwise: no evidence of a difference. Same validity rules as v24s2 (invalid runs excluded, not replaced; an arm with < 8 valid runs is not interpreted; no run dropped because of H; logs decoded as UTF-16).
+ Honest prior, written now: stage 2 (v24s2) found no benefit of a larger dose and no effect of (K, R) allocation. A cap on the feature change can only help if the harmful perturbations are the large ones; the stage-2 losses were concentrated in two splits (C3 fold 1 and 3) with only one seed.
+ After step 2: no further Chapter-3 experiment on this formulation unless a new hypothesis is pre-registered; Chapter 3 is then written as the proposed mechanism with its negative end-to-end result.
+
+NOT CLAIMED: that feature stability preserves the fault class; that the result generalises to the trained encoder, other pumps or the sealed 75 % speed data.
+
+DECISIONS NEEDED FROM THE USER BEFORE ANY COMPUTATION
+ 1. Calibration: C1 (weak-view, q = 0.95) as primary, C2 for scale only. Or a different, pre-specified rule.
+ 2. Pure fallback (this draft) instead of re-using the halving loop.
+ 3. Step 2 at gain 2 only.
+ 4. Acceptance that INERT / OVER-REJECT ends the line without a recalibration.
