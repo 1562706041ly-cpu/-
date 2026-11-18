@@ -1,0 +1,42 @@
+v24a RESULT: allocation mechanism diagnostic (Bruinsma pump, Motor-2 100 % speed). Criteria: v24a_allocation_PREREGISTERED.txt, written before any number was computed; unchanged.
+Part W: 27 warm-up models (9 splits x 3 seeds), fixed models, unlabelled windows, K from knn, kappa = budget_v2; script scratch/v24p/alloc_diag.py; raw v24a_allocation_W.json.
+Part L: the 36 uploaded v24s2 logs (UTF-16 decoded), table in v24a_allocation_L.txt. Nothing retrained; no GPU.
+
+RULES (count over 27 models; 9 splits x 3 seeds are not 27 independent datasets)
+ SPREAD (p90/p10 >= 1.5 and no plateau > 60 %)                 23/27  (needs 23)  -> met, at the limit (4 models have one plateau above 60 %; p90/p10 < 1.5 in 0 models)
+ DIFFERS (mean |kappa - kappa_shuf| >= 0.10)                   27/27             -> met
+ DECOUPLED (|rho(kappa_adaptive, signal in the shuffled arm)| < 0.15)  27/27 at gain 2 and 4 -> met
+ TRANSMITTED_SIGNAL (tercile ratio >= 1.5)                      gain 2: 21/27, gain 4: 21/27 (needs 23)  -> NOT met
+ TRANSMITTED_FEATURE (tercile ratio >= 1.5)                     gain 2: 26/27, gain 4: 25/27             -> met
+Pre-registered branch that applies (spread, differs, decoupled, signal not transmitted): "inspect the mode perturbation and the fidelity mechanism." Inspection result below. The 4th branch (everything transmitted but no end-to-end benefit -> re-scope) is NOT formally reached because TRANSMITTED_SIGNAL fails; it is not relabelled.
+
+NUMBERS (mean over 27 models; range)
+ W1 kappa p10 / p50 / p90: 0.435 / 0.634 / 0.922; p90/p10 2.14 (1.78-2.56).
+    zones of unlabelled windows: reliable-known 0.353 (0.17-0.61), reliable-unknown 0.480 (0.23-0.71), uncertain 0.167 (0.10-0.25). Mean kappa in zone: 0.851 / 0.620 / 0.401.
+    share within 0.05 of the nominal levels: 1.0: 0.064; 0.625: 0.476; 0.25: 0.029.
+ W2 Spearman(kappa, kappa_shuf) -0.003; mean |kappa - kappa_shuf| 0.186 (0.12-0.24); 61 % of windows differ by >= 0.1.
+ W5 (labels for analysis only) mean kappa of unlabelled known windows 0.771 vs unknown 0.603; AUROC of kappa for known-vs-unknown 0.759 (0.57-0.90); share of truly unknown windows inside the reliable-known zone 0.185 (0.05-0.41), reliable-unknown zone 0.951, uncertain zone 0.593.
+ W3 gain 2 | gain 4: Spearman(kappa, realised signal change) adaptive 0.647 | 0.544, shuffled arm (against the kappa it was given) 0.620 | 0.506; Spearman(kappa_adaptive, signal in the shuffled arm) 0.031 | 0.030.
+    tercile ratio of the realised signal change: adaptive 1.73 | 1.63, shuffled 1.67 | 1.55. Median realised change: 0.088 | 0.173 in both arms.
+    per-window noise sd of log(signal change) across 20 random draws: 0.279 | 0.338. Budget SNR (|log tercile ratio| / noise sd): 1.94 | 1.44 (range 0.53-2.78 | 0.40-2.18).
+    fraction of windows shrunk by the fidelity check: 0.000 | 0.057 (adaptive), 0.000 | 0.060 (shuffled); fallback 0.
+ W4 tercile ratio of the feature distance: adaptive 2.77 | 2.27, shuffled 2.79 | 2.20; Spearman(kappa, feature distance) 0.43 | 0.37.
+ The adaptive and the shuffled arm have the same median realised change and the same transmission of the kappa they were given; they differ only in WHICH windows get which budget.
+
+INSPECTION OF THE FAILED SIGNAL RULE (descriptive)
+ - Fidelity is not the cause: at gain 2 the check shrinks 0.000 of the windows in every model, yet 6 models are below 1.5. At gain 4 it shrinks about 6 %.
+ - The 6 models at gain 2 below 1.5 (ratios 1.16-1.50): C3 fold 1 seeds 0, 1, 2 (1.44, 1.16, 1.42), C2 fold 1 seeds 0 and 2 (1.48, 1.49), C3 fold 3 seed 0 (1.50 to two decimals, below 1.5 as computed). At gain 4 a different set of 6 fails (C2 fold 2 seed 1 is below 1.5 at gain 4 only). These splits have the smallest reliable-known zone (C3 f1 0.17-0.20, C2 f1 0.26-0.29, C3 f3 seed 0 0.22), i.e. fewer windows with kappa near 1 and a narrower spread (p90/p10 1.78-1.97, against 2.14 on average).
+ - Per-split mean tercile ratio at gain 2: C3 f1 1.34, C2 f1 1.52, all other splits 1.67-1.96. C3 fold 1 and fold 3 are also the two splits that carry the negative H differences in stage 2 (v24s2 result). This is an observation, not an explanation.
+ - Feature transmission passes (26/27, 25/27) even where the signal tercile ratio is 1.2-1.5.
+
+PART L (training logs, 9 splits, seed 0; see v24a_allocation_L.txt)
+ AUROC of K for unknown-vs-known on the unlabelled windows: 0.91 at step 300, 0.89-0.92 later (gain 2: 0.89 at step 1500; gain 4: 0.90). AUROC of R for correct routing: 0.86 at step 300, 0.82 at step 1500.
+ Zones at step 1500: reliable-known 0.23-0.27, reliable-unknown 0.53-0.59, uncertain 0.18-0.20 (gain 4 moves windows from reliable-known to reliable-unknown). Share of truly unknown windows inside the reliable-known zone: 0.11-0.17 across stages.
+ Batch kappa mean 0.72-0.74, p10 0.44-0.49, p90 1.00 (batch includes labelled anchors with kappa = 1); realised median signal change 0.097-0.099 (gain 2), 0.18-0.19 (gain 4); shrink 0.000 (gain 2), 0.09-0.12 (gain 4); fallback 0.
+ Adaptive and random arms are indistinguishable in all these batch statistics at every stage, as designed.
+
+LIMITS
+ Warm-up models only for per-window quantities (Part W); no per-window K, R, kappa after Chapter-3 training (kr_teacher_*.npz on the user's machine; not requested, no GPU needed if wanted). 27 models are 9 splits x 3 seeds. A correlation between kappa and the realised perturbation shows that the budget passes through, not that it is useful. Thresholds (1.5, 0.10, 0.15, 23/27) were fixed before the run.
+
+STOP POINT (pre-registered)
+ No further Chapter-3 dose or allocation experiment on the current formulation unless a new hypothesis is pre-registered first. Bg4 remains the main baseline; the 75 % speed data stay sealed.

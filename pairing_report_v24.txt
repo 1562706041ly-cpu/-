@@ -1,0 +1,2 @@
+runs found (of 27): {'Rg': 27, 'Rk': 27, 'Rd': 27};  Rgrep: 3 (of 3)
+pairing checks: PASSED

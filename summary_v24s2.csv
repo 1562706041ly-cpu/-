@@ -1,0 +1,7 @@
+label,X,Y,n,mean_dH,ci_lo,ci_hi,positive_splits,verdict
+C1 dose,Rk2,Rk,9,-0.016104685700701307,-0.053755894148021205,0.01676475286538871,4,no evidence of a difference at this resolution
+C1 dose,Rk4,Rk,9,-0.03246392511378964,-0.09305644668083521,0.020509387299017696,4,no evidence of a difference at this resolution
+C2 baseline,Rk2,Bg4,9,-0.027779233665972736,-0.07475227513779813,0.01540412572625808,3,no evidence of a difference at this resolution
+C2 baseline,Rk4,Bg4,9,-0.044138473079061075,-0.1111600274976798,0.014052430159481901,4,no evidence of a difference at this resolution
+C3 allocation,Rk2,Rks2,9,-0.0011772346912596382,-0.013599424113279258,0.009765063155541286,5,no evidence of a difference at this resolution
+C3 allocation,Rk4,Rks4,9,-0.0008630959424125173,-0.01466664767070864,0.01342991716494769,3,no evidence of a difference at this resolution

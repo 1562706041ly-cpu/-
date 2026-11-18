@@ -1,0 +1,30 @@
+v25 step 1 RESULT: feature-stability check of the VMD candidate view, fixed warm-up models (27 = 9 splits x 3 seeds, sandbox CPU; script scratch/v24p/featcheck_step1.py; raw v25_step1.json).
+Criteria: v25_featcheck_PREREGISTERED.txt (final version pushed to branch v25-prereg before the run, 2026-11-18T10:36Z; unchanged). 75 % speed data not opened. No training, no H.
+
+PRE-REGISTERED RULES
+ INTEGRITY (rule executed as written)                                27/27   (needs 27)           -> met
+ OPERATES  (gain-2 rejection rate in 5-60 % in >= 23/27 models, <= 3 extreme splits)   21/27 models in 5-60 %; extreme splits 0/9   -> NOT met (needs 23)
+ INERT     (< 5 % in >= 23/27)                                       0/27                         -> not met
+ OVER-REJECT (> 60 % in >= 23/27)                                    6/27                         -> not met
+ => VERDICT: INCONCLUSIVE.
+ Pre-registered action: report the per-split results; step 2 (end-to-end, GPU) is NOT run; no calibration is switched. The line ends for this formulation.
+ (Gain 4 is scale-only and has no rule.)
+
+NUMBERS (mean over 27 models; range in brackets)
+ tau_f (C1, 0.95 quantile of the weak-view feature change of the labelled windows): 0.0057 [0.002, 0.014]. C2 (same-class cross-installation median) 0.078 [0.023, 0.13].
+ Log-spectral fallback: 0.000 at gain 2 and 4 (no active candidate was removed before the feature check).
+ Rejection rate among active candidates of the unlabelled windows
+   gain 2: 0.388 [0.084, 0.701]; per-split means (C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3): 0.126 0.558 0.493 0.301 0.588 0.650 0.195 0.252 0.329. Labelled windows: 0.694. Under C2 (scale only): 0.003.
+   gain 4: 0.773 [0.455, 0.959]; per-split: 0.561 0.890 0.841 0.771 0.898 0.915 0.651 0.685 0.748. Labelled: 0.925. Under C2: 0.055.
+ Gain 2: rejection by kappa tercile low / mid / high: 0.23 / 0.35 / 0.55; by zone reliable-known / reliable-unknown / uncertain: 0.56 / 0.34 / 0.14; truly known / truly unknown windows (labels for analysis only): 0.51 / 0.31.
+ Gain 2: median realised signal change rejected 0.107 vs kept 0.077; median feature change rejected 0.0101 vs kept 0.0022; feature change of the final views 0.0009 vs 0.0043 unchecked; route flips (K >= 0.5 changes) 0.044 vs 0.100 unchecked.
+ Gain 4: feature change of the final views 0.0000 (median) vs 0.0142 unchecked; route flips 0.026 vs 0.212.
+
+READING (descriptive; not pre-registered rules)
+ - The check is executed as written (integrity 27/27) and is neither inert nor rejecting everything at gain 2, but 6 of 27 models exceed 60 % and the pre-registered 23/27 threshold for OPERATES is missed by two models. The verdict is not relabelled.
+ - The rejection is not uniform: it is higher for windows with a large budget (high kappa), for the reliable-known zone and for truly known windows (0.51 vs 0.31 at gain 2). Windows that receive the most budget are the ones removed most often; the check therefore also works against the allocation by (K, R).
+ - The kept views have a feature change of about 0.002, close to the measured gain-1 level (0.0013). So at gain 2 the check largely turns the dose back to about the gain-1 scale, and at gain 4 (77 % rejected, final feature change about 0) almost removes the VMD perturbation. Gain 1 was already compared with Bg4 (Rk - Bg4 -0.009, 27 runs, post-hoc) and gave no benefit. This is an interpretation, not a test.
+ - As written in the pre-registration beforehand: C1 rejects a large share at gain 2 and almost everything at gain 4; C2 would reject almost nothing (0.3 % and 5.5 %). The weak-view calibration and the cross-installation calibration differ by about 14x, so the choice decides the outcome; per the pre-registration no switching is allowed after seeing this.
+
+LIMITS
+ Warm-up encoders (300 steps), not the trained encoder (the threshold is recomputed at every refresh in training and the encoder changes). 27 models are 9 splits x 3 seeds, not independent datasets. Labels (known/unknown) used for analysis only. Step 1 does not test whether the rejected views are harmful; that was the purpose of step 2, which is not run.

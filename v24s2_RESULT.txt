@@ -1,0 +1,36 @@
+v24s2 RESULT (stage 2, exploratory screen; 9 splits x seed 0; Bruinsma pump, Motor-2 100 % speed; user's GPU; uploaded as v20.zip on branch v24s2)
+Criteria: v24s2_PREREGISTERED.txt (written before the runs; unchanged). 75 % speed data not opened.
+
+Validity (checked independently by decoding the UTF-16 logs): 36/36 new runs finished all 1500 steps, no nan/inf loss, no Traceback, no invalid_v24s2.txt. Pairing checks PASSED (labelled windows, n, args). H recomputed from the [OPEN-V] line of each log equals the summary arm means (0.635 / 0.619 / 0.636 / 0.619 vs 0.635 / 0.619 / 0.636 / 0.620; rounding).
+Analyzer bug found: PowerShell '*>' writes UTF-16 logs; analyze_v24s2.py read them as UTF-8, so its log-based non-finite check and the 'mechanism logs' section silently returned nothing (n/a). The H comparisons come from results_exp2.json and are not affected. Fixed in analyze_v24s2.py (read_log); the mechanism numbers below were computed by decoding the logs.
+
+Arm means over 9 splits (seed 0)
+  Bg4   H 0.663  known_acc 0.739  unk_recall 0.657  known_false_unk 0.188  unk_cluster_acc 0.515  nmi 0.587
+  Rk    H 0.651  known_acc 0.722  unk_recall 0.643  known_false_unk 0.203  unk_cluster_acc 0.509  nmi 0.585
+  Rk2   H 0.635  known_acc 0.725  unk_recall 0.621  known_false_unk 0.195  unk_cluster_acc 0.468  nmi 0.556
+  Rk4   H 0.619  known_acc 0.677  unk_recall 0.634  known_false_unk 0.235  unk_cluster_acc 0.463  nmi 0.515
+  Rks2  H 0.636  known_acc 0.716  unk_recall 0.627  known_false_unk 0.207  unk_cluster_acc 0.481  nmi 0.556
+  Rks4  H 0.620  known_acc 0.677  unk_recall 0.639  known_false_unk 0.235  unk_cluster_acc 0.479  nmi 0.531
+
+Pre-registered comparisons (mean dH, 95 % bootstrap over 9 splits, positive splits) -> verdict
+  C1 dose        Rk2 - Rk   -0.016 [-0.054, +0.017]  4/9  no evidence of a difference
+                 Rk4 - Rk   -0.033 [-0.093, +0.021]  4/9  no evidence of a difference
+  C2 baseline    Rk2 - Bg4  -0.028 [-0.075, +0.015]  3/9  no evidence of a difference
+                 Rk4 - Bg4  -0.044 [-0.111, +0.014]  4/9  no evidence of a difference
+  C3 allocation  Rk2 - Rks2 -0.001 [-0.014, +0.010]  5/9  no evidence of a difference
+                 Rk4 - Rks4 -0.001 [-0.015, +0.013]  3/9  no evidence of a difference
+No comparison reached WORTH CONFIRMING; none reached HARM (HARM needs an interval upper bound below 0).
+
+Per-split dH (order C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3), Rk4 - Rk: -0.040 -0.009 +0.033 -0.031 +0.040 +0.080 -0.201 +0.001 -0.166. Rk4 - Bg4: -0.081 -0.007 +0.024 +0.009 +0.012 +0.071 -0.231 -0.000 -0.194. Two splits (C3 fold 1 and fold 3, known class soft foot) carry most of the negative mean; the other seven splits are near zero or positive. With one seed per split this heterogeneity cannot be separated from seed noise.
+
+Mechanism in training (decoded logs, mean over 9 runs, last print; 'max' over all prints and runs)
+  Rk2  kappa mean 0.729  relchg_med 0.099  fallback 0.000  mean_shrink 0.000 (max 0.020)
+  Rk4  kappa mean 0.724  relchg_med 0.189  fallback 0.000  mean_shrink 0.093 (max 0.240)
+  Rks2 kappa mean 0.729  relchg_med 0.097  fallback 0.000  mean_shrink 0.000 (max 0.020)
+  Rks4 kappa mean 0.721  relchg_med 0.188  fallback 0.000  mean_shrink 0.093 (max 0.220)
+  Adaptive and random arms have the same kappa distribution and the same realised signal change at each gain, as intended. The realised signal change in training (0.10 at gain 2, 0.19 at gain 4) agrees with the fixed-model scan (0.09 and 0.175). The fidelity check shrinks some windows at gain 4 and never falls back.
+
+Reading (descriptive; rules fixed in advance say: no support)
+  Pre-registered interpretation: "nothing worth confirming -> no support for Chapter-3 adaptive augmentation at gains 1, 2, 4 in this setup; the negative result stands."
+  The dose acted as designed, but a larger dose did not help (all dose and baseline point estimates are negative, intervals include 0), and random allocation of the budget gave the same H as allocation by (K, R) at both gains (dH -0.001 each).
+  Limits: one seed per split, 9 splits, exploratory, six comparisons without correction, 100 % speed data already used for development, one fixed warm-up scan versus trained models. The negative point estimates are not shown to be real (intervals include 0).

@@ -1,0 +1,33 @@
+v26 RESULT: unknown-class separability under the VMD view (Bruinsma pump, Motor-2 100 % speed; 27 warm-up models = 9 splits x 3 seeds; sandbox CPU; script scratch/v24p/separability.py; raw v26_separability.json).
+Criteria: v26_unknown_separability_PREREGISTERED.txt (final version and Addendum 1 pushed to branch v26-prereg, UTC 11:07 and 11:08, before any v26 number). Unknown labels used for analysis only. 75 % speed data not opened. No training, no H.
+
+IMPLEMENTATION CLARIFICATION (Addendum 1): train_measurement ids repeat across installations and classes, so "recording" = (train_installation, train_measurement). Recordings per unknown class: 3 to 8 (the earlier "3-5 measurements" counted ids). No rule or threshold was changed.
+
+PRE-REGISTERED RULES (P1 pair AUROC at gain 2; counts over 27 models)
+ DEGRADES   (Delta <= -(noise_mag + 0.01))   17/27   (needs 23)  -> NOT met
+ IMPROVES   (Delta >= +(noise_mag + 0.01))    0/27   (needs 23)  -> not met
+ NO-CHANGE  (|Delta| < 0.01)                 10/27   (needs 23)  -> not met
+ => P1 verdict: INCONCLUSIVE (insufficient evidence under the pre-registered screening rule; it does not refute H2).
+ EXPOSURE   (exposure_unknown >= 1.5 x exposure_known and difference >= 0.05)   24/27   (needs 23)  -> met
+ Pre-registered decision table: "EXPOSURE but not DEGRADES" and "INCONCLUSIVE" both match this outcome (the table overlaps here; this is a defect of the pre-registration, not resolved by relabelling). Both readings are reported: formally the evidence is insufficient (INCONCLUSIVE), and by the "EXPOSURE but not DEGRADES" row H2 is not supported as the reason for the null result by this measure. In every case this is the last diagnostic on the current VMD formulation; nothing is recalibrated.
+
+NUMBERS (mean over 27 models; range)
+ P1 of the standard view VA 0.870 [0.738, 0.959]; of the raw windows V0 0.866. Noise reference noise_mag 0.0028 [0.0008, 0.0084] (mean absolute P1 difference between two independent standard views).
+ Delta P1 = P1(A(x_vmd)) - P1(A(x)):
+   gain 1: -0.0038 [-0.0093, +0.0012]
+   gain 2: -0.0155 [-0.0334, -0.0017]; negative in 27/27 models; below -(noise_mag + 0.01) in 17/27; the 10 models that miss the threshold are C1 f1 (3 seeds), C1 f3 seed 0, C2 f1 (3 seeds), C3 f1 (3 seeds), with Delta -0.002 to -0.009
+   gain 4: -0.0523 [-0.1069, -0.0085]
+ P2 kNN purity (different recordings), gain 2: -0.0231 (noise: mean |difference| 0.0057). P3 within/between ratio of the class compactness: 0.295 (VA), 0.304 / 0.333 / 0.435 at gain 1 / 2 / 4 (larger = classes less compact relative to their distance).
+ Per-split mean Delta P1 at gain 2 (C1f1 C1f2 C1f3 C2f1 C2f2 C2f3 C3f1 C3f2 C3f3): -0.003 -0.024 -0.017 -0.004 -0.014 -0.021 -0.009 -0.019 -0.029.
+ Per-channel Delta P1 at gain 2 (channels 1, 2, 4, 5): -0.0028 -0.0015 -0.0086 -0.0031 (channel 4 carries about half of the total; the four sum to -0.0160).
+ Different-installation secondary (gain 2; only classes with >= 2 installations; 9 of 27 models have an unknown class with a single installation in the training split, mainly C1 splits): mean Delta P1 -0.0142 (27/27 models have data).
+ Part B (exposure): exposure_unknown 0.683 [0.599, 0.835]; exposure_known (all known windows, same estimator) 0.311 [0.213, 0.461]; code-estimator version 0.205 (reference). Ratio 2.3 on average. Spearman(scale, Dunk) -0.10; Spearman(scale, Dknown) -0.57.
+
+POST-HOC OBSERVATIONS (not pre-registered; 9 splits; descriptive)
+ - Across the 9 splits, the per-split Delta P1 at gain 2 correlates weakly with the stage-2 H differences: Spearman 0.42 with Rk2 - Rk, 0.07 with Rk2 - Bg4, -0.07 with Rk4 - Bg4. The two splits with the largest stage-2 losses (C3 fold 1 and fold 3) do not share a separability change: C3 f1 -0.009, C3 f3 -0.029. This gives no support for separability as the reason for the stage-2 H differences.
+ - The direction is the same in all 27 models and the dose trend is monotone (-0.004, -0.016, -0.052 at gain 1, 2, 4), but the pre-registered 23/27 criterion with the noise margin is not reached at gain 2. The pre-registered verdict is not relabelled.
+
+READING AND LIMITS
+ - The standard-augmentation view of the VMD-perturbed window separates the unknown fault classes slightly less well than the standard view of the original window (about 0.016 AUROC at gain 2) in a fixed warm-up feature space. The exposure indicator shows that a larger share of the VMD budget falls on modes that are informative for the unknown classes than for the known classes. The two observations are consistent with H2, but they do not show that exposure caused the loss of separability, and the screening rule for the loss is not met. The exposure indicator uses the allocated budget, not the damage done to a mode; the known and unknown groups differ in number of classes, windows and installations.
+ - Warm-up encoder (300 steps); the trained Chapter-3 encoder may behave differently. Separability in a fixed feature space does not show an effect on H. 200,000 pairs share windows and recordings; 27 models are 9 splits x 3 seeds, not independent datasets.
+ - If a protection of exposed modes were ever designed, its training-time rule may not use true unknown labels (they are used here only for diagnosis). That would need a new pre-registration; none is planned.

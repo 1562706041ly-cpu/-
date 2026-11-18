@@ -1,0 +1,66 @@
+v26 unknown-class separability under the VMD view: PRE-REGISTRATION (final; supersedes v26_unknown_separability_PREREGISTERED_DRAFT.txt).
+Bruinsma centrifugal pump only (Motor-2, 100 % speed). 75 % speed data sealed. Confirmed by the user 2026-11-06 with the changes below; written and pushed BEFORE any number of this diagnostic was computed.
+This replaces the closed v25 line (INCONCLUSIVE, not continued, no recalibration).
+
+CONFIRMED BY THE USER
+ 1. P1 (pair AUROC between different measurements) is the primary metric; P2 and P3 are descriptive.
+ 2. Gain 2 is the primary dose; gains 1 and 4 are reported.
+ 3. This is the LAST diagnostic on the current VMD formulation. Nothing is recalibrated after the result.
+ Changes requested by the user and made here: fixed stratified pair sampling; noise formula made consistent (with the added 0.01); several independent noise seeds; exposure reporting and wording limits; wording of NO-CHANGE and INCONCLUSIVE.
+
+NEW HYPOTHESIS (not a dose, allocation or threshold question)
+ H2: the VMD mode perturbation weakens the information that distinguishes DIFFERENT UNKNOWN fault classes from each other, because the mode budget sigma_rec * g is estimated from LABELLED KNOWN classes only (kr_modules.nuisance_mode_stats): modes that separate unknown classes but not known classes are not protected.
+ No evidence for H2 exists yet. A finding here could only motivate designing a protection of such modes or bands in a later, separately pre-registered step; it cannot show that separability caused any H difference of v24s2. If such a protection is ever designed, its training-time rule may not use true unknown-class labels; unknown labels are used only in this post-hoc diagnostic.
+
+WHAT IS COMPARED (fixed models, no training, no H; sandbox CPU)
+ Models: the 27 warm-up checkpoints (9 splits x 3 seeds). Windows: all UNKNOWN-class windows of the training split (about 800 per split, three unknown classes, ids 2-4). Unknown labels are used for this ANALYSIS ONLY; they enter no model, budget, K, R, pseudo-label or threshold. Known-class windows are not used for the separability metrics.
+ Standard augmentation A: shift 256, scale 0.2, noise 0.1, mask 0.10. Views per model:
+  VA   = A(x), torch seed 7.
+  VV   = A(x_vmd), SAME torch seed 7 (paired random numbers). x_vmd: VMD view with kappa = budget_v2(K, R), K from knn, labelled windows kappa = 1, the v24d random numbers u (seed + 20000, drawn for all training windows and then subset), the unchanged log-spectral fidelity check with halving and fallback.
+  VA'k = A(x) with torch seeds 8, 9, 10 (three independent standard views, the noise reference).
+  V0   = x (reference only).
+ Encoder: the warm-up encoder in eval mode. Gains: 2 (primary), 1 and 4 (reported; the three gains trained so far).
+ Per-channel views (descriptive, gain 2): channel c of the VMD view replaced into the original window, the other three channels original, A with torch seed 7.
+
+PAIR SAMPLING (fixed now; one pair set per model, identical for all views and gains)
+ Cells = (unknown class, measurement). Positives: choose a cell uniformly among all cells, a window uniformly in it; choose a second cell uniformly among the other cells of the SAME class (different measurement); a window uniformly in it. Negatives: choose a cell uniformly, a window uniformly; choose a cell uniformly among the cells of OTHER classes; a window uniformly in it. 100,000 positive and 100,000 negative pairs per model, generator seeded from the model index. This stratification stops large records or classes from dominating. The 200,000 pairs are not 200,000 independent observations (they share windows, recordings and installations); 23/27 is a screening rule, not a statistical confirmation on 27 independent datasets.
+ Different-installation pairs: secondary, reported only for classes with >= 2 installations in the training split; the classes and splits that cannot satisfy it are listed.
+
+METRICS (per model and view)
+ P1 pair AUROC (primary): score = cosine similarity of the features; target = same unknown class.
+ P2 kNN purity: k = 10 cosine neighbours among the unknown windows of DIFFERENT measurements; fraction with the same unknown class, macro-averaged over the three classes.
+ P3 compactness: within-class mean cosine distance to the class centroid, between-centroid cosine distance, and their ratio.
+ Delta(g) = P1(VV, gain g) - P1(VA). Noise reference noise_mag = mean over the three independent seeds of |P1(VA'k) - P1(VA)|. (The paired difference VV - VA shares the augmentation numbers and is probably less noisy than independent views; noise_mag is therefore a conservative reference.)
+
+BUDGET EXPOSURE (part B)
+ For each channel and VMD mode, from the log mode energy (record key = installation, as in training; windows of a class with < 2 records use the window-level standard deviation, as the code does; the number of such classes is reported):
+  D = sigma_cls^2 / (sigma_rec^2 + sigma_cls^2); sigma_cls is the standard deviation (ddof = 1) of the class means, the same estimator for both groups so that two known and three unknown classes are comparable.
+  Dknown_full: all known-class windows of the training split (labelled and unlabelled; labels for analysis). Dunk: all unknown-class windows. Dknown_code: the quantity actually used in training (1 - g from the labelled windows; ddof 0), reported for reference only.
+  scale = the mode budget sigma_rec * g used in training (gain 1; the ratio does not depend on the gain).
+ exposure_known = sum(Dknown_full * scale) / sum(scale); exposure_unknown = sum(Dunk * scale) / sum(scale). Numerator, denominator and the per-(channel, mode) raw values of Dknown_full, Dunk, scale are stored for every model. Spearman(scale, Dunk) is reported.
+ Limits stated now: scale is the allocated budget, not the damage actually done to a mode; the two groups differ in the number of classes, windows, records and installations; exposure is an indicator, not evidence of cause.
+
+RULES (27 models; 9 splits x 3 seeds are not independent; P1 at gain 2)
+ DEGRADES   : Delta <= -(noise_mag + 0.01) in >= 23/27 models.
+ IMPROVES   : Delta >= +(noise_mag + 0.01) in >= 23/27 models.
+ NO-CHANGE  : |Delta| < 0.01 in >= 23/27 models. This means the change is smaller than 0.01 AUROC in this setting; it is not a proof of equivalence or of no effect.
+ INCONCLUSIVE: none of the three. Insufficient evidence; it does not refute H2. Per-split results (mean of the 3 seeds) are reported.
+ EXPOSURE   : exposure_unknown >= 1.5 x exposure_known (Dknown_full) AND exposure_unknown - exposure_known >= 0.05, in >= 23/27 models. (The absolute margin protects against an unstable ratio when exposure_known is small.)
+ Descriptive only, no rule, no effect on the verdict: gain trend (1, 2, 4), P2, P3, per-channel and per-split tables, the different-installation results, Dknown_code.
+ (0.01 AUROC, 1.5, 0.05 and 23/27 are judgements fixed now.)
+
+DECISIONS FIXED NOW
+ DEGRADES and EXPOSURE          -> both observations are consistent with H2 and justify a further test; they do NOT show that exposure caused the loss of separability. A protection of exposed modes or bands would need a NEW pre-registration.
+ DEGRADES but not EXPOSURE      -> separability drops, but this exposure indicator does not support the stated mechanism; report; no protection design on this basis.
+ EXPOSURE but not DEGRADES      -> the exposure condition is met without a measurable effect on separability at gain 2; H2 is not supported as the reason for the null result by this measure.
+ NO-CHANGE or IMPROVES          -> the change in unknown separability is smaller than 0.01 AUROC or positive; H2 is not supported by this measure.
+ INCONCLUSIVE                   -> insufficient evidence; report.
+ In every case this is the last diagnostic on the current VMD formulation unless a new hypothesis is pre-registered first. Bg4 stays the main baseline. Chapter-3 focus is discussed with the supervisor.
+
+LIMITS (stated now)
+ Warm-up encoder (300 steps) trained with the standard augmentation and the labelled windows; the trained Chapter-3 encoder may behave differently. Separability in a fixed feature space does not show a downstream effect on H. Windows of one installation can share installation-specific structure that the measurement-level exclusion does not remove.
+
+NOT CLAIMED: that separability explains the stage-2 H values; that any protected-mode design would help.
+
+ADDENDUM 1 (2026-11-06, written after the first run of the script aborted on its own assertion and BEFORE any v26 number was produced; no result had been computed)
+ The script's consistency check failed because the field train_measurement is only unique within an installation and a class (ids 0, 1, 2, ... repeat across installations and classes). The intended unit "recording" is therefore the pair (train_installation, train_measurement). All statements above that say "measurement" or "different measurement" mean DIFFERENT RECORDING = different (installation, measurement) pair. This changes the operationalisation of the pair cells, the pair partner exclusion and the kNN exclusion; it does not change any rule, threshold, metric or decision. The earlier counts of "3-5 measurements per unknown class" were counts of ids and understate the number of recordings; the number of recordings per unknown class is reported in the result.

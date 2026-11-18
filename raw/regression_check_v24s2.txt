@@ -1,0 +1,7 @@
+v24s2 code regression check (2026-11-06, sandbox CPU, C1 fold 1, seed 0, Rk configuration: --k-score-train knn, gain 1, VMD bank, LOIO guard)
+v23 code vs v24s2 code (only changes: new flag --kr2-shuf-scope default 'both'; extra log values kap_mean, kap_p10, kap_p90, relchg_med every 300 steps).
+ adaptive_kr2 : openset and clustering blocks identical (H 0.7055), pred_V / raw_V / pred_U / raw_U / yv / yu arrays equal.
+ shuffled_kr2 (default scope): identical (H 0.7282), all arrays equal.
+Smoke tests of the new options (single split, one seed, NOT evidence about the method): shuffled_kr2 with --kr2-shuf-scope sample and gain 4, and adaptive_kr2 with gain 4, both ran to completion with finite losses; kap_mean about 0.72, relchg_med about 0.13-0.14, fallback 0.00.
+Limits: CPU only, one split. GPU and the other splits were not re-checked. The reused Rk runs were produced by the v23 code.
+sha256: m2_paderborn_kr.py 6623ea074c5a8a86b83aa37055e3ec63485479fc0bc5fe7facfa231978ea6f73 ; kr_modules.py 7dfe0e59aed59963b03386fd78a0d00ef4966d2d776d6846112385f1b88a303f (unchanged from v23)

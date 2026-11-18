@@ -1,0 +1,46 @@
+v24s2 exploratory screen: 9 splits x seed 0 (criteria: v24s2_PREREGISTERED.txt). Candidates only; no multiplicity correction.
+
+arm means over valid splits: H, known_acc, unk_recall, known_false_unk, unk_cluster_acc, nmi
+  Bg4   n=9  H 0.663  known_acc 0.739  unk_recall 0.657  known_false_unk 0.188  unk_cluster_acc 0.515  nmi 0.587
+  Rk    n=9  H 0.651  known_acc 0.722  unk_recall 0.643  known_false_unk 0.203  unk_cluster_acc 0.509  nmi 0.585
+  Rk2   n=9  H 0.635  known_acc 0.725  unk_recall 0.621  known_false_unk 0.195  unk_cluster_acc 0.468  nmi 0.556
+  Rk4   n=9  H 0.619  known_acc 0.677  unk_recall 0.634  known_false_unk 0.235  unk_cluster_acc 0.463  nmi 0.515
+  Rks2  n=9  H 0.636  known_acc 0.716  unk_recall 0.627  known_false_unk 0.207  unk_cluster_acc 0.481  nmi 0.556
+  Rks4  n=9  H 0.620  known_acc 0.677  unk_recall 0.639  known_false_unk 0.235  unk_cluster_acc 0.479  nmi 0.531
+
+C1 dose: Rk2 - Rk (n=9): mean dH -0.0161  95% [-0.0538, +0.0168]  positive in 4/9 splits
+   per-split dH: -0.001 -0.002 +0.010 +0.057 +0.027 -0.024 -0.125 +0.006 -0.092
+   secondary mean differences: known_acc +0.002  unk_recall -0.022  known_false_unk -0.008  unk_cluster_acc -0.042  nmi -0.029
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+C1 dose: Rk4 - Rk (n=9): mean dH -0.0325  95% [-0.0931, +0.0205]  positive in 4/9 splits
+   per-split dH: -0.040 -0.009 +0.033 -0.031 +0.040 +0.080 -0.201 +0.001 -0.166
+   secondary mean differences: known_acc -0.045  unk_recall -0.009  known_false_unk +0.032  unk_cluster_acc -0.047  nmi -0.070
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+C2 baseline: Rk2 - Bg4 (n=9): mean dH -0.0278  95% [-0.0748, +0.0154]  positive in 3/9 splits
+   per-split dH: -0.043 -0.001 +0.001 +0.096 -0.002 -0.033 -0.155 +0.005 -0.120
+   secondary mean differences: known_acc -0.015  unk_recall -0.036  known_false_unk +0.007  unk_cluster_acc -0.047  nmi -0.031
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+C2 baseline: Rk4 - Bg4 (n=9): mean dH -0.0441  95% [-0.1112, +0.0141]  positive in 4/9 splits
+   per-split dH: -0.081 -0.007 +0.024 +0.009 +0.012 +0.071 -0.231 -0.000 -0.194
+   secondary mean differences: known_acc -0.062  unk_recall -0.023  known_false_unk +0.047  unk_cluster_acc -0.052  nmi -0.073
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+C3 allocation: Rk2 - Rks2 (n=9): mean dH -0.0012  95% [-0.0136, +0.0098]  positive in 5/9 splits
+   per-split dH: +0.014 +0.006 +0.006 +0.024 -0.004 -0.001 -0.032 +0.007 -0.032
+   secondary mean differences: known_acc +0.009  unk_recall -0.006  known_false_unk -0.012  unk_cluster_acc -0.013  nmi +0.001
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+C3 allocation: Rk4 - Rks4 (n=9): mean dH -0.0009  95% [-0.0147, +0.0134]  positive in 3/9 splits
+   per-split dH: -0.000 +0.029 +0.024 -0.026 -0.013 -0.012 -0.011 -0.029 +0.030
+   secondary mean differences: known_acc +0.000  unk_recall -0.005  known_false_unk +0.000  unk_cluster_acc -0.016  nmi -0.016
+   VERDICT (pre-registered rule): no evidence of a difference at this resolution
+
+mechanism logs (last print of each run, mean over runs): kap_mean kap_p10 kap_p90 relchg_med fallback mean_shrink
+  Rk    kap_mean n/a  kap_p10 n/a  kap_p90 n/a  relchg_med n/a  fallback n/a  mean_shrink n/a  (logs: 0 runs)
+  Rk2   kap_mean n/a  kap_p10 n/a  kap_p90 n/a  relchg_med n/a  fallback n/a  mean_shrink n/a  (logs: 0 runs)
+  Rk4   kap_mean n/a  kap_p10 n/a  kap_p90 n/a  relchg_med n/a  fallback n/a  mean_shrink n/a  (logs: 0 runs)
+  Rks2  kap_mean n/a  kap_p10 n/a  kap_p90 n/a  relchg_med n/a  fallback n/a  mean_shrink n/a  (logs: 0 runs)
+  Rks4  kap_mean n/a  kap_p10 n/a  kap_p90 n/a  relchg_med n/a  fallback n/a  mean_shrink n/a  (logs: 0 runs)

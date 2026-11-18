@@ -1,0 +1,9 @@
+Design note (2026-11-06; descriptive, not a pre-registered test; no rule, no decision). Question raised by the user: can "mode m of channel a" be treated as the same frequency band as "mode m of channel b" in the pump VMD bank (centrifugal/pool/pool_motor2_100_ch1245_vmd.npy; K = 8, modes sorted by VMD centre frequency per channel and window; build_vmd_pool.py)?
+Method: 200 training windows evenly spaced over the pool (all classes), spectral centroid of each mode (fs 20 kHz), median over windows.
+Median centroid (Hz), modes 1..8:
+ channel 1: 299 1216 7000 7751 7900 8120 8173 9048
+ channel 2: 374 1141 7048 7861 7865 8007 8258 9001
+ channel 4: 340  978 2727 4020 5355 6616 8165 9243
+ channel 5: 387 1217 3165 4448 5928 7116 8091 9452
+Largest centroid difference between channels for the same mode index: 88, 239, 4321, 3841, 2545, 1504, 167, 451 Hz (modes 1..8). Across windows the centroid of one channel-mode varies by an interquartile range of up to about 2 kHz (channel 1, mode 3).
+Reading: the same mode index corresponds to a similar band only for modes 1, 2, 7, 8. For modes 3-6 channels 1 and 2 on one side and channels 4 and 5 on the other sit in different bands (up to 4.3 kHz apart), and the index-to-band map moves from window to window. A cross-channel coordination rule that pairs equal mode indices would therefore couple different frequency bands for modes 3-6. Whether cross-channel coordination matters at all is not tested here; it is a candidate hypothesis that still needs an implementation check, a literature check and a pre-registration.

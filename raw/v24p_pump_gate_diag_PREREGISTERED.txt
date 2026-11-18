@@ -1,0 +1,30 @@
+v24p gate diagnostic on the Bruinsma centrifugal pump (Motor-2, 100 % speed, 4-channel log-spectrum). Written BEFORE any pump score was computed (2026-11-06).
+Supersedes the Paderborn-only v24 / v24b for all further work (user instruction: only the Bruinsma pump data from now on).
+
+SCOPE
+- Fixed-model, offline. Models: warm-up checkpoints (step 300 of the post-hoc stage, i.e. after 600 supervised steps + 300 contrastive steps) trained in the sandbox on CPU with the v22 pump settings:
+  --input spec --norm window --mode generic --contrast plain --vmd-bank none --k-score denergy --known-subcenters 2 --label-balance-key train_installation --label-record-key train_measurement --record-key train_installation --known 0,1 --unknown 2,3,4 (generic mode, the encoder at warm-up does not depend on the K variant).
+  Run with --steps 301 so the script stops one step after the warm-up checkpoint. The encoder at warm-up is therefore the SAME for A3d, A3g and pure NN arms; only the K score computed from it differs.
+- Splits: centrifugal/splits_ch1245/motor2_100_ch1245_C{1,2,3}_fold{1,2,3}.npz (held out by installation). Seeds 0,1,2. 27 models. Seeds within a split share data; the 9 splits are the independent-ish units (3 combos x 3 folds, the folds share installations across train/eval roles).
+- The sealed 75 % speed data is NOT opened. Labels (incl. unknown-class labels) are used only for analysis, never to choose a parameter. gamma = 2 and the region threshold are fixed now.
+- Held-out windows are called "val" in the files; there is no separate validation set.
+
+SCORES (higher = more known; calibrated with the labelled leave-one-out rule used in kr_modules)
+ qD nearest labelled cosine (w=0);  qE classifier-head energy (w=1);  qG = qD^2 qE + (1-qD^2) qD (A3g);  qDE distance energy T=0.05 (A3d).
+Sets: S_U = unlabelled training windows, S_V = held-out evaluation windows.
+
+MEASUREMENTS (same as v24)
+ M1 Spearman(qE,qD), Spearman(qDE,qD) pooled / within known / within unknown on S_U.
+ M2 AUROC unknown-vs-known for qD, qE, qG, qDE on S_U and S_V.
+ M3 route flips at K>=0.5: qG vs qD and qG vs qDE; fraction where qG is correct among flips.
+ M4 region qD >= 0.8: flip fraction and routing accuracy of qG vs qD.
+
+DECISION RULES, counted over the 27 models AND over the 9 splits (split value = mean of its 3 seeds)
+ "Head energy adds information inside the support": AUROC(qG) - AUROC(qD) >= +0.02 on BOTH sets in >= 23/27 models and >= 8/9 splits.
+ "Gate hurts": AUROC(qG) - AUROC(qD) <= -0.02 on BOTH sets in >= 23/27 models and >= 8/9 splits.
+ "Redundant": |dAUROC| < 0.01 on both sets in >= 23/27 models AND pooled Spearman(qE,qD) >= 0.9 in >= 23/27.
+ "Different ranking, no gain": |dAUROC| < 0.01 with Spearman < 0.9.
+ Otherwise inconclusive. Report per-split means too, and the same table for qDE vs qD.
+Spearman: >=0.9 strong overlap, 0.5-0.9 partial, <0.5 distinct.
+
+NOT CLAIMED: nothing about end-to-end H; nothing about the 75 % speed set; the Paderborn result of v24 is not used to set any threshold here other than the rule form.
