@@ -1,0 +1,21 @@
+v24 pump end-to-end comparison (criteria: v24_endtoend_PREREGISTERED.txt)
+
+overall mean +- std over 27 runs
+  Rg  H 0.640  known_acc 0.712  unk_recall 0.630  known_false_unk 0.200  nmi 0.567
+  Rk  H 0.642  known_acc 0.719  unk_recall 0.626  known_false_unk 0.197  nmi 0.571
+  Rd  H 0.635  known_acc 0.712  unk_recall 0.626  known_false_unk 0.198  nmi 0.568
+
+P1 Rk - Rg: mean dH +0.0021  95% interval over splits [-0.0057, +0.0080]  higher in 17/27 runs, positive in 7/9 splits
+   per-split mean dH: +0.009 +0.002 +0.003 -0.025 +0.014 -0.001 +0.004 +0.011 +0.002
+   secondary mean differences: known_acc +0.007  unk_recall -0.004  known_false_unk -0.003  nmi +0.003
+   VERDICT (pre-registered rule): no worse (not shown better)
+P2 Rd - Rg: mean dH -0.0044  95% interval over splits [-0.0170, +0.0053]  higher in 13/27 runs, positive in 6/9 splits
+   per-split mean dH: +0.003 +0.003 +0.004 -0.004 +0.018 +0.002 -0.019 +0.001 -0.047
+   secondary mean differences: known_acc +0.000  unk_recall -0.004  known_false_unk -0.003  nmi +0.001
+   VERDICT (pre-registered rule): no worse (not shown better)
+P3 Rk - Rd: mean dH +0.0065  95% interval over splits [-0.0042, +0.0195]  higher in 17/27 runs, positive in 4/9 splits
+   per-split mean dH: +0.006 -0.000 -0.001 -0.021 -0.003 -0.003 +0.023 +0.010 +0.049
+   secondary mean differences: known_acc +0.007  unk_recall +0.000  known_false_unk -0.001  nmi +0.003
+   VERDICT (pre-registered rule): no worse (not shown better)
+
+Rgrep noise floor |H(Rgrep) - H(Rg)| on 3 repeats: 0.000 0.000 0.000  mean 0.000

@@ -1,0 +1,5 @@
+v24c code-version check (2026-11-06, sandbox CPU, one split, one seed)
+Question: Bg4 (generic mode, no Chapter 3) was run with the v20 code; Rg/Rk/Rd/Mx with the v23 code. Do the two code versions give identical output for the Bg4 configuration?
+Test: C1 fold 1, seed 0, Bg4 arguments (--mode generic --contrast plain --vmd-bank none --known-guard 0.4 --guard-group-key train_installation, spec input, window norm), --device cpu, same gpu_runtime.
+v20 code (scratch/deliver_v20) vs v23 code (scratch/deliver_v23): results_exp2.json openset and clustering blocks identical (H 0.7184, known_acc 0.6156, unk_recall 0.8625); pred_V, raw_V, pred_U, raw_U, yv, yu arrays equal.
+Limits: one split, one seed, CPU only. GPU runs and the other 26 pairs were not re-run. This supports, but does not prove, that Bg4 (v20 code) and Rg (v23 code) are comparable.
