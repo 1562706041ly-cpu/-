@@ -1,0 +1,2 @@
+runs found per arm (valid / total of 9): Bg4 9/9  Rk 9/9  Rk2 9/9  Rk4 9/9  Rks2 9/9  Rks4 9/9
+pairing checks: PASSED
