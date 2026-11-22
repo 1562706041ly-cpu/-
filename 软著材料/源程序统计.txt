@@ -1,0 +1,27 @@
+矿盾声鉴-矿山设备声音智能监测系统 V1.0
+
+文件	总行数	非空行数
+kdsj/__init__.py	16	15
+kdsj/__main__.py	3	2
+kdsj/audio.py	89	80
+kdsj/tfr.py	175	139
+kdsj/vmd.py	141	118
+kdsj/optim.py	147	127
+kdsj/nets.py	74	55
+kdsj/lssvm.py	136	115
+kdsj/recognizer.py	158	141
+kdsj/anomaly.py	342	285
+kdsj/monitor.py	117	102
+kdsj/cli.py	132	119
+kdsj/selftest.py	93	82
+kdsj/gui/__init__.py	41	34
+kdsj/gui/style.py	190	169
+kdsj/gui/widgets.py	283	244
+kdsj/gui/auth.py	28	22
+kdsj/gui/store.py	79	66
+kdsj/gui/workers.py	38	30
+kdsj/gui/login.py	86	77
+kdsj/gui/main_window.py	503	462
+
+合计 21 个文件，源程序总行数 2871 行（含空行），非空行 2484 行。
+折行后共 2705 行，每页 50 行，共 55 页；不足 60 页，全部提交（55 页）。
