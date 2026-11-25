@@ -1,0 +1,32 @@
+regen_splits_v2 started 2026-11-26 00:20:13
+Dest = D:\DCWRU_Data\Paderborn_Experiment
+Python = D:\chuqishiyan1\zhubao\pump_reproduction\.venv_gpu\Scripts\python.exe
+PSVersion = 5.1.19041.6456
+OK    exists python.exe 
+OK    exists pool_motor2_100_ch1245.npz 
+OK    exists pool_motor2_100_ch1245_logspec.npy 
+OK    exists make_splits_da_v2.py 
+OK    exists verify_splits_v2.py 
+OK    exists target_split_v1.json 
+OK    exists split_assignment_r1m_v1.sha256 
+--- generating splits (rule R1m) ---
+cross-check with option_R1_merged of the json: 2720 windows, 0 differences
+C1_fold1: T_adapt/T_eval 491/309 feasible=True
+C1_fold2: T_adapt/T_eval 511/289 feasible=False
+C1_fold3: T_adapt/T_eval 485/315 feasible=True
+C2_fold1: T_adapt/T_eval 486/314 feasible=True
+C2_fold2: T_adapt/T_eval 532/268 feasible=False
+C2_fold3: T_adapt/T_eval 479/321 feasible=True
+C3_fold1: T_adapt/T_eval 495/305 feasible=True
+C3_fold2: T_adapt/T_eval 547/253 feasible=False
+C3_fold3: T_adapt/T_eval 514/286 feasible=True
+wrote split_assignment_r1m_v1.tsv sha256 b5f108dbc301ceaa62095685f069eff939f374c2aeb2d5f1487c708029862ce7
+OK    make_splits_da_v2.py exit code = 0
+--- verifying splits ---
+(106 lines "OK   <split>: <check>" for the 9 splits; omitted here, none was FAIL)
+assignment sha256 (rebuilt from the npz files): b5f108dbc301ceaa62095685f069eff939f374c2aeb2d5f1487c708029862ce7
+OK   assignment sha256 equals the pre-registered value b5f108dbc301ceaa62095685f069eff939f374c2aeb2d5f1487c708029862ce7
+ALL CHECKS PASSED
+OK    verify_splits_v2.py exit code = 0
+RESULT: ALL OK
+log written to D:\DCWRU_Data\Paderborn_Experiment\regen_splits_v2_log.txt
