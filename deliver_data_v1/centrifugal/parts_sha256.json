@@ -1,0 +1,73 @@
+{
+ "note": "parts are byte-identical copies of the v19 branch files; concatenating them in the listed order gives the target file with the listed sha256",
+ "pool": {
+  "target": "centrifugal/pool/pool_motor2_100_ch1245.npz",
+  "manifest": "centrifugal/pool/pool_motor2_100_ch1245.json",
+  "manifest_sha256_key": "sha256",
+  "sha256": "4be16646c108805062fcc19c523b346cafd7fad812262a3cdfcea8418157afa4",
+  "size_bytes": 89501438,
+  "source_branch": "v19-B",
+  "parts": [
+   {
+    "file": "centrifugal/pool/pool_motor2_100_ch1245.npz.part00",
+    "size_bytes": 47185920,
+    "sha256": "9a83b661913c5ecb20e3e56e20b9956eae4cbfd6014dd171752a7b27e6291661"
+   },
+   {
+    "file": "centrifugal/pool/pool_motor2_100_ch1245.npz.part01",
+    "size_bytes": 42315518,
+    "sha256": "6e460ac6723432bfd18bf76a0a8a53a16dc8e1a39b7cb408171ffa3ac2d7e934"
+   }
+  ]
+ },
+ "vmd": {
+  "target": "centrifugal/pool/pool_motor2_100_ch1245_vmd.npy",
+  "manifest": "centrifugal/pool/pool_motor2_100_ch1245_vmd.json",
+  "manifest_sha256_key": "bank_sha256",
+  "sha256": "0170fc642b940d05cc53f657f4bd546f6c24c4f1426c80f4063880e7710d41f8",
+  "size_bytes": 356515968,
+  "source_branch": "v19-VMD",
+  "parts": [
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part00",
+    "size_bytes": 47185920,
+    "sha256": "c6bf9d96c8be129efed0af2ad409be7d9883b8a152621e522acf3dd15f299f22"
+   },
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part01",
+    "size_bytes": 47185920,
+    "sha256": "c53d76af9cd62335de2b14ab80e0cce691f7392ddf1a1335b6554b5a352868ed"
+   },
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part02",
+    "size_bytes": 47185920,
+    "sha256": "820aff178ecfb0d13758767ea9934e79bb52ae25bf7424120ff1a25e7aacbc43"
+   },
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part03",
+    "size_bytes": 47185920,
+    "sha256": "cd3285e96c5972d7935a4733e537b84a70f522a43425e7f5e932e737cc1370b3"
+   },
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part04",
+    "size_bytes": 47185920,
+    "sha256": "71622d18ab4c291d38c9d877bdab4015273f6e11f442071176e9cb8aac3cc51f"
+   },
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part05",
+    "size_bytes": 47185920,
+    "sha256": "547cc2123d5046f23d0f1318cf4ea78e797d88a981071620127f9900f515b97c"
+   },
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part06",
+    "size_bytes": 47185920,
+    "sha256": "65ebcd49903befa996a8cd316e01de3294a0972da66dc1a4904dba298865421c"
+   },
+   {
+    "file": "centrifugal/pool_vmd/pool_motor2_100_ch1245_vmd.npy.part07",
+    "size_bytes": 26214528,
+    "sha256": "11cb17f8bf659bac6c8d3bf253a773d71a1a8e6a6353fd7eb1b974df03df56fd"
+   }
+  ]
+ }
+}
