@@ -1,0 +1,20 @@
+{
+ "pool": "pool_motor2_100_ch1245.npz",
+ "pool_sha256": "4be16646c108805062fcc19c523b346cafd7fad812262a3cdfcea8418157afa4",
+ "vmd_shape": [
+  2720,
+  4,
+  8,
+  2048
+ ],
+ "dtype": "float16",
+ "bank_sha256": "0170fc642b940d05cc53f657f4bd546f6c24c4f1426c80f4063880e7710d41f8",
+ "K": 8,
+ "alpha": 300.0,
+ "tau": 0.0,
+ "DC": 0,
+ "init": 1,
+ "tol": 1e-07,
+ "input": "per-window per-channel z-scored pool X",
+ "reconstruction_rel_error": 0.0392
+}

@@ -1,0 +1,2721 @@
+pool_index,installation,fault_type,measurement,column,start,recording_key,side
+0,healthy 1,healthy,0,0,77824,healthy 1|0,adapt
+1,healthy 1,healthy,0,1,34816,healthy 1|0,adapt
+2,healthy 1,healthy,0,1,235520,healthy 1|0,adapt
+3,healthy 1,healthy,0,2,49152,healthy 1|0,adapt
+4,healthy 1,healthy,0,2,108544,healthy 1|0,adapt
+5,healthy 1,healthy,0,2,167936,healthy 1|0,adapt
+6,healthy 1,healthy,0,3,8192,healthy 1|0,adapt
+7,healthy 1,healthy,0,3,57344,healthy 1|0,adapt
+8,healthy 1,healthy,0,3,92160,healthy 1|0,adapt
+9,healthy 1,healthy,0,3,94208,healthy 1|0,adapt
+10,healthy 1,healthy,0,3,98304,healthy 1|0,adapt
+11,healthy 1,healthy,0,4,100352,healthy 1|0,adapt
+12,healthy 1,healthy,0,4,112640,healthy 1|0,adapt
+13,healthy 1,healthy,1,5,43008,healthy 1|1,eval
+14,healthy 1,healthy,1,5,49152,healthy 1|1,eval
+15,healthy 1,healthy,1,5,116736,healthy 1|1,eval
+16,healthy 1,healthy,1,5,165888,healthy 1|1,eval
+17,healthy 1,healthy,1,5,188416,healthy 1|1,eval
+18,healthy 1,healthy,1,6,212992,healthy 1|1,eval
+19,healthy 1,healthy,1,8,10240,healthy 1|1,eval
+20,healthy 1,healthy,1,8,16384,healthy 1|1,eval
+21,healthy 1,healthy,1,8,65536,healthy 1|1,eval
+22,healthy 1,healthy,1,9,118784,healthy 1|1,eval
+23,healthy 1,healthy,2,11,40960,healthy 1|2,adapt
+24,healthy 1,healthy,2,11,92160,healthy 1|2,adapt
+25,healthy 1,healthy,2,11,157696,healthy 1|2,adapt
+26,healthy 1,healthy,2,11,219136,healthy 1|2,adapt
+27,healthy 1,healthy,2,11,223232,healthy 1|2,adapt
+28,healthy 1,healthy,2,11,225280,healthy 1|2,adapt
+29,healthy 1,healthy,2,12,28672,healthy 1|2,adapt
+30,healthy 1,healthy,2,12,77824,healthy 1|2,adapt
+31,healthy 1,healthy,2,12,126976,healthy 1|2,adapt
+32,healthy 1,healthy,2,12,155648,healthy 1|2,adapt
+33,healthy 1,healthy,2,12,161792,healthy 1|2,adapt
+34,healthy 1,healthy,2,12,231424,healthy 1|2,adapt
+35,healthy 1,healthy,2,13,6144,healthy 1|2,adapt
+36,healthy 1,healthy,2,13,112640,healthy 1|2,adapt
+37,healthy 1,healthy,2,13,120832,healthy 1|2,adapt
+38,healthy 1,healthy,2,13,165888,healthy 1|2,adapt
+39,healthy 1,healthy,2,13,174080,healthy 1|2,adapt
+40,healthy 1,healthy,3,16,208896,healthy 1|3,eval
+41,healthy 1,healthy,3,17,221184,healthy 1|3,eval
+42,healthy 1,healthy,3,19,55296,healthy 1|3,eval
+43,healthy 1,healthy,3,19,178176,healthy 1|3,eval
+44,healthy 1,healthy,3,19,206848,healthy 1|3,eval
+45,healthy 1,healthy,4,20,149504,healthy 1|4,adapt
+46,healthy 1,healthy,4,20,215040,healthy 1|4,adapt
+47,healthy 1,healthy,4,21,104448,healthy 1|4,adapt
+48,healthy 1,healthy,4,21,196608,healthy 1|4,adapt
+49,healthy 1,healthy,4,22,133120,healthy 1|4,adapt
+50,healthy 1,healthy,4,22,178176,healthy 1|4,adapt
+51,healthy 1,healthy,4,22,182272,healthy 1|4,adapt
+52,healthy 1,healthy,4,23,77824,healthy 1|4,adapt
+53,healthy 1,healthy,4,23,155648,healthy 1|4,adapt
+54,healthy 1,healthy,4,23,221184,healthy 1|4,adapt
+55,healthy 1,healthy,4,24,8192,healthy 1|4,adapt
+56,healthy 1,healthy,4,24,10240,healthy 1|4,adapt
+57,healthy 1,healthy,4,24,51200,healthy 1|4,adapt
+58,healthy 1,healthy,4,24,83968,healthy 1|4,adapt
+59,healthy 1,healthy,4,24,235520,healthy 1|4,adapt
+60,healthy 1,healthy,5,25,51200,healthy 1|5,eval
+61,healthy 1,healthy,5,25,59392,healthy 1|5,eval
+62,healthy 1,healthy,5,25,180224,healthy 1|5,eval
+63,healthy 1,healthy,5,26,34816,healthy 1|5,eval
+64,healthy 1,healthy,5,26,69632,healthy 1|5,eval
+65,healthy 1,healthy,5,27,79872,healthy 1|5,eval
+66,healthy 1,healthy,5,27,120832,healthy 1|5,eval
+67,healthy 1,healthy,5,27,208896,healthy 1|5,eval
+68,healthy 1,healthy,5,27,219136,healthy 1|5,eval
+69,healthy 1,healthy,5,28,186368,healthy 1|5,eval
+70,healthy 1,healthy,5,28,217088,healthy 1|5,eval
+71,healthy 1,healthy,5,28,219136,healthy 1|5,eval
+72,healthy 1,healthy,5,29,106496,healthy 1|5,eval
+73,healthy 1,healthy,5,29,110592,healthy 1|5,eval
+74,healthy 1,healthy,5,29,210944,healthy 1|5,eval
+75,healthy 1,healthy,6,30,126976,healthy 1|6,adapt
+76,healthy 1,healthy,6,30,153600,healthy 1|6,adapt
+77,healthy 1,healthy,6,31,12288,healthy 1|6,adapt
+78,healthy 1,healthy,6,31,20480,healthy 1|6,adapt
+79,healthy 1,healthy,6,31,69632,healthy 1|6,adapt
+80,healthy 1,healthy,6,31,182272,healthy 1|6,adapt
+81,healthy 1,healthy,6,32,180224,healthy 1|6,adapt
+82,healthy 1,healthy,6,32,182272,healthy 1|6,adapt
+83,healthy 1,healthy,6,32,227328,healthy 1|6,adapt
+84,healthy 1,healthy,6,33,120832,healthy 1|6,adapt
+85,healthy 1,healthy,6,33,149504,healthy 1|6,adapt
+86,healthy 1,healthy,6,33,194560,healthy 1|6,adapt
+87,healthy 1,healthy,6,33,221184,healthy 1|6,adapt
+88,healthy 1,healthy,6,34,90112,healthy 1|6,adapt
+89,healthy 1,healthy,6,34,114688,healthy 1|6,adapt
+90,healthy 1,healthy,6,34,180224,healthy 1|6,adapt
+91,healthy 1,healthy,7,35,0,healthy 1|7,eval
+92,healthy 1,healthy,7,35,141312,healthy 1|7,eval
+93,healthy 1,healthy,7,35,196608,healthy 1|7,eval
+94,healthy 1,healthy,7,35,215040,healthy 1|7,eval
+95,healthy 1,healthy,7,37,90112,healthy 1|7,eval
+96,healthy 1,healthy,7,37,116736,healthy 1|7,eval
+97,healthy 1,healthy,7,38,20480,healthy 1|7,eval
+98,healthy 1,healthy,7,38,32768,healthy 1|7,eval
+99,healthy 1,healthy,8,41,24576,healthy 1|8,adapt
+100,healthy 1,healthy,8,41,212992,healthy 1|8,adapt
+101,healthy 1,healthy,8,42,10240,healthy 1|8,adapt
+102,healthy 1,healthy,8,42,24576,healthy 1|8,adapt
+103,healthy 1,healthy,8,42,102400,healthy 1|8,adapt
+104,healthy 1,healthy,8,42,231424,healthy 1|8,adapt
+105,healthy 1,healthy,8,43,161792,healthy 1|8,adapt
+106,healthy 1,healthy,8,43,180224,healthy 1|8,adapt
+107,healthy 1,healthy,8,44,129024,healthy 1|8,adapt
+108,healthy 1,healthy,8,44,233472,healthy 1|8,adapt
+109,healthy 1,healthy,9,46,190464,healthy 1|9,eval
+110,healthy 1,healthy,9,48,12288,healthy 1|9,eval
+111,healthy 1,healthy,9,48,194560,healthy 1|9,eval
+112,healthy 1,healthy,9,49,153600,healthy 1|9,eval
+113,healthy 1,healthy,9,49,169984,healthy 1|9,eval
+114,healthy 1,healthy,9,49,180224,healthy 1|9,eval
+115,healthy 1,healthy,9,49,184320,healthy 1|9,eval
+116,healthy 1,healthy,10,50,55296,healthy 1|10,adapt
+117,healthy 1,healthy,10,50,139264,healthy 1|10,adapt
+118,healthy 1,healthy,10,50,202752,healthy 1|10,adapt
+119,healthy 1,healthy,10,50,210944,healthy 1|10,adapt
+120,healthy 1,healthy,10,51,30720,healthy 1|10,adapt
+121,healthy 1,healthy,10,51,38912,healthy 1|10,adapt
+122,healthy 1,healthy,10,52,59392,healthy 1|10,adapt
+123,healthy 1,healthy,10,52,124928,healthy 1|10,adapt
+124,healthy 1,healthy,10,52,159744,healthy 1|10,adapt
+125,healthy 1,healthy,10,52,172032,healthy 1|10,adapt
+126,healthy 1,healthy,10,53,6144,healthy 1|10,adapt
+127,healthy 1,healthy,10,53,59392,healthy 1|10,adapt
+128,healthy 1,healthy,10,53,124928,healthy 1|10,adapt
+129,healthy 1,healthy,11,55,67584,healthy 1|11,eval
+130,healthy 1,healthy,11,55,86016,healthy 1|11,eval
+131,healthy 1,healthy,11,55,188416,healthy 1|11,eval
+132,healthy 1,healthy,11,55,235520,healthy 1|11,eval
+133,healthy 1,healthy,11,56,55296,healthy 1|11,eval
+134,healthy 1,healthy,11,57,206848,healthy 1|11,eval
+135,healthy 1,healthy,11,58,53248,healthy 1|11,eval
+136,healthy 1,healthy,11,58,67584,healthy 1|11,eval
+137,healthy 1,healthy,11,58,141312,healthy 1|11,eval
+138,healthy 1,healthy,11,58,163840,healthy 1|11,eval
+139,healthy 1,healthy,11,58,194560,healthy 1|11,eval
+140,healthy 1,healthy,11,59,28672,healthy 1|11,eval
+141,healthy 1,healthy,12,60,28672,healthy 1|12,adapt
+142,healthy 1,healthy,12,60,92160,healthy 1|12,adapt
+143,healthy 1,healthy,12,60,206848,healthy 1|12,adapt
+144,healthy 1,healthy,12,61,26624,healthy 1|12,adapt
+145,healthy 1,healthy,12,61,38912,healthy 1|12,adapt
+146,healthy 1,healthy,12,61,145408,healthy 1|12,adapt
+147,healthy 1,healthy,12,62,14336,healthy 1|12,adapt
+148,healthy 1,healthy,12,63,59392,healthy 1|12,adapt
+149,healthy 1,healthy,12,63,120832,healthy 1|12,adapt
+150,healthy 1,healthy,12,63,133120,healthy 1|12,adapt
+151,healthy 1,healthy,12,64,147456,healthy 1|12,adapt
+152,healthy 1,healthy,12,64,149504,healthy 1|12,adapt
+153,healthy 1,healthy,13,65,30720,healthy 1|13,eval
+154,healthy 1,healthy,13,65,135168,healthy 1|13,eval
+155,healthy 1,healthy,13,65,149504,healthy 1|13,eval
+156,healthy 1,healthy,13,65,210944,healthy 1|13,eval
+157,healthy 1,healthy,13,66,83968,healthy 1|13,eval
+158,healthy 1,healthy,13,67,88064,healthy 1|13,eval
+159,healthy 1,healthy,13,67,112640,healthy 1|13,eval
+160,healthy 2,healthy,0,0,28672,healthy 2|0,adapt
+161,healthy 2,healthy,0,0,88064,healthy 2|0,adapt
+162,healthy 2,healthy,0,0,227328,healthy 2|0,adapt
+163,healthy 2,healthy,0,1,40960,healthy 2|0,adapt
+164,healthy 2,healthy,0,1,198656,healthy 2|0,adapt
+165,healthy 2,healthy,0,2,51200,healthy 2|0,adapt
+166,healthy 2,healthy,0,2,79872,healthy 2|0,adapt
+167,healthy 2,healthy,0,2,112640,healthy 2|0,adapt
+168,healthy 2,healthy,0,3,133120,healthy 2|0,adapt
+169,healthy 2,healthy,0,3,215040,healthy 2|0,adapt
+170,healthy 2,healthy,0,4,200704,healthy 2|0,adapt
+171,healthy 2,healthy,1,5,22528,healthy 2|1,eval
+172,healthy 2,healthy,1,5,131072,healthy 2|1,eval
+173,healthy 2,healthy,1,5,143360,healthy 2|1,eval
+174,healthy 2,healthy,1,5,227328,healthy 2|1,eval
+175,healthy 2,healthy,1,6,49152,healthy 2|1,eval
+176,healthy 2,healthy,1,6,133120,healthy 2|1,eval
+177,healthy 2,healthy,1,6,135168,healthy 2|1,eval
+178,healthy 2,healthy,1,6,141312,healthy 2|1,eval
+179,healthy 2,healthy,1,7,18432,healthy 2|1,eval
+180,healthy 2,healthy,1,7,200704,healthy 2|1,eval
+181,healthy 2,healthy,1,7,206848,healthy 2|1,eval
+182,healthy 2,healthy,1,8,12288,healthy 2|1,eval
+183,healthy 2,healthy,1,8,32768,healthy 2|1,eval
+184,healthy 2,healthy,1,8,83968,healthy 2|1,eval
+185,healthy 2,healthy,1,8,194560,healthy 2|1,eval
+186,healthy 2,healthy,1,8,200704,healthy 2|1,eval
+187,healthy 2,healthy,1,8,215040,healthy 2|1,eval
+188,healthy 2,healthy,1,9,61440,healthy 2|1,eval
+189,healthy 2,healthy,1,9,102400,healthy 2|1,eval
+190,healthy 2,healthy,1,9,202752,healthy 2|1,eval
+191,healthy 2,healthy,2,10,110592,healthy 2|2,adapt
+192,healthy 2,healthy,2,10,122880,healthy 2|2,adapt
+193,healthy 2,healthy,2,10,231424,healthy 2|2,adapt
+194,healthy 2,healthy,2,11,45056,healthy 2|2,adapt
+195,healthy 2,healthy,2,12,0,healthy 2|2,adapt
+196,healthy 2,healthy,2,12,96256,healthy 2|2,adapt
+197,healthy 2,healthy,2,12,157696,healthy 2|2,adapt
+198,healthy 2,healthy,2,12,235520,healthy 2|2,adapt
+199,healthy 2,healthy,2,13,14336,healthy 2|2,adapt
+200,healthy 2,healthy,2,13,81920,healthy 2|2,adapt
+201,healthy 2,healthy,2,13,163840,healthy 2|2,adapt
+202,healthy 2,healthy,2,13,174080,healthy 2|2,adapt
+203,healthy 2,healthy,2,13,196608,healthy 2|2,adapt
+204,healthy 2,healthy,2,14,63488,healthy 2|2,adapt
+205,healthy 2,healthy,3,15,96256,healthy 2|3,eval
+206,healthy 2,healthy,3,15,126976,healthy 2|3,eval
+207,healthy 2,healthy,3,16,112640,healthy 2|3,eval
+208,healthy 2,healthy,3,16,167936,healthy 2|3,eval
+209,healthy 2,healthy,3,17,79872,healthy 2|3,eval
+210,healthy 2,healthy,3,17,208896,healthy 2|3,eval
+211,healthy 2,healthy,3,18,53248,healthy 2|3,eval
+212,healthy 2,healthy,3,18,57344,healthy 2|3,eval
+213,healthy 2,healthy,3,18,81920,healthy 2|3,eval
+214,healthy 2,healthy,3,18,110592,healthy 2|3,eval
+215,healthy 2,healthy,3,18,178176,healthy 2|3,eval
+216,healthy 2,healthy,3,19,77824,healthy 2|3,eval
+217,healthy 2,healthy,3,19,172032,healthy 2|3,eval
+218,healthy 2,healthy,3,19,227328,healthy 2|3,eval
+219,healthy 2,healthy,4,20,96256,healthy 2|4,adapt
+220,healthy 2,healthy,4,20,157696,healthy 2|4,adapt
+221,healthy 2,healthy,4,20,186368,healthy 2|4,adapt
+222,healthy 2,healthy,4,21,4096,healthy 2|4,adapt
+223,healthy 2,healthy,4,21,61440,healthy 2|4,adapt
+224,healthy 2,healthy,4,21,225280,healthy 2|4,adapt
+225,healthy 2,healthy,4,22,182272,healthy 2|4,adapt
+226,healthy 2,healthy,4,22,186368,healthy 2|4,adapt
+227,healthy 2,healthy,4,23,12288,healthy 2|4,adapt
+228,healthy 2,healthy,4,24,18432,healthy 2|4,adapt
+229,healthy 2,healthy,4,24,79872,healthy 2|4,adapt
+230,healthy 2,healthy,4,24,81920,healthy 2|4,adapt
+231,healthy 2,healthy,4,24,118784,healthy 2|4,adapt
+232,healthy 2,healthy,4,24,159744,healthy 2|4,adapt
+233,healthy 2,healthy,5,25,65536,healthy 2|5,eval
+234,healthy 2,healthy,5,25,116736,healthy 2|5,eval
+235,healthy 2,healthy,5,26,63488,healthy 2|5,eval
+236,healthy 2,healthy,5,26,137216,healthy 2|5,eval
+237,healthy 2,healthy,5,26,190464,healthy 2|5,eval
+238,healthy 2,healthy,5,26,237568,healthy 2|5,eval
+239,healthy 2,healthy,5,27,112640,healthy 2|5,eval
+240,healthy 2,healthy,5,27,159744,healthy 2|5,eval
+241,healthy 2,healthy,5,27,186368,healthy 2|5,eval
+242,healthy 2,healthy,5,28,43008,healthy 2|5,eval
+243,healthy 2,healthy,5,28,122880,healthy 2|5,eval
+244,healthy 2,healthy,5,29,73728,healthy 2|5,eval
+245,healthy 2,healthy,6,30,51200,healthy 2|6,adapt
+246,healthy 2,healthy,6,30,92160,healthy 2|6,adapt
+247,healthy 2,healthy,6,31,182272,healthy 2|6,adapt
+248,healthy 2,healthy,6,31,186368,healthy 2|6,adapt
+249,healthy 2,healthy,6,32,63488,healthy 2|6,adapt
+250,healthy 2,healthy,6,32,65536,healthy 2|6,adapt
+251,healthy 2,healthy,6,32,135168,healthy 2|6,adapt
+252,healthy 2,healthy,6,32,155648,healthy 2|6,adapt
+253,healthy 2,healthy,6,32,172032,healthy 2|6,adapt
+254,healthy 2,healthy,6,33,75776,healthy 2|6,adapt
+255,healthy 2,healthy,6,33,86016,healthy 2|6,adapt
+256,healthy 2,healthy,6,33,157696,healthy 2|6,adapt
+257,healthy 2,healthy,6,34,0,healthy 2|6,adapt
+258,healthy 2,healthy,6,34,79872,healthy 2|6,adapt
+259,healthy 2,healthy,6,34,219136,healthy 2|6,adapt
+260,healthy 2,healthy,7,35,122880,healthy 2|7,eval
+261,healthy 2,healthy,7,36,20480,healthy 2|7,eval
+262,healthy 2,healthy,7,36,32768,healthy 2|7,eval
+263,healthy 2,healthy,7,36,208896,healthy 2|7,eval
+264,healthy 2,healthy,7,37,4096,healthy 2|7,eval
+265,healthy 2,healthy,7,37,219136,healthy 2|7,eval
+266,healthy 2,healthy,7,38,4096,healthy 2|7,eval
+267,healthy 2,healthy,7,39,2048,healthy 2|7,eval
+268,healthy 2,healthy,7,39,110592,healthy 2|7,eval
+269,healthy 2,healthy,7,39,126976,healthy 2|7,eval
+270,healthy 2,healthy,7,39,145408,healthy 2|7,eval
+271,healthy 2,healthy,7,39,190464,healthy 2|7,eval
+272,healthy 2,healthy,7,39,235520,healthy 2|7,eval
+273,healthy 2,healthy,8,40,59392,healthy 2|8,adapt
+274,healthy 2,healthy,8,40,169984,healthy 2|8,adapt
+275,healthy 2,healthy,8,40,212992,healthy 2|8,adapt
+276,healthy 2,healthy,8,41,57344,healthy 2|8,adapt
+277,healthy 2,healthy,8,41,88064,healthy 2|8,adapt
+278,healthy 2,healthy,8,42,157696,healthy 2|8,adapt
+279,healthy 2,healthy,8,43,16384,healthy 2|8,adapt
+280,healthy 2,healthy,8,43,225280,healthy 2|8,adapt
+281,healthy 2,healthy,8,44,100352,healthy 2|8,adapt
+282,healthy 2,healthy,8,44,161792,healthy 2|8,adapt
+283,healthy 2,healthy,9,45,149504,healthy 2|9,eval
+284,healthy 2,healthy,9,45,153600,healthy 2|9,eval
+285,healthy 2,healthy,9,45,163840,healthy 2|9,eval
+286,healthy 2,healthy,9,45,223232,healthy 2|9,eval
+287,healthy 2,healthy,9,46,32768,healthy 2|9,eval
+288,healthy 2,healthy,9,46,34816,healthy 2|9,eval
+289,healthy 2,healthy,9,46,40960,healthy 2|9,eval
+290,healthy 2,healthy,9,46,141312,healthy 2|9,eval
+291,healthy 2,healthy,9,47,120832,healthy 2|9,eval
+292,healthy 2,healthy,9,47,153600,healthy 2|9,eval
+293,healthy 2,healthy,9,47,165888,healthy 2|9,eval
+294,healthy 2,healthy,9,47,194560,healthy 2|9,eval
+295,healthy 2,healthy,9,47,237568,healthy 2|9,eval
+296,healthy 2,healthy,9,49,147456,healthy 2|9,eval
+297,healthy 2,healthy,9,49,221184,healthy 2|9,eval
+298,healthy 2,healthy,9,49,227328,healthy 2|9,eval
+299,healthy 2,healthy,10,50,208896,healthy 2|10,adapt
+300,healthy 2,healthy,10,51,210944,healthy 2|10,adapt
+301,healthy 2,healthy,10,51,225280,healthy 2|10,adapt
+302,healthy 2,healthy,10,52,2048,healthy 2|10,adapt
+303,healthy 2,healthy,10,52,90112,healthy 2|10,adapt
+304,healthy 2,healthy,10,52,178176,healthy 2|10,adapt
+305,healthy 2,healthy,10,53,59392,healthy 2|10,adapt
+306,healthy 2,healthy,10,54,186368,healthy 2|10,adapt
+307,healthy 2,healthy,10,54,233472,healthy 2|10,adapt
+308,healthy 2,healthy,11,55,79872,healthy 2|11,eval
+309,healthy 2,healthy,11,55,94208,healthy 2|11,eval
+310,healthy 2,healthy,11,55,235520,healthy 2|11,eval
+311,healthy 2,healthy,11,56,10240,healthy 2|11,eval
+312,healthy 2,healthy,11,56,40960,healthy 2|11,eval
+313,healthy 2,healthy,11,56,124928,healthy 2|11,eval
+314,healthy 2,healthy,11,57,217088,healthy 2|11,eval
+315,healthy 2,healthy,11,58,4096,healthy 2|11,eval
+316,healthy 2,healthy,11,58,71680,healthy 2|11,eval
+317,healthy 2,healthy,11,58,155648,healthy 2|11,eval
+318,healthy 2,healthy,11,59,161792,healthy 2|11,eval
+319,healthy 2,healthy,11,59,169984,healthy 2|11,eval
+320,healthy 3,healthy,0,0,26624,healthy 3|0,adapt
+321,healthy 3,healthy,0,1,100352,healthy 3|0,adapt
+322,healthy 3,healthy,0,1,137216,healthy 3|0,adapt
+323,healthy 3,healthy,0,2,96256,healthy 3|0,adapt
+324,healthy 3,healthy,0,2,165888,healthy 3|0,adapt
+325,healthy 3,healthy,0,3,45056,healthy 3|0,adapt
+326,healthy 3,healthy,0,3,92160,healthy 3|0,adapt
+327,healthy 3,healthy,0,3,122880,healthy 3|0,adapt
+328,healthy 3,healthy,0,3,206848,healthy 3|0,adapt
+329,healthy 3,healthy,0,3,231424,healthy 3|0,adapt
+330,healthy 3,healthy,0,4,43008,healthy 3|0,adapt
+331,healthy 3,healthy,0,4,81920,healthy 3|0,adapt
+332,healthy 3,healthy,0,4,237568,healthy 3|0,adapt
+333,healthy 3,healthy,1,5,30720,healthy 3|1,eval
+334,healthy 3,healthy,1,5,86016,healthy 3|1,eval
+335,healthy 3,healthy,1,5,98304,healthy 3|1,eval
+336,healthy 3,healthy,1,5,219136,healthy 3|1,eval
+337,healthy 3,healthy,1,6,0,healthy 3|1,eval
+338,healthy 3,healthy,1,6,16384,healthy 3|1,eval
+339,healthy 3,healthy,1,6,18432,healthy 3|1,eval
+340,healthy 3,healthy,1,6,63488,healthy 3|1,eval
+341,healthy 3,healthy,1,6,88064,healthy 3|1,eval
+342,healthy 3,healthy,1,6,143360,healthy 3|1,eval
+343,healthy 3,healthy,1,6,172032,healthy 3|1,eval
+344,healthy 3,healthy,1,6,229376,healthy 3|1,eval
+345,healthy 3,healthy,1,7,22528,healthy 3|1,eval
+346,healthy 3,healthy,1,7,90112,healthy 3|1,eval
+347,healthy 3,healthy,1,7,172032,healthy 3|1,eval
+348,healthy 3,healthy,1,7,174080,healthy 3|1,eval
+349,healthy 3,healthy,1,8,92160,healthy 3|1,eval
+350,healthy 3,healthy,1,8,116736,healthy 3|1,eval
+351,healthy 3,healthy,1,8,126976,healthy 3|1,eval
+352,healthy 3,healthy,1,8,206848,healthy 3|1,eval
+353,healthy 3,healthy,1,8,210944,healthy 3|1,eval
+354,healthy 3,healthy,1,9,30720,healthy 3|1,eval
+355,healthy 3,healthy,1,9,98304,healthy 3|1,eval
+356,healthy 3,healthy,1,9,141312,healthy 3|1,eval
+357,healthy 3,healthy,2,10,69632,healthy 3|2,adapt
+358,healthy 3,healthy,2,10,77824,healthy 3|2,adapt
+359,healthy 3,healthy,2,10,223232,healthy 3|2,adapt
+360,healthy 3,healthy,2,11,219136,healthy 3|2,adapt
+361,healthy 3,healthy,2,11,235520,healthy 3|2,adapt
+362,healthy 3,healthy,2,12,159744,healthy 3|2,adapt
+363,healthy 3,healthy,2,14,71680,healthy 3|2,adapt
+364,healthy 3,healthy,2,14,229376,healthy 3|2,adapt
+365,healthy 3,healthy,3,16,32768,healthy 3|3,eval
+366,healthy 3,healthy,3,16,38912,healthy 3|3,eval
+367,healthy 3,healthy,3,16,217088,healthy 3|3,eval
+368,healthy 3,healthy,3,17,67584,healthy 3|3,eval
+369,healthy 3,healthy,3,17,149504,healthy 3|3,eval
+370,healthy 3,healthy,3,17,153600,healthy 3|3,eval
+371,healthy 3,healthy,3,17,223232,healthy 3|3,eval
+372,healthy 3,healthy,3,18,16384,healthy 3|3,eval
+373,healthy 3,healthy,3,18,169984,healthy 3|3,eval
+374,healthy 3,healthy,3,18,198656,healthy 3|3,eval
+375,healthy 3,healthy,3,19,118784,healthy 3|3,eval
+376,healthy 3,healthy,4,20,73728,healthy 3|4,adapt
+377,healthy 3,healthy,4,20,163840,healthy 3|4,adapt
+378,healthy 3,healthy,4,20,221184,healthy 3|4,adapt
+379,healthy 3,healthy,4,20,227328,healthy 3|4,adapt
+380,healthy 3,healthy,4,21,14336,healthy 3|4,adapt
+381,healthy 3,healthy,4,22,192512,healthy 3|4,adapt
+382,healthy 3,healthy,4,23,20480,healthy 3|4,adapt
+383,healthy 3,healthy,4,23,67584,healthy 3|4,adapt
+384,healthy 3,healthy,4,23,129024,healthy 3|4,adapt
+385,healthy 3,healthy,4,23,212992,healthy 3|4,adapt
+386,healthy 3,healthy,4,23,235520,healthy 3|4,adapt
+387,healthy 3,healthy,4,24,32768,healthy 3|4,adapt
+388,healthy 3,healthy,4,24,61440,healthy 3|4,adapt
+389,healthy 3,healthy,5,25,145408,healthy 3|5,eval
+390,healthy 3,healthy,5,25,212992,healthy 3|5,eval
+391,healthy 3,healthy,5,26,22528,healthy 3|5,eval
+392,healthy 3,healthy,5,26,36864,healthy 3|5,eval
+393,healthy 3,healthy,5,26,149504,healthy 3|5,eval
+394,healthy 3,healthy,5,26,215040,healthy 3|5,eval
+395,healthy 3,healthy,5,27,32768,healthy 3|5,eval
+396,healthy 3,healthy,5,27,176128,healthy 3|5,eval
+397,healthy 3,healthy,5,27,202752,healthy 3|5,eval
+398,healthy 3,healthy,5,27,235520,healthy 3|5,eval
+399,healthy 3,healthy,5,28,135168,healthy 3|5,eval
+400,healthy 3,healthy,5,28,229376,healthy 3|5,eval
+401,healthy 3,healthy,5,29,124928,healthy 3|5,eval
+402,healthy 3,healthy,5,29,126976,healthy 3|5,eval
+403,healthy 3,healthy,5,29,225280,healthy 3|5,eval
+404,healthy 3,healthy,6,30,172032,healthy 3|6,adapt
+405,healthy 3,healthy,6,30,221184,healthy 3|6,adapt
+406,healthy 3,healthy,6,31,149504,healthy 3|6,adapt
+407,healthy 3,healthy,6,31,159744,healthy 3|6,adapt
+408,healthy 3,healthy,6,32,10240,healthy 3|6,adapt
+409,healthy 3,healthy,6,32,26624,healthy 3|6,adapt
+410,healthy 3,healthy,6,32,157696,healthy 3|6,adapt
+411,healthy 3,healthy,6,32,182272,healthy 3|6,adapt
+412,healthy 3,healthy,6,32,194560,healthy 3|6,adapt
+413,healthy 3,healthy,6,32,215040,healthy 3|6,adapt
+414,healthy 3,healthy,6,33,147456,healthy 3|6,adapt
+415,healthy 3,healthy,6,33,210944,healthy 3|6,adapt
+416,healthy 3,healthy,6,34,145408,healthy 3|6,adapt
+417,healthy 3,healthy,7,35,120832,healthy 3|7,eval
+418,healthy 3,healthy,7,35,133120,healthy 3|7,eval
+419,healthy 3,healthy,7,35,221184,healthy 3|7,eval
+420,healthy 3,healthy,7,35,235520,healthy 3|7,eval
+421,healthy 3,healthy,7,36,43008,healthy 3|7,eval
+422,healthy 3,healthy,7,37,2048,healthy 3|7,eval
+423,healthy 3,healthy,7,37,67584,healthy 3|7,eval
+424,healthy 3,healthy,7,37,69632,healthy 3|7,eval
+425,healthy 3,healthy,7,38,71680,healthy 3|7,eval
+426,healthy 3,healthy,7,38,112640,healthy 3|7,eval
+427,healthy 3,healthy,7,38,167936,healthy 3|7,eval
+428,healthy 3,healthy,7,38,206848,healthy 3|7,eval
+429,healthy 3,healthy,7,39,120832,healthy 3|7,eval
+430,healthy 3,healthy,7,39,208896,healthy 3|7,eval
+431,healthy 3,healthy,8,40,4096,healthy 3|8,adapt
+432,healthy 3,healthy,8,40,159744,healthy 3|8,adapt
+433,healthy 3,healthy,8,40,223232,healthy 3|8,adapt
+434,healthy 3,healthy,8,41,26624,healthy 3|8,adapt
+435,healthy 3,healthy,8,41,28672,healthy 3|8,adapt
+436,healthy 3,healthy,8,41,83968,healthy 3|8,adapt
+437,healthy 3,healthy,8,41,126976,healthy 3|8,adapt
+438,healthy 3,healthy,8,41,208896,healthy 3|8,adapt
+439,healthy 3,healthy,8,42,63488,healthy 3|8,adapt
+440,healthy 3,healthy,8,42,110592,healthy 3|8,adapt
+441,healthy 3,healthy,8,43,65536,healthy 3|8,adapt
+442,healthy 3,healthy,8,43,112640,healthy 3|8,adapt
+443,healthy 3,healthy,8,43,163840,healthy 3|8,adapt
+444,healthy 3,healthy,8,43,210944,healthy 3|8,adapt
+445,healthy 3,healthy,8,44,100352,healthy 3|8,adapt
+446,healthy 3,healthy,8,44,145408,healthy 3|8,adapt
+447,healthy 3,healthy,9,45,98304,healthy 3|9,eval
+448,healthy 3,healthy,9,45,141312,healthy 3|9,eval
+449,healthy 3,healthy,9,46,45056,healthy 3|9,eval
+450,healthy 3,healthy,9,46,51200,healthy 3|9,eval
+451,healthy 3,healthy,9,46,137216,healthy 3|9,eval
+452,healthy 3,healthy,9,46,139264,healthy 3|9,eval
+453,healthy 3,healthy,9,47,6144,healthy 3|9,eval
+454,healthy 3,healthy,9,47,112640,healthy 3|9,eval
+455,healthy 3,healthy,9,47,129024,healthy 3|9,eval
+456,healthy 3,healthy,9,48,6144,healthy 3|9,eval
+457,healthy 3,healthy,9,48,106496,healthy 3|9,eval
+458,healthy 3,healthy,9,48,153600,healthy 3|9,eval
+459,healthy 3,healthy,9,48,208896,healthy 3|9,eval
+460,healthy 3,healthy,9,49,22528,healthy 3|9,eval
+461,healthy 3,healthy,9,49,51200,healthy 3|9,eval
+462,healthy 3,healthy,9,49,163840,healthy 3|9,eval
+463,healthy 3,healthy,9,49,227328,healthy 3|9,eval
+464,healthy 3,healthy,10,50,231424,healthy 3|10,adapt
+465,healthy 3,healthy,10,53,38912,healthy 3|10,adapt
+466,healthy 3,healthy,10,53,59392,healthy 3|10,adapt
+467,healthy 3,healthy,10,53,151552,healthy 3|10,adapt
+468,healthy 3,healthy,10,53,219136,healthy 3|10,adapt
+469,healthy 3,healthy,10,54,92160,healthy 3|10,adapt
+470,healthy 3,healthy,10,54,161792,healthy 3|10,adapt
+471,healthy 3,healthy,10,54,176128,healthy 3|10,adapt
+472,healthy 3,healthy,10,54,215040,healthy 3|10,adapt
+473,healthy 3,healthy,11,55,204800,healthy 3|11,eval
+474,healthy 3,healthy,11,55,231424,healthy 3|11,eval
+475,healthy 3,healthy,11,56,65536,healthy 3|11,eval
+476,healthy 3,healthy,11,56,77824,healthy 3|11,eval
+477,healthy 3,healthy,11,58,45056,healthy 3|11,eval
+478,healthy 3,healthy,11,58,182272,healthy 3|11,eval
+479,healthy 3,healthy,11,59,204800,healthy 3|11,eval
+480,impeller 1,impeller,0,0,0,impeller 1|0,adapt
+481,impeller 1,impeller,0,0,40960,impeller 1|0,adapt
+482,impeller 1,impeller,0,0,129024,impeller 1|0,adapt
+483,impeller 1,impeller,0,1,8192,impeller 1|0,adapt
+484,impeller 1,impeller,0,1,16384,impeller 1|0,adapt
+485,impeller 1,impeller,0,1,114688,impeller 1|0,adapt
+486,impeller 1,impeller,0,1,120832,impeller 1|0,adapt
+487,impeller 1,impeller,0,1,161792,impeller 1|0,adapt
+488,impeller 1,impeller,0,2,0,impeller 1|0,adapt
+489,impeller 1,impeller,0,2,36864,impeller 1|0,adapt
+490,impeller 1,impeller,0,2,55296,impeller 1|0,adapt
+491,impeller 1,impeller,0,2,92160,impeller 1|0,adapt
+492,impeller 1,impeller,0,2,122880,impeller 1|0,adapt
+493,impeller 1,impeller,0,2,135168,impeller 1|0,adapt
+494,impeller 1,impeller,0,2,190464,impeller 1|0,adapt
+495,impeller 1,impeller,0,3,81920,impeller 1|0,adapt
+496,impeller 1,impeller,0,3,96256,impeller 1|0,adapt
+497,impeller 1,impeller,0,3,106496,impeller 1|0,adapt
+498,impeller 1,impeller,0,3,153600,impeller 1|0,adapt
+499,impeller 1,impeller,0,3,155648,impeller 1|0,adapt
+500,impeller 1,impeller,0,3,172032,impeller 1|0,adapt
+501,impeller 1,impeller,0,3,212992,impeller 1|0,adapt
+502,impeller 1,impeller,0,4,32768,impeller 1|0,adapt
+503,impeller 1,impeller,0,4,79872,impeller 1|0,adapt
+504,impeller 1,impeller,0,4,96256,impeller 1|0,adapt
+505,impeller 1,impeller,0,4,104448,impeller 1|0,adapt
+506,impeller 1,impeller,0,4,143360,impeller 1|0,adapt
+507,impeller 1,impeller,0,4,153600,impeller 1|0,adapt
+508,impeller 1,impeller,0,4,163840,impeller 1|0,adapt
+509,impeller 1,impeller,0,4,169984,impeller 1|0,adapt
+510,impeller 1,impeller,0,4,219136,impeller 1|0,adapt
+511,impeller 1,impeller,0,4,227328,impeller 1|0,adapt
+512,impeller 1,impeller,1,5,63488,impeller 1|1,eval
+513,impeller 1,impeller,1,5,157696,impeller 1|1,eval
+514,impeller 1,impeller,1,5,198656,impeller 1|1,eval
+515,impeller 1,impeller,1,5,204800,impeller 1|1,eval
+516,impeller 1,impeller,1,5,221184,impeller 1|1,eval
+517,impeller 1,impeller,1,5,235520,impeller 1|1,eval
+518,impeller 1,impeller,1,6,0,impeller 1|1,eval
+519,impeller 1,impeller,1,6,2048,impeller 1|1,eval
+520,impeller 1,impeller,1,6,4096,impeller 1|1,eval
+521,impeller 1,impeller,1,6,53248,impeller 1|1,eval
+522,impeller 1,impeller,1,6,92160,impeller 1|1,eval
+523,impeller 1,impeller,1,6,133120,impeller 1|1,eval
+524,impeller 1,impeller,1,6,143360,impeller 1|1,eval
+525,impeller 1,impeller,1,6,190464,impeller 1|1,eval
+526,impeller 1,impeller,1,7,38912,impeller 1|1,eval
+527,impeller 1,impeller,1,7,65536,impeller 1|1,eval
+528,impeller 1,impeller,1,7,71680,impeller 1|1,eval
+529,impeller 1,impeller,1,7,137216,impeller 1|1,eval
+530,impeller 1,impeller,1,7,143360,impeller 1|1,eval
+531,impeller 1,impeller,1,7,165888,impeller 1|1,eval
+532,impeller 1,impeller,1,8,51200,impeller 1|1,eval
+533,impeller 1,impeller,1,8,71680,impeller 1|1,eval
+534,impeller 1,impeller,1,8,100352,impeller 1|1,eval
+535,impeller 1,impeller,1,8,106496,impeller 1|1,eval
+536,impeller 1,impeller,1,8,145408,impeller 1|1,eval
+537,impeller 1,impeller,1,8,204800,impeller 1|1,eval
+538,impeller 1,impeller,1,8,221184,impeller 1|1,eval
+539,impeller 1,impeller,1,8,229376,impeller 1|1,eval
+540,impeller 1,impeller,1,9,26624,impeller 1|1,eval
+541,impeller 1,impeller,1,9,32768,impeller 1|1,eval
+542,impeller 1,impeller,1,9,61440,impeller 1|1,eval
+543,impeller 1,impeller,1,9,90112,impeller 1|1,eval
+544,impeller 1,impeller,1,9,184320,impeller 1|1,eval
+545,impeller 1,impeller,1,9,186368,impeller 1|1,eval
+546,impeller 1,impeller,1,9,188416,impeller 1|1,eval
+547,impeller 1,impeller,1,9,200704,impeller 1|1,eval
+548,impeller 1,impeller,2,10,18432,impeller 1|2,adapt
+549,impeller 1,impeller,2,10,51200,impeller 1|2,adapt
+550,impeller 1,impeller,2,10,53248,impeller 1|2,adapt
+551,impeller 1,impeller,2,10,116736,impeller 1|2,adapt
+552,impeller 1,impeller,2,10,172032,impeller 1|2,adapt
+553,impeller 1,impeller,2,10,215040,impeller 1|2,adapt
+554,impeller 1,impeller,2,10,229376,impeller 1|2,adapt
+555,impeller 1,impeller,2,11,108544,impeller 1|2,adapt
+556,impeller 1,impeller,2,11,131072,impeller 1|2,adapt
+557,impeller 1,impeller,2,11,139264,impeller 1|2,adapt
+558,impeller 1,impeller,2,11,184320,impeller 1|2,adapt
+559,impeller 1,impeller,2,12,0,impeller 1|2,adapt
+560,impeller 1,impeller,2,12,10240,impeller 1|2,adapt
+561,impeller 1,impeller,2,13,61440,impeller 1|2,adapt
+562,impeller 1,impeller,2,13,79872,impeller 1|2,adapt
+563,impeller 1,impeller,2,13,110592,impeller 1|2,adapt
+564,impeller 1,impeller,2,13,141312,impeller 1|2,adapt
+565,impeller 1,impeller,2,13,206848,impeller 1|2,adapt
+566,impeller 1,impeller,2,13,221184,impeller 1|2,adapt
+567,impeller 1,impeller,2,14,30720,impeller 1|2,adapt
+568,impeller 1,impeller,2,14,69632,impeller 1|2,adapt
+569,impeller 1,impeller,2,14,73728,impeller 1|2,adapt
+570,impeller 1,impeller,2,14,141312,impeller 1|2,adapt
+571,impeller 1,impeller,2,14,153600,impeller 1|2,adapt
+572,impeller 1,impeller,2,14,194560,impeller 1|2,adapt
+573,impeller 1,impeller,2,14,196608,impeller 1|2,adapt
+574,impeller 1,impeller,2,14,202752,impeller 1|2,adapt
+575,impeller 1,impeller,2,14,215040,impeller 1|2,adapt
+576,impeller 1,impeller,3,15,53248,impeller 1|3,eval
+577,impeller 1,impeller,3,15,67584,impeller 1|3,eval
+578,impeller 1,impeller,3,15,83968,impeller 1|3,eval
+579,impeller 1,impeller,3,15,122880,impeller 1|3,eval
+580,impeller 1,impeller,3,15,180224,impeller 1|3,eval
+581,impeller 1,impeller,3,15,182272,impeller 1|3,eval
+582,impeller 1,impeller,3,15,215040,impeller 1|3,eval
+583,impeller 1,impeller,3,15,219136,impeller 1|3,eval
+584,impeller 1,impeller,3,16,14336,impeller 1|3,eval
+585,impeller 1,impeller,3,16,53248,impeller 1|3,eval
+586,impeller 1,impeller,3,16,102400,impeller 1|3,eval
+587,impeller 1,impeller,3,16,139264,impeller 1|3,eval
+588,impeller 1,impeller,3,16,161792,impeller 1|3,eval
+589,impeller 1,impeller,3,16,215040,impeller 1|3,eval
+590,impeller 1,impeller,3,16,227328,impeller 1|3,eval
+591,impeller 1,impeller,3,16,231424,impeller 1|3,eval
+592,impeller 1,impeller,3,17,71680,impeller 1|3,eval
+593,impeller 1,impeller,3,18,22528,impeller 1|3,eval
+594,impeller 1,impeller,3,18,219136,impeller 1|3,eval
+595,impeller 1,impeller,3,18,227328,impeller 1|3,eval
+596,impeller 1,impeller,3,19,0,impeller 1|3,eval
+597,impeller 1,impeller,3,19,34816,impeller 1|3,eval
+598,impeller 1,impeller,3,19,81920,impeller 1|3,eval
+599,impeller 1,impeller,3,19,100352,impeller 1|3,eval
+600,impeller 1,impeller,3,19,110592,impeller 1|3,eval
+601,impeller 1,impeller,3,19,129024,impeller 1|3,eval
+602,impeller 1,impeller,4,20,55296,impeller 1|4,adapt
+603,impeller 1,impeller,4,20,116736,impeller 1|4,adapt
+604,impeller 1,impeller,4,20,124928,impeller 1|4,adapt
+605,impeller 1,impeller,4,20,126976,impeller 1|4,adapt
+606,impeller 1,impeller,4,20,163840,impeller 1|4,adapt
+607,impeller 1,impeller,4,20,190464,impeller 1|4,adapt
+608,impeller 1,impeller,4,20,192512,impeller 1|4,adapt
+609,impeller 1,impeller,4,20,198656,impeller 1|4,adapt
+610,impeller 1,impeller,4,20,204800,impeller 1|4,adapt
+611,impeller 1,impeller,4,21,26624,impeller 1|4,adapt
+612,impeller 1,impeller,4,21,38912,impeller 1|4,adapt
+613,impeller 1,impeller,4,21,53248,impeller 1|4,adapt
+614,impeller 1,impeller,4,21,57344,impeller 1|4,adapt
+615,impeller 1,impeller,4,21,131072,impeller 1|4,adapt
+616,impeller 1,impeller,4,21,172032,impeller 1|4,adapt
+617,impeller 1,impeller,4,21,202752,impeller 1|4,adapt
+618,impeller 1,impeller,4,21,221184,impeller 1|4,adapt
+619,impeller 1,impeller,4,22,10240,impeller 1|4,adapt
+620,impeller 1,impeller,4,22,18432,impeller 1|4,adapt
+621,impeller 1,impeller,4,22,40960,impeller 1|4,adapt
+622,impeller 1,impeller,4,22,47104,impeller 1|4,adapt
+623,impeller 1,impeller,4,22,57344,impeller 1|4,adapt
+624,impeller 1,impeller,4,22,212992,impeller 1|4,adapt
+625,impeller 1,impeller,4,23,51200,impeller 1|4,adapt
+626,impeller 1,impeller,4,23,147456,impeller 1|4,adapt
+627,impeller 1,impeller,4,23,159744,impeller 1|4,adapt
+628,impeller 1,impeller,4,23,172032,impeller 1|4,adapt
+629,impeller 1,impeller,4,23,178176,impeller 1|4,adapt
+630,impeller 1,impeller,4,23,215040,impeller 1|4,adapt
+631,impeller 1,impeller,4,23,233472,impeller 1|4,adapt
+632,impeller 1,impeller,4,24,2048,impeller 1|4,adapt
+633,impeller 1,impeller,4,24,28672,impeller 1|4,adapt
+634,impeller 1,impeller,4,24,51200,impeller 1|4,adapt
+635,impeller 1,impeller,4,24,59392,impeller 1|4,adapt
+636,impeller 1,impeller,4,24,67584,impeller 1|4,adapt
+637,impeller 1,impeller,4,24,139264,impeller 1|4,adapt
+638,impeller 1,impeller,4,24,202752,impeller 1|4,adapt
+639,impeller 1,impeller,4,24,235520,impeller 1|4,adapt
+640,impeller 2,impeller,0,0,0,impeller 2|0,adapt
+641,impeller 2,impeller,0,0,24576,impeller 2|0,adapt
+642,impeller 2,impeller,0,0,34816,impeller 2|0,adapt
+643,impeller 2,impeller,0,0,36864,impeller 2|0,adapt
+644,impeller 2,impeller,0,0,45056,impeller 2|0,adapt
+645,impeller 2,impeller,0,0,49152,impeller 2|0,adapt
+646,impeller 2,impeller,0,0,51200,impeller 2|0,adapt
+647,impeller 2,impeller,0,0,59392,impeller 2|0,adapt
+648,impeller 2,impeller,0,0,61440,impeller 2|0,adapt
+649,impeller 2,impeller,0,0,69632,impeller 2|0,adapt
+650,impeller 2,impeller,0,0,79872,impeller 2|0,adapt
+651,impeller 2,impeller,0,0,90112,impeller 2|0,adapt
+652,impeller 2,impeller,0,0,96256,impeller 2|0,adapt
+653,impeller 2,impeller,0,0,102400,impeller 2|0,adapt
+654,impeller 2,impeller,0,0,104448,impeller 2|0,adapt
+655,impeller 2,impeller,0,0,116736,impeller 2|0,adapt
+656,impeller 2,impeller,0,0,118784,impeller 2|0,adapt
+657,impeller 2,impeller,0,0,120832,impeller 2|0,adapt
+658,impeller 2,impeller,0,0,126976,impeller 2|0,adapt
+659,impeller 2,impeller,0,0,133120,impeller 2|0,adapt
+660,impeller 2,impeller,0,0,141312,impeller 2|0,adapt
+661,impeller 2,impeller,0,0,163840,impeller 2|0,adapt
+662,impeller 2,impeller,0,0,167936,impeller 2|0,adapt
+663,impeller 2,impeller,0,0,184320,impeller 2|0,adapt
+664,impeller 2,impeller,0,0,190464,impeller 2|0,adapt
+665,impeller 2,impeller,0,0,192512,impeller 2|0,adapt
+666,impeller 2,impeller,0,0,196608,impeller 2|0,adapt
+667,impeller 2,impeller,0,0,204800,impeller 2|0,adapt
+668,impeller 2,impeller,0,0,206848,impeller 2|0,adapt
+669,impeller 2,impeller,0,0,212992,impeller 2|0,adapt
+670,impeller 2,impeller,0,0,215040,impeller 2|0,adapt
+671,impeller 2,impeller,0,0,225280,impeller 2|0,adapt
+672,impeller 2,impeller,0,0,229376,impeller 2|0,adapt
+673,impeller 2,impeller,0,1,8192,impeller 2|0,adapt
+674,impeller 2,impeller,0,1,43008,impeller 2|0,adapt
+675,impeller 2,impeller,0,1,49152,impeller 2|0,adapt
+676,impeller 2,impeller,0,1,86016,impeller 2|0,adapt
+677,impeller 2,impeller,0,1,106496,impeller 2|0,adapt
+678,impeller 2,impeller,0,1,129024,impeller 2|0,adapt
+679,impeller 2,impeller,0,1,139264,impeller 2|0,adapt
+680,impeller 2,impeller,0,1,143360,impeller 2|0,adapt
+681,impeller 2,impeller,0,1,151552,impeller 2|0,adapt
+682,impeller 2,impeller,0,1,161792,impeller 2|0,adapt
+683,impeller 2,impeller,0,1,167936,impeller 2|0,adapt
+684,impeller 2,impeller,0,1,169984,impeller 2|0,adapt
+685,impeller 2,impeller,0,1,176128,impeller 2|0,adapt
+686,impeller 2,impeller,0,1,178176,impeller 2|0,adapt
+687,impeller 2,impeller,0,1,182272,impeller 2|0,adapt
+688,impeller 2,impeller,0,1,188416,impeller 2|0,adapt
+689,impeller 2,impeller,0,1,190464,impeller 2|0,adapt
+690,impeller 2,impeller,0,1,202752,impeller 2|0,adapt
+691,impeller 2,impeller,0,1,204800,impeller 2|0,adapt
+692,impeller 2,impeller,0,1,208896,impeller 2|0,adapt
+693,impeller 2,impeller,0,1,221184,impeller 2|0,adapt
+694,impeller 2,impeller,0,1,229376,impeller 2|0,adapt
+695,impeller 2,impeller,0,1,233472,impeller 2|0,adapt
+696,impeller 2,impeller,0,1,237568,impeller 2|0,adapt
+697,impeller 2,impeller,0,2,2048,impeller 2|0,adapt
+698,impeller 2,impeller,0,2,4096,impeller 2|0,adapt
+699,impeller 2,impeller,0,2,6144,impeller 2|0,adapt
+700,impeller 2,impeller,0,2,10240,impeller 2|0,adapt
+701,impeller 2,impeller,0,2,20480,impeller 2|0,adapt
+702,impeller 2,impeller,0,2,32768,impeller 2|0,adapt
+703,impeller 2,impeller,0,2,47104,impeller 2|0,adapt
+704,impeller 2,impeller,0,2,53248,impeller 2|0,adapt
+705,impeller 2,impeller,0,2,61440,impeller 2|0,adapt
+706,impeller 2,impeller,0,2,67584,impeller 2|0,adapt
+707,impeller 2,impeller,0,2,73728,impeller 2|0,adapt
+708,impeller 2,impeller,0,2,90112,impeller 2|0,adapt
+709,impeller 2,impeller,0,2,94208,impeller 2|0,adapt
+710,impeller 2,impeller,0,2,96256,impeller 2|0,adapt
+711,impeller 2,impeller,0,2,114688,impeller 2|0,adapt
+712,impeller 2,impeller,0,2,120832,impeller 2|0,adapt
+713,impeller 2,impeller,0,2,126976,impeller 2|0,adapt
+714,impeller 2,impeller,0,2,129024,impeller 2|0,adapt
+715,impeller 2,impeller,0,2,131072,impeller 2|0,adapt
+716,impeller 2,impeller,0,2,135168,impeller 2|0,adapt
+717,impeller 2,impeller,0,2,147456,impeller 2|0,adapt
+718,impeller 2,impeller,0,2,151552,impeller 2|0,adapt
+719,impeller 2,impeller,0,2,153600,impeller 2|0,adapt
+720,impeller 2,impeller,0,2,169984,impeller 2|0,adapt
+721,impeller 2,impeller,0,2,174080,impeller 2|0,adapt
+722,impeller 2,impeller,0,2,176128,impeller 2|0,adapt
+723,impeller 2,impeller,0,2,202752,impeller 2|0,adapt
+724,impeller 2,impeller,0,2,204800,impeller 2|0,adapt
+725,impeller 2,impeller,0,2,210944,impeller 2|0,adapt
+726,impeller 2,impeller,0,2,212992,impeller 2|0,adapt
+727,impeller 2,impeller,0,2,227328,impeller 2|0,adapt
+728,impeller 2,impeller,0,2,231424,impeller 2|0,adapt
+729,impeller 2,impeller,0,2,237568,impeller 2|0,adapt
+730,impeller 2,impeller,0,3,2048,impeller 2|0,adapt
+731,impeller 2,impeller,0,3,4096,impeller 2|0,adapt
+732,impeller 2,impeller,0,3,14336,impeller 2|0,adapt
+733,impeller 2,impeller,0,3,26624,impeller 2|0,adapt
+734,impeller 2,impeller,0,3,28672,impeller 2|0,adapt
+735,impeller 2,impeller,0,3,45056,impeller 2|0,adapt
+736,impeller 2,impeller,0,3,47104,impeller 2|0,adapt
+737,impeller 2,impeller,0,3,51200,impeller 2|0,adapt
+738,impeller 2,impeller,0,3,67584,impeller 2|0,adapt
+739,impeller 2,impeller,0,3,71680,impeller 2|0,adapt
+740,impeller 2,impeller,0,3,77824,impeller 2|0,adapt
+741,impeller 2,impeller,0,3,79872,impeller 2|0,adapt
+742,impeller 2,impeller,0,3,88064,impeller 2|0,adapt
+743,impeller 2,impeller,0,3,90112,impeller 2|0,adapt
+744,impeller 2,impeller,0,3,106496,impeller 2|0,adapt
+745,impeller 2,impeller,0,3,129024,impeller 2|0,adapt
+746,impeller 2,impeller,0,3,135168,impeller 2|0,adapt
+747,impeller 2,impeller,0,3,143360,impeller 2|0,adapt
+748,impeller 2,impeller,0,3,145408,impeller 2|0,adapt
+749,impeller 2,impeller,0,3,147456,impeller 2|0,adapt
+750,impeller 2,impeller,0,3,151552,impeller 2|0,adapt
+751,impeller 2,impeller,0,3,153600,impeller 2|0,adapt
+752,impeller 2,impeller,0,3,163840,impeller 2|0,adapt
+753,impeller 2,impeller,0,3,167936,impeller 2|0,adapt
+754,impeller 2,impeller,0,3,169984,impeller 2|0,adapt
+755,impeller 2,impeller,0,3,174080,impeller 2|0,adapt
+756,impeller 2,impeller,0,3,178176,impeller 2|0,adapt
+757,impeller 2,impeller,0,3,180224,impeller 2|0,adapt
+758,impeller 2,impeller,0,3,182272,impeller 2|0,adapt
+759,impeller 2,impeller,0,3,186368,impeller 2|0,adapt
+760,impeller 2,impeller,0,3,202752,impeller 2|0,adapt
+761,impeller 2,impeller,0,3,206848,impeller 2|0,adapt
+762,impeller 2,impeller,0,3,208896,impeller 2|0,adapt
+763,impeller 2,impeller,0,3,217088,impeller 2|0,adapt
+764,impeller 2,impeller,0,3,223232,impeller 2|0,adapt
+765,impeller 2,impeller,0,3,225280,impeller 2|0,adapt
+766,impeller 2,impeller,0,3,227328,impeller 2|0,adapt
+767,impeller 2,impeller,0,4,2048,impeller 2|0,adapt
+768,impeller 2,impeller,0,4,6144,impeller 2|0,adapt
+769,impeller 2,impeller,0,4,16384,impeller 2|0,adapt
+770,impeller 2,impeller,0,4,20480,impeller 2|0,adapt
+771,impeller 2,impeller,0,4,26624,impeller 2|0,adapt
+772,impeller 2,impeller,0,4,32768,impeller 2|0,adapt
+773,impeller 2,impeller,0,4,45056,impeller 2|0,adapt
+774,impeller 2,impeller,0,4,53248,impeller 2|0,adapt
+775,impeller 2,impeller,0,4,59392,impeller 2|0,adapt
+776,impeller 2,impeller,0,4,67584,impeller 2|0,adapt
+777,impeller 2,impeller,0,4,75776,impeller 2|0,adapt
+778,impeller 2,impeller,0,4,81920,impeller 2|0,adapt
+779,impeller 2,impeller,0,4,96256,impeller 2|0,adapt
+780,impeller 2,impeller,0,4,100352,impeller 2|0,adapt
+781,impeller 2,impeller,0,4,116736,impeller 2|0,adapt
+782,impeller 2,impeller,0,4,120832,impeller 2|0,adapt
+783,impeller 2,impeller,0,4,131072,impeller 2|0,adapt
+784,impeller 2,impeller,0,4,135168,impeller 2|0,adapt
+785,impeller 2,impeller,0,4,157696,impeller 2|0,adapt
+786,impeller 2,impeller,0,4,163840,impeller 2|0,adapt
+787,impeller 2,impeller,0,4,169984,impeller 2|0,adapt
+788,impeller 2,impeller,0,4,174080,impeller 2|0,adapt
+789,impeller 2,impeller,0,4,180224,impeller 2|0,adapt
+790,impeller 2,impeller,0,4,182272,impeller 2|0,adapt
+791,impeller 2,impeller,0,4,186368,impeller 2|0,adapt
+792,impeller 2,impeller,0,4,190464,impeller 2|0,adapt
+793,impeller 2,impeller,0,4,198656,impeller 2|0,adapt
+794,impeller 2,impeller,0,4,208896,impeller 2|0,adapt
+795,impeller 2,impeller,0,4,212992,impeller 2|0,adapt
+796,impeller 2,impeller,0,4,221184,impeller 2|0,adapt
+797,impeller 2,impeller,0,4,223232,impeller 2|0,adapt
+798,impeller 2,impeller,0,4,233472,impeller 2|0,adapt
+799,impeller 2,impeller,0,4,237568,impeller 2|0,adapt
+800,impeller 3,impeller,0,0,16384,impeller 3|0,adapt
+801,impeller 3,impeller,0,0,40960,impeller 3|0,adapt
+802,impeller 3,impeller,0,0,43008,impeller 3|0,adapt
+803,impeller 3,impeller,0,0,47104,impeller 3|0,adapt
+804,impeller 3,impeller,0,0,77824,impeller 3|0,adapt
+805,impeller 3,impeller,0,0,108544,impeller 3|0,adapt
+806,impeller 3,impeller,0,0,110592,impeller 3|0,adapt
+807,impeller 3,impeller,0,0,112640,impeller 3|0,adapt
+808,impeller 3,impeller,0,0,149504,impeller 3|0,adapt
+809,impeller 3,impeller,0,0,182272,impeller 3|0,adapt
+810,impeller 3,impeller,0,0,194560,impeller 3|0,adapt
+811,impeller 3,impeller,0,0,215040,impeller 3|0,adapt
+812,impeller 3,impeller,0,1,18432,impeller 3|0,adapt
+813,impeller 3,impeller,0,1,28672,impeller 3|0,adapt
+814,impeller 3,impeller,0,1,38912,impeller 3|0,adapt
+815,impeller 3,impeller,0,1,43008,impeller 3|0,adapt
+816,impeller 3,impeller,0,1,57344,impeller 3|0,adapt
+817,impeller 3,impeller,0,1,94208,impeller 3|0,adapt
+818,impeller 3,impeller,0,1,98304,impeller 3|0,adapt
+819,impeller 3,impeller,0,1,147456,impeller 3|0,adapt
+820,impeller 3,impeller,0,1,155648,impeller 3|0,adapt
+821,impeller 3,impeller,0,1,217088,impeller 3|0,adapt
+822,impeller 3,impeller,0,2,28672,impeller 3|0,adapt
+823,impeller 3,impeller,0,2,71680,impeller 3|0,adapt
+824,impeller 3,impeller,0,2,75776,impeller 3|0,adapt
+825,impeller 3,impeller,0,2,86016,impeller 3|0,adapt
+826,impeller 3,impeller,0,2,90112,impeller 3|0,adapt
+827,impeller 3,impeller,0,2,104448,impeller 3|0,adapt
+828,impeller 3,impeller,0,2,112640,impeller 3|0,adapt
+829,impeller 3,impeller,0,2,120832,impeller 3|0,adapt
+830,impeller 3,impeller,0,2,133120,impeller 3|0,adapt
+831,impeller 3,impeller,0,2,139264,impeller 3|0,adapt
+832,impeller 3,impeller,0,2,145408,impeller 3|0,adapt
+833,impeller 3,impeller,0,2,149504,impeller 3|0,adapt
+834,impeller 3,impeller,0,2,157696,impeller 3|0,adapt
+835,impeller 3,impeller,0,2,161792,impeller 3|0,adapt
+836,impeller 3,impeller,0,2,176128,impeller 3|0,adapt
+837,impeller 3,impeller,0,2,190464,impeller 3|0,adapt
+838,impeller 3,impeller,0,2,208896,impeller 3|0,adapt
+839,impeller 3,impeller,0,2,219136,impeller 3|0,adapt
+840,impeller 3,impeller,0,2,225280,impeller 3|0,adapt
+841,impeller 3,impeller,0,2,229376,impeller 3|0,adapt
+842,impeller 3,impeller,0,3,6144,impeller 3|0,adapt
+843,impeller 3,impeller,0,3,32768,impeller 3|0,adapt
+844,impeller 3,impeller,0,3,69632,impeller 3|0,adapt
+845,impeller 3,impeller,0,3,83968,impeller 3|0,adapt
+846,impeller 3,impeller,0,3,118784,impeller 3|0,adapt
+847,impeller 3,impeller,0,3,133120,impeller 3|0,adapt
+848,impeller 3,impeller,0,3,208896,impeller 3|0,adapt
+849,impeller 3,impeller,0,3,210944,impeller 3|0,adapt
+850,impeller 3,impeller,0,3,221184,impeller 3|0,adapt
+851,impeller 3,impeller,0,3,233472,impeller 3|0,adapt
+852,impeller 3,impeller,0,4,26624,impeller 3|0,adapt
+853,impeller 3,impeller,0,4,49152,impeller 3|0,adapt
+854,impeller 3,impeller,0,4,55296,impeller 3|0,adapt
+855,impeller 3,impeller,0,4,126976,impeller 3|0,adapt
+856,impeller 3,impeller,0,4,161792,impeller 3|0,adapt
+857,impeller 3,impeller,0,4,184320,impeller 3|0,adapt
+858,impeller 3,impeller,1,5,18432,impeller 3|1,eval
+859,impeller 3,impeller,1,5,81920,impeller 3|1,eval
+860,impeller 3,impeller,1,5,126976,impeller 3|1,eval
+861,impeller 3,impeller,1,5,167936,impeller 3|1,eval
+862,impeller 3,impeller,1,5,172032,impeller 3|1,eval
+863,impeller 3,impeller,1,5,186368,impeller 3|1,eval
+864,impeller 3,impeller,1,5,219136,impeller 3|1,eval
+865,impeller 3,impeller,1,6,12288,impeller 3|1,eval
+866,impeller 3,impeller,1,6,34816,impeller 3|1,eval
+867,impeller 3,impeller,1,6,47104,impeller 3|1,eval
+868,impeller 3,impeller,1,6,67584,impeller 3|1,eval
+869,impeller 3,impeller,1,6,77824,impeller 3|1,eval
+870,impeller 3,impeller,1,6,88064,impeller 3|1,eval
+871,impeller 3,impeller,1,6,92160,impeller 3|1,eval
+872,impeller 3,impeller,1,6,104448,impeller 3|1,eval
+873,impeller 3,impeller,1,6,112640,impeller 3|1,eval
+874,impeller 3,impeller,1,6,120832,impeller 3|1,eval
+875,impeller 3,impeller,1,6,159744,impeller 3|1,eval
+876,impeller 3,impeller,1,6,165888,impeller 3|1,eval
+877,impeller 3,impeller,1,6,167936,impeller 3|1,eval
+878,impeller 3,impeller,1,6,178176,impeller 3|1,eval
+879,impeller 3,impeller,1,6,200704,impeller 3|1,eval
+880,impeller 3,impeller,1,6,208896,impeller 3|1,eval
+881,impeller 3,impeller,1,6,217088,impeller 3|1,eval
+882,impeller 3,impeller,1,6,221184,impeller 3|1,eval
+883,impeller 3,impeller,1,6,229376,impeller 3|1,eval
+884,impeller 3,impeller,1,7,4096,impeller 3|1,eval
+885,impeller 3,impeller,1,7,6144,impeller 3|1,eval
+886,impeller 3,impeller,1,7,14336,impeller 3|1,eval
+887,impeller 3,impeller,1,7,120832,impeller 3|1,eval
+888,impeller 3,impeller,1,7,124928,impeller 3|1,eval
+889,impeller 3,impeller,1,7,129024,impeller 3|1,eval
+890,impeller 3,impeller,1,7,143360,impeller 3|1,eval
+891,impeller 3,impeller,1,7,153600,impeller 3|1,eval
+892,impeller 3,impeller,1,7,172032,impeller 3|1,eval
+893,impeller 3,impeller,1,8,2048,impeller 3|1,eval
+894,impeller 3,impeller,1,8,28672,impeller 3|1,eval
+895,impeller 3,impeller,1,8,43008,impeller 3|1,eval
+896,impeller 3,impeller,1,8,63488,impeller 3|1,eval
+897,impeller 3,impeller,1,8,71680,impeller 3|1,eval
+898,impeller 3,impeller,1,8,96256,impeller 3|1,eval
+899,impeller 3,impeller,1,8,98304,impeller 3|1,eval
+900,impeller 3,impeller,1,8,108544,impeller 3|1,eval
+901,impeller 3,impeller,1,9,8192,impeller 3|1,eval
+902,impeller 3,impeller,1,9,12288,impeller 3|1,eval
+903,impeller 3,impeller,1,9,16384,impeller 3|1,eval
+904,impeller 3,impeller,1,9,47104,impeller 3|1,eval
+905,impeller 3,impeller,1,9,92160,impeller 3|1,eval
+906,impeller 3,impeller,1,9,104448,impeller 3|1,eval
+907,impeller 3,impeller,1,9,147456,impeller 3|1,eval
+908,impeller 3,impeller,1,9,174080,impeller 3|1,eval
+909,impeller 3,impeller,1,9,186368,impeller 3|1,eval
+910,impeller 3,impeller,2,10,0,impeller 3|2,adapt
+911,impeller 3,impeller,2,10,10240,impeller 3|2,adapt
+912,impeller 3,impeller,2,10,36864,impeller 3|2,adapt
+913,impeller 3,impeller,2,10,43008,impeller 3|2,adapt
+914,impeller 3,impeller,2,10,57344,impeller 3|2,adapt
+915,impeller 3,impeller,2,10,81920,impeller 3|2,adapt
+916,impeller 3,impeller,2,10,90112,impeller 3|2,adapt
+917,impeller 3,impeller,2,10,174080,impeller 3|2,adapt
+918,impeller 3,impeller,2,10,188416,impeller 3|2,adapt
+919,impeller 3,impeller,2,10,196608,impeller 3|2,adapt
+920,impeller 3,impeller,2,10,225280,impeller 3|2,adapt
+921,impeller 3,impeller,2,11,55296,impeller 3|2,adapt
+922,impeller 3,impeller,2,11,81920,impeller 3|2,adapt
+923,impeller 3,impeller,2,11,92160,impeller 3|2,adapt
+924,impeller 3,impeller,2,11,94208,impeller 3|2,adapt
+925,impeller 3,impeller,2,11,129024,impeller 3|2,adapt
+926,impeller 3,impeller,2,11,135168,impeller 3|2,adapt
+927,impeller 3,impeller,2,11,137216,impeller 3|2,adapt
+928,impeller 3,impeller,2,11,145408,impeller 3|2,adapt
+929,impeller 3,impeller,2,11,155648,impeller 3|2,adapt
+930,impeller 3,impeller,2,11,157696,impeller 3|2,adapt
+931,impeller 3,impeller,2,11,184320,impeller 3|2,adapt
+932,impeller 3,impeller,2,11,202752,impeller 3|2,adapt
+933,impeller 3,impeller,2,11,223232,impeller 3|2,adapt
+934,impeller 3,impeller,2,12,4096,impeller 3|2,adapt
+935,impeller 3,impeller,2,12,55296,impeller 3|2,adapt
+936,impeller 3,impeller,2,12,94208,impeller 3|2,adapt
+937,impeller 3,impeller,2,12,139264,impeller 3|2,adapt
+938,impeller 3,impeller,2,12,225280,impeller 3|2,adapt
+939,impeller 3,impeller,2,13,26624,impeller 3|2,adapt
+940,impeller 3,impeller,2,13,34816,impeller 3|2,adapt
+941,impeller 3,impeller,2,13,53248,impeller 3|2,adapt
+942,impeller 3,impeller,2,13,79872,impeller 3|2,adapt
+943,impeller 3,impeller,2,13,110592,impeller 3|2,adapt
+944,impeller 3,impeller,2,13,151552,impeller 3|2,adapt
+945,impeller 3,impeller,2,13,172032,impeller 3|2,adapt
+946,impeller 3,impeller,2,13,198656,impeller 3|2,adapt
+947,impeller 3,impeller,2,13,206848,impeller 3|2,adapt
+948,impeller 3,impeller,2,13,210944,impeller 3|2,adapt
+949,impeller 3,impeller,2,13,223232,impeller 3|2,adapt
+950,impeller 3,impeller,2,13,227328,impeller 3|2,adapt
+951,impeller 3,impeller,2,13,237568,impeller 3|2,adapt
+952,impeller 3,impeller,2,14,4096,impeller 3|2,adapt
+953,impeller 3,impeller,2,14,22528,impeller 3|2,adapt
+954,impeller 3,impeller,2,14,30720,impeller 3|2,adapt
+955,impeller 3,impeller,2,14,45056,impeller 3|2,adapt
+956,impeller 3,impeller,2,14,47104,impeller 3|2,adapt
+957,impeller 3,impeller,2,14,55296,impeller 3|2,adapt
+958,impeller 3,impeller,2,14,106496,impeller 3|2,adapt
+959,impeller 3,impeller,2,14,169984,impeller 3|2,adapt
+960,bearing pump 1,pump bearing,0,0,53248,bearing pump 1|0,adapt
+961,bearing pump 1,pump bearing,0,0,63488,bearing pump 1|0,adapt
+962,bearing pump 1,pump bearing,0,0,69632,bearing pump 1|0,adapt
+963,bearing pump 1,pump bearing,0,0,71680,bearing pump 1|0,adapt
+964,bearing pump 1,pump bearing,0,0,106496,bearing pump 1|0,adapt
+965,bearing pump 1,pump bearing,0,0,124928,bearing pump 1|0,adapt
+966,bearing pump 1,pump bearing,0,0,129024,bearing pump 1|0,adapt
+967,bearing pump 1,pump bearing,0,0,157696,bearing pump 1|0,adapt
+968,bearing pump 1,pump bearing,0,0,192512,bearing pump 1|0,adapt
+969,bearing pump 1,pump bearing,0,0,202752,bearing pump 1|0,adapt
+970,bearing pump 1,pump bearing,0,0,204800,bearing pump 1|0,adapt
+971,bearing pump 1,pump bearing,0,0,217088,bearing pump 1|0,adapt
+972,bearing pump 1,pump bearing,0,0,237568,bearing pump 1|0,adapt
+973,bearing pump 1,pump bearing,0,1,38912,bearing pump 1|0,adapt
+974,bearing pump 1,pump bearing,0,1,45056,bearing pump 1|0,adapt
+975,bearing pump 1,pump bearing,0,1,53248,bearing pump 1|0,adapt
+976,bearing pump 1,pump bearing,0,1,57344,bearing pump 1|0,adapt
+977,bearing pump 1,pump bearing,0,1,90112,bearing pump 1|0,adapt
+978,bearing pump 1,pump bearing,0,1,104448,bearing pump 1|0,adapt
+979,bearing pump 1,pump bearing,0,1,147456,bearing pump 1|0,adapt
+980,bearing pump 1,pump bearing,0,1,157696,bearing pump 1|0,adapt
+981,bearing pump 1,pump bearing,0,2,4096,bearing pump 1|0,adapt
+982,bearing pump 1,pump bearing,0,2,28672,bearing pump 1|0,adapt
+983,bearing pump 1,pump bearing,0,2,34816,bearing pump 1|0,adapt
+984,bearing pump 1,pump bearing,0,2,75776,bearing pump 1|0,adapt
+985,bearing pump 1,pump bearing,0,2,116736,bearing pump 1|0,adapt
+986,bearing pump 1,pump bearing,0,2,122880,bearing pump 1|0,adapt
+987,bearing pump 1,pump bearing,0,2,153600,bearing pump 1|0,adapt
+988,bearing pump 1,pump bearing,0,2,180224,bearing pump 1|0,adapt
+989,bearing pump 1,pump bearing,0,2,190464,bearing pump 1|0,adapt
+990,bearing pump 1,pump bearing,0,2,212992,bearing pump 1|0,adapt
+991,bearing pump 1,pump bearing,0,3,0,bearing pump 1|0,adapt
+992,bearing pump 1,pump bearing,0,3,47104,bearing pump 1|0,adapt
+993,bearing pump 1,pump bearing,0,3,49152,bearing pump 1|0,adapt
+994,bearing pump 1,pump bearing,0,3,57344,bearing pump 1|0,adapt
+995,bearing pump 1,pump bearing,0,3,63488,bearing pump 1|0,adapt
+996,bearing pump 1,pump bearing,0,3,126976,bearing pump 1|0,adapt
+997,bearing pump 1,pump bearing,0,3,141312,bearing pump 1|0,adapt
+998,bearing pump 1,pump bearing,0,3,145408,bearing pump 1|0,adapt
+999,bearing pump 1,pump bearing,0,3,225280,bearing pump 1|0,adapt
+1000,bearing pump 1,pump bearing,0,4,40960,bearing pump 1|0,adapt
+1001,bearing pump 1,pump bearing,0,4,55296,bearing pump 1|0,adapt
+1002,bearing pump 1,pump bearing,0,4,96256,bearing pump 1|0,adapt
+1003,bearing pump 1,pump bearing,0,4,116736,bearing pump 1|0,adapt
+1004,bearing pump 1,pump bearing,0,4,145408,bearing pump 1|0,adapt
+1005,bearing pump 1,pump bearing,0,4,163840,bearing pump 1|0,adapt
+1006,bearing pump 1,pump bearing,0,4,172032,bearing pump 1|0,adapt
+1007,bearing pump 1,pump bearing,0,4,200704,bearing pump 1|0,adapt
+1008,bearing pump 1,pump bearing,0,4,217088,bearing pump 1|0,adapt
+1009,bearing pump 1,pump bearing,0,4,223232,bearing pump 1|0,adapt
+1010,bearing pump 1,pump bearing,1,5,6144,bearing pump 1|1,eval
+1011,bearing pump 1,pump bearing,1,5,51200,bearing pump 1|1,eval
+1012,bearing pump 1,pump bearing,1,5,75776,bearing pump 1|1,eval
+1013,bearing pump 1,pump bearing,1,5,86016,bearing pump 1|1,eval
+1014,bearing pump 1,pump bearing,1,5,90112,bearing pump 1|1,eval
+1015,bearing pump 1,pump bearing,1,5,100352,bearing pump 1|1,eval
+1016,bearing pump 1,pump bearing,1,5,133120,bearing pump 1|1,eval
+1017,bearing pump 1,pump bearing,1,5,188416,bearing pump 1|1,eval
+1018,bearing pump 1,pump bearing,1,5,190464,bearing pump 1|1,eval
+1019,bearing pump 1,pump bearing,1,5,196608,bearing pump 1|1,eval
+1020,bearing pump 1,pump bearing,1,5,215040,bearing pump 1|1,eval
+1021,bearing pump 1,pump bearing,1,5,221184,bearing pump 1|1,eval
+1022,bearing pump 1,pump bearing,1,6,4096,bearing pump 1|1,eval
+1023,bearing pump 1,pump bearing,1,6,24576,bearing pump 1|1,eval
+1024,bearing pump 1,pump bearing,1,6,55296,bearing pump 1|1,eval
+1025,bearing pump 1,pump bearing,1,6,81920,bearing pump 1|1,eval
+1026,bearing pump 1,pump bearing,1,6,92160,bearing pump 1|1,eval
+1027,bearing pump 1,pump bearing,1,6,100352,bearing pump 1|1,eval
+1028,bearing pump 1,pump bearing,1,6,106496,bearing pump 1|1,eval
+1029,bearing pump 1,pump bearing,1,6,147456,bearing pump 1|1,eval
+1030,bearing pump 1,pump bearing,1,6,176128,bearing pump 1|1,eval
+1031,bearing pump 1,pump bearing,1,6,227328,bearing pump 1|1,eval
+1032,bearing pump 1,pump bearing,1,7,20480,bearing pump 1|1,eval
+1033,bearing pump 1,pump bearing,1,7,40960,bearing pump 1|1,eval
+1034,bearing pump 1,pump bearing,1,7,45056,bearing pump 1|1,eval
+1035,bearing pump 1,pump bearing,1,7,88064,bearing pump 1|1,eval
+1036,bearing pump 1,pump bearing,1,7,90112,bearing pump 1|1,eval
+1037,bearing pump 1,pump bearing,1,7,106496,bearing pump 1|1,eval
+1038,bearing pump 1,pump bearing,1,7,176128,bearing pump 1|1,eval
+1039,bearing pump 1,pump bearing,1,7,180224,bearing pump 1|1,eval
+1040,bearing pump 1,pump bearing,1,7,184320,bearing pump 1|1,eval
+1041,bearing pump 1,pump bearing,1,7,186368,bearing pump 1|1,eval
+1042,bearing pump 1,pump bearing,1,7,219136,bearing pump 1|1,eval
+1043,bearing pump 1,pump bearing,1,8,26624,bearing pump 1|1,eval
+1044,bearing pump 1,pump bearing,1,8,34816,bearing pump 1|1,eval
+1045,bearing pump 1,pump bearing,1,8,38912,bearing pump 1|1,eval
+1046,bearing pump 1,pump bearing,1,8,47104,bearing pump 1|1,eval
+1047,bearing pump 1,pump bearing,1,8,63488,bearing pump 1|1,eval
+1048,bearing pump 1,pump bearing,1,8,77824,bearing pump 1|1,eval
+1049,bearing pump 1,pump bearing,1,8,79872,bearing pump 1|1,eval
+1050,bearing pump 1,pump bearing,1,8,81920,bearing pump 1|1,eval
+1051,bearing pump 1,pump bearing,1,8,83968,bearing pump 1|1,eval
+1052,bearing pump 1,pump bearing,1,8,96256,bearing pump 1|1,eval
+1053,bearing pump 1,pump bearing,1,8,122880,bearing pump 1|1,eval
+1054,bearing pump 1,pump bearing,1,8,126976,bearing pump 1|1,eval
+1055,bearing pump 1,pump bearing,1,8,133120,bearing pump 1|1,eval
+1056,bearing pump 1,pump bearing,1,8,153600,bearing pump 1|1,eval
+1057,bearing pump 1,pump bearing,1,8,159744,bearing pump 1|1,eval
+1058,bearing pump 1,pump bearing,1,8,167936,bearing pump 1|1,eval
+1059,bearing pump 1,pump bearing,1,8,200704,bearing pump 1|1,eval
+1060,bearing pump 1,pump bearing,1,8,229376,bearing pump 1|1,eval
+1061,bearing pump 1,pump bearing,1,8,233472,bearing pump 1|1,eval
+1062,bearing pump 1,pump bearing,1,9,18432,bearing pump 1|1,eval
+1063,bearing pump 1,pump bearing,1,9,51200,bearing pump 1|1,eval
+1064,bearing pump 1,pump bearing,1,9,59392,bearing pump 1|1,eval
+1065,bearing pump 1,pump bearing,1,9,73728,bearing pump 1|1,eval
+1066,bearing pump 1,pump bearing,1,9,86016,bearing pump 1|1,eval
+1067,bearing pump 1,pump bearing,1,9,98304,bearing pump 1|1,eval
+1068,bearing pump 1,pump bearing,1,9,110592,bearing pump 1|1,eval
+1069,bearing pump 1,pump bearing,1,9,114688,bearing pump 1|1,eval
+1070,bearing pump 1,pump bearing,1,9,169984,bearing pump 1|1,eval
+1071,bearing pump 1,pump bearing,1,9,178176,bearing pump 1|1,eval
+1072,bearing pump 1,pump bearing,1,9,182272,bearing pump 1|1,eval
+1073,bearing pump 1,pump bearing,1,9,192512,bearing pump 1|1,eval
+1074,bearing pump 1,pump bearing,1,9,204800,bearing pump 1|1,eval
+1075,bearing pump 1,pump bearing,1,9,212992,bearing pump 1|1,eval
+1076,bearing pump 1,pump bearing,2,10,2048,bearing pump 1|2,adapt
+1077,bearing pump 1,pump bearing,2,10,18432,bearing pump 1|2,adapt
+1078,bearing pump 1,pump bearing,2,10,38912,bearing pump 1|2,adapt
+1079,bearing pump 1,pump bearing,2,10,59392,bearing pump 1|2,adapt
+1080,bearing pump 1,pump bearing,2,10,102400,bearing pump 1|2,adapt
+1081,bearing pump 1,pump bearing,2,10,131072,bearing pump 1|2,adapt
+1082,bearing pump 1,pump bearing,2,10,163840,bearing pump 1|2,adapt
+1083,bearing pump 1,pump bearing,2,10,174080,bearing pump 1|2,adapt
+1084,bearing pump 1,pump bearing,2,10,208896,bearing pump 1|2,adapt
+1085,bearing pump 1,pump bearing,2,10,210944,bearing pump 1|2,adapt
+1086,bearing pump 1,pump bearing,2,10,215040,bearing pump 1|2,adapt
+1087,bearing pump 1,pump bearing,2,10,231424,bearing pump 1|2,adapt
+1088,bearing pump 1,pump bearing,2,11,2048,bearing pump 1|2,adapt
+1089,bearing pump 1,pump bearing,2,11,34816,bearing pump 1|2,adapt
+1090,bearing pump 1,pump bearing,2,11,196608,bearing pump 1|2,adapt
+1091,bearing pump 1,pump bearing,2,11,219136,bearing pump 1|2,adapt
+1092,bearing pump 1,pump bearing,2,12,20480,bearing pump 1|2,adapt
+1093,bearing pump 1,pump bearing,2,12,63488,bearing pump 1|2,adapt
+1094,bearing pump 1,pump bearing,2,12,83968,bearing pump 1|2,adapt
+1095,bearing pump 1,pump bearing,2,12,110592,bearing pump 1|2,adapt
+1096,bearing pump 1,pump bearing,2,12,118784,bearing pump 1|2,adapt
+1097,bearing pump 1,pump bearing,2,12,167936,bearing pump 1|2,adapt
+1098,bearing pump 1,pump bearing,2,12,198656,bearing pump 1|2,adapt
+1099,bearing pump 1,pump bearing,2,12,204800,bearing pump 1|2,adapt
+1100,bearing pump 1,pump bearing,2,12,221184,bearing pump 1|2,adapt
+1101,bearing pump 1,pump bearing,2,12,225280,bearing pump 1|2,adapt
+1102,bearing pump 1,pump bearing,2,13,8192,bearing pump 1|2,adapt
+1103,bearing pump 1,pump bearing,2,13,79872,bearing pump 1|2,adapt
+1104,bearing pump 1,pump bearing,2,13,100352,bearing pump 1|2,adapt
+1105,bearing pump 1,pump bearing,2,13,110592,bearing pump 1|2,adapt
+1106,bearing pump 1,pump bearing,2,13,143360,bearing pump 1|2,adapt
+1107,bearing pump 1,pump bearing,2,13,153600,bearing pump 1|2,adapt
+1108,bearing pump 1,pump bearing,2,13,178176,bearing pump 1|2,adapt
+1109,bearing pump 1,pump bearing,2,13,196608,bearing pump 1|2,adapt
+1110,bearing pump 1,pump bearing,2,13,206848,bearing pump 1|2,adapt
+1111,bearing pump 1,pump bearing,2,13,231424,bearing pump 1|2,adapt
+1112,bearing pump 1,pump bearing,2,14,8192,bearing pump 1|2,adapt
+1113,bearing pump 1,pump bearing,2,14,18432,bearing pump 1|2,adapt
+1114,bearing pump 1,pump bearing,2,14,36864,bearing pump 1|2,adapt
+1115,bearing pump 1,pump bearing,2,14,40960,bearing pump 1|2,adapt
+1116,bearing pump 1,pump bearing,2,14,43008,bearing pump 1|2,adapt
+1117,bearing pump 1,pump bearing,2,14,71680,bearing pump 1|2,adapt
+1118,bearing pump 1,pump bearing,2,14,131072,bearing pump 1|2,adapt
+1119,bearing pump 1,pump bearing,2,14,182272,bearing pump 1|2,adapt
+1120,bearing pump 2,pump bearing,0,0,10240,bearing pump 2|0,adapt
+1121,bearing pump 2,pump bearing,0,0,14336,bearing pump 2|0,adapt
+1122,bearing pump 2,pump bearing,0,0,28672,bearing pump 2|0,adapt
+1123,bearing pump 2,pump bearing,0,0,38912,bearing pump 2|0,adapt
+1124,bearing pump 2,pump bearing,0,0,40960,bearing pump 2|0,adapt
+1125,bearing pump 2,pump bearing,0,0,65536,bearing pump 2|0,adapt
+1126,bearing pump 2,pump bearing,0,0,71680,bearing pump 2|0,adapt
+1127,bearing pump 2,pump bearing,0,0,90112,bearing pump 2|0,adapt
+1128,bearing pump 2,pump bearing,0,0,155648,bearing pump 2|0,adapt
+1129,bearing pump 2,pump bearing,0,0,169984,bearing pump 2|0,adapt
+1130,bearing pump 2,pump bearing,0,0,217088,bearing pump 2|0,adapt
+1131,bearing pump 2,pump bearing,0,1,2048,bearing pump 2|0,adapt
+1132,bearing pump 2,pump bearing,0,1,4096,bearing pump 2|0,adapt
+1133,bearing pump 2,pump bearing,0,1,22528,bearing pump 2|0,adapt
+1134,bearing pump 2,pump bearing,0,1,53248,bearing pump 2|0,adapt
+1135,bearing pump 2,pump bearing,0,1,69632,bearing pump 2|0,adapt
+1136,bearing pump 2,pump bearing,0,1,75776,bearing pump 2|0,adapt
+1137,bearing pump 2,pump bearing,0,1,90112,bearing pump 2|0,adapt
+1138,bearing pump 2,pump bearing,0,1,126976,bearing pump 2|0,adapt
+1139,bearing pump 2,pump bearing,0,1,139264,bearing pump 2|0,adapt
+1140,bearing pump 2,pump bearing,0,1,145408,bearing pump 2|0,adapt
+1141,bearing pump 2,pump bearing,0,1,147456,bearing pump 2|0,adapt
+1142,bearing pump 2,pump bearing,0,1,208896,bearing pump 2|0,adapt
+1143,bearing pump 2,pump bearing,0,1,223232,bearing pump 2|0,adapt
+1144,bearing pump 2,pump bearing,0,1,225280,bearing pump 2|0,adapt
+1145,bearing pump 2,pump bearing,0,2,0,bearing pump 2|0,adapt
+1146,bearing pump 2,pump bearing,0,2,51200,bearing pump 2|0,adapt
+1147,bearing pump 2,pump bearing,0,2,59392,bearing pump 2|0,adapt
+1148,bearing pump 2,pump bearing,0,2,63488,bearing pump 2|0,adapt
+1149,bearing pump 2,pump bearing,0,2,65536,bearing pump 2|0,adapt
+1150,bearing pump 2,pump bearing,0,2,90112,bearing pump 2|0,adapt
+1151,bearing pump 2,pump bearing,0,2,104448,bearing pump 2|0,adapt
+1152,bearing pump 2,pump bearing,0,2,122880,bearing pump 2|0,adapt
+1153,bearing pump 2,pump bearing,0,2,151552,bearing pump 2|0,adapt
+1154,bearing pump 2,pump bearing,0,2,204800,bearing pump 2|0,adapt
+1155,bearing pump 2,pump bearing,0,2,215040,bearing pump 2|0,adapt
+1156,bearing pump 2,pump bearing,0,2,221184,bearing pump 2|0,adapt
+1157,bearing pump 2,pump bearing,0,2,223232,bearing pump 2|0,adapt
+1158,bearing pump 2,pump bearing,0,3,71680,bearing pump 2|0,adapt
+1159,bearing pump 2,pump bearing,0,3,81920,bearing pump 2|0,adapt
+1160,bearing pump 2,pump bearing,0,3,88064,bearing pump 2|0,adapt
+1161,bearing pump 2,pump bearing,0,3,94208,bearing pump 2|0,adapt
+1162,bearing pump 2,pump bearing,0,3,118784,bearing pump 2|0,adapt
+1163,bearing pump 2,pump bearing,0,3,149504,bearing pump 2|0,adapt
+1164,bearing pump 2,pump bearing,0,3,155648,bearing pump 2|0,adapt
+1165,bearing pump 2,pump bearing,0,3,204800,bearing pump 2|0,adapt
+1166,bearing pump 2,pump bearing,0,3,208896,bearing pump 2|0,adapt
+1167,bearing pump 2,pump bearing,0,3,215040,bearing pump 2|0,adapt
+1168,bearing pump 2,pump bearing,0,3,237568,bearing pump 2|0,adapt
+1169,bearing pump 2,pump bearing,0,4,57344,bearing pump 2|0,adapt
+1170,bearing pump 2,pump bearing,0,4,59392,bearing pump 2|0,adapt
+1171,bearing pump 2,pump bearing,0,4,63488,bearing pump 2|0,adapt
+1172,bearing pump 2,pump bearing,0,4,174080,bearing pump 2|0,adapt
+1173,bearing pump 2,pump bearing,0,4,194560,bearing pump 2|0,adapt
+1174,bearing pump 2,pump bearing,0,4,227328,bearing pump 2|0,adapt
+1175,bearing pump 2,pump bearing,0,4,229376,bearing pump 2|0,adapt
+1176,bearing pump 2,pump bearing,0,4,231424,bearing pump 2|0,adapt
+1177,bearing pump 2,pump bearing,1,5,4096,bearing pump 2|1,eval
+1178,bearing pump 2,pump bearing,1,5,67584,bearing pump 2|1,eval
+1179,bearing pump 2,pump bearing,1,5,88064,bearing pump 2|1,eval
+1180,bearing pump 2,pump bearing,1,5,90112,bearing pump 2|1,eval
+1181,bearing pump 2,pump bearing,1,5,126976,bearing pump 2|1,eval
+1182,bearing pump 2,pump bearing,1,5,139264,bearing pump 2|1,eval
+1183,bearing pump 2,pump bearing,1,5,169984,bearing pump 2|1,eval
+1184,bearing pump 2,pump bearing,1,5,192512,bearing pump 2|1,eval
+1185,bearing pump 2,pump bearing,1,5,194560,bearing pump 2|1,eval
+1186,bearing pump 2,pump bearing,1,5,227328,bearing pump 2|1,eval
+1187,bearing pump 2,pump bearing,1,6,24576,bearing pump 2|1,eval
+1188,bearing pump 2,pump bearing,1,6,36864,bearing pump 2|1,eval
+1189,bearing pump 2,pump bearing,1,6,49152,bearing pump 2|1,eval
+1190,bearing pump 2,pump bearing,1,6,69632,bearing pump 2|1,eval
+1191,bearing pump 2,pump bearing,1,6,106496,bearing pump 2|1,eval
+1192,bearing pump 2,pump bearing,1,6,161792,bearing pump 2|1,eval
+1193,bearing pump 2,pump bearing,1,6,167936,bearing pump 2|1,eval
+1194,bearing pump 2,pump bearing,1,6,196608,bearing pump 2|1,eval
+1195,bearing pump 2,pump bearing,1,6,202752,bearing pump 2|1,eval
+1196,bearing pump 2,pump bearing,1,7,24576,bearing pump 2|1,eval
+1197,bearing pump 2,pump bearing,1,7,36864,bearing pump 2|1,eval
+1198,bearing pump 2,pump bearing,1,7,43008,bearing pump 2|1,eval
+1199,bearing pump 2,pump bearing,1,7,61440,bearing pump 2|1,eval
+1200,bearing pump 2,pump bearing,1,7,77824,bearing pump 2|1,eval
+1201,bearing pump 2,pump bearing,1,7,108544,bearing pump 2|1,eval
+1202,bearing pump 2,pump bearing,1,7,126976,bearing pump 2|1,eval
+1203,bearing pump 2,pump bearing,1,7,137216,bearing pump 2|1,eval
+1204,bearing pump 2,pump bearing,1,7,141312,bearing pump 2|1,eval
+1205,bearing pump 2,pump bearing,1,7,147456,bearing pump 2|1,eval
+1206,bearing pump 2,pump bearing,1,7,178176,bearing pump 2|1,eval
+1207,bearing pump 2,pump bearing,1,7,217088,bearing pump 2|1,eval
+1208,bearing pump 2,pump bearing,1,8,18432,bearing pump 2|1,eval
+1209,bearing pump 2,pump bearing,1,8,32768,bearing pump 2|1,eval
+1210,bearing pump 2,pump bearing,1,8,38912,bearing pump 2|1,eval
+1211,bearing pump 2,pump bearing,1,8,49152,bearing pump 2|1,eval
+1212,bearing pump 2,pump bearing,1,8,57344,bearing pump 2|1,eval
+1213,bearing pump 2,pump bearing,1,8,116736,bearing pump 2|1,eval
+1214,bearing pump 2,pump bearing,1,8,122880,bearing pump 2|1,eval
+1215,bearing pump 2,pump bearing,1,8,137216,bearing pump 2|1,eval
+1216,bearing pump 2,pump bearing,1,8,172032,bearing pump 2|1,eval
+1217,bearing pump 2,pump bearing,1,8,178176,bearing pump 2|1,eval
+1218,bearing pump 2,pump bearing,1,8,204800,bearing pump 2|1,eval
+1219,bearing pump 2,pump bearing,1,8,233472,bearing pump 2|1,eval
+1220,bearing pump 2,pump bearing,1,9,32768,bearing pump 2|1,eval
+1221,bearing pump 2,pump bearing,1,9,34816,bearing pump 2|1,eval
+1222,bearing pump 2,pump bearing,1,9,55296,bearing pump 2|1,eval
+1223,bearing pump 2,pump bearing,1,9,59392,bearing pump 2|1,eval
+1224,bearing pump 2,pump bearing,1,9,81920,bearing pump 2|1,eval
+1225,bearing pump 2,pump bearing,1,9,137216,bearing pump 2|1,eval
+1226,bearing pump 2,pump bearing,1,9,141312,bearing pump 2|1,eval
+1227,bearing pump 2,pump bearing,1,9,145408,bearing pump 2|1,eval
+1228,bearing pump 2,pump bearing,1,9,163840,bearing pump 2|1,eval
+1229,bearing pump 2,pump bearing,1,9,172032,bearing pump 2|1,eval
+1230,bearing pump 2,pump bearing,1,9,188416,bearing pump 2|1,eval
+1231,bearing pump 2,pump bearing,1,9,204800,bearing pump 2|1,eval
+1232,bearing pump 2,pump bearing,1,9,229376,bearing pump 2|1,eval
+1233,bearing pump 2,pump bearing,1,9,233472,bearing pump 2|1,eval
+1234,bearing pump 2,pump bearing,2,10,16384,bearing pump 2|2,adapt
+1235,bearing pump 2,pump bearing,2,10,47104,bearing pump 2|2,adapt
+1236,bearing pump 2,pump bearing,2,10,61440,bearing pump 2|2,adapt
+1237,bearing pump 2,pump bearing,2,10,67584,bearing pump 2|2,adapt
+1238,bearing pump 2,pump bearing,2,10,71680,bearing pump 2|2,adapt
+1239,bearing pump 2,pump bearing,2,10,100352,bearing pump 2|2,adapt
+1240,bearing pump 2,pump bearing,2,10,116736,bearing pump 2|2,adapt
+1241,bearing pump 2,pump bearing,2,10,161792,bearing pump 2|2,adapt
+1242,bearing pump 2,pump bearing,2,10,194560,bearing pump 2|2,adapt
+1243,bearing pump 2,pump bearing,2,10,221184,bearing pump 2|2,adapt
+1244,bearing pump 2,pump bearing,2,10,229376,bearing pump 2|2,adapt
+1245,bearing pump 2,pump bearing,2,11,20480,bearing pump 2|2,adapt
+1246,bearing pump 2,pump bearing,2,11,92160,bearing pump 2|2,adapt
+1247,bearing pump 2,pump bearing,2,11,110592,bearing pump 2|2,adapt
+1248,bearing pump 2,pump bearing,2,11,120832,bearing pump 2|2,adapt
+1249,bearing pump 2,pump bearing,2,11,135168,bearing pump 2|2,adapt
+1250,bearing pump 2,pump bearing,2,11,145408,bearing pump 2|2,adapt
+1251,bearing pump 2,pump bearing,2,11,147456,bearing pump 2|2,adapt
+1252,bearing pump 2,pump bearing,2,11,155648,bearing pump 2|2,adapt
+1253,bearing pump 2,pump bearing,2,11,157696,bearing pump 2|2,adapt
+1254,bearing pump 2,pump bearing,2,11,186368,bearing pump 2|2,adapt
+1255,bearing pump 2,pump bearing,2,11,215040,bearing pump 2|2,adapt
+1256,bearing pump 2,pump bearing,2,11,233472,bearing pump 2|2,adapt
+1257,bearing pump 2,pump bearing,2,12,22528,bearing pump 2|2,adapt
+1258,bearing pump 2,pump bearing,2,12,53248,bearing pump 2|2,adapt
+1259,bearing pump 2,pump bearing,2,12,59392,bearing pump 2|2,adapt
+1260,bearing pump 2,pump bearing,2,12,108544,bearing pump 2|2,adapt
+1261,bearing pump 2,pump bearing,2,12,118784,bearing pump 2|2,adapt
+1262,bearing pump 2,pump bearing,2,12,202752,bearing pump 2|2,adapt
+1263,bearing pump 2,pump bearing,2,12,221184,bearing pump 2|2,adapt
+1264,bearing pump 2,pump bearing,2,12,225280,bearing pump 2|2,adapt
+1265,bearing pump 2,pump bearing,2,13,55296,bearing pump 2|2,adapt
+1266,bearing pump 2,pump bearing,2,13,90112,bearing pump 2|2,adapt
+1267,bearing pump 2,pump bearing,2,13,106496,bearing pump 2|2,adapt
+1268,bearing pump 2,pump bearing,2,13,120832,bearing pump 2|2,adapt
+1269,bearing pump 2,pump bearing,2,13,126976,bearing pump 2|2,adapt
+1270,bearing pump 2,pump bearing,2,13,135168,bearing pump 2|2,adapt
+1271,bearing pump 2,pump bearing,2,13,204800,bearing pump 2|2,adapt
+1272,bearing pump 2,pump bearing,2,13,225280,bearing pump 2|2,adapt
+1273,bearing pump 2,pump bearing,2,14,6144,bearing pump 2|2,adapt
+1274,bearing pump 2,pump bearing,2,14,16384,bearing pump 2|2,adapt
+1275,bearing pump 2,pump bearing,2,14,53248,bearing pump 2|2,adapt
+1276,bearing pump 2,pump bearing,2,14,77824,bearing pump 2|2,adapt
+1277,bearing pump 2,pump bearing,2,14,96256,bearing pump 2|2,adapt
+1278,bearing pump 2,pump bearing,2,14,192512,bearing pump 2|2,adapt
+1279,bearing pump 2,pump bearing,2,14,233472,bearing pump 2|2,adapt
+1280,bearing pump 3,pump bearing,0,0,118784,bearing pump 3|0,adapt
+1281,bearing pump 3,pump bearing,0,0,120832,bearing pump 3|0,adapt
+1282,bearing pump 3,pump bearing,0,0,145408,bearing pump 3|0,adapt
+1283,bearing pump 3,pump bearing,0,0,151552,bearing pump 3|0,adapt
+1284,bearing pump 3,pump bearing,0,0,174080,bearing pump 3|0,adapt
+1285,bearing pump 3,pump bearing,0,0,215040,bearing pump 3|0,adapt
+1286,bearing pump 3,pump bearing,0,0,233472,bearing pump 3|0,adapt
+1287,bearing pump 3,pump bearing,0,1,0,bearing pump 3|0,adapt
+1288,bearing pump 3,pump bearing,0,1,8192,bearing pump 3|0,adapt
+1289,bearing pump 3,pump bearing,0,1,40960,bearing pump 3|0,adapt
+1290,bearing pump 3,pump bearing,0,1,69632,bearing pump 3|0,adapt
+1291,bearing pump 3,pump bearing,0,1,71680,bearing pump 3|0,adapt
+1292,bearing pump 3,pump bearing,0,1,83968,bearing pump 3|0,adapt
+1293,bearing pump 3,pump bearing,0,1,94208,bearing pump 3|0,adapt
+1294,bearing pump 3,pump bearing,0,1,126976,bearing pump 3|0,adapt
+1295,bearing pump 3,pump bearing,0,1,159744,bearing pump 3|0,adapt
+1296,bearing pump 3,pump bearing,0,1,178176,bearing pump 3|0,adapt
+1297,bearing pump 3,pump bearing,0,1,184320,bearing pump 3|0,adapt
+1298,bearing pump 3,pump bearing,0,2,6144,bearing pump 3|0,adapt
+1299,bearing pump 3,pump bearing,0,2,8192,bearing pump 3|0,adapt
+1300,bearing pump 3,pump bearing,0,2,16384,bearing pump 3|0,adapt
+1301,bearing pump 3,pump bearing,0,2,24576,bearing pump 3|0,adapt
+1302,bearing pump 3,pump bearing,0,2,28672,bearing pump 3|0,adapt
+1303,bearing pump 3,pump bearing,0,2,32768,bearing pump 3|0,adapt
+1304,bearing pump 3,pump bearing,0,2,47104,bearing pump 3|0,adapt
+1305,bearing pump 3,pump bearing,0,2,77824,bearing pump 3|0,adapt
+1306,bearing pump 3,pump bearing,0,2,90112,bearing pump 3|0,adapt
+1307,bearing pump 3,pump bearing,0,2,118784,bearing pump 3|0,adapt
+1308,bearing pump 3,pump bearing,0,2,133120,bearing pump 3|0,adapt
+1309,bearing pump 3,pump bearing,0,2,141312,bearing pump 3|0,adapt
+1310,bearing pump 3,pump bearing,0,2,169984,bearing pump 3|0,adapt
+1311,bearing pump 3,pump bearing,0,2,190464,bearing pump 3|0,adapt
+1312,bearing pump 3,pump bearing,0,2,198656,bearing pump 3|0,adapt
+1313,bearing pump 3,pump bearing,0,2,217088,bearing pump 3|0,adapt
+1314,bearing pump 3,pump bearing,0,3,26624,bearing pump 3|0,adapt
+1315,bearing pump 3,pump bearing,0,3,69632,bearing pump 3|0,adapt
+1316,bearing pump 3,pump bearing,0,3,96256,bearing pump 3|0,adapt
+1317,bearing pump 3,pump bearing,0,3,147456,bearing pump 3|0,adapt
+1318,bearing pump 3,pump bearing,0,3,159744,bearing pump 3|0,adapt
+1319,bearing pump 3,pump bearing,0,3,172032,bearing pump 3|0,adapt
+1320,bearing pump 3,pump bearing,0,3,215040,bearing pump 3|0,adapt
+1321,bearing pump 3,pump bearing,0,4,6144,bearing pump 3|0,adapt
+1322,bearing pump 3,pump bearing,0,4,12288,bearing pump 3|0,adapt
+1323,bearing pump 3,pump bearing,0,4,47104,bearing pump 3|0,adapt
+1324,bearing pump 3,pump bearing,0,4,69632,bearing pump 3|0,adapt
+1325,bearing pump 3,pump bearing,0,4,79872,bearing pump 3|0,adapt
+1326,bearing pump 3,pump bearing,0,4,92160,bearing pump 3|0,adapt
+1327,bearing pump 3,pump bearing,0,4,108544,bearing pump 3|0,adapt
+1328,bearing pump 3,pump bearing,0,4,110592,bearing pump 3|0,adapt
+1329,bearing pump 3,pump bearing,0,4,139264,bearing pump 3|0,adapt
+1330,bearing pump 3,pump bearing,0,4,141312,bearing pump 3|0,adapt
+1331,bearing pump 3,pump bearing,0,4,163840,bearing pump 3|0,adapt
+1332,bearing pump 3,pump bearing,0,4,176128,bearing pump 3|0,adapt
+1333,bearing pump 3,pump bearing,0,4,182272,bearing pump 3|0,adapt
+1334,bearing pump 3,pump bearing,0,4,221184,bearing pump 3|0,adapt
+1335,bearing pump 3,pump bearing,0,4,233472,bearing pump 3|0,adapt
+1336,bearing pump 3,pump bearing,1,5,4096,bearing pump 3|1,eval
+1337,bearing pump 3,pump bearing,1,5,16384,bearing pump 3|1,eval
+1338,bearing pump 3,pump bearing,1,5,59392,bearing pump 3|1,eval
+1339,bearing pump 3,pump bearing,1,5,69632,bearing pump 3|1,eval
+1340,bearing pump 3,pump bearing,1,5,73728,bearing pump 3|1,eval
+1341,bearing pump 3,pump bearing,1,5,126976,bearing pump 3|1,eval
+1342,bearing pump 3,pump bearing,1,5,133120,bearing pump 3|1,eval
+1343,bearing pump 3,pump bearing,1,5,147456,bearing pump 3|1,eval
+1344,bearing pump 3,pump bearing,1,5,151552,bearing pump 3|1,eval
+1345,bearing pump 3,pump bearing,1,5,155648,bearing pump 3|1,eval
+1346,bearing pump 3,pump bearing,1,5,178176,bearing pump 3|1,eval
+1347,bearing pump 3,pump bearing,1,5,198656,bearing pump 3|1,eval
+1348,bearing pump 3,pump bearing,1,6,53248,bearing pump 3|1,eval
+1349,bearing pump 3,pump bearing,1,6,61440,bearing pump 3|1,eval
+1350,bearing pump 3,pump bearing,1,6,63488,bearing pump 3|1,eval
+1351,bearing pump 3,pump bearing,1,6,67584,bearing pump 3|1,eval
+1352,bearing pump 3,pump bearing,1,6,71680,bearing pump 3|1,eval
+1353,bearing pump 3,pump bearing,1,6,83968,bearing pump 3|1,eval
+1354,bearing pump 3,pump bearing,1,6,141312,bearing pump 3|1,eval
+1355,bearing pump 3,pump bearing,1,6,186368,bearing pump 3|1,eval
+1356,bearing pump 3,pump bearing,1,6,217088,bearing pump 3|1,eval
+1357,bearing pump 3,pump bearing,1,7,18432,bearing pump 3|1,eval
+1358,bearing pump 3,pump bearing,1,7,22528,bearing pump 3|1,eval
+1359,bearing pump 3,pump bearing,1,7,47104,bearing pump 3|1,eval
+1360,bearing pump 3,pump bearing,1,7,65536,bearing pump 3|1,eval
+1361,bearing pump 3,pump bearing,1,7,75776,bearing pump 3|1,eval
+1362,bearing pump 3,pump bearing,1,7,159744,bearing pump 3|1,eval
+1363,bearing pump 3,pump bearing,1,7,163840,bearing pump 3|1,eval
+1364,bearing pump 3,pump bearing,1,7,172032,bearing pump 3|1,eval
+1365,bearing pump 3,pump bearing,1,7,178176,bearing pump 3|1,eval
+1366,bearing pump 3,pump bearing,1,7,217088,bearing pump 3|1,eval
+1367,bearing pump 3,pump bearing,1,8,10240,bearing pump 3|1,eval
+1368,bearing pump 3,pump bearing,1,8,24576,bearing pump 3|1,eval
+1369,bearing pump 3,pump bearing,1,8,45056,bearing pump 3|1,eval
+1370,bearing pump 3,pump bearing,1,8,75776,bearing pump 3|1,eval
+1371,bearing pump 3,pump bearing,1,8,108544,bearing pump 3|1,eval
+1372,bearing pump 3,pump bearing,1,8,147456,bearing pump 3|1,eval
+1373,bearing pump 3,pump bearing,1,8,153600,bearing pump 3|1,eval
+1374,bearing pump 3,pump bearing,1,9,43008,bearing pump 3|1,eval
+1375,bearing pump 3,pump bearing,1,9,47104,bearing pump 3|1,eval
+1376,bearing pump 3,pump bearing,1,9,67584,bearing pump 3|1,eval
+1377,bearing pump 3,pump bearing,1,9,69632,bearing pump 3|1,eval
+1378,bearing pump 3,pump bearing,1,9,184320,bearing pump 3|1,eval
+1379,bearing pump 3,pump bearing,1,9,194560,bearing pump 3|1,eval
+1380,bearing pump 3,pump bearing,2,10,8192,bearing pump 3|2,adapt
+1381,bearing pump 3,pump bearing,2,10,43008,bearing pump 3|2,adapt
+1382,bearing pump 3,pump bearing,2,10,69632,bearing pump 3|2,adapt
+1383,bearing pump 3,pump bearing,2,10,112640,bearing pump 3|2,adapt
+1384,bearing pump 3,pump bearing,2,10,151552,bearing pump 3|2,adapt
+1385,bearing pump 3,pump bearing,2,10,174080,bearing pump 3|2,adapt
+1386,bearing pump 3,pump bearing,2,10,186368,bearing pump 3|2,adapt
+1387,bearing pump 3,pump bearing,2,10,194560,bearing pump 3|2,adapt
+1388,bearing pump 3,pump bearing,2,10,225280,bearing pump 3|2,adapt
+1389,bearing pump 3,pump bearing,2,10,235520,bearing pump 3|2,adapt
+1390,bearing pump 3,pump bearing,2,11,12288,bearing pump 3|2,adapt
+1391,bearing pump 3,pump bearing,2,11,20480,bearing pump 3|2,adapt
+1392,bearing pump 3,pump bearing,2,11,63488,bearing pump 3|2,adapt
+1393,bearing pump 3,pump bearing,2,11,75776,bearing pump 3|2,adapt
+1394,bearing pump 3,pump bearing,2,11,90112,bearing pump 3|2,adapt
+1395,bearing pump 3,pump bearing,2,11,114688,bearing pump 3|2,adapt
+1396,bearing pump 3,pump bearing,2,11,120832,bearing pump 3|2,adapt
+1397,bearing pump 3,pump bearing,2,11,149504,bearing pump 3|2,adapt
+1398,bearing pump 3,pump bearing,2,11,165888,bearing pump 3|2,adapt
+1399,bearing pump 3,pump bearing,2,11,174080,bearing pump 3|2,adapt
+1400,bearing pump 3,pump bearing,2,11,186368,bearing pump 3|2,adapt
+1401,bearing pump 3,pump bearing,2,11,198656,bearing pump 3|2,adapt
+1402,bearing pump 3,pump bearing,2,11,200704,bearing pump 3|2,adapt
+1403,bearing pump 3,pump bearing,2,11,202752,bearing pump 3|2,adapt
+1404,bearing pump 3,pump bearing,2,12,0,bearing pump 3|2,adapt
+1405,bearing pump 3,pump bearing,2,12,14336,bearing pump 3|2,adapt
+1406,bearing pump 3,pump bearing,2,12,16384,bearing pump 3|2,adapt
+1407,bearing pump 3,pump bearing,2,12,22528,bearing pump 3|2,adapt
+1408,bearing pump 3,pump bearing,2,12,40960,bearing pump 3|2,adapt
+1409,bearing pump 3,pump bearing,2,12,45056,bearing pump 3|2,adapt
+1410,bearing pump 3,pump bearing,2,12,149504,bearing pump 3|2,adapt
+1411,bearing pump 3,pump bearing,2,12,167936,bearing pump 3|2,adapt
+1412,bearing pump 3,pump bearing,2,12,210944,bearing pump 3|2,adapt
+1413,bearing pump 3,pump bearing,2,12,219136,bearing pump 3|2,adapt
+1414,bearing pump 3,pump bearing,2,12,235520,bearing pump 3|2,adapt
+1415,bearing pump 3,pump bearing,2,13,45056,bearing pump 3|2,adapt
+1416,bearing pump 3,pump bearing,2,13,49152,bearing pump 3|2,adapt
+1417,bearing pump 3,pump bearing,2,13,83968,bearing pump 3|2,adapt
+1418,bearing pump 3,pump bearing,2,13,139264,bearing pump 3|2,adapt
+1419,bearing pump 3,pump bearing,2,13,151552,bearing pump 3|2,adapt
+1420,bearing pump 3,pump bearing,2,13,159744,bearing pump 3|2,adapt
+1421,bearing pump 3,pump bearing,2,13,161792,bearing pump 3|2,adapt
+1422,bearing pump 3,pump bearing,2,13,200704,bearing pump 3|2,adapt
+1423,bearing pump 3,pump bearing,2,13,212992,bearing pump 3|2,adapt
+1424,bearing pump 3,pump bearing,2,13,227328,bearing pump 3|2,adapt
+1425,bearing pump 3,pump bearing,2,13,235520,bearing pump 3|2,adapt
+1426,bearing pump 3,pump bearing,2,14,4096,bearing pump 3|2,adapt
+1427,bearing pump 3,pump bearing,2,14,22528,bearing pump 3|2,adapt
+1428,bearing pump 3,pump bearing,2,14,24576,bearing pump 3|2,adapt
+1429,bearing pump 3,pump bearing,2,14,55296,bearing pump 3|2,adapt
+1430,bearing pump 3,pump bearing,2,14,61440,bearing pump 3|2,adapt
+1431,bearing pump 3,pump bearing,2,14,90112,bearing pump 3|2,adapt
+1432,bearing pump 3,pump bearing,2,14,98304,bearing pump 3|2,adapt
+1433,bearing pump 3,pump bearing,2,14,104448,bearing pump 3|2,adapt
+1434,bearing pump 3,pump bearing,2,14,114688,bearing pump 3|2,adapt
+1435,bearing pump 3,pump bearing,2,14,139264,bearing pump 3|2,adapt
+1436,bearing pump 3,pump bearing,2,14,202752,bearing pump 3|2,adapt
+1437,bearing pump 3,pump bearing,2,14,215040,bearing pump 3|2,adapt
+1438,bearing pump 3,pump bearing,2,14,227328,bearing pump 3|2,adapt
+1439,bearing pump 3,pump bearing,2,14,229376,bearing pump 3|2,adapt
+1440,bearing bpfo 1,motor BPFO,0,0,24576,bearing bpfo 1|0,adapt
+1441,bearing bpfo 1,motor BPFO,0,0,83968,bearing bpfo 1|0,adapt
+1442,bearing bpfo 1,motor BPFO,0,0,86016,bearing bpfo 1|0,adapt
+1443,bearing bpfo 1,motor BPFO,0,0,90112,bearing bpfo 1|0,adapt
+1444,bearing bpfo 1,motor BPFO,0,0,114688,bearing bpfo 1|0,adapt
+1445,bearing bpfo 1,motor BPFO,0,0,186368,bearing bpfo 1|0,adapt
+1446,bearing bpfo 1,motor BPFO,0,0,198656,bearing bpfo 1|0,adapt
+1447,bearing bpfo 1,motor BPFO,0,0,225280,bearing bpfo 1|0,adapt
+1448,bearing bpfo 1,motor BPFO,0,0,237568,bearing bpfo 1|0,adapt
+1449,bearing bpfo 1,motor BPFO,0,1,51200,bearing bpfo 1|0,adapt
+1450,bearing bpfo 1,motor BPFO,0,1,100352,bearing bpfo 1|0,adapt
+1451,bearing bpfo 1,motor BPFO,0,1,161792,bearing bpfo 1|0,adapt
+1452,bearing bpfo 1,motor BPFO,0,1,186368,bearing bpfo 1|0,adapt
+1453,bearing bpfo 1,motor BPFO,0,1,198656,bearing bpfo 1|0,adapt
+1454,bearing bpfo 1,motor BPFO,0,2,20480,bearing bpfo 1|0,adapt
+1455,bearing bpfo 1,motor BPFO,0,2,36864,bearing bpfo 1|0,adapt
+1456,bearing bpfo 1,motor BPFO,0,2,100352,bearing bpfo 1|0,adapt
+1457,bearing bpfo 1,motor BPFO,0,2,112640,bearing bpfo 1|0,adapt
+1458,bearing bpfo 1,motor BPFO,0,2,153600,bearing bpfo 1|0,adapt
+1459,bearing bpfo 1,motor BPFO,0,2,206848,bearing bpfo 1|0,adapt
+1460,bearing bpfo 1,motor BPFO,0,2,215040,bearing bpfo 1|0,adapt
+1461,bearing bpfo 1,motor BPFO,0,2,233472,bearing bpfo 1|0,adapt
+1462,bearing bpfo 1,motor BPFO,0,3,8192,bearing bpfo 1|0,adapt
+1463,bearing bpfo 1,motor BPFO,0,3,12288,bearing bpfo 1|0,adapt
+1464,bearing bpfo 1,motor BPFO,0,3,18432,bearing bpfo 1|0,adapt
+1465,bearing bpfo 1,motor BPFO,0,3,26624,bearing bpfo 1|0,adapt
+1466,bearing bpfo 1,motor BPFO,0,3,34816,bearing bpfo 1|0,adapt
+1467,bearing bpfo 1,motor BPFO,0,3,51200,bearing bpfo 1|0,adapt
+1468,bearing bpfo 1,motor BPFO,0,3,65536,bearing bpfo 1|0,adapt
+1469,bearing bpfo 1,motor BPFO,0,3,77824,bearing bpfo 1|0,adapt
+1470,bearing bpfo 1,motor BPFO,0,3,90112,bearing bpfo 1|0,adapt
+1471,bearing bpfo 1,motor BPFO,0,3,92160,bearing bpfo 1|0,adapt
+1472,bearing bpfo 1,motor BPFO,0,3,131072,bearing bpfo 1|0,adapt
+1473,bearing bpfo 1,motor BPFO,0,3,133120,bearing bpfo 1|0,adapt
+1474,bearing bpfo 1,motor BPFO,0,3,165888,bearing bpfo 1|0,adapt
+1475,bearing bpfo 1,motor BPFO,0,3,196608,bearing bpfo 1|0,adapt
+1476,bearing bpfo 1,motor BPFO,0,3,229376,bearing bpfo 1|0,adapt
+1477,bearing bpfo 1,motor BPFO,0,4,67584,bearing bpfo 1|0,adapt
+1478,bearing bpfo 1,motor BPFO,0,4,86016,bearing bpfo 1|0,adapt
+1479,bearing bpfo 1,motor BPFO,0,4,92160,bearing bpfo 1|0,adapt
+1480,bearing bpfo 1,motor BPFO,0,4,98304,bearing bpfo 1|0,adapt
+1481,bearing bpfo 1,motor BPFO,0,4,106496,bearing bpfo 1|0,adapt
+1482,bearing bpfo 1,motor BPFO,0,4,137216,bearing bpfo 1|0,adapt
+1483,bearing bpfo 1,motor BPFO,0,4,153600,bearing bpfo 1|0,adapt
+1484,bearing bpfo 1,motor BPFO,0,4,159744,bearing bpfo 1|0,adapt
+1485,bearing bpfo 1,motor BPFO,0,4,169984,bearing bpfo 1|0,adapt
+1486,bearing bpfo 1,motor BPFO,0,4,210944,bearing bpfo 1|0,adapt
+1487,bearing bpfo 1,motor BPFO,0,4,231424,bearing bpfo 1|0,adapt
+1488,bearing bpfo 1,motor BPFO,1,5,16384,bearing bpfo 1|1,eval
+1489,bearing bpfo 1,motor BPFO,1,5,53248,bearing bpfo 1|1,eval
+1490,bearing bpfo 1,motor BPFO,1,5,59392,bearing bpfo 1|1,eval
+1491,bearing bpfo 1,motor BPFO,1,5,83968,bearing bpfo 1|1,eval
+1492,bearing bpfo 1,motor BPFO,1,5,86016,bearing bpfo 1|1,eval
+1493,bearing bpfo 1,motor BPFO,1,5,96256,bearing bpfo 1|1,eval
+1494,bearing bpfo 1,motor BPFO,1,5,106496,bearing bpfo 1|1,eval
+1495,bearing bpfo 1,motor BPFO,1,5,108544,bearing bpfo 1|1,eval
+1496,bearing bpfo 1,motor BPFO,1,5,114688,bearing bpfo 1|1,eval
+1497,bearing bpfo 1,motor BPFO,1,5,137216,bearing bpfo 1|1,eval
+1498,bearing bpfo 1,motor BPFO,1,5,145408,bearing bpfo 1|1,eval
+1499,bearing bpfo 1,motor BPFO,1,5,153600,bearing bpfo 1|1,eval
+1500,bearing bpfo 1,motor BPFO,1,5,188416,bearing bpfo 1|1,eval
+1501,bearing bpfo 1,motor BPFO,1,5,192512,bearing bpfo 1|1,eval
+1502,bearing bpfo 1,motor BPFO,1,5,194560,bearing bpfo 1|1,eval
+1503,bearing bpfo 1,motor BPFO,1,5,198656,bearing bpfo 1|1,eval
+1504,bearing bpfo 1,motor BPFO,1,5,217088,bearing bpfo 1|1,eval
+1505,bearing bpfo 1,motor BPFO,1,5,219136,bearing bpfo 1|1,eval
+1506,bearing bpfo 1,motor BPFO,1,6,4096,bearing bpfo 1|1,eval
+1507,bearing bpfo 1,motor BPFO,1,6,88064,bearing bpfo 1|1,eval
+1508,bearing bpfo 1,motor BPFO,1,6,102400,bearing bpfo 1|1,eval
+1509,bearing bpfo 1,motor BPFO,1,6,118784,bearing bpfo 1|1,eval
+1510,bearing bpfo 1,motor BPFO,1,6,133120,bearing bpfo 1|1,eval
+1511,bearing bpfo 1,motor BPFO,1,6,147456,bearing bpfo 1|1,eval
+1512,bearing bpfo 1,motor BPFO,1,6,153600,bearing bpfo 1|1,eval
+1513,bearing bpfo 1,motor BPFO,1,6,155648,bearing bpfo 1|1,eval
+1514,bearing bpfo 1,motor BPFO,1,6,174080,bearing bpfo 1|1,eval
+1515,bearing bpfo 1,motor BPFO,1,6,229376,bearing bpfo 1|1,eval
+1516,bearing bpfo 1,motor BPFO,1,7,10240,bearing bpfo 1|1,eval
+1517,bearing bpfo 1,motor BPFO,1,7,61440,bearing bpfo 1|1,eval
+1518,bearing bpfo 1,motor BPFO,1,7,102400,bearing bpfo 1|1,eval
+1519,bearing bpfo 1,motor BPFO,1,7,108544,bearing bpfo 1|1,eval
+1520,bearing bpfo 1,motor BPFO,1,7,161792,bearing bpfo 1|1,eval
+1521,bearing bpfo 1,motor BPFO,1,7,167936,bearing bpfo 1|1,eval
+1522,bearing bpfo 1,motor BPFO,1,7,184320,bearing bpfo 1|1,eval
+1523,bearing bpfo 1,motor BPFO,1,7,210944,bearing bpfo 1|1,eval
+1524,bearing bpfo 1,motor BPFO,1,8,4096,bearing bpfo 1|1,eval
+1525,bearing bpfo 1,motor BPFO,1,8,10240,bearing bpfo 1|1,eval
+1526,bearing bpfo 1,motor BPFO,1,8,36864,bearing bpfo 1|1,eval
+1527,bearing bpfo 1,motor BPFO,1,8,40960,bearing bpfo 1|1,eval
+1528,bearing bpfo 1,motor BPFO,1,8,86016,bearing bpfo 1|1,eval
+1529,bearing bpfo 1,motor BPFO,1,8,135168,bearing bpfo 1|1,eval
+1530,bearing bpfo 1,motor BPFO,1,8,167936,bearing bpfo 1|1,eval
+1531,bearing bpfo 1,motor BPFO,1,8,184320,bearing bpfo 1|1,eval
+1532,bearing bpfo 1,motor BPFO,1,8,200704,bearing bpfo 1|1,eval
+1533,bearing bpfo 1,motor BPFO,1,8,223232,bearing bpfo 1|1,eval
+1534,bearing bpfo 1,motor BPFO,1,8,235520,bearing bpfo 1|1,eval
+1535,bearing bpfo 1,motor BPFO,1,9,10240,bearing bpfo 1|1,eval
+1536,bearing bpfo 1,motor BPFO,1,9,34816,bearing bpfo 1|1,eval
+1537,bearing bpfo 1,motor BPFO,1,9,102400,bearing bpfo 1|1,eval
+1538,bearing bpfo 1,motor BPFO,1,9,110592,bearing bpfo 1|1,eval
+1539,bearing bpfo 1,motor BPFO,1,9,114688,bearing bpfo 1|1,eval
+1540,bearing bpfo 1,motor BPFO,1,9,133120,bearing bpfo 1|1,eval
+1541,bearing bpfo 1,motor BPFO,1,9,157696,bearing bpfo 1|1,eval
+1542,bearing bpfo 1,motor BPFO,1,9,204800,bearing bpfo 1|1,eval
+1543,bearing bpfo 1,motor BPFO,1,9,210944,bearing bpfo 1|1,eval
+1544,bearing bpfo 1,motor BPFO,1,9,212992,bearing bpfo 1|1,eval
+1545,bearing bpfo 1,motor BPFO,2,10,2048,bearing bpfo 1|2,adapt
+1546,bearing bpfo 1,motor BPFO,2,10,12288,bearing bpfo 1|2,adapt
+1547,bearing bpfo 1,motor BPFO,2,10,43008,bearing bpfo 1|2,adapt
+1548,bearing bpfo 1,motor BPFO,2,10,81920,bearing bpfo 1|2,adapt
+1549,bearing bpfo 1,motor BPFO,2,10,88064,bearing bpfo 1|2,adapt
+1550,bearing bpfo 1,motor BPFO,2,10,98304,bearing bpfo 1|2,adapt
+1551,bearing bpfo 1,motor BPFO,2,10,133120,bearing bpfo 1|2,adapt
+1552,bearing bpfo 1,motor BPFO,2,10,155648,bearing bpfo 1|2,adapt
+1553,bearing bpfo 1,motor BPFO,2,10,215040,bearing bpfo 1|2,adapt
+1554,bearing bpfo 1,motor BPFO,2,11,12288,bearing bpfo 1|2,adapt
+1555,bearing bpfo 1,motor BPFO,2,11,16384,bearing bpfo 1|2,adapt
+1556,bearing bpfo 1,motor BPFO,2,11,24576,bearing bpfo 1|2,adapt
+1557,bearing bpfo 1,motor BPFO,2,11,135168,bearing bpfo 1|2,adapt
+1558,bearing bpfo 1,motor BPFO,2,11,139264,bearing bpfo 1|2,adapt
+1559,bearing bpfo 1,motor BPFO,2,11,157696,bearing bpfo 1|2,adapt
+1560,bearing bpfo 1,motor BPFO,2,11,186368,bearing bpfo 1|2,adapt
+1561,bearing bpfo 1,motor BPFO,2,11,200704,bearing bpfo 1|2,adapt
+1562,bearing bpfo 1,motor BPFO,2,11,215040,bearing bpfo 1|2,adapt
+1563,bearing bpfo 1,motor BPFO,2,11,221184,bearing bpfo 1|2,adapt
+1564,bearing bpfo 1,motor BPFO,2,12,4096,bearing bpfo 1|2,adapt
+1565,bearing bpfo 1,motor BPFO,2,12,24576,bearing bpfo 1|2,adapt
+1566,bearing bpfo 1,motor BPFO,2,12,32768,bearing bpfo 1|2,adapt
+1567,bearing bpfo 1,motor BPFO,2,12,36864,bearing bpfo 1|2,adapt
+1568,bearing bpfo 1,motor BPFO,2,12,55296,bearing bpfo 1|2,adapt
+1569,bearing bpfo 1,motor BPFO,2,12,67584,bearing bpfo 1|2,adapt
+1570,bearing bpfo 1,motor BPFO,2,12,86016,bearing bpfo 1|2,adapt
+1571,bearing bpfo 1,motor BPFO,2,12,124928,bearing bpfo 1|2,adapt
+1572,bearing bpfo 1,motor BPFO,2,12,126976,bearing bpfo 1|2,adapt
+1573,bearing bpfo 1,motor BPFO,2,12,129024,bearing bpfo 1|2,adapt
+1574,bearing bpfo 1,motor BPFO,2,12,135168,bearing bpfo 1|2,adapt
+1575,bearing bpfo 1,motor BPFO,2,12,163840,bearing bpfo 1|2,adapt
+1576,bearing bpfo 1,motor BPFO,2,12,182272,bearing bpfo 1|2,adapt
+1577,bearing bpfo 1,motor BPFO,2,12,202752,bearing bpfo 1|2,adapt
+1578,bearing bpfo 1,motor BPFO,2,12,210944,bearing bpfo 1|2,adapt
+1579,bearing bpfo 1,motor BPFO,2,12,235520,bearing bpfo 1|2,adapt
+1580,bearing bpfo 1,motor BPFO,2,13,4096,bearing bpfo 1|2,adapt
+1581,bearing bpfo 1,motor BPFO,2,13,59392,bearing bpfo 1|2,adapt
+1582,bearing bpfo 1,motor BPFO,2,13,65536,bearing bpfo 1|2,adapt
+1583,bearing bpfo 1,motor BPFO,2,13,108544,bearing bpfo 1|2,adapt
+1584,bearing bpfo 1,motor BPFO,2,13,141312,bearing bpfo 1|2,adapt
+1585,bearing bpfo 1,motor BPFO,2,13,157696,bearing bpfo 1|2,adapt
+1586,bearing bpfo 1,motor BPFO,2,13,186368,bearing bpfo 1|2,adapt
+1587,bearing bpfo 1,motor BPFO,2,13,190464,bearing bpfo 1|2,adapt
+1588,bearing bpfo 1,motor BPFO,2,13,192512,bearing bpfo 1|2,adapt
+1589,bearing bpfo 1,motor BPFO,2,13,215040,bearing bpfo 1|2,adapt
+1590,bearing bpfo 1,motor BPFO,2,14,8192,bearing bpfo 1|2,adapt
+1591,bearing bpfo 1,motor BPFO,2,14,45056,bearing bpfo 1|2,adapt
+1592,bearing bpfo 1,motor BPFO,2,14,49152,bearing bpfo 1|2,adapt
+1593,bearing bpfo 1,motor BPFO,2,14,63488,bearing bpfo 1|2,adapt
+1594,bearing bpfo 1,motor BPFO,2,14,114688,bearing bpfo 1|2,adapt
+1595,bearing bpfo 1,motor BPFO,2,14,135168,bearing bpfo 1|2,adapt
+1596,bearing bpfo 1,motor BPFO,2,14,139264,bearing bpfo 1|2,adapt
+1597,bearing bpfo 1,motor BPFO,2,14,145408,bearing bpfo 1|2,adapt
+1598,bearing bpfo 1,motor BPFO,2,14,188416,bearing bpfo 1|2,adapt
+1599,bearing bpfo 1,motor BPFO,2,14,200704,bearing bpfo 1|2,adapt
+1600,bearing bpfo 2,motor BPFO,0,0,59392,bearing bpfo 2|0,adapt
+1601,bearing bpfo 2,motor BPFO,0,0,67584,bearing bpfo 2|0,adapt
+1602,bearing bpfo 2,motor BPFO,0,0,151552,bearing bpfo 2|0,adapt
+1603,bearing bpfo 2,motor BPFO,0,0,172032,bearing bpfo 2|0,adapt
+1604,bearing bpfo 2,motor BPFO,0,0,212992,bearing bpfo 2|0,adapt
+1605,bearing bpfo 2,motor BPFO,0,0,227328,bearing bpfo 2|0,adapt
+1606,bearing bpfo 2,motor BPFO,0,1,26624,bearing bpfo 2|0,adapt
+1607,bearing bpfo 2,motor BPFO,0,1,40960,bearing bpfo 2|0,adapt
+1608,bearing bpfo 2,motor BPFO,0,1,57344,bearing bpfo 2|0,adapt
+1609,bearing bpfo 2,motor BPFO,0,1,86016,bearing bpfo 2|0,adapt
+1610,bearing bpfo 2,motor BPFO,0,1,112640,bearing bpfo 2|0,adapt
+1611,bearing bpfo 2,motor BPFO,0,1,169984,bearing bpfo 2|0,adapt
+1612,bearing bpfo 2,motor BPFO,0,1,219136,bearing bpfo 2|0,adapt
+1613,bearing bpfo 2,motor BPFO,0,2,26624,bearing bpfo 2|0,adapt
+1614,bearing bpfo 2,motor BPFO,0,2,30720,bearing bpfo 2|0,adapt
+1615,bearing bpfo 2,motor BPFO,0,2,63488,bearing bpfo 2|0,adapt
+1616,bearing bpfo 2,motor BPFO,0,2,108544,bearing bpfo 2|0,adapt
+1617,bearing bpfo 2,motor BPFO,0,2,112640,bearing bpfo 2|0,adapt
+1618,bearing bpfo 2,motor BPFO,0,2,129024,bearing bpfo 2|0,adapt
+1619,bearing bpfo 2,motor BPFO,0,2,165888,bearing bpfo 2|0,adapt
+1620,bearing bpfo 2,motor BPFO,0,2,172032,bearing bpfo 2|0,adapt
+1621,bearing bpfo 2,motor BPFO,0,2,188416,bearing bpfo 2|0,adapt
+1622,bearing bpfo 2,motor BPFO,0,2,202752,bearing bpfo 2|0,adapt
+1623,bearing bpfo 2,motor BPFO,0,3,20480,bearing bpfo 2|0,adapt
+1624,bearing bpfo 2,motor BPFO,0,3,55296,bearing bpfo 2|0,adapt
+1625,bearing bpfo 2,motor BPFO,0,3,63488,bearing bpfo 2|0,adapt
+1626,bearing bpfo 2,motor BPFO,0,3,75776,bearing bpfo 2|0,adapt
+1627,bearing bpfo 2,motor BPFO,0,3,100352,bearing bpfo 2|0,adapt
+1628,bearing bpfo 2,motor BPFO,0,3,120832,bearing bpfo 2|0,adapt
+1629,bearing bpfo 2,motor BPFO,0,3,141312,bearing bpfo 2|0,adapt
+1630,bearing bpfo 2,motor BPFO,0,3,155648,bearing bpfo 2|0,adapt
+1631,bearing bpfo 2,motor BPFO,0,3,161792,bearing bpfo 2|0,adapt
+1632,bearing bpfo 2,motor BPFO,0,3,180224,bearing bpfo 2|0,adapt
+1633,bearing bpfo 2,motor BPFO,0,3,196608,bearing bpfo 2|0,adapt
+1634,bearing bpfo 2,motor BPFO,0,3,204800,bearing bpfo 2|0,adapt
+1635,bearing bpfo 2,motor BPFO,0,3,231424,bearing bpfo 2|0,adapt
+1636,bearing bpfo 2,motor BPFO,0,4,43008,bearing bpfo 2|0,adapt
+1637,bearing bpfo 2,motor BPFO,0,4,81920,bearing bpfo 2|0,adapt
+1638,bearing bpfo 2,motor BPFO,0,4,141312,bearing bpfo 2|0,adapt
+1639,bearing bpfo 2,motor BPFO,0,4,155648,bearing bpfo 2|0,adapt
+1640,bearing bpfo 2,motor BPFO,0,4,186368,bearing bpfo 2|0,adapt
+1641,bearing bpfo 2,motor BPFO,0,4,229376,bearing bpfo 2|0,adapt
+1642,bearing bpfo 2,motor BPFO,1,5,47104,bearing bpfo 2|1,eval
+1643,bearing bpfo 2,motor BPFO,1,5,69632,bearing bpfo 2|1,eval
+1644,bearing bpfo 2,motor BPFO,1,5,102400,bearing bpfo 2|1,eval
+1645,bearing bpfo 2,motor BPFO,1,5,149504,bearing bpfo 2|1,eval
+1646,bearing bpfo 2,motor BPFO,1,5,186368,bearing bpfo 2|1,eval
+1647,bearing bpfo 2,motor BPFO,1,5,231424,bearing bpfo 2|1,eval
+1648,bearing bpfo 2,motor BPFO,1,6,0,bearing bpfo 2|1,eval
+1649,bearing bpfo 2,motor BPFO,1,6,43008,bearing bpfo 2|1,eval
+1650,bearing bpfo 2,motor BPFO,1,6,75776,bearing bpfo 2|1,eval
+1651,bearing bpfo 2,motor BPFO,1,6,88064,bearing bpfo 2|1,eval
+1652,bearing bpfo 2,motor BPFO,1,6,153600,bearing bpfo 2|1,eval
+1653,bearing bpfo 2,motor BPFO,1,6,208896,bearing bpfo 2|1,eval
+1654,bearing bpfo 2,motor BPFO,1,7,2048,bearing bpfo 2|1,eval
+1655,bearing bpfo 2,motor BPFO,1,7,10240,bearing bpfo 2|1,eval
+1656,bearing bpfo 2,motor BPFO,1,7,38912,bearing bpfo 2|1,eval
+1657,bearing bpfo 2,motor BPFO,1,7,43008,bearing bpfo 2|1,eval
+1658,bearing bpfo 2,motor BPFO,1,7,49152,bearing bpfo 2|1,eval
+1659,bearing bpfo 2,motor BPFO,1,7,71680,bearing bpfo 2|1,eval
+1660,bearing bpfo 2,motor BPFO,1,7,102400,bearing bpfo 2|1,eval
+1661,bearing bpfo 2,motor BPFO,1,7,149504,bearing bpfo 2|1,eval
+1662,bearing bpfo 2,motor BPFO,1,7,194560,bearing bpfo 2|1,eval
+1663,bearing bpfo 2,motor BPFO,1,7,202752,bearing bpfo 2|1,eval
+1664,bearing bpfo 2,motor BPFO,1,7,204800,bearing bpfo 2|1,eval
+1665,bearing bpfo 2,motor BPFO,1,7,210944,bearing bpfo 2|1,eval
+1666,bearing bpfo 2,motor BPFO,1,7,231424,bearing bpfo 2|1,eval
+1667,bearing bpfo 2,motor BPFO,1,8,20480,bearing bpfo 2|1,eval
+1668,bearing bpfo 2,motor BPFO,1,8,45056,bearing bpfo 2|1,eval
+1669,bearing bpfo 2,motor BPFO,1,8,55296,bearing bpfo 2|1,eval
+1670,bearing bpfo 2,motor BPFO,1,8,92160,bearing bpfo 2|1,eval
+1671,bearing bpfo 2,motor BPFO,1,8,106496,bearing bpfo 2|1,eval
+1672,bearing bpfo 2,motor BPFO,1,8,149504,bearing bpfo 2|1,eval
+1673,bearing bpfo 2,motor BPFO,1,8,198656,bearing bpfo 2|1,eval
+1674,bearing bpfo 2,motor BPFO,1,8,223232,bearing bpfo 2|1,eval
+1675,bearing bpfo 2,motor BPFO,1,9,16384,bearing bpfo 2|1,eval
+1676,bearing bpfo 2,motor BPFO,1,9,86016,bearing bpfo 2|1,eval
+1677,bearing bpfo 2,motor BPFO,1,9,129024,bearing bpfo 2|1,eval
+1678,bearing bpfo 2,motor BPFO,1,9,141312,bearing bpfo 2|1,eval
+1679,bearing bpfo 2,motor BPFO,1,9,200704,bearing bpfo 2|1,eval
+1680,bearing bpfo 2,motor BPFO,2,10,38912,bearing bpfo 2|2,adapt
+1681,bearing bpfo 2,motor BPFO,2,10,65536,bearing bpfo 2|2,adapt
+1682,bearing bpfo 2,motor BPFO,2,10,86016,bearing bpfo 2|2,adapt
+1683,bearing bpfo 2,motor BPFO,2,10,104448,bearing bpfo 2|2,adapt
+1684,bearing bpfo 2,motor BPFO,2,10,145408,bearing bpfo 2|2,adapt
+1685,bearing bpfo 2,motor BPFO,2,10,229376,bearing bpfo 2|2,adapt
+1686,bearing bpfo 2,motor BPFO,2,11,24576,bearing bpfo 2|2,adapt
+1687,bearing bpfo 2,motor BPFO,2,11,49152,bearing bpfo 2|2,adapt
+1688,bearing bpfo 2,motor BPFO,2,11,67584,bearing bpfo 2|2,adapt
+1689,bearing bpfo 2,motor BPFO,2,11,178176,bearing bpfo 2|2,adapt
+1690,bearing bpfo 2,motor BPFO,2,11,219136,bearing bpfo 2|2,adapt
+1691,bearing bpfo 2,motor BPFO,2,11,235520,bearing bpfo 2|2,adapt
+1692,bearing bpfo 2,motor BPFO,2,12,4096,bearing bpfo 2|2,adapt
+1693,bearing bpfo 2,motor BPFO,2,12,34816,bearing bpfo 2|2,adapt
+1694,bearing bpfo 2,motor BPFO,2,12,49152,bearing bpfo 2|2,adapt
+1695,bearing bpfo 2,motor BPFO,2,12,55296,bearing bpfo 2|2,adapt
+1696,bearing bpfo 2,motor BPFO,2,12,120832,bearing bpfo 2|2,adapt
+1697,bearing bpfo 2,motor BPFO,2,12,124928,bearing bpfo 2|2,adapt
+1698,bearing bpfo 2,motor BPFO,2,12,153600,bearing bpfo 2|2,adapt
+1699,bearing bpfo 2,motor BPFO,2,12,155648,bearing bpfo 2|2,adapt
+1700,bearing bpfo 2,motor BPFO,2,12,167936,bearing bpfo 2|2,adapt
+1701,bearing bpfo 2,motor BPFO,2,12,188416,bearing bpfo 2|2,adapt
+1702,bearing bpfo 2,motor BPFO,2,12,192512,bearing bpfo 2|2,adapt
+1703,bearing bpfo 2,motor BPFO,2,12,237568,bearing bpfo 2|2,adapt
+1704,bearing bpfo 2,motor BPFO,2,13,24576,bearing bpfo 2|2,adapt
+1705,bearing bpfo 2,motor BPFO,2,13,38912,bearing bpfo 2|2,adapt
+1706,bearing bpfo 2,motor BPFO,2,13,49152,bearing bpfo 2|2,adapt
+1707,bearing bpfo 2,motor BPFO,2,13,73728,bearing bpfo 2|2,adapt
+1708,bearing bpfo 2,motor BPFO,2,13,108544,bearing bpfo 2|2,adapt
+1709,bearing bpfo 2,motor BPFO,2,13,178176,bearing bpfo 2|2,adapt
+1710,bearing bpfo 2,motor BPFO,2,13,206848,bearing bpfo 2|2,adapt
+1711,bearing bpfo 2,motor BPFO,2,13,210944,bearing bpfo 2|2,adapt
+1712,bearing bpfo 2,motor BPFO,2,13,212992,bearing bpfo 2|2,adapt
+1713,bearing bpfo 2,motor BPFO,2,14,12288,bearing bpfo 2|2,adapt
+1714,bearing bpfo 2,motor BPFO,2,14,26624,bearing bpfo 2|2,adapt
+1715,bearing bpfo 2,motor BPFO,2,14,53248,bearing bpfo 2|2,adapt
+1716,bearing bpfo 2,motor BPFO,2,14,96256,bearing bpfo 2|2,adapt
+1717,bearing bpfo 2,motor BPFO,2,14,204800,bearing bpfo 2|2,adapt
+1718,bearing bpfo 2,motor BPFO,3,15,16384,bearing bpfo 2|3,eval
+1719,bearing bpfo 2,motor BPFO,3,15,49152,bearing bpfo 2|3,eval
+1720,bearing bpfo 2,motor BPFO,3,15,77824,bearing bpfo 2|3,eval
+1721,bearing bpfo 2,motor BPFO,3,15,98304,bearing bpfo 2|3,eval
+1722,bearing bpfo 2,motor BPFO,3,15,118784,bearing bpfo 2|3,eval
+1723,bearing bpfo 2,motor BPFO,3,15,141312,bearing bpfo 2|3,eval
+1724,bearing bpfo 2,motor BPFO,3,15,145408,bearing bpfo 2|3,eval
+1725,bearing bpfo 2,motor BPFO,3,15,194560,bearing bpfo 2|3,eval
+1726,bearing bpfo 2,motor BPFO,3,15,210944,bearing bpfo 2|3,eval
+1727,bearing bpfo 2,motor BPFO,3,15,227328,bearing bpfo 2|3,eval
+1728,bearing bpfo 2,motor BPFO,3,15,237568,bearing bpfo 2|3,eval
+1729,bearing bpfo 2,motor BPFO,3,16,18432,bearing bpfo 2|3,eval
+1730,bearing bpfo 2,motor BPFO,3,16,34816,bearing bpfo 2|3,eval
+1731,bearing bpfo 2,motor BPFO,3,16,38912,bearing bpfo 2|3,eval
+1732,bearing bpfo 2,motor BPFO,3,16,73728,bearing bpfo 2|3,eval
+1733,bearing bpfo 2,motor BPFO,3,16,122880,bearing bpfo 2|3,eval
+1734,bearing bpfo 2,motor BPFO,3,16,163840,bearing bpfo 2|3,eval
+1735,bearing bpfo 2,motor BPFO,3,16,167936,bearing bpfo 2|3,eval
+1736,bearing bpfo 2,motor BPFO,3,16,172032,bearing bpfo 2|3,eval
+1737,bearing bpfo 2,motor BPFO,3,16,184320,bearing bpfo 2|3,eval
+1738,bearing bpfo 2,motor BPFO,3,16,196608,bearing bpfo 2|3,eval
+1739,bearing bpfo 2,motor BPFO,3,16,206848,bearing bpfo 2|3,eval
+1740,bearing bpfo 2,motor BPFO,3,16,210944,bearing bpfo 2|3,eval
+1741,bearing bpfo 2,motor BPFO,3,16,217088,bearing bpfo 2|3,eval
+1742,bearing bpfo 2,motor BPFO,3,16,233472,bearing bpfo 2|3,eval
+1743,bearing bpfo 2,motor BPFO,3,17,30720,bearing bpfo 2|3,eval
+1744,bearing bpfo 2,motor BPFO,3,17,40960,bearing bpfo 2|3,eval
+1745,bearing bpfo 2,motor BPFO,3,17,51200,bearing bpfo 2|3,eval
+1746,bearing bpfo 2,motor BPFO,3,17,55296,bearing bpfo 2|3,eval
+1747,bearing bpfo 2,motor BPFO,3,17,57344,bearing bpfo 2|3,eval
+1748,bearing bpfo 2,motor BPFO,3,17,77824,bearing bpfo 2|3,eval
+1749,bearing bpfo 2,motor BPFO,3,17,178176,bearing bpfo 2|3,eval
+1750,bearing bpfo 2,motor BPFO,3,18,6144,bearing bpfo 2|3,eval
+1751,bearing bpfo 2,motor BPFO,3,18,16384,bearing bpfo 2|3,eval
+1752,bearing bpfo 2,motor BPFO,3,18,192512,bearing bpfo 2|3,eval
+1753,bearing bpfo 2,motor BPFO,3,18,219136,bearing bpfo 2|3,eval
+1754,bearing bpfo 2,motor BPFO,3,19,18432,bearing bpfo 2|3,eval
+1755,bearing bpfo 2,motor BPFO,3,19,22528,bearing bpfo 2|3,eval
+1756,bearing bpfo 2,motor BPFO,3,19,38912,bearing bpfo 2|3,eval
+1757,bearing bpfo 2,motor BPFO,3,19,90112,bearing bpfo 2|3,eval
+1758,bearing bpfo 2,motor BPFO,3,19,180224,bearing bpfo 2|3,eval
+1759,bearing bpfo 2,motor BPFO,3,19,215040,bearing bpfo 2|3,eval
+1760,bearing bpfo 3,motor BPFO,0,0,16384,bearing bpfo 3|0,adapt
+1761,bearing bpfo 3,motor BPFO,0,0,22528,bearing bpfo 3|0,adapt
+1762,bearing bpfo 3,motor BPFO,0,0,71680,bearing bpfo 3|0,adapt
+1763,bearing bpfo 3,motor BPFO,0,0,73728,bearing bpfo 3|0,adapt
+1764,bearing bpfo 3,motor BPFO,0,0,122880,bearing bpfo 3|0,adapt
+1765,bearing bpfo 3,motor BPFO,0,0,139264,bearing bpfo 3|0,adapt
+1766,bearing bpfo 3,motor BPFO,0,0,157696,bearing bpfo 3|0,adapt
+1767,bearing bpfo 3,motor BPFO,0,0,165888,bearing bpfo 3|0,adapt
+1768,bearing bpfo 3,motor BPFO,0,0,176128,bearing bpfo 3|0,adapt
+1769,bearing bpfo 3,motor BPFO,0,0,182272,bearing bpfo 3|0,adapt
+1770,bearing bpfo 3,motor BPFO,0,0,186368,bearing bpfo 3|0,adapt
+1771,bearing bpfo 3,motor BPFO,0,1,22528,bearing bpfo 3|0,adapt
+1772,bearing bpfo 3,motor BPFO,0,1,86016,bearing bpfo 3|0,adapt
+1773,bearing bpfo 3,motor BPFO,0,1,110592,bearing bpfo 3|0,adapt
+1774,bearing bpfo 3,motor BPFO,0,1,204800,bearing bpfo 3|0,adapt
+1775,bearing bpfo 3,motor BPFO,0,2,0,bearing bpfo 3|0,adapt
+1776,bearing bpfo 3,motor BPFO,0,2,34816,bearing bpfo 3|0,adapt
+1777,bearing bpfo 3,motor BPFO,0,2,40960,bearing bpfo 3|0,adapt
+1778,bearing bpfo 3,motor BPFO,0,3,4096,bearing bpfo 3|0,adapt
+1779,bearing bpfo 3,motor BPFO,0,3,47104,bearing bpfo 3|0,adapt
+1780,bearing bpfo 3,motor BPFO,0,3,61440,bearing bpfo 3|0,adapt
+1781,bearing bpfo 3,motor BPFO,0,3,77824,bearing bpfo 3|0,adapt
+1782,bearing bpfo 3,motor BPFO,0,3,188416,bearing bpfo 3|0,adapt
+1783,bearing bpfo 3,motor BPFO,0,3,231424,bearing bpfo 3|0,adapt
+1784,bearing bpfo 3,motor BPFO,0,4,2048,bearing bpfo 3|0,adapt
+1785,bearing bpfo 3,motor BPFO,0,4,4096,bearing bpfo 3|0,adapt
+1786,bearing bpfo 3,motor BPFO,0,4,8192,bearing bpfo 3|0,adapt
+1787,bearing bpfo 3,motor BPFO,0,4,51200,bearing bpfo 3|0,adapt
+1788,bearing bpfo 3,motor BPFO,0,4,83968,bearing bpfo 3|0,adapt
+1789,bearing bpfo 3,motor BPFO,0,4,108544,bearing bpfo 3|0,adapt
+1790,bearing bpfo 3,motor BPFO,0,4,110592,bearing bpfo 3|0,adapt
+1791,bearing bpfo 3,motor BPFO,0,4,133120,bearing bpfo 3|0,adapt
+1792,bearing bpfo 3,motor BPFO,0,4,137216,bearing bpfo 3|0,adapt
+1793,bearing bpfo 3,motor BPFO,0,4,141312,bearing bpfo 3|0,adapt
+1794,bearing bpfo 3,motor BPFO,0,4,157696,bearing bpfo 3|0,adapt
+1795,bearing bpfo 3,motor BPFO,0,4,210944,bearing bpfo 3|0,adapt
+1796,bearing bpfo 3,motor BPFO,0,4,229376,bearing bpfo 3|0,adapt
+1797,bearing bpfo 3,motor BPFO,1,5,32768,bearing bpfo 3|1,eval
+1798,bearing bpfo 3,motor BPFO,1,5,53248,bearing bpfo 3|1,eval
+1799,bearing bpfo 3,motor BPFO,1,5,61440,bearing bpfo 3|1,eval
+1800,bearing bpfo 3,motor BPFO,1,5,69632,bearing bpfo 3|1,eval
+1801,bearing bpfo 3,motor BPFO,1,5,79872,bearing bpfo 3|1,eval
+1802,bearing bpfo 3,motor BPFO,1,5,135168,bearing bpfo 3|1,eval
+1803,bearing bpfo 3,motor BPFO,1,5,153600,bearing bpfo 3|1,eval
+1804,bearing bpfo 3,motor BPFO,1,5,155648,bearing bpfo 3|1,eval
+1805,bearing bpfo 3,motor BPFO,1,5,169984,bearing bpfo 3|1,eval
+1806,bearing bpfo 3,motor BPFO,1,5,186368,bearing bpfo 3|1,eval
+1807,bearing bpfo 3,motor BPFO,1,5,206848,bearing bpfo 3|1,eval
+1808,bearing bpfo 3,motor BPFO,1,5,237568,bearing bpfo 3|1,eval
+1809,bearing bpfo 3,motor BPFO,1,6,6144,bearing bpfo 3|1,eval
+1810,bearing bpfo 3,motor BPFO,1,6,55296,bearing bpfo 3|1,eval
+1811,bearing bpfo 3,motor BPFO,1,6,98304,bearing bpfo 3|1,eval
+1812,bearing bpfo 3,motor BPFO,1,6,145408,bearing bpfo 3|1,eval
+1813,bearing bpfo 3,motor BPFO,1,6,182272,bearing bpfo 3|1,eval
+1814,bearing bpfo 3,motor BPFO,1,7,28672,bearing bpfo 3|1,eval
+1815,bearing bpfo 3,motor BPFO,1,7,34816,bearing bpfo 3|1,eval
+1816,bearing bpfo 3,motor BPFO,1,7,98304,bearing bpfo 3|1,eval
+1817,bearing bpfo 3,motor BPFO,1,7,129024,bearing bpfo 3|1,eval
+1818,bearing bpfo 3,motor BPFO,1,7,167936,bearing bpfo 3|1,eval
+1819,bearing bpfo 3,motor BPFO,1,7,231424,bearing bpfo 3|1,eval
+1820,bearing bpfo 3,motor BPFO,1,8,12288,bearing bpfo 3|1,eval
+1821,bearing bpfo 3,motor BPFO,1,8,18432,bearing bpfo 3|1,eval
+1822,bearing bpfo 3,motor BPFO,1,8,32768,bearing bpfo 3|1,eval
+1823,bearing bpfo 3,motor BPFO,1,8,53248,bearing bpfo 3|1,eval
+1824,bearing bpfo 3,motor BPFO,1,8,77824,bearing bpfo 3|1,eval
+1825,bearing bpfo 3,motor BPFO,1,8,118784,bearing bpfo 3|1,eval
+1826,bearing bpfo 3,motor BPFO,1,8,120832,bearing bpfo 3|1,eval
+1827,bearing bpfo 3,motor BPFO,1,8,122880,bearing bpfo 3|1,eval
+1828,bearing bpfo 3,motor BPFO,1,8,151552,bearing bpfo 3|1,eval
+1829,bearing bpfo 3,motor BPFO,1,8,174080,bearing bpfo 3|1,eval
+1830,bearing bpfo 3,motor BPFO,1,8,182272,bearing bpfo 3|1,eval
+1831,bearing bpfo 3,motor BPFO,1,8,198656,bearing bpfo 3|1,eval
+1832,bearing bpfo 3,motor BPFO,1,8,212992,bearing bpfo 3|1,eval
+1833,bearing bpfo 3,motor BPFO,1,9,32768,bearing bpfo 3|1,eval
+1834,bearing bpfo 3,motor BPFO,1,9,40960,bearing bpfo 3|1,eval
+1835,bearing bpfo 3,motor BPFO,1,9,45056,bearing bpfo 3|1,eval
+1836,bearing bpfo 3,motor BPFO,1,9,51200,bearing bpfo 3|1,eval
+1837,bearing bpfo 3,motor BPFO,2,10,30720,bearing bpfo 3|2,adapt
+1838,bearing bpfo 3,motor BPFO,2,10,43008,bearing bpfo 3|2,adapt
+1839,bearing bpfo 3,motor BPFO,2,10,67584,bearing bpfo 3|2,adapt
+1840,bearing bpfo 3,motor BPFO,2,10,108544,bearing bpfo 3|2,adapt
+1841,bearing bpfo 3,motor BPFO,2,10,120832,bearing bpfo 3|2,adapt
+1842,bearing bpfo 3,motor BPFO,2,10,145408,bearing bpfo 3|2,adapt
+1843,bearing bpfo 3,motor BPFO,2,10,215040,bearing bpfo 3|2,adapt
+1844,bearing bpfo 3,motor BPFO,2,11,14336,bearing bpfo 3|2,adapt
+1845,bearing bpfo 3,motor BPFO,2,11,18432,bearing bpfo 3|2,adapt
+1846,bearing bpfo 3,motor BPFO,2,11,30720,bearing bpfo 3|2,adapt
+1847,bearing bpfo 3,motor BPFO,2,11,53248,bearing bpfo 3|2,adapt
+1848,bearing bpfo 3,motor BPFO,2,11,67584,bearing bpfo 3|2,adapt
+1849,bearing bpfo 3,motor BPFO,2,11,71680,bearing bpfo 3|2,adapt
+1850,bearing bpfo 3,motor BPFO,2,11,75776,bearing bpfo 3|2,adapt
+1851,bearing bpfo 3,motor BPFO,2,11,92160,bearing bpfo 3|2,adapt
+1852,bearing bpfo 3,motor BPFO,2,11,96256,bearing bpfo 3|2,adapt
+1853,bearing bpfo 3,motor BPFO,2,11,231424,bearing bpfo 3|2,adapt
+1854,bearing bpfo 3,motor BPFO,2,12,10240,bearing bpfo 3|2,adapt
+1855,bearing bpfo 3,motor BPFO,2,12,30720,bearing bpfo 3|2,adapt
+1856,bearing bpfo 3,motor BPFO,2,12,69632,bearing bpfo 3|2,adapt
+1857,bearing bpfo 3,motor BPFO,2,12,102400,bearing bpfo 3|2,adapt
+1858,bearing bpfo 3,motor BPFO,2,12,131072,bearing bpfo 3|2,adapt
+1859,bearing bpfo 3,motor BPFO,2,12,159744,bearing bpfo 3|2,adapt
+1860,bearing bpfo 3,motor BPFO,2,12,165888,bearing bpfo 3|2,adapt
+1861,bearing bpfo 3,motor BPFO,2,12,217088,bearing bpfo 3|2,adapt
+1862,bearing bpfo 3,motor BPFO,2,13,6144,bearing bpfo 3|2,adapt
+1863,bearing bpfo 3,motor BPFO,2,13,12288,bearing bpfo 3|2,adapt
+1864,bearing bpfo 3,motor BPFO,2,13,36864,bearing bpfo 3|2,adapt
+1865,bearing bpfo 3,motor BPFO,2,13,83968,bearing bpfo 3|2,adapt
+1866,bearing bpfo 3,motor BPFO,2,13,114688,bearing bpfo 3|2,adapt
+1867,bearing bpfo 3,motor BPFO,2,13,149504,bearing bpfo 3|2,adapt
+1868,bearing bpfo 3,motor BPFO,2,13,184320,bearing bpfo 3|2,adapt
+1869,bearing bpfo 3,motor BPFO,2,13,229376,bearing bpfo 3|2,adapt
+1870,bearing bpfo 3,motor BPFO,2,13,235520,bearing bpfo 3|2,adapt
+1871,bearing bpfo 3,motor BPFO,2,14,16384,bearing bpfo 3|2,adapt
+1872,bearing bpfo 3,motor BPFO,2,14,81920,bearing bpfo 3|2,adapt
+1873,bearing bpfo 3,motor BPFO,2,14,120832,bearing bpfo 3|2,adapt
+1874,bearing bpfo 3,motor BPFO,2,14,153600,bearing bpfo 3|2,adapt
+1875,bearing bpfo 3,motor BPFO,2,14,172032,bearing bpfo 3|2,adapt
+1876,bearing bpfo 3,motor BPFO,2,14,190464,bearing bpfo 3|2,adapt
+1877,bearing bpfo 3,motor BPFO,3,15,6144,bearing bpfo 3|3,eval
+1878,bearing bpfo 3,motor BPFO,3,15,45056,bearing bpfo 3|3,eval
+1879,bearing bpfo 3,motor BPFO,3,15,57344,bearing bpfo 3|3,eval
+1880,bearing bpfo 3,motor BPFO,3,15,135168,bearing bpfo 3|3,eval
+1881,bearing bpfo 3,motor BPFO,3,15,145408,bearing bpfo 3|3,eval
+1882,bearing bpfo 3,motor BPFO,3,15,233472,bearing bpfo 3|3,eval
+1883,bearing bpfo 3,motor BPFO,3,16,45056,bearing bpfo 3|3,eval
+1884,bearing bpfo 3,motor BPFO,3,16,47104,bearing bpfo 3|3,eval
+1885,bearing bpfo 3,motor BPFO,3,16,79872,bearing bpfo 3|3,eval
+1886,bearing bpfo 3,motor BPFO,3,16,88064,bearing bpfo 3|3,eval
+1887,bearing bpfo 3,motor BPFO,3,16,131072,bearing bpfo 3|3,eval
+1888,bearing bpfo 3,motor BPFO,3,16,167936,bearing bpfo 3|3,eval
+1889,bearing bpfo 3,motor BPFO,3,16,188416,bearing bpfo 3|3,eval
+1890,bearing bpfo 3,motor BPFO,3,17,16384,bearing bpfo 3|3,eval
+1891,bearing bpfo 3,motor BPFO,3,17,30720,bearing bpfo 3|3,eval
+1892,bearing bpfo 3,motor BPFO,3,17,75776,bearing bpfo 3|3,eval
+1893,bearing bpfo 3,motor BPFO,3,17,116736,bearing bpfo 3|3,eval
+1894,bearing bpfo 3,motor BPFO,3,17,172032,bearing bpfo 3|3,eval
+1895,bearing bpfo 3,motor BPFO,3,17,178176,bearing bpfo 3|3,eval
+1896,bearing bpfo 3,motor BPFO,3,17,235520,bearing bpfo 3|3,eval
+1897,bearing bpfo 3,motor BPFO,3,18,14336,bearing bpfo 3|3,eval
+1898,bearing bpfo 3,motor BPFO,3,18,69632,bearing bpfo 3|3,eval
+1899,bearing bpfo 3,motor BPFO,3,18,81920,bearing bpfo 3|3,eval
+1900,bearing bpfo 3,motor BPFO,3,18,83968,bearing bpfo 3|3,eval
+1901,bearing bpfo 3,motor BPFO,3,18,90112,bearing bpfo 3|3,eval
+1902,bearing bpfo 3,motor BPFO,3,18,106496,bearing bpfo 3|3,eval
+1903,bearing bpfo 3,motor BPFO,3,18,118784,bearing bpfo 3|3,eval
+1904,bearing bpfo 3,motor BPFO,3,18,135168,bearing bpfo 3|3,eval
+1905,bearing bpfo 3,motor BPFO,3,18,208896,bearing bpfo 3|3,eval
+1906,bearing bpfo 3,motor BPFO,3,19,12288,bearing bpfo 3|3,eval
+1907,bearing bpfo 3,motor BPFO,3,19,14336,bearing bpfo 3|3,eval
+1908,bearing bpfo 3,motor BPFO,3,19,20480,bearing bpfo 3|3,eval
+1909,bearing bpfo 3,motor BPFO,3,19,32768,bearing bpfo 3|3,eval
+1910,bearing bpfo 3,motor BPFO,3,19,55296,bearing bpfo 3|3,eval
+1911,bearing bpfo 3,motor BPFO,3,19,73728,bearing bpfo 3|3,eval
+1912,bearing bpfo 3,motor BPFO,3,19,83968,bearing bpfo 3|3,eval
+1913,bearing bpfo 3,motor BPFO,3,19,92160,bearing bpfo 3|3,eval
+1914,bearing bpfo 3,motor BPFO,3,19,110592,bearing bpfo 3|3,eval
+1915,bearing bpfo 3,motor BPFO,3,19,120832,bearing bpfo 3|3,eval
+1916,bearing bpfo 3,motor BPFO,3,19,133120,bearing bpfo 3|3,eval
+1917,bearing bpfo 3,motor BPFO,3,19,176128,bearing bpfo 3|3,eval
+1918,bearing bpfo 3,motor BPFO,3,19,196608,bearing bpfo 3|3,eval
+1919,bearing bpfo 3,motor BPFO,3,19,237568,bearing bpfo 3|3,eval
+1920,bearing bpfi 1,motor BPFI,0,0,28672,bearing bpfi 1|0,adapt
+1921,bearing bpfi 1,motor BPFI,0,0,43008,bearing bpfi 1|0,adapt
+1922,bearing bpfi 1,motor BPFI,0,0,90112,bearing bpfi 1|0,adapt
+1923,bearing bpfi 1,motor BPFI,0,0,94208,bearing bpfi 1|0,adapt
+1924,bearing bpfi 1,motor BPFI,0,0,151552,bearing bpfi 1|0,adapt
+1925,bearing bpfi 1,motor BPFI,0,0,155648,bearing bpfi 1|0,adapt
+1926,bearing bpfi 1,motor BPFI,0,0,157696,bearing bpfi 1|0,adapt
+1927,bearing bpfi 1,motor BPFI,0,0,184320,bearing bpfi 1|0,adapt
+1928,bearing bpfi 1,motor BPFI,0,0,196608,bearing bpfi 1|0,adapt
+1929,bearing bpfi 1,motor BPFI,0,1,2048,bearing bpfi 1|0,adapt
+1930,bearing bpfi 1,motor BPFI,0,1,8192,bearing bpfi 1|0,adapt
+1931,bearing bpfi 1,motor BPFI,0,1,14336,bearing bpfi 1|0,adapt
+1932,bearing bpfi 1,motor BPFI,0,1,55296,bearing bpfi 1|0,adapt
+1933,bearing bpfi 1,motor BPFI,0,1,81920,bearing bpfi 1|0,adapt
+1934,bearing bpfi 1,motor BPFI,0,1,88064,bearing bpfi 1|0,adapt
+1935,bearing bpfi 1,motor BPFI,0,1,122880,bearing bpfi 1|0,adapt
+1936,bearing bpfi 1,motor BPFI,0,1,139264,bearing bpfi 1|0,adapt
+1937,bearing bpfi 1,motor BPFI,0,1,165888,bearing bpfi 1|0,adapt
+1938,bearing bpfi 1,motor BPFI,0,1,196608,bearing bpfi 1|0,adapt
+1939,bearing bpfi 1,motor BPFI,0,1,198656,bearing bpfi 1|0,adapt
+1940,bearing bpfi 1,motor BPFI,0,2,10240,bearing bpfi 1|0,adapt
+1941,bearing bpfi 1,motor BPFI,0,2,12288,bearing bpfi 1|0,adapt
+1942,bearing bpfi 1,motor BPFI,0,2,40960,bearing bpfi 1|0,adapt
+1943,bearing bpfi 1,motor BPFI,0,2,45056,bearing bpfi 1|0,adapt
+1944,bearing bpfi 1,motor BPFI,0,2,47104,bearing bpfi 1|0,adapt
+1945,bearing bpfi 1,motor BPFI,0,2,59392,bearing bpfi 1|0,adapt
+1946,bearing bpfi 1,motor BPFI,0,2,86016,bearing bpfi 1|0,adapt
+1947,bearing bpfi 1,motor BPFI,0,2,94208,bearing bpfi 1|0,adapt
+1948,bearing bpfi 1,motor BPFI,0,2,124928,bearing bpfi 1|0,adapt
+1949,bearing bpfi 1,motor BPFI,0,2,126976,bearing bpfi 1|0,adapt
+1950,bearing bpfi 1,motor BPFI,0,2,139264,bearing bpfi 1|0,adapt
+1951,bearing bpfi 1,motor BPFI,0,2,149504,bearing bpfi 1|0,adapt
+1952,bearing bpfi 1,motor BPFI,0,2,165888,bearing bpfi 1|0,adapt
+1953,bearing bpfi 1,motor BPFI,0,3,38912,bearing bpfi 1|0,adapt
+1954,bearing bpfi 1,motor BPFI,0,3,59392,bearing bpfi 1|0,adapt
+1955,bearing bpfi 1,motor BPFI,0,3,112640,bearing bpfi 1|0,adapt
+1956,bearing bpfi 1,motor BPFI,0,3,114688,bearing bpfi 1|0,adapt
+1957,bearing bpfi 1,motor BPFI,0,3,133120,bearing bpfi 1|0,adapt
+1958,bearing bpfi 1,motor BPFI,0,3,147456,bearing bpfi 1|0,adapt
+1959,bearing bpfi 1,motor BPFI,0,3,149504,bearing bpfi 1|0,adapt
+1960,bearing bpfi 1,motor BPFI,0,3,159744,bearing bpfi 1|0,adapt
+1961,bearing bpfi 1,motor BPFI,0,3,161792,bearing bpfi 1|0,adapt
+1962,bearing bpfi 1,motor BPFI,0,3,163840,bearing bpfi 1|0,adapt
+1963,bearing bpfi 1,motor BPFI,0,3,184320,bearing bpfi 1|0,adapt
+1964,bearing bpfi 1,motor BPFI,0,4,38912,bearing bpfi 1|0,adapt
+1965,bearing bpfi 1,motor BPFI,0,4,49152,bearing bpfi 1|0,adapt
+1966,bearing bpfi 1,motor BPFI,0,4,59392,bearing bpfi 1|0,adapt
+1967,bearing bpfi 1,motor BPFI,0,4,79872,bearing bpfi 1|0,adapt
+1968,bearing bpfi 1,motor BPFI,0,4,139264,bearing bpfi 1|0,adapt
+1969,bearing bpfi 1,motor BPFI,0,4,151552,bearing bpfi 1|0,adapt
+1970,bearing bpfi 1,motor BPFI,0,4,188416,bearing bpfi 1|0,adapt
+1971,bearing bpfi 1,motor BPFI,0,4,202752,bearing bpfi 1|0,adapt
+1972,bearing bpfi 1,motor BPFI,0,4,208896,bearing bpfi 1|0,adapt
+1973,bearing bpfi 1,motor BPFI,0,4,225280,bearing bpfi 1|0,adapt
+1974,bearing bpfi 1,motor BPFI,0,4,235520,bearing bpfi 1|0,adapt
+1975,bearing bpfi 1,motor BPFI,1,5,14336,bearing bpfi 1|1,eval
+1976,bearing bpfi 1,motor BPFI,1,5,61440,bearing bpfi 1|1,eval
+1977,bearing bpfi 1,motor BPFI,1,5,73728,bearing bpfi 1|1,eval
+1978,bearing bpfi 1,motor BPFI,1,5,88064,bearing bpfi 1|1,eval
+1979,bearing bpfi 1,motor BPFI,1,5,145408,bearing bpfi 1|1,eval
+1980,bearing bpfi 1,motor BPFI,1,5,223232,bearing bpfi 1|1,eval
+1981,bearing bpfi 1,motor BPFI,1,6,4096,bearing bpfi 1|1,eval
+1982,bearing bpfi 1,motor BPFI,1,6,20480,bearing bpfi 1|1,eval
+1983,bearing bpfi 1,motor BPFI,1,6,38912,bearing bpfi 1|1,eval
+1984,bearing bpfi 1,motor BPFI,1,6,55296,bearing bpfi 1|1,eval
+1985,bearing bpfi 1,motor BPFI,1,6,61440,bearing bpfi 1|1,eval
+1986,bearing bpfi 1,motor BPFI,1,6,67584,bearing bpfi 1|1,eval
+1987,bearing bpfi 1,motor BPFI,1,6,96256,bearing bpfi 1|1,eval
+1988,bearing bpfi 1,motor BPFI,1,6,151552,bearing bpfi 1|1,eval
+1989,bearing bpfi 1,motor BPFI,1,6,153600,bearing bpfi 1|1,eval
+1990,bearing bpfi 1,motor BPFI,1,6,155648,bearing bpfi 1|1,eval
+1991,bearing bpfi 1,motor BPFI,1,6,169984,bearing bpfi 1|1,eval
+1992,bearing bpfi 1,motor BPFI,1,7,14336,bearing bpfi 1|1,eval
+1993,bearing bpfi 1,motor BPFI,1,7,30720,bearing bpfi 1|1,eval
+1994,bearing bpfi 1,motor BPFI,1,7,40960,bearing bpfi 1|1,eval
+1995,bearing bpfi 1,motor BPFI,1,7,49152,bearing bpfi 1|1,eval
+1996,bearing bpfi 1,motor BPFI,1,7,57344,bearing bpfi 1|1,eval
+1997,bearing bpfi 1,motor BPFI,1,7,59392,bearing bpfi 1|1,eval
+1998,bearing bpfi 1,motor BPFI,1,7,75776,bearing bpfi 1|1,eval
+1999,bearing bpfi 1,motor BPFI,1,7,77824,bearing bpfi 1|1,eval
+2000,bearing bpfi 1,motor BPFI,1,7,110592,bearing bpfi 1|1,eval
+2001,bearing bpfi 1,motor BPFI,1,7,126976,bearing bpfi 1|1,eval
+2002,bearing bpfi 1,motor BPFI,1,7,174080,bearing bpfi 1|1,eval
+2003,bearing bpfi 1,motor BPFI,1,7,182272,bearing bpfi 1|1,eval
+2004,bearing bpfi 1,motor BPFI,1,7,194560,bearing bpfi 1|1,eval
+2005,bearing bpfi 1,motor BPFI,1,7,206848,bearing bpfi 1|1,eval
+2006,bearing bpfi 1,motor BPFI,1,7,217088,bearing bpfi 1|1,eval
+2007,bearing bpfi 1,motor BPFI,1,8,22528,bearing bpfi 1|1,eval
+2008,bearing bpfi 1,motor BPFI,1,8,73728,bearing bpfi 1|1,eval
+2009,bearing bpfi 1,motor BPFI,1,8,90112,bearing bpfi 1|1,eval
+2010,bearing bpfi 1,motor BPFI,1,8,100352,bearing bpfi 1|1,eval
+2011,bearing bpfi 1,motor BPFI,1,8,102400,bearing bpfi 1|1,eval
+2012,bearing bpfi 1,motor BPFI,1,8,114688,bearing bpfi 1|1,eval
+2013,bearing bpfi 1,motor BPFI,1,8,145408,bearing bpfi 1|1,eval
+2014,bearing bpfi 1,motor BPFI,1,8,157696,bearing bpfi 1|1,eval
+2015,bearing bpfi 1,motor BPFI,1,8,202752,bearing bpfi 1|1,eval
+2016,bearing bpfi 1,motor BPFI,1,8,219136,bearing bpfi 1|1,eval
+2017,bearing bpfi 1,motor BPFI,1,9,43008,bearing bpfi 1|1,eval
+2018,bearing bpfi 1,motor BPFI,1,9,45056,bearing bpfi 1|1,eval
+2019,bearing bpfi 1,motor BPFI,1,9,63488,bearing bpfi 1|1,eval
+2020,bearing bpfi 1,motor BPFI,1,9,94208,bearing bpfi 1|1,eval
+2021,bearing bpfi 1,motor BPFI,1,9,110592,bearing bpfi 1|1,eval
+2022,bearing bpfi 1,motor BPFI,1,9,112640,bearing bpfi 1|1,eval
+2023,bearing bpfi 1,motor BPFI,1,9,145408,bearing bpfi 1|1,eval
+2024,bearing bpfi 1,motor BPFI,1,9,182272,bearing bpfi 1|1,eval
+2025,bearing bpfi 1,motor BPFI,1,9,204800,bearing bpfi 1|1,eval
+2026,bearing bpfi 1,motor BPFI,1,9,210944,bearing bpfi 1|1,eval
+2027,bearing bpfi 1,motor BPFI,1,9,212992,bearing bpfi 1|1,eval
+2028,bearing bpfi 1,motor BPFI,2,10,16384,bearing bpfi 1|2,adapt
+2029,bearing bpfi 1,motor BPFI,2,10,34816,bearing bpfi 1|2,adapt
+2030,bearing bpfi 1,motor BPFI,2,10,43008,bearing bpfi 1|2,adapt
+2031,bearing bpfi 1,motor BPFI,2,10,45056,bearing bpfi 1|2,adapt
+2032,bearing bpfi 1,motor BPFI,2,10,83968,bearing bpfi 1|2,adapt
+2033,bearing bpfi 1,motor BPFI,2,10,116736,bearing bpfi 1|2,adapt
+2034,bearing bpfi 1,motor BPFI,2,10,120832,bearing bpfi 1|2,adapt
+2035,bearing bpfi 1,motor BPFI,2,10,180224,bearing bpfi 1|2,adapt
+2036,bearing bpfi 1,motor BPFI,2,10,196608,bearing bpfi 1|2,adapt
+2037,bearing bpfi 1,motor BPFI,2,10,217088,bearing bpfi 1|2,adapt
+2038,bearing bpfi 1,motor BPFI,2,10,227328,bearing bpfi 1|2,adapt
+2039,bearing bpfi 1,motor BPFI,2,11,2048,bearing bpfi 1|2,adapt
+2040,bearing bpfi 1,motor BPFI,2,11,34816,bearing bpfi 1|2,adapt
+2041,bearing bpfi 1,motor BPFI,2,11,40960,bearing bpfi 1|2,adapt
+2042,bearing bpfi 1,motor BPFI,2,11,43008,bearing bpfi 1|2,adapt
+2043,bearing bpfi 1,motor BPFI,2,11,59392,bearing bpfi 1|2,adapt
+2044,bearing bpfi 1,motor BPFI,2,11,94208,bearing bpfi 1|2,adapt
+2045,bearing bpfi 1,motor BPFI,2,11,106496,bearing bpfi 1|2,adapt
+2046,bearing bpfi 1,motor BPFI,2,11,145408,bearing bpfi 1|2,adapt
+2047,bearing bpfi 1,motor BPFI,2,11,149504,bearing bpfi 1|2,adapt
+2048,bearing bpfi 1,motor BPFI,2,11,153600,bearing bpfi 1|2,adapt
+2049,bearing bpfi 1,motor BPFI,2,11,180224,bearing bpfi 1|2,adapt
+2050,bearing bpfi 1,motor BPFI,2,11,190464,bearing bpfi 1|2,adapt
+2051,bearing bpfi 1,motor BPFI,2,11,231424,bearing bpfi 1|2,adapt
+2052,bearing bpfi 1,motor BPFI,2,12,6144,bearing bpfi 1|2,adapt
+2053,bearing bpfi 1,motor BPFI,2,12,53248,bearing bpfi 1|2,adapt
+2054,bearing bpfi 1,motor BPFI,2,12,96256,bearing bpfi 1|2,adapt
+2055,bearing bpfi 1,motor BPFI,2,12,129024,bearing bpfi 1|2,adapt
+2056,bearing bpfi 1,motor BPFI,2,12,133120,bearing bpfi 1|2,adapt
+2057,bearing bpfi 1,motor BPFI,2,12,139264,bearing bpfi 1|2,adapt
+2058,bearing bpfi 1,motor BPFI,2,12,145408,bearing bpfi 1|2,adapt
+2059,bearing bpfi 1,motor BPFI,2,12,155648,bearing bpfi 1|2,adapt
+2060,bearing bpfi 1,motor BPFI,2,12,186368,bearing bpfi 1|2,adapt
+2061,bearing bpfi 1,motor BPFI,2,12,198656,bearing bpfi 1|2,adapt
+2062,bearing bpfi 1,motor BPFI,2,12,200704,bearing bpfi 1|2,adapt
+2063,bearing bpfi 1,motor BPFI,2,12,210944,bearing bpfi 1|2,adapt
+2064,bearing bpfi 1,motor BPFI,2,12,215040,bearing bpfi 1|2,adapt
+2065,bearing bpfi 1,motor BPFI,2,12,223232,bearing bpfi 1|2,adapt
+2066,bearing bpfi 1,motor BPFI,2,13,22528,bearing bpfi 1|2,adapt
+2067,bearing bpfi 1,motor BPFI,2,13,67584,bearing bpfi 1|2,adapt
+2068,bearing bpfi 1,motor BPFI,2,13,83968,bearing bpfi 1|2,adapt
+2069,bearing bpfi 1,motor BPFI,2,13,94208,bearing bpfi 1|2,adapt
+2070,bearing bpfi 1,motor BPFI,2,13,145408,bearing bpfi 1|2,adapt
+2071,bearing bpfi 1,motor BPFI,2,13,151552,bearing bpfi 1|2,adapt
+2072,bearing bpfi 1,motor BPFI,2,13,161792,bearing bpfi 1|2,adapt
+2073,bearing bpfi 1,motor BPFI,2,13,163840,bearing bpfi 1|2,adapt
+2074,bearing bpfi 1,motor BPFI,2,14,4096,bearing bpfi 1|2,adapt
+2075,bearing bpfi 1,motor BPFI,2,14,38912,bearing bpfi 1|2,adapt
+2076,bearing bpfi 1,motor BPFI,2,14,51200,bearing bpfi 1|2,adapt
+2077,bearing bpfi 1,motor BPFI,2,14,57344,bearing bpfi 1|2,adapt
+2078,bearing bpfi 1,motor BPFI,2,14,61440,bearing bpfi 1|2,adapt
+2079,bearing bpfi 1,motor BPFI,2,14,112640,bearing bpfi 1|2,adapt
+2080,bearing bpfi 2,motor BPFI,0,0,0,bearing bpfi 2|0,adapt
+2081,bearing bpfi 2,motor BPFI,0,0,45056,bearing bpfi 2|0,adapt
+2082,bearing bpfi 2,motor BPFI,0,0,53248,bearing bpfi 2|0,adapt
+2083,bearing bpfi 2,motor BPFI,0,0,65536,bearing bpfi 2|0,adapt
+2084,bearing bpfi 2,motor BPFI,0,0,81920,bearing bpfi 2|0,adapt
+2085,bearing bpfi 2,motor BPFI,0,0,86016,bearing bpfi 2|0,adapt
+2086,bearing bpfi 2,motor BPFI,0,0,151552,bearing bpfi 2|0,adapt
+2087,bearing bpfi 2,motor BPFI,0,0,161792,bearing bpfi 2|0,adapt
+2088,bearing bpfi 2,motor BPFI,0,0,169984,bearing bpfi 2|0,adapt
+2089,bearing bpfi 2,motor BPFI,0,0,235520,bearing bpfi 2|0,adapt
+2090,bearing bpfi 2,motor BPFI,0,1,6144,bearing bpfi 2|0,adapt
+2091,bearing bpfi 2,motor BPFI,0,1,24576,bearing bpfi 2|0,adapt
+2092,bearing bpfi 2,motor BPFI,0,1,30720,bearing bpfi 2|0,adapt
+2093,bearing bpfi 2,motor BPFI,0,1,34816,bearing bpfi 2|0,adapt
+2094,bearing bpfi 2,motor BPFI,0,1,65536,bearing bpfi 2|0,adapt
+2095,bearing bpfi 2,motor BPFI,0,1,75776,bearing bpfi 2|0,adapt
+2096,bearing bpfi 2,motor BPFI,0,1,79872,bearing bpfi 2|0,adapt
+2097,bearing bpfi 2,motor BPFI,0,1,86016,bearing bpfi 2|0,adapt
+2098,bearing bpfi 2,motor BPFI,0,1,106496,bearing bpfi 2|0,adapt
+2099,bearing bpfi 2,motor BPFI,0,1,126976,bearing bpfi 2|0,adapt
+2100,bearing bpfi 2,motor BPFI,0,1,131072,bearing bpfi 2|0,adapt
+2101,bearing bpfi 2,motor BPFI,0,1,149504,bearing bpfi 2|0,adapt
+2102,bearing bpfi 2,motor BPFI,0,1,176128,bearing bpfi 2|0,adapt
+2103,bearing bpfi 2,motor BPFI,0,1,182272,bearing bpfi 2|0,adapt
+2104,bearing bpfi 2,motor BPFI,0,1,190464,bearing bpfi 2|0,adapt
+2105,bearing bpfi 2,motor BPFI,0,1,221184,bearing bpfi 2|0,adapt
+2106,bearing bpfi 2,motor BPFI,0,2,8192,bearing bpfi 2|0,adapt
+2107,bearing bpfi 2,motor BPFI,0,2,14336,bearing bpfi 2|0,adapt
+2108,bearing bpfi 2,motor BPFI,0,2,20480,bearing bpfi 2|0,adapt
+2109,bearing bpfi 2,motor BPFI,0,2,49152,bearing bpfi 2|0,adapt
+2110,bearing bpfi 2,motor BPFI,0,2,94208,bearing bpfi 2|0,adapt
+2111,bearing bpfi 2,motor BPFI,0,2,106496,bearing bpfi 2|0,adapt
+2112,bearing bpfi 2,motor BPFI,0,2,135168,bearing bpfi 2|0,adapt
+2113,bearing bpfi 2,motor BPFI,0,3,28672,bearing bpfi 2|0,adapt
+2114,bearing bpfi 2,motor BPFI,0,3,73728,bearing bpfi 2|0,adapt
+2115,bearing bpfi 2,motor BPFI,0,3,81920,bearing bpfi 2|0,adapt
+2116,bearing bpfi 2,motor BPFI,0,3,131072,bearing bpfi 2|0,adapt
+2117,bearing bpfi 2,motor BPFI,0,3,180224,bearing bpfi 2|0,adapt
+2118,bearing bpfi 2,motor BPFI,0,3,188416,bearing bpfi 2|0,adapt
+2119,bearing bpfi 2,motor BPFI,0,3,190464,bearing bpfi 2|0,adapt
+2120,bearing bpfi 2,motor BPFI,0,3,206848,bearing bpfi 2|0,adapt
+2121,bearing bpfi 2,motor BPFI,0,3,225280,bearing bpfi 2|0,adapt
+2122,bearing bpfi 2,motor BPFI,0,4,20480,bearing bpfi 2|0,adapt
+2123,bearing bpfi 2,motor BPFI,0,4,24576,bearing bpfi 2|0,adapt
+2124,bearing bpfi 2,motor BPFI,0,4,65536,bearing bpfi 2|0,adapt
+2125,bearing bpfi 2,motor BPFI,0,4,69632,bearing bpfi 2|0,adapt
+2126,bearing bpfi 2,motor BPFI,0,4,88064,bearing bpfi 2|0,adapt
+2127,bearing bpfi 2,motor BPFI,0,4,102400,bearing bpfi 2|0,adapt
+2128,bearing bpfi 2,motor BPFI,0,4,114688,bearing bpfi 2|0,adapt
+2129,bearing bpfi 2,motor BPFI,0,4,184320,bearing bpfi 2|0,adapt
+2130,bearing bpfi 2,motor BPFI,0,4,198656,bearing bpfi 2|0,adapt
+2131,bearing bpfi 2,motor BPFI,0,4,212992,bearing bpfi 2|0,adapt
+2132,bearing bpfi 2,motor BPFI,0,4,217088,bearing bpfi 2|0,adapt
+2133,bearing bpfi 2,motor BPFI,0,4,233472,bearing bpfi 2|0,adapt
+2134,bearing bpfi 2,motor BPFI,1,5,8192,bearing bpfi 2|1,eval
+2135,bearing bpfi 2,motor BPFI,1,5,43008,bearing bpfi 2|1,eval
+2136,bearing bpfi 2,motor BPFI,1,5,69632,bearing bpfi 2|1,eval
+2137,bearing bpfi 2,motor BPFI,1,5,94208,bearing bpfi 2|1,eval
+2138,bearing bpfi 2,motor BPFI,1,5,108544,bearing bpfi 2|1,eval
+2139,bearing bpfi 2,motor BPFI,1,5,137216,bearing bpfi 2|1,eval
+2140,bearing bpfi 2,motor BPFI,1,5,180224,bearing bpfi 2|1,eval
+2141,bearing bpfi 2,motor BPFI,1,5,202752,bearing bpfi 2|1,eval
+2142,bearing bpfi 2,motor BPFI,1,5,237568,bearing bpfi 2|1,eval
+2143,bearing bpfi 2,motor BPFI,1,6,57344,bearing bpfi 2|1,eval
+2144,bearing bpfi 2,motor BPFI,1,6,63488,bearing bpfi 2|1,eval
+2145,bearing bpfi 2,motor BPFI,1,6,108544,bearing bpfi 2|1,eval
+2146,bearing bpfi 2,motor BPFI,1,6,129024,bearing bpfi 2|1,eval
+2147,bearing bpfi 2,motor BPFI,1,6,155648,bearing bpfi 2|1,eval
+2148,bearing bpfi 2,motor BPFI,1,6,188416,bearing bpfi 2|1,eval
+2149,bearing bpfi 2,motor BPFI,1,6,208896,bearing bpfi 2|1,eval
+2150,bearing bpfi 2,motor BPFI,1,6,229376,bearing bpfi 2|1,eval
+2151,bearing bpfi 2,motor BPFI,1,6,235520,bearing bpfi 2|1,eval
+2152,bearing bpfi 2,motor BPFI,1,7,10240,bearing bpfi 2|1,eval
+2153,bearing bpfi 2,motor BPFI,1,7,55296,bearing bpfi 2|1,eval
+2154,bearing bpfi 2,motor BPFI,1,7,163840,bearing bpfi 2|1,eval
+2155,bearing bpfi 2,motor BPFI,1,7,198656,bearing bpfi 2|1,eval
+2156,bearing bpfi 2,motor BPFI,1,7,200704,bearing bpfi 2|1,eval
+2157,bearing bpfi 2,motor BPFI,1,7,206848,bearing bpfi 2|1,eval
+2158,bearing bpfi 2,motor BPFI,1,7,212992,bearing bpfi 2|1,eval
+2159,bearing bpfi 2,motor BPFI,1,7,217088,bearing bpfi 2|1,eval
+2160,bearing bpfi 2,motor BPFI,1,7,235520,bearing bpfi 2|1,eval
+2161,bearing bpfi 2,motor BPFI,1,7,237568,bearing bpfi 2|1,eval
+2162,bearing bpfi 2,motor BPFI,1,8,12288,bearing bpfi 2|1,eval
+2163,bearing bpfi 2,motor BPFI,1,8,16384,bearing bpfi 2|1,eval
+2164,bearing bpfi 2,motor BPFI,1,8,34816,bearing bpfi 2|1,eval
+2165,bearing bpfi 2,motor BPFI,1,8,92160,bearing bpfi 2|1,eval
+2166,bearing bpfi 2,motor BPFI,1,8,122880,bearing bpfi 2|1,eval
+2167,bearing bpfi 2,motor BPFI,1,8,135168,bearing bpfi 2|1,eval
+2168,bearing bpfi 2,motor BPFI,1,8,137216,bearing bpfi 2|1,eval
+2169,bearing bpfi 2,motor BPFI,1,9,6144,bearing bpfi 2|1,eval
+2170,bearing bpfi 2,motor BPFI,1,9,14336,bearing bpfi 2|1,eval
+2171,bearing bpfi 2,motor BPFI,1,9,47104,bearing bpfi 2|1,eval
+2172,bearing bpfi 2,motor BPFI,1,9,77824,bearing bpfi 2|1,eval
+2173,bearing bpfi 2,motor BPFI,1,9,90112,bearing bpfi 2|1,eval
+2174,bearing bpfi 2,motor BPFI,1,9,116736,bearing bpfi 2|1,eval
+2175,bearing bpfi 2,motor BPFI,1,9,180224,bearing bpfi 2|1,eval
+2176,bearing bpfi 2,motor BPFI,1,9,198656,bearing bpfi 2|1,eval
+2177,bearing bpfi 2,motor BPFI,1,9,223232,bearing bpfi 2|1,eval
+2178,bearing bpfi 2,motor BPFI,2,10,8192,bearing bpfi 2|2,adapt
+2179,bearing bpfi 2,motor BPFI,2,10,24576,bearing bpfi 2|2,adapt
+2180,bearing bpfi 2,motor BPFI,2,10,26624,bearing bpfi 2|2,adapt
+2181,bearing bpfi 2,motor BPFI,2,10,45056,bearing bpfi 2|2,adapt
+2182,bearing bpfi 2,motor BPFI,2,10,92160,bearing bpfi 2|2,adapt
+2183,bearing bpfi 2,motor BPFI,2,10,100352,bearing bpfi 2|2,adapt
+2184,bearing bpfi 2,motor BPFI,2,10,104448,bearing bpfi 2|2,adapt
+2185,bearing bpfi 2,motor BPFI,2,10,112640,bearing bpfi 2|2,adapt
+2186,bearing bpfi 2,motor BPFI,2,10,137216,bearing bpfi 2|2,adapt
+2187,bearing bpfi 2,motor BPFI,2,10,184320,bearing bpfi 2|2,adapt
+2188,bearing bpfi 2,motor BPFI,2,10,200704,bearing bpfi 2|2,adapt
+2189,bearing bpfi 2,motor BPFI,2,10,208896,bearing bpfi 2|2,adapt
+2190,bearing bpfi 2,motor BPFI,2,10,235520,bearing bpfi 2|2,adapt
+2191,bearing bpfi 2,motor BPFI,2,11,47104,bearing bpfi 2|2,adapt
+2192,bearing bpfi 2,motor BPFI,2,11,86016,bearing bpfi 2|2,adapt
+2193,bearing bpfi 2,motor BPFI,2,11,108544,bearing bpfi 2|2,adapt
+2194,bearing bpfi 2,motor BPFI,2,11,124928,bearing bpfi 2|2,adapt
+2195,bearing bpfi 2,motor BPFI,2,11,135168,bearing bpfi 2|2,adapt
+2196,bearing bpfi 2,motor BPFI,2,11,141312,bearing bpfi 2|2,adapt
+2197,bearing bpfi 2,motor BPFI,2,11,161792,bearing bpfi 2|2,adapt
+2198,bearing bpfi 2,motor BPFI,2,11,172032,bearing bpfi 2|2,adapt
+2199,bearing bpfi 2,motor BPFI,2,12,14336,bearing bpfi 2|2,adapt
+2200,bearing bpfi 2,motor BPFI,2,12,18432,bearing bpfi 2|2,adapt
+2201,bearing bpfi 2,motor BPFI,2,12,43008,bearing bpfi 2|2,adapt
+2202,bearing bpfi 2,motor BPFI,2,12,79872,bearing bpfi 2|2,adapt
+2203,bearing bpfi 2,motor BPFI,2,12,88064,bearing bpfi 2|2,adapt
+2204,bearing bpfi 2,motor BPFI,2,12,92160,bearing bpfi 2|2,adapt
+2205,bearing bpfi 2,motor BPFI,2,12,169984,bearing bpfi 2|2,adapt
+2206,bearing bpfi 2,motor BPFI,2,12,188416,bearing bpfi 2|2,adapt
+2207,bearing bpfi 2,motor BPFI,2,12,194560,bearing bpfi 2|2,adapt
+2208,bearing bpfi 2,motor BPFI,2,12,196608,bearing bpfi 2|2,adapt
+2209,bearing bpfi 2,motor BPFI,2,12,237568,bearing bpfi 2|2,adapt
+2210,bearing bpfi 2,motor BPFI,2,13,14336,bearing bpfi 2|2,adapt
+2211,bearing bpfi 2,motor BPFI,2,13,51200,bearing bpfi 2|2,adapt
+2212,bearing bpfi 2,motor BPFI,2,13,55296,bearing bpfi 2|2,adapt
+2213,bearing bpfi 2,motor BPFI,2,13,57344,bearing bpfi 2|2,adapt
+2214,bearing bpfi 2,motor BPFI,2,13,65536,bearing bpfi 2|2,adapt
+2215,bearing bpfi 2,motor BPFI,2,13,100352,bearing bpfi 2|2,adapt
+2216,bearing bpfi 2,motor BPFI,2,13,161792,bearing bpfi 2|2,adapt
+2217,bearing bpfi 2,motor BPFI,2,13,169984,bearing bpfi 2|2,adapt
+2218,bearing bpfi 2,motor BPFI,2,13,174080,bearing bpfi 2|2,adapt
+2219,bearing bpfi 2,motor BPFI,2,13,176128,bearing bpfi 2|2,adapt
+2220,bearing bpfi 2,motor BPFI,2,13,192512,bearing bpfi 2|2,adapt
+2221,bearing bpfi 2,motor BPFI,2,13,194560,bearing bpfi 2|2,adapt
+2222,bearing bpfi 2,motor BPFI,2,13,210944,bearing bpfi 2|2,adapt
+2223,bearing bpfi 2,motor BPFI,2,14,6144,bearing bpfi 2|2,adapt
+2224,bearing bpfi 2,motor BPFI,2,14,12288,bearing bpfi 2|2,adapt
+2225,bearing bpfi 2,motor BPFI,2,14,32768,bearing bpfi 2|2,adapt
+2226,bearing bpfi 2,motor BPFI,2,14,38912,bearing bpfi 2|2,adapt
+2227,bearing bpfi 2,motor BPFI,2,14,61440,bearing bpfi 2|2,adapt
+2228,bearing bpfi 2,motor BPFI,2,14,63488,bearing bpfi 2|2,adapt
+2229,bearing bpfi 2,motor BPFI,2,14,77824,bearing bpfi 2|2,adapt
+2230,bearing bpfi 2,motor BPFI,2,14,88064,bearing bpfi 2|2,adapt
+2231,bearing bpfi 2,motor BPFI,2,14,90112,bearing bpfi 2|2,adapt
+2232,bearing bpfi 2,motor BPFI,2,14,104448,bearing bpfi 2|2,adapt
+2233,bearing bpfi 2,motor BPFI,2,14,114688,bearing bpfi 2|2,adapt
+2234,bearing bpfi 2,motor BPFI,2,14,124928,bearing bpfi 2|2,adapt
+2235,bearing bpfi 2,motor BPFI,2,14,137216,bearing bpfi 2|2,adapt
+2236,bearing bpfi 2,motor BPFI,2,14,188416,bearing bpfi 2|2,adapt
+2237,bearing bpfi 2,motor BPFI,2,14,208896,bearing bpfi 2|2,adapt
+2238,bearing bpfi 2,motor BPFI,2,14,225280,bearing bpfi 2|2,adapt
+2239,bearing bpfi 2,motor BPFI,2,14,229376,bearing bpfi 2|2,adapt
+2240,bearing bpfi 3,motor BPFI,0,0,0,bearing bpfi 3|0,adapt
+2241,bearing bpfi 3,motor BPFI,0,0,14336,bearing bpfi 3|0,adapt
+2242,bearing bpfi 3,motor BPFI,0,0,16384,bearing bpfi 3|0,adapt
+2243,bearing bpfi 3,motor BPFI,0,0,30720,bearing bpfi 3|0,adapt
+2244,bearing bpfi 3,motor BPFI,0,0,77824,bearing bpfi 3|0,adapt
+2245,bearing bpfi 3,motor BPFI,0,0,79872,bearing bpfi 3|0,adapt
+2246,bearing bpfi 3,motor BPFI,0,0,133120,bearing bpfi 3|0,adapt
+2247,bearing bpfi 3,motor BPFI,0,0,145408,bearing bpfi 3|0,adapt
+2248,bearing bpfi 3,motor BPFI,0,0,188416,bearing bpfi 3|0,adapt
+2249,bearing bpfi 3,motor BPFI,0,0,200704,bearing bpfi 3|0,adapt
+2250,bearing bpfi 3,motor BPFI,0,1,2048,bearing bpfi 3|0,adapt
+2251,bearing bpfi 3,motor BPFI,0,1,88064,bearing bpfi 3|0,adapt
+2252,bearing bpfi 3,motor BPFI,0,1,102400,bearing bpfi 3|0,adapt
+2253,bearing bpfi 3,motor BPFI,0,1,110592,bearing bpfi 3|0,adapt
+2254,bearing bpfi 3,motor BPFI,0,1,122880,bearing bpfi 3|0,adapt
+2255,bearing bpfi 3,motor BPFI,0,1,124928,bearing bpfi 3|0,adapt
+2256,bearing bpfi 3,motor BPFI,0,1,131072,bearing bpfi 3|0,adapt
+2257,bearing bpfi 3,motor BPFI,0,1,137216,bearing bpfi 3|0,adapt
+2258,bearing bpfi 3,motor BPFI,0,1,143360,bearing bpfi 3|0,adapt
+2259,bearing bpfi 3,motor BPFI,0,1,159744,bearing bpfi 3|0,adapt
+2260,bearing bpfi 3,motor BPFI,0,1,174080,bearing bpfi 3|0,adapt
+2261,bearing bpfi 3,motor BPFI,0,2,34816,bearing bpfi 3|0,adapt
+2262,bearing bpfi 3,motor BPFI,0,2,47104,bearing bpfi 3|0,adapt
+2263,bearing bpfi 3,motor BPFI,0,2,63488,bearing bpfi 3|0,adapt
+2264,bearing bpfi 3,motor BPFI,0,2,65536,bearing bpfi 3|0,adapt
+2265,bearing bpfi 3,motor BPFI,0,2,94208,bearing bpfi 3|0,adapt
+2266,bearing bpfi 3,motor BPFI,0,2,118784,bearing bpfi 3|0,adapt
+2267,bearing bpfi 3,motor BPFI,0,2,176128,bearing bpfi 3|0,adapt
+2268,bearing bpfi 3,motor BPFI,0,2,235520,bearing bpfi 3|0,adapt
+2269,bearing bpfi 3,motor BPFI,0,3,20480,bearing bpfi 3|0,adapt
+2270,bearing bpfi 3,motor BPFI,0,3,26624,bearing bpfi 3|0,adapt
+2271,bearing bpfi 3,motor BPFI,0,3,32768,bearing bpfi 3|0,adapt
+2272,bearing bpfi 3,motor BPFI,0,3,45056,bearing bpfi 3|0,adapt
+2273,bearing bpfi 3,motor BPFI,0,3,73728,bearing bpfi 3|0,adapt
+2274,bearing bpfi 3,motor BPFI,0,3,112640,bearing bpfi 3|0,adapt
+2275,bearing bpfi 3,motor BPFI,0,3,118784,bearing bpfi 3|0,adapt
+2276,bearing bpfi 3,motor BPFI,0,3,126976,bearing bpfi 3|0,adapt
+2277,bearing bpfi 3,motor BPFI,0,3,147456,bearing bpfi 3|0,adapt
+2278,bearing bpfi 3,motor BPFI,0,3,159744,bearing bpfi 3|0,adapt
+2279,bearing bpfi 3,motor BPFI,0,3,215040,bearing bpfi 3|0,adapt
+2280,bearing bpfi 3,motor BPFI,0,3,219136,bearing bpfi 3|0,adapt
+2281,bearing bpfi 3,motor BPFI,0,4,2048,bearing bpfi 3|0,adapt
+2282,bearing bpfi 3,motor BPFI,0,4,6144,bearing bpfi 3|0,adapt
+2283,bearing bpfi 3,motor BPFI,0,4,8192,bearing bpfi 3|0,adapt
+2284,bearing bpfi 3,motor BPFI,0,4,16384,bearing bpfi 3|0,adapt
+2285,bearing bpfi 3,motor BPFI,0,4,51200,bearing bpfi 3|0,adapt
+2286,bearing bpfi 3,motor BPFI,0,4,53248,bearing bpfi 3|0,adapt
+2287,bearing bpfi 3,motor BPFI,0,4,61440,bearing bpfi 3|0,adapt
+2288,bearing bpfi 3,motor BPFI,0,4,67584,bearing bpfi 3|0,adapt
+2289,bearing bpfi 3,motor BPFI,0,4,108544,bearing bpfi 3|0,adapt
+2290,bearing bpfi 3,motor BPFI,0,4,137216,bearing bpfi 3|0,adapt
+2291,bearing bpfi 3,motor BPFI,0,4,155648,bearing bpfi 3|0,adapt
+2292,bearing bpfi 3,motor BPFI,0,4,157696,bearing bpfi 3|0,adapt
+2293,bearing bpfi 3,motor BPFI,0,4,165888,bearing bpfi 3|0,adapt
+2294,bearing bpfi 3,motor BPFI,0,4,182272,bearing bpfi 3|0,adapt
+2295,bearing bpfi 3,motor BPFI,0,4,186368,bearing bpfi 3|0,adapt
+2296,bearing bpfi 3,motor BPFI,0,4,200704,bearing bpfi 3|0,adapt
+2297,bearing bpfi 3,motor BPFI,0,4,204800,bearing bpfi 3|0,adapt
+2298,bearing bpfi 3,motor BPFI,0,4,217088,bearing bpfi 3|0,adapt
+2299,bearing bpfi 3,motor BPFI,0,4,235520,bearing bpfi 3|0,adapt
+2300,bearing bpfi 3,motor BPFI,1,5,0,bearing bpfi 3|1,eval
+2301,bearing bpfi 3,motor BPFI,1,5,55296,bearing bpfi 3|1,eval
+2302,bearing bpfi 3,motor BPFI,1,5,79872,bearing bpfi 3|1,eval
+2303,bearing bpfi 3,motor BPFI,1,5,92160,bearing bpfi 3|1,eval
+2304,bearing bpfi 3,motor BPFI,1,5,104448,bearing bpfi 3|1,eval
+2305,bearing bpfi 3,motor BPFI,1,5,120832,bearing bpfi 3|1,eval
+2306,bearing bpfi 3,motor BPFI,1,5,192512,bearing bpfi 3|1,eval
+2307,bearing bpfi 3,motor BPFI,1,5,233472,bearing bpfi 3|1,eval
+2308,bearing bpfi 3,motor BPFI,1,6,6144,bearing bpfi 3|1,eval
+2309,bearing bpfi 3,motor BPFI,1,6,40960,bearing bpfi 3|1,eval
+2310,bearing bpfi 3,motor BPFI,1,6,59392,bearing bpfi 3|1,eval
+2311,bearing bpfi 3,motor BPFI,1,6,75776,bearing bpfi 3|1,eval
+2312,bearing bpfi 3,motor BPFI,1,6,94208,bearing bpfi 3|1,eval
+2313,bearing bpfi 3,motor BPFI,1,6,184320,bearing bpfi 3|1,eval
+2314,bearing bpfi 3,motor BPFI,1,7,22528,bearing bpfi 3|1,eval
+2315,bearing bpfi 3,motor BPFI,1,7,30720,bearing bpfi 3|1,eval
+2316,bearing bpfi 3,motor BPFI,1,7,38912,bearing bpfi 3|1,eval
+2317,bearing bpfi 3,motor BPFI,1,7,55296,bearing bpfi 3|1,eval
+2318,bearing bpfi 3,motor BPFI,1,7,81920,bearing bpfi 3|1,eval
+2319,bearing bpfi 3,motor BPFI,1,7,102400,bearing bpfi 3|1,eval
+2320,bearing bpfi 3,motor BPFI,1,7,196608,bearing bpfi 3|1,eval
+2321,bearing bpfi 3,motor BPFI,1,7,202752,bearing bpfi 3|1,eval
+2322,bearing bpfi 3,motor BPFI,1,7,212992,bearing bpfi 3|1,eval
+2323,bearing bpfi 3,motor BPFI,1,7,227328,bearing bpfi 3|1,eval
+2324,bearing bpfi 3,motor BPFI,1,8,2048,bearing bpfi 3|1,eval
+2325,bearing bpfi 3,motor BPFI,1,8,20480,bearing bpfi 3|1,eval
+2326,bearing bpfi 3,motor BPFI,1,8,83968,bearing bpfi 3|1,eval
+2327,bearing bpfi 3,motor BPFI,1,8,98304,bearing bpfi 3|1,eval
+2328,bearing bpfi 3,motor BPFI,1,8,131072,bearing bpfi 3|1,eval
+2329,bearing bpfi 3,motor BPFI,1,8,159744,bearing bpfi 3|1,eval
+2330,bearing bpfi 3,motor BPFI,1,8,172032,bearing bpfi 3|1,eval
+2331,bearing bpfi 3,motor BPFI,1,8,186368,bearing bpfi 3|1,eval
+2332,bearing bpfi 3,motor BPFI,1,8,231424,bearing bpfi 3|1,eval
+2333,bearing bpfi 3,motor BPFI,1,9,28672,bearing bpfi 3|1,eval
+2334,bearing bpfi 3,motor BPFI,1,9,34816,bearing bpfi 3|1,eval
+2335,bearing bpfi 3,motor BPFI,1,9,53248,bearing bpfi 3|1,eval
+2336,bearing bpfi 3,motor BPFI,1,9,88064,bearing bpfi 3|1,eval
+2337,bearing bpfi 3,motor BPFI,1,9,104448,bearing bpfi 3|1,eval
+2338,bearing bpfi 3,motor BPFI,1,9,112640,bearing bpfi 3|1,eval
+2339,bearing bpfi 3,motor BPFI,1,9,126976,bearing bpfi 3|1,eval
+2340,bearing bpfi 3,motor BPFI,1,9,155648,bearing bpfi 3|1,eval
+2341,bearing bpfi 3,motor BPFI,1,9,176128,bearing bpfi 3|1,eval
+2342,bearing bpfi 3,motor BPFI,1,9,184320,bearing bpfi 3|1,eval
+2343,bearing bpfi 3,motor BPFI,1,9,194560,bearing bpfi 3|1,eval
+2344,bearing bpfi 3,motor BPFI,1,9,212992,bearing bpfi 3|1,eval
+2345,bearing bpfi 3,motor BPFI,1,9,225280,bearing bpfi 3|1,eval
+2346,bearing bpfi 3,motor BPFI,2,10,2048,bearing bpfi 3|2,adapt
+2347,bearing bpfi 3,motor BPFI,2,10,38912,bearing bpfi 3|2,adapt
+2348,bearing bpfi 3,motor BPFI,2,10,57344,bearing bpfi 3|2,adapt
+2349,bearing bpfi 3,motor BPFI,2,10,69632,bearing bpfi 3|2,adapt
+2350,bearing bpfi 3,motor BPFI,2,10,73728,bearing bpfi 3|2,adapt
+2351,bearing bpfi 3,motor BPFI,2,10,83968,bearing bpfi 3|2,adapt
+2352,bearing bpfi 3,motor BPFI,2,10,120832,bearing bpfi 3|2,adapt
+2353,bearing bpfi 3,motor BPFI,2,10,188416,bearing bpfi 3|2,adapt
+2354,bearing bpfi 3,motor BPFI,2,10,194560,bearing bpfi 3|2,adapt
+2355,bearing bpfi 3,motor BPFI,2,10,229376,bearing bpfi 3|2,adapt
+2356,bearing bpfi 3,motor BPFI,2,11,28672,bearing bpfi 3|2,adapt
+2357,bearing bpfi 3,motor BPFI,2,11,40960,bearing bpfi 3|2,adapt
+2358,bearing bpfi 3,motor BPFI,2,11,53248,bearing bpfi 3|2,adapt
+2359,bearing bpfi 3,motor BPFI,2,11,100352,bearing bpfi 3|2,adapt
+2360,bearing bpfi 3,motor BPFI,2,11,120832,bearing bpfi 3|2,adapt
+2361,bearing bpfi 3,motor BPFI,2,11,126976,bearing bpfi 3|2,adapt
+2362,bearing bpfi 3,motor BPFI,2,11,135168,bearing bpfi 3|2,adapt
+2363,bearing bpfi 3,motor BPFI,2,11,157696,bearing bpfi 3|2,adapt
+2364,bearing bpfi 3,motor BPFI,2,11,176128,bearing bpfi 3|2,adapt
+2365,bearing bpfi 3,motor BPFI,2,12,10240,bearing bpfi 3|2,adapt
+2366,bearing bpfi 3,motor BPFI,2,12,43008,bearing bpfi 3|2,adapt
+2367,bearing bpfi 3,motor BPFI,2,12,73728,bearing bpfi 3|2,adapt
+2368,bearing bpfi 3,motor BPFI,2,12,81920,bearing bpfi 3|2,adapt
+2369,bearing bpfi 3,motor BPFI,2,12,96256,bearing bpfi 3|2,adapt
+2370,bearing bpfi 3,motor BPFI,2,12,120832,bearing bpfi 3|2,adapt
+2371,bearing bpfi 3,motor BPFI,2,12,124928,bearing bpfi 3|2,adapt
+2372,bearing bpfi 3,motor BPFI,2,12,155648,bearing bpfi 3|2,adapt
+2373,bearing bpfi 3,motor BPFI,2,12,167936,bearing bpfi 3|2,adapt
+2374,bearing bpfi 3,motor BPFI,2,12,169984,bearing bpfi 3|2,adapt
+2375,bearing bpfi 3,motor BPFI,2,12,174080,bearing bpfi 3|2,adapt
+2376,bearing bpfi 3,motor BPFI,2,12,182272,bearing bpfi 3|2,adapt
+2377,bearing bpfi 3,motor BPFI,2,12,208896,bearing bpfi 3|2,adapt
+2378,bearing bpfi 3,motor BPFI,2,12,225280,bearing bpfi 3|2,adapt
+2379,bearing bpfi 3,motor BPFI,2,12,227328,bearing bpfi 3|2,adapt
+2380,bearing bpfi 3,motor BPFI,2,12,233472,bearing bpfi 3|2,adapt
+2381,bearing bpfi 3,motor BPFI,2,13,18432,bearing bpfi 3|2,adapt
+2382,bearing bpfi 3,motor BPFI,2,13,20480,bearing bpfi 3|2,adapt
+2383,bearing bpfi 3,motor BPFI,2,13,22528,bearing bpfi 3|2,adapt
+2384,bearing bpfi 3,motor BPFI,2,13,65536,bearing bpfi 3|2,adapt
+2385,bearing bpfi 3,motor BPFI,2,13,114688,bearing bpfi 3|2,adapt
+2386,bearing bpfi 3,motor BPFI,2,13,118784,bearing bpfi 3|2,adapt
+2387,bearing bpfi 3,motor BPFI,2,13,129024,bearing bpfi 3|2,adapt
+2388,bearing bpfi 3,motor BPFI,2,13,184320,bearing bpfi 3|2,adapt
+2389,bearing bpfi 3,motor BPFI,2,14,22528,bearing bpfi 3|2,adapt
+2390,bearing bpfi 3,motor BPFI,2,14,47104,bearing bpfi 3|2,adapt
+2391,bearing bpfi 3,motor BPFI,2,14,83968,bearing bpfi 3|2,adapt
+2392,bearing bpfi 3,motor BPFI,2,14,96256,bearing bpfi 3|2,adapt
+2393,bearing bpfi 3,motor BPFI,2,14,139264,bearing bpfi 3|2,adapt
+2394,bearing bpfi 3,motor BPFI,2,14,147456,bearing bpfi 3|2,adapt
+2395,bearing bpfi 3,motor BPFI,2,14,161792,bearing bpfi 3|2,adapt
+2396,bearing bpfi 3,motor BPFI,2,14,163840,bearing bpfi 3|2,adapt
+2397,bearing bpfi 3,motor BPFI,2,14,180224,bearing bpfi 3|2,adapt
+2398,bearing bpfi 3,motor BPFI,2,14,198656,bearing bpfi 3|2,adapt
+2399,bearing bpfi 3,motor BPFI,2,14,200704,bearing bpfi 3|2,adapt
+2400,soft foot 1,soft foot,0,0,30720,soft foot 1|0,adapt
+2401,soft foot 1,soft foot,0,0,34816,soft foot 1|0,adapt
+2402,soft foot 1,soft foot,0,0,45056,soft foot 1|0,adapt
+2403,soft foot 1,soft foot,0,0,67584,soft foot 1|0,adapt
+2404,soft foot 1,soft foot,0,0,104448,soft foot 1|0,adapt
+2405,soft foot 1,soft foot,0,0,116736,soft foot 1|0,adapt
+2406,soft foot 1,soft foot,0,0,208896,soft foot 1|0,adapt
+2407,soft foot 1,soft foot,0,1,24576,soft foot 1|0,adapt
+2408,soft foot 1,soft foot,0,1,30720,soft foot 1|0,adapt
+2409,soft foot 1,soft foot,0,1,79872,soft foot 1|0,adapt
+2410,soft foot 1,soft foot,0,1,100352,soft foot 1|0,adapt
+2411,soft foot 1,soft foot,0,1,124928,soft foot 1|0,adapt
+2412,soft foot 1,soft foot,0,1,133120,soft foot 1|0,adapt
+2413,soft foot 1,soft foot,0,1,161792,soft foot 1|0,adapt
+2414,soft foot 1,soft foot,0,1,163840,soft foot 1|0,adapt
+2415,soft foot 1,soft foot,0,1,178176,soft foot 1|0,adapt
+2416,soft foot 1,soft foot,0,1,190464,soft foot 1|0,adapt
+2417,soft foot 1,soft foot,0,1,237568,soft foot 1|0,adapt
+2418,soft foot 1,soft foot,0,2,45056,soft foot 1|0,adapt
+2419,soft foot 1,soft foot,0,2,57344,soft foot 1|0,adapt
+2420,soft foot 1,soft foot,0,2,79872,soft foot 1|0,adapt
+2421,soft foot 1,soft foot,0,2,81920,soft foot 1|0,adapt
+2422,soft foot 1,soft foot,0,2,92160,soft foot 1|0,adapt
+2423,soft foot 1,soft foot,0,2,114688,soft foot 1|0,adapt
+2424,soft foot 1,soft foot,0,2,153600,soft foot 1|0,adapt
+2425,soft foot 1,soft foot,0,3,20480,soft foot 1|0,adapt
+2426,soft foot 1,soft foot,0,3,38912,soft foot 1|0,adapt
+2427,soft foot 1,soft foot,0,3,57344,soft foot 1|0,adapt
+2428,soft foot 1,soft foot,0,3,65536,soft foot 1|0,adapt
+2429,soft foot 1,soft foot,0,3,69632,soft foot 1|0,adapt
+2430,soft foot 1,soft foot,0,3,75776,soft foot 1|0,adapt
+2431,soft foot 1,soft foot,0,3,92160,soft foot 1|0,adapt
+2432,soft foot 1,soft foot,0,3,135168,soft foot 1|0,adapt
+2433,soft foot 1,soft foot,0,3,155648,soft foot 1|0,adapt
+2434,soft foot 1,soft foot,0,3,159744,soft foot 1|0,adapt
+2435,soft foot 1,soft foot,0,3,180224,soft foot 1|0,adapt
+2436,soft foot 1,soft foot,0,3,208896,soft foot 1|0,adapt
+2437,soft foot 1,soft foot,0,3,217088,soft foot 1|0,adapt
+2438,soft foot 1,soft foot,0,4,34816,soft foot 1|0,adapt
+2439,soft foot 1,soft foot,0,4,36864,soft foot 1|0,adapt
+2440,soft foot 1,soft foot,0,4,86016,soft foot 1|0,adapt
+2441,soft foot 1,soft foot,0,4,96256,soft foot 1|0,adapt
+2442,soft foot 1,soft foot,0,4,106496,soft foot 1|0,adapt
+2443,soft foot 1,soft foot,0,4,120832,soft foot 1|0,adapt
+2444,soft foot 1,soft foot,0,4,155648,soft foot 1|0,adapt
+2445,soft foot 1,soft foot,0,4,161792,soft foot 1|0,adapt
+2446,soft foot 1,soft foot,0,4,163840,soft foot 1|0,adapt
+2447,soft foot 1,soft foot,0,4,186368,soft foot 1|0,adapt
+2448,soft foot 1,soft foot,0,4,196608,soft foot 1|0,adapt
+2449,soft foot 1,soft foot,0,4,221184,soft foot 1|0,adapt
+2450,soft foot 1,soft foot,0,4,231424,soft foot 1|0,adapt
+2451,soft foot 1,soft foot,1,5,0,soft foot 1|1,eval
+2452,soft foot 1,soft foot,1,5,6144,soft foot 1|1,eval
+2453,soft foot 1,soft foot,1,5,45056,soft foot 1|1,eval
+2454,soft foot 1,soft foot,1,5,90112,soft foot 1|1,eval
+2455,soft foot 1,soft foot,1,5,110592,soft foot 1|1,eval
+2456,soft foot 1,soft foot,1,5,118784,soft foot 1|1,eval
+2457,soft foot 1,soft foot,1,5,141312,soft foot 1|1,eval
+2458,soft foot 1,soft foot,1,5,178176,soft foot 1|1,eval
+2459,soft foot 1,soft foot,1,5,182272,soft foot 1|1,eval
+2460,soft foot 1,soft foot,1,5,188416,soft foot 1|1,eval
+2461,soft foot 1,soft foot,1,5,215040,soft foot 1|1,eval
+2462,soft foot 1,soft foot,1,6,20480,soft foot 1|1,eval
+2463,soft foot 1,soft foot,1,6,30720,soft foot 1|1,eval
+2464,soft foot 1,soft foot,1,6,40960,soft foot 1|1,eval
+2465,soft foot 1,soft foot,1,6,43008,soft foot 1|1,eval
+2466,soft foot 1,soft foot,1,6,49152,soft foot 1|1,eval
+2467,soft foot 1,soft foot,1,6,53248,soft foot 1|1,eval
+2468,soft foot 1,soft foot,1,6,86016,soft foot 1|1,eval
+2469,soft foot 1,soft foot,1,6,90112,soft foot 1|1,eval
+2470,soft foot 1,soft foot,1,6,118784,soft foot 1|1,eval
+2471,soft foot 1,soft foot,1,6,129024,soft foot 1|1,eval
+2472,soft foot 1,soft foot,1,6,141312,soft foot 1|1,eval
+2473,soft foot 1,soft foot,1,6,143360,soft foot 1|1,eval
+2474,soft foot 1,soft foot,1,6,147456,soft foot 1|1,eval
+2475,soft foot 1,soft foot,1,6,235520,soft foot 1|1,eval
+2476,soft foot 1,soft foot,1,7,139264,soft foot 1|1,eval
+2477,soft foot 1,soft foot,1,7,159744,soft foot 1|1,eval
+2478,soft foot 1,soft foot,1,7,194560,soft foot 1|1,eval
+2479,soft foot 1,soft foot,1,7,200704,soft foot 1|1,eval
+2480,soft foot 1,soft foot,1,7,235520,soft foot 1|1,eval
+2481,soft foot 1,soft foot,1,8,24576,soft foot 1|1,eval
+2482,soft foot 1,soft foot,1,8,34816,soft foot 1|1,eval
+2483,soft foot 1,soft foot,1,8,47104,soft foot 1|1,eval
+2484,soft foot 1,soft foot,1,8,49152,soft foot 1|1,eval
+2485,soft foot 1,soft foot,1,8,77824,soft foot 1|1,eval
+2486,soft foot 1,soft foot,1,8,147456,soft foot 1|1,eval
+2487,soft foot 1,soft foot,1,8,186368,soft foot 1|1,eval
+2488,soft foot 1,soft foot,1,8,217088,soft foot 1|1,eval
+2489,soft foot 1,soft foot,1,9,6144,soft foot 1|1,eval
+2490,soft foot 1,soft foot,1,9,16384,soft foot 1|1,eval
+2491,soft foot 1,soft foot,1,9,30720,soft foot 1|1,eval
+2492,soft foot 1,soft foot,1,9,38912,soft foot 1|1,eval
+2493,soft foot 1,soft foot,1,9,51200,soft foot 1|1,eval
+2494,soft foot 1,soft foot,1,9,100352,soft foot 1|1,eval
+2495,soft foot 1,soft foot,1,9,149504,soft foot 1|1,eval
+2496,soft foot 1,soft foot,1,9,163840,soft foot 1|1,eval
+2497,soft foot 1,soft foot,1,9,180224,soft foot 1|1,eval
+2498,soft foot 1,soft foot,1,9,194560,soft foot 1|1,eval
+2499,soft foot 1,soft foot,2,10,20480,soft foot 1|2,adapt
+2500,soft foot 1,soft foot,2,10,30720,soft foot 1|2,adapt
+2501,soft foot 1,soft foot,2,10,53248,soft foot 1|2,adapt
+2502,soft foot 1,soft foot,2,10,65536,soft foot 1|2,adapt
+2503,soft foot 1,soft foot,2,10,112640,soft foot 1|2,adapt
+2504,soft foot 1,soft foot,2,10,141312,soft foot 1|2,adapt
+2505,soft foot 1,soft foot,2,10,165888,soft foot 1|2,adapt
+2506,soft foot 1,soft foot,2,10,178176,soft foot 1|2,adapt
+2507,soft foot 1,soft foot,2,10,182272,soft foot 1|2,adapt
+2508,soft foot 1,soft foot,2,10,186368,soft foot 1|2,adapt
+2509,soft foot 1,soft foot,2,10,202752,soft foot 1|2,adapt
+2510,soft foot 1,soft foot,2,10,204800,soft foot 1|2,adapt
+2511,soft foot 1,soft foot,2,10,235520,soft foot 1|2,adapt
+2512,soft foot 1,soft foot,2,11,8192,soft foot 1|2,adapt
+2513,soft foot 1,soft foot,2,11,12288,soft foot 1|2,adapt
+2514,soft foot 1,soft foot,2,11,14336,soft foot 1|2,adapt
+2515,soft foot 1,soft foot,2,11,22528,soft foot 1|2,adapt
+2516,soft foot 1,soft foot,2,11,30720,soft foot 1|2,adapt
+2517,soft foot 1,soft foot,2,11,36864,soft foot 1|2,adapt
+2518,soft foot 1,soft foot,2,11,43008,soft foot 1|2,adapt
+2519,soft foot 1,soft foot,2,11,69632,soft foot 1|2,adapt
+2520,soft foot 1,soft foot,2,11,137216,soft foot 1|2,adapt
+2521,soft foot 1,soft foot,2,11,141312,soft foot 1|2,adapt
+2522,soft foot 1,soft foot,2,11,176128,soft foot 1|2,adapt
+2523,soft foot 1,soft foot,2,12,0,soft foot 1|2,adapt
+2524,soft foot 1,soft foot,2,12,20480,soft foot 1|2,adapt
+2525,soft foot 1,soft foot,2,12,45056,soft foot 1|2,adapt
+2526,soft foot 1,soft foot,2,12,77824,soft foot 1|2,adapt
+2527,soft foot 1,soft foot,2,12,114688,soft foot 1|2,adapt
+2528,soft foot 1,soft foot,2,12,137216,soft foot 1|2,adapt
+2529,soft foot 1,soft foot,2,12,149504,soft foot 1|2,adapt
+2530,soft foot 1,soft foot,2,12,153600,soft foot 1|2,adapt
+2531,soft foot 1,soft foot,2,12,155648,soft foot 1|2,adapt
+2532,soft foot 1,soft foot,2,12,174080,soft foot 1|2,adapt
+2533,soft foot 1,soft foot,2,12,188416,soft foot 1|2,adapt
+2534,soft foot 1,soft foot,2,13,4096,soft foot 1|2,adapt
+2535,soft foot 1,soft foot,2,13,10240,soft foot 1|2,adapt
+2536,soft foot 1,soft foot,2,13,20480,soft foot 1|2,adapt
+2537,soft foot 1,soft foot,2,13,59392,soft foot 1|2,adapt
+2538,soft foot 1,soft foot,2,13,102400,soft foot 1|2,adapt
+2539,soft foot 1,soft foot,2,13,104448,soft foot 1|2,adapt
+2540,soft foot 1,soft foot,2,13,106496,soft foot 1|2,adapt
+2541,soft foot 1,soft foot,2,13,149504,soft foot 1|2,adapt
+2542,soft foot 1,soft foot,2,13,159744,soft foot 1|2,adapt
+2543,soft foot 1,soft foot,2,13,172032,soft foot 1|2,adapt
+2544,soft foot 1,soft foot,2,13,174080,soft foot 1|2,adapt
+2545,soft foot 1,soft foot,2,13,186368,soft foot 1|2,adapt
+2546,soft foot 1,soft foot,2,13,190464,soft foot 1|2,adapt
+2547,soft foot 1,soft foot,2,13,202752,soft foot 1|2,adapt
+2548,soft foot 1,soft foot,2,13,204800,soft foot 1|2,adapt
+2549,soft foot 1,soft foot,2,14,4096,soft foot 1|2,adapt
+2550,soft foot 1,soft foot,2,14,14336,soft foot 1|2,adapt
+2551,soft foot 1,soft foot,2,14,28672,soft foot 1|2,adapt
+2552,soft foot 1,soft foot,2,14,106496,soft foot 1|2,adapt
+2553,soft foot 1,soft foot,2,14,110592,soft foot 1|2,adapt
+2554,soft foot 1,soft foot,2,14,131072,soft foot 1|2,adapt
+2555,soft foot 1,soft foot,2,14,147456,soft foot 1|2,adapt
+2556,soft foot 1,soft foot,2,14,151552,soft foot 1|2,adapt
+2557,soft foot 1,soft foot,2,14,153600,soft foot 1|2,adapt
+2558,soft foot 1,soft foot,2,14,215040,soft foot 1|2,adapt
+2559,soft foot 1,soft foot,2,14,217088,soft foot 1|2,adapt
+2560,soft foot 2,soft foot,0,0,51200,soft foot 2|0,adapt
+2561,soft foot 2,soft foot,0,0,79872,soft foot 2|0,adapt
+2562,soft foot 2,soft foot,0,0,92160,soft foot 2|0,adapt
+2563,soft foot 2,soft foot,0,0,106496,soft foot 2|0,adapt
+2564,soft foot 2,soft foot,0,0,145408,soft foot 2|0,adapt
+2565,soft foot 2,soft foot,0,0,147456,soft foot 2|0,adapt
+2566,soft foot 2,soft foot,0,0,184320,soft foot 2|0,adapt
+2567,soft foot 2,soft foot,0,0,188416,soft foot 2|0,adapt
+2568,soft foot 2,soft foot,0,0,210944,soft foot 2|0,adapt
+2569,soft foot 2,soft foot,0,0,225280,soft foot 2|0,adapt
+2570,soft foot 2,soft foot,0,1,2048,soft foot 2|0,adapt
+2571,soft foot 2,soft foot,0,1,12288,soft foot 2|0,adapt
+2572,soft foot 2,soft foot,0,1,28672,soft foot 2|0,adapt
+2573,soft foot 2,soft foot,0,1,88064,soft foot 2|0,adapt
+2574,soft foot 2,soft foot,0,1,92160,soft foot 2|0,adapt
+2575,soft foot 2,soft foot,0,1,137216,soft foot 2|0,adapt
+2576,soft foot 2,soft foot,0,1,172032,soft foot 2|0,adapt
+2577,soft foot 2,soft foot,0,1,184320,soft foot 2|0,adapt
+2578,soft foot 2,soft foot,0,1,223232,soft foot 2|0,adapt
+2579,soft foot 2,soft foot,0,1,227328,soft foot 2|0,adapt
+2580,soft foot 2,soft foot,0,1,233472,soft foot 2|0,adapt
+2581,soft foot 2,soft foot,0,2,16384,soft foot 2|0,adapt
+2582,soft foot 2,soft foot,0,2,30720,soft foot 2|0,adapt
+2583,soft foot 2,soft foot,0,2,40960,soft foot 2|0,adapt
+2584,soft foot 2,soft foot,0,2,51200,soft foot 2|0,adapt
+2585,soft foot 2,soft foot,0,2,57344,soft foot 2|0,adapt
+2586,soft foot 2,soft foot,0,2,77824,soft foot 2|0,adapt
+2587,soft foot 2,soft foot,0,2,102400,soft foot 2|0,adapt
+2588,soft foot 2,soft foot,0,2,116736,soft foot 2|0,adapt
+2589,soft foot 2,soft foot,0,2,124928,soft foot 2|0,adapt
+2590,soft foot 2,soft foot,0,2,143360,soft foot 2|0,adapt
+2591,soft foot 2,soft foot,0,2,172032,soft foot 2|0,adapt
+2592,soft foot 2,soft foot,0,2,178176,soft foot 2|0,adapt
+2593,soft foot 2,soft foot,0,2,180224,soft foot 2|0,adapt
+2594,soft foot 2,soft foot,0,2,194560,soft foot 2|0,adapt
+2595,soft foot 2,soft foot,0,2,221184,soft foot 2|0,adapt
+2596,soft foot 2,soft foot,0,3,14336,soft foot 2|0,adapt
+2597,soft foot 2,soft foot,0,3,81920,soft foot 2|0,adapt
+2598,soft foot 2,soft foot,0,3,126976,soft foot 2|0,adapt
+2599,soft foot 2,soft foot,0,3,141312,soft foot 2|0,adapt
+2600,soft foot 2,soft foot,0,3,147456,soft foot 2|0,adapt
+2601,soft foot 2,soft foot,0,3,155648,soft foot 2|0,adapt
+2602,soft foot 2,soft foot,0,3,231424,soft foot 2|0,adapt
+2603,soft foot 2,soft foot,0,4,40960,soft foot 2|0,adapt
+2604,soft foot 2,soft foot,0,4,53248,soft foot 2|0,adapt
+2605,soft foot 2,soft foot,0,4,57344,soft foot 2|0,adapt
+2606,soft foot 2,soft foot,0,4,86016,soft foot 2|0,adapt
+2607,soft foot 2,soft foot,0,4,92160,soft foot 2|0,adapt
+2608,soft foot 2,soft foot,0,4,221184,soft foot 2|0,adapt
+2609,soft foot 2,soft foot,1,5,8192,soft foot 2|1,eval
+2610,soft foot 2,soft foot,1,5,12288,soft foot 2|1,eval
+2611,soft foot 2,soft foot,1,5,16384,soft foot 2|1,eval
+2612,soft foot 2,soft foot,1,5,26624,soft foot 2|1,eval
+2613,soft foot 2,soft foot,1,5,53248,soft foot 2|1,eval
+2614,soft foot 2,soft foot,1,5,59392,soft foot 2|1,eval
+2615,soft foot 2,soft foot,1,5,79872,soft foot 2|1,eval
+2616,soft foot 2,soft foot,1,5,116736,soft foot 2|1,eval
+2617,soft foot 2,soft foot,1,5,120832,soft foot 2|1,eval
+2618,soft foot 2,soft foot,1,5,133120,soft foot 2|1,eval
+2619,soft foot 2,soft foot,1,5,135168,soft foot 2|1,eval
+2620,soft foot 2,soft foot,1,5,157696,soft foot 2|1,eval
+2621,soft foot 2,soft foot,1,5,167936,soft foot 2|1,eval
+2622,soft foot 2,soft foot,1,5,186368,soft foot 2|1,eval
+2623,soft foot 2,soft foot,1,5,192512,soft foot 2|1,eval
+2624,soft foot 2,soft foot,1,5,200704,soft foot 2|1,eval
+2625,soft foot 2,soft foot,1,5,208896,soft foot 2|1,eval
+2626,soft foot 2,soft foot,1,5,221184,soft foot 2|1,eval
+2627,soft foot 2,soft foot,1,5,229376,soft foot 2|1,eval
+2628,soft foot 2,soft foot,1,6,6144,soft foot 2|1,eval
+2629,soft foot 2,soft foot,1,6,22528,soft foot 2|1,eval
+2630,soft foot 2,soft foot,1,6,34816,soft foot 2|1,eval
+2631,soft foot 2,soft foot,1,6,45056,soft foot 2|1,eval
+2632,soft foot 2,soft foot,1,6,94208,soft foot 2|1,eval
+2633,soft foot 2,soft foot,1,6,133120,soft foot 2|1,eval
+2634,soft foot 2,soft foot,1,6,145408,soft foot 2|1,eval
+2635,soft foot 2,soft foot,1,6,204800,soft foot 2|1,eval
+2636,soft foot 2,soft foot,1,6,206848,soft foot 2|1,eval
+2637,soft foot 2,soft foot,1,6,217088,soft foot 2|1,eval
+2638,soft foot 2,soft foot,1,6,235520,soft foot 2|1,eval
+2639,soft foot 2,soft foot,1,7,2048,soft foot 2|1,eval
+2640,soft foot 2,soft foot,1,7,16384,soft foot 2|1,eval
+2641,soft foot 2,soft foot,1,7,18432,soft foot 2|1,eval
+2642,soft foot 2,soft foot,1,7,55296,soft foot 2|1,eval
+2643,soft foot 2,soft foot,1,7,71680,soft foot 2|1,eval
+2644,soft foot 2,soft foot,1,7,83968,soft foot 2|1,eval
+2645,soft foot 2,soft foot,1,7,90112,soft foot 2|1,eval
+2646,soft foot 2,soft foot,1,7,118784,soft foot 2|1,eval
+2647,soft foot 2,soft foot,1,7,120832,soft foot 2|1,eval
+2648,soft foot 2,soft foot,1,7,124928,soft foot 2|1,eval
+2649,soft foot 2,soft foot,1,7,135168,soft foot 2|1,eval
+2650,soft foot 2,soft foot,1,7,217088,soft foot 2|1,eval
+2651,soft foot 2,soft foot,1,7,235520,soft foot 2|1,eval
+2652,soft foot 2,soft foot,1,8,0,soft foot 2|1,eval
+2653,soft foot 2,soft foot,1,8,16384,soft foot 2|1,eval
+2654,soft foot 2,soft foot,1,8,49152,soft foot 2|1,eval
+2655,soft foot 2,soft foot,1,8,51200,soft foot 2|1,eval
+2656,soft foot 2,soft foot,1,8,114688,soft foot 2|1,eval
+2657,soft foot 2,soft foot,1,8,118784,soft foot 2|1,eval
+2658,soft foot 2,soft foot,1,8,133120,soft foot 2|1,eval
+2659,soft foot 2,soft foot,1,8,141312,soft foot 2|1,eval
+2660,soft foot 2,soft foot,1,8,172032,soft foot 2|1,eval
+2661,soft foot 2,soft foot,1,8,198656,soft foot 2|1,eval
+2662,soft foot 2,soft foot,1,8,215040,soft foot 2|1,eval
+2663,soft foot 2,soft foot,1,9,14336,soft foot 2|1,eval
+2664,soft foot 2,soft foot,1,9,53248,soft foot 2|1,eval
+2665,soft foot 2,soft foot,1,9,67584,soft foot 2|1,eval
+2666,soft foot 2,soft foot,1,9,69632,soft foot 2|1,eval
+2667,soft foot 2,soft foot,1,9,73728,soft foot 2|1,eval
+2668,soft foot 2,soft foot,1,9,110592,soft foot 2|1,eval
+2669,soft foot 2,soft foot,1,9,122880,soft foot 2|1,eval
+2670,soft foot 2,soft foot,1,9,131072,soft foot 2|1,eval
+2671,soft foot 2,soft foot,1,9,137216,soft foot 2|1,eval
+2672,soft foot 2,soft foot,1,9,174080,soft foot 2|1,eval
+2673,soft foot 2,soft foot,1,9,223232,soft foot 2|1,eval
+2674,soft foot 2,soft foot,2,10,0,soft foot 2|2,adapt
+2675,soft foot 2,soft foot,2,10,8192,soft foot 2|2,adapt
+2676,soft foot 2,soft foot,2,10,59392,soft foot 2|2,adapt
+2677,soft foot 2,soft foot,2,10,79872,soft foot 2|2,adapt
+2678,soft foot 2,soft foot,2,10,104448,soft foot 2|2,adapt
+2679,soft foot 2,soft foot,2,10,108544,soft foot 2|2,adapt
+2680,soft foot 2,soft foot,2,10,188416,soft foot 2|2,adapt
+2681,soft foot 2,soft foot,2,11,12288,soft foot 2|2,adapt
+2682,soft foot 2,soft foot,2,11,51200,soft foot 2|2,adapt
+2683,soft foot 2,soft foot,2,11,96256,soft foot 2|2,adapt
+2684,soft foot 2,soft foot,2,11,116736,soft foot 2|2,adapt
+2685,soft foot 2,soft foot,2,11,124928,soft foot 2|2,adapt
+2686,soft foot 2,soft foot,2,11,167936,soft foot 2|2,adapt
+2687,soft foot 2,soft foot,2,11,178176,soft foot 2|2,adapt
+2688,soft foot 2,soft foot,2,11,180224,soft foot 2|2,adapt
+2689,soft foot 2,soft foot,2,11,208896,soft foot 2|2,adapt
+2690,soft foot 2,soft foot,2,11,233472,soft foot 2|2,adapt
+2691,soft foot 2,soft foot,2,12,16384,soft foot 2|2,adapt
+2692,soft foot 2,soft foot,2,12,43008,soft foot 2|2,adapt
+2693,soft foot 2,soft foot,2,12,65536,soft foot 2|2,adapt
+2694,soft foot 2,soft foot,2,12,86016,soft foot 2|2,adapt
+2695,soft foot 2,soft foot,2,12,120832,soft foot 2|2,adapt
+2696,soft foot 2,soft foot,2,12,122880,soft foot 2|2,adapt
+2697,soft foot 2,soft foot,2,12,129024,soft foot 2|2,adapt
+2698,soft foot 2,soft foot,2,12,133120,soft foot 2|2,adapt
+2699,soft foot 2,soft foot,2,12,190464,soft foot 2|2,adapt
+2700,soft foot 2,soft foot,2,12,198656,soft foot 2|2,adapt
+2701,soft foot 2,soft foot,2,12,210944,soft foot 2|2,adapt
+2702,soft foot 2,soft foot,2,12,219136,soft foot 2|2,adapt
+2703,soft foot 2,soft foot,2,13,12288,soft foot 2|2,adapt
+2704,soft foot 2,soft foot,2,13,26624,soft foot 2|2,adapt
+2705,soft foot 2,soft foot,2,13,49152,soft foot 2|2,adapt
+2706,soft foot 2,soft foot,2,13,57344,soft foot 2|2,adapt
+2707,soft foot 2,soft foot,2,13,67584,soft foot 2|2,adapt
+2708,soft foot 2,soft foot,2,13,79872,soft foot 2|2,adapt
+2709,soft foot 2,soft foot,2,13,202752,soft foot 2|2,adapt
+2710,soft foot 2,soft foot,2,13,219136,soft foot 2|2,adapt
+2711,soft foot 2,soft foot,2,13,235520,soft foot 2|2,adapt
+2712,soft foot 2,soft foot,2,14,0,soft foot 2|2,adapt
+2713,soft foot 2,soft foot,2,14,8192,soft foot 2|2,adapt
+2714,soft foot 2,soft foot,2,14,10240,soft foot 2|2,adapt
+2715,soft foot 2,soft foot,2,14,96256,soft foot 2|2,adapt
+2716,soft foot 2,soft foot,2,14,108544,soft foot 2|2,adapt
+2717,soft foot 2,soft foot,2,14,155648,soft foot 2|2,adapt
+2718,soft foot 2,soft foot,2,14,163840,soft foot 2|2,adapt
+2719,soft foot 2,soft foot,2,14,206848,soft foot 2|2,adapt

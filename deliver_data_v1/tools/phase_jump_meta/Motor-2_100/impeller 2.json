@@ -1,0 +1,27 @@
+{
+ "setup": "Motor-2_100",
+ "fault": "impeller 2",
+ "n_channels": 5,
+ "n_columns": 5,
+ "median_phase_jump": [
+  0.187,
+  0.205,
+  0.196,
+  0.23
+ ],
+ "measurement_of_column": [
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "n_measurements": 1,
+ "rms_per_channel": [
+  0.3936,
+  0.5145,
+  0.011,
+  0.3322,
+  0.2276
+ ]
+}

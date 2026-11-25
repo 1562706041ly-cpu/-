@@ -1,0 +1,42 @@
+{
+ "file": "pool_motor2_100_ch1245_logspec.npy",
+ "sha256": "674bcd6bb93ba9b6db5ddb579577277ddf132768a190a6a7c4a5920b85c2b0ce",
+ "size_bytes": 44608128,
+ "shape": [
+  2720,
+  4,
+  1025
+ ],
+ "dtype": "float32",
+ "pool": "pool_motor2_100_ch1245.npz",
+ "pool_sha256": "4be16646c108805062fcc19c523b346cafd7fad812262a3cdfcea8418157afa4",
+ "channels": [
+  1,
+  2,
+  4,
+  5
+ ],
+ "sample_rate_hz": 20000.0,
+ "window_size": 2048,
+ "n_bins": 1025,
+ "bin_resolution_hz": 9.765625,
+ "bin_frequency": "bin k (0..1024) = k * 20000 / 2048 Hz",
+ "recipe": [
+  "z = ((X - X.mean(-1, keepdims=True)) / np.maximum(X.std(-1, keepdims=True), 1e-8)).astype(np.float32)   (per window, per channel; zn of m2_paderborn_kr.py, --norm window)",
+  "w = periodic Hann window of length 2048: 0.5 - 0.5*cos(2*pi*n/2048), n = 0..2047 (= torch.hann_window(2048, periodic=True))",
+  "S = log(|rfft(z * w)| + 1e-6): z cast to float64, product, rfft and log in float64, result rounded to float32"
+ ],
+ "row_order": "same as pool X (pool index)",
+ "note": "spectrum of the un-augmented (weak) view only; the encoder in training computes the spectrum from the augmented waveform and then standardises it per channel and bin with training statistics, which is not applied here",
+ "torch_check": {
+  "done": true,
+  "torch_version": "2.15.0+cpu",
+  "windows_checked": 2720,
+  "reference": "code_keep/m2_paderborn_kr.py log_spectrum: torch.log(torch.fft.rfft(x * torch.hann_window(L, periodic=True, dtype=x.dtype)).abs() + 1e-6), x = zn(X)",
+  "max_abs_diff_vs_torch_float64": 1.862645149230957e-09,
+  "max_abs_diff_vs_torch_float32": 0.010762691497802734,
+  "fraction_of_values_with_diff_gt_1e-4_vs_torch_float32": 7.101865136298422e-05,
+  "quantile_0.9999_diff_vs_torch_float32": 8.344650268554688e-05,
+  "note": "the float32 torch FFT has rounding error up to about 1e-2 at bins with very small magnitude (log value near -7 or lower); against a float64 reference the torch float32 result deviates by that much, this array (float64 computation, rounded once to float32) does not. Pass criterion: diff vs torch float64 <= 1e-4."
+ }
+}
