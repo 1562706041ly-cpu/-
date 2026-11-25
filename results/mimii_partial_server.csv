@@ -1,0 +1,3 @@
+protocol,feature,model,seed,epochs,train_s,n_train,n_val,n_test,net_acc,net_bal_acc,net_f1,net_detect,net_false_alarm,lssvm_acc,lssvm_bal_acc,lssvm_f1,lssvm_detect,lssvm_false_alarm,gam,sig2,cv_error
+file,set,cnn,1,38,628.2,10798,3604,3617,0.822228,0.703101,0.701361,0.641141,0.109116,0.87227,0.775995,0.758817,0.767267,0.0894612,381274,8111.49,0.055
+file,set,cnn,2,37,615.7,10798,3604,3617,0.763063,0.704778,0.65419,0.62012,0.178922,0.861487,0.773471,0.75116,0.752252,0.097594,151848,6003.9,0.0575
